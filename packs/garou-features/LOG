@@ -1,5 +1,3 @@
-2026/01/30-07:57:41.948 6c6c Recovering log #11
-2026/01/30-07:57:41.948 6c6c Level-0 table #13: started
-2026/01/30-07:57:41.950 6c6c Level-0 table #13: 13791 bytes OK
-2026/01/30-07:57:41.951 6c6c Delete type=0 #11
-2026/01/30-07:57:41.951 6c6c Delete type=3 #10
+2026/01/30-08:44:50.412 c4c Recovering log #18
+2026/01/30-08:44:50.414 c4c Delete type=0 #18
+2026/01/30-08:44:50.415 c4c Delete type=3 #15

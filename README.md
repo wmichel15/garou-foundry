@@ -12,3 +12,4 @@ https://raw.githubusercontent.com/wmichel15/garou-foundry/main/module.json
 This is a fan-made homebrew conversion for tabletop use.  
 It is not affiliated with or endorsed by any publisher.  
 All original setting names and concepts referenced remain the property of their respective owners.
+Version 0.1.0 – Initial module scaffold.

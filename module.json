@@ -3,15 +3,21 @@
   "name": "garou",
   "title": "Garou: The Apocalypse",
   "description": "A Foundry VTT module implementing the Garou class, tribes, gifts, rites, and lore for D&D 5e.",
-  "version": "0.1.1",
-  "minimumCoreVersion": "13",
-  "compatibleCoreVersion": "13",
+  "version": "0.1.0",
   "authors": [
     { "name": "Wesley Michel" }
   ],
   "url": "https://github.com/wmichel15/garou-foundry",
   "manifest": "https://raw.githubusercontent.com/wmichel15/garou-foundry/main/module.json",
   "download": "https://github.com/wmichel15/garou-foundry/archive/refs/heads/main.zip",
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ]
+  },
   "packs": [
     {
       "name": "garou-classes",
@@ -38,8 +44,10 @@
       "name": "garou-journals",
       "label": "Garou - Journals",
       "type": "JournalEntry",
+      "system": "dnd5e",
       "path": "packs/garou-journals"
     }
   ]
 }
+
 

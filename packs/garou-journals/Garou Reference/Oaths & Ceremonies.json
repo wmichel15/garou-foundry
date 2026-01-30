@@ -1,0 +1,27 @@
+{
+  "folder": "ZDlf9E15fYphIbda",
+  "name": "Oaths & Ceremonies",
+  "pages": [],
+  "categories": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "JournalEntry.n9IsXGwSS5xddTJ8",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769753204799,
+    "modifiedTime": 1769753204799,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

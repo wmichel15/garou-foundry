@@ -1,11 +1,13 @@
 {
   "id": "garou",
-  "name": "garou",
   "title": "Garou: The Apocalypse",
-  "description": "A Foundry VTT module implementing the Garou class, tribes, gifts, rites, and lore for D&D 5e.",
+  "description": "<p>A Foundry VTT module implementing the Garou class, tribes, gifts, rites, and lore for D&amp;D 5e.</p>",
   "version": "0.1.0",
   "authors": [
-    { "name": "Wesley Michel" }
+    {
+      "name": "Wesley Michel",
+      "flags": {}
+    }
   ],
   "url": "https://github.com/wmichel15/garou-foundry",
   "manifest": "https://raw.githubusercontent.com/wmichel15/garou-foundry/main/module.json",
@@ -14,7 +16,8 @@
     "systems": [
       {
         "id": "dnd5e",
-        "type": "system"
+        "type": "system",
+        "compatibility": {}
       }
     ]
   },
@@ -22,32 +25,47 @@
     {
       "name": "garou-classes",
       "label": "Garou - Classes",
+      "path": "packs/garou-classes",
       "type": "Item",
       "system": "dnd5e",
-      "path": "packs/garou-classes"
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "garou-features",
       "label": "Garou - Features",
+      "path": "packs/garou-features",
       "type": "Item",
       "system": "dnd5e",
-      "path": "packs/garou-features"
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "garou-gifts",
       "label": "Garou - Gifts & Rites",
+      "path": "packs/garou-gifts",
       "type": "Item",
       "system": "dnd5e",
-      "path": "packs/garou-gifts"
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "garou-journals",
       "label": "Garou - Journals",
+      "path": "packs/garou-journals",
       "type": "JournalEntry",
       "system": "dnd5e",
-      "path": "packs/garou-journals"
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
-  ]
+  ],
+  "flags": {}
 }
-
-

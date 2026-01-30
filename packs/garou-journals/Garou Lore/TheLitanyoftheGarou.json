@@ -1,0 +1,483 @@
+{
+  "name": "The Litany of the Garou",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "I. Garou Shall Not Mate With Garou",
+      "type": "text",
+      "_id": "zbUcnZGIPKuMmNNi",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Garou are forbidden from binding blood to blood, as such unions bring suffering, instability, and tragedy that weaken the people as a whole.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 200000,
+      "name": "II. Combat the Wyrm Wherever It Dwells and Wherever It Breeds",
+      "type": "text",
+      "_id": "CJ6ZyeNX36rlCscR",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The Garou exist to oppose corruption in all its forms and must confront it relentlessly, even as doubts grow about whether the war can truly be won.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 300000,
+      "name": "III. Respect the Territory of Another",
+      "type": "text",
+      "_id": "MjTvj4PgEWGoCQag",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Territory must be honored and entered with respect, as ignoring boundaries invites conflict and fractures Garou unity.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 400000,
+      "name": "IV. Accept an Honorable Surrender",
+      "type": "text",
+      "_id": "2R1EPF33DVE2UXXE",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Victory ends when a foe yields, and mercy shown to one of their own preserves the strength and honor of the Garou.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 500000,
+      "name": "V. Submit to Those of Higher Station",
+      "type": "text",
+      "_id": "wyUdm6cEQzgDIgoq",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Hierarchy provides order and survival, but obedience is contested when rank is upheld without wisdom or merit.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 600000,
+      "name": "VI. The First Share of the Kill for the Greatest in Station",
+      "type": "text",
+      "_id": "CEBW1hDZg0sSqg2Q",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Those of highest renown may claim the first spoils of victory, though abuse of this right breeds resentment and division.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 700000,
+      "name": "VII. Ye Shall Not Eat the Flesh of Humans",
+      "type": "text",
+      "_id": "chXbdpD48zKoiQJp",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>To prey upon humanity as food is to abandon the role of guardian and invite corruption, even when instinct and rage tempt otherwise.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 800000,
+      "name": "VIII. Respect Those Beneath Ye — All Are of Gaia",
+      "type": "text",
+      "_id": "ABmq5iXk1Enkz2ei",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>True honor lies in showing restraint and respect to the weak, lest the Garou become the monsters they fear.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 900000,
+      "name": "IX. The Veil Shall Not Be Lifted",
+      "type": "text",
+      "_id": "Chha9Wr9mqsH8XDI",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>The Garou must remain unseen among humanity, for revelation brings panic, persecution, and devastation.</p><p data-start=\"3343\" data-end=\"3517\"></p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 1000000,
+      "name": "X. Do Not Suffer Thy People to Tend Thy Sickness",
+      "type": "text",
+      "_id": "aQwQV0CJh261AdRh",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>A Garou should not linger in prolonged infirmity, choosing dignity in departure or care rather than burdening the pack.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 1100000,
+      "name": "XI. The Leader May Be Challenged at Any Time During Peace",
+      "type": "text",
+      "_id": "sWAuaP6R06IxcauC",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Leadership must be tested openly in times of peace to prevent weakness, stagnation, or tyranny.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 1200000,
+      "name": "XII. The Leader May Not Be Challenged During Wartime",
+      "type": "text",
+      "_id": "3p18ifesYlWGH7IK",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>In battle, unity and obedience outweigh pride, as division in war leads only to death.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 1300000,
+      "name": "XIII. Ye Shall Take No Action That Causes a Caern to Be Violated",
+      "type": "text",
+      "_id": "utj0STG8E1hjTVOO",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Endangering a caern is among the gravest of crimes, for to harm these sacred sites is to wound the world itself.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    }
+  ],
+  "folder": "9oHM6AKrr2Oz3lv4",
+  "categories": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "JournalEntry.7B9BUVMH63t201NO",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769753201461,
+    "modifiedTime": 1769753201461,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "folder": "9oHM6AKrr2Oz3lv4",
+  "name": "Rites & Sacred Duties",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Rites",
+      "type": "text",
+      "_id": "ntC9PdC0GMWvdGls",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h2 data-start=\"590\" data-end=\"608\">What Is a Rite?</h2><p data-start=\"610\" data-end=\"843\">A rite is a formalized act of meaning performed to honor spirits, enforce tradition, or maintain balance between the physical world and the Umbra. Some rites are ancient and unchanging. Others evolve with the sept that performs them.</p><p data-start=\"845\" data-end=\"871\">Rites serve many purposes:</p><ul data-start=\"872\" data-end=\"1035\"><li data-start=\"872\" data-end=\"908\"><p data-start=\"874\" data-end=\"908\">Strengthening bonds with spirits</p></li><li data-start=\"909\" data-end=\"933\"><p data-start=\"911\" data-end=\"933\">Cleansing corruption</p></li><li data-start=\"934\" data-end=\"977\"><p data-start=\"936\" data-end=\"977\">Marking transitions of rank or identity</p></li><li data-start=\"978\" data-end=\"1007\"><p data-start=\"980\" data-end=\"1007\">Appeasing offended powers</p></li><li data-start=\"1008\" data-end=\"1035\"><p data-start=\"1010\" data-end=\"1035\">Preparing Garou for war</p></li></ul><p data-start=\"1037\" data-end=\"1097\">A rite is not merely ceremony—it is action with consequence.</p><hr data-start=\"1099\" data-end=\"1102\" /><h2 data-start=\"1104\" data-end=\"1124\">Sacred Obligation</h2><p data-start=\"1126\" data-end=\"1159\">Performing rites is not optional.</p><p data-start=\"1161\" data-end=\"1374\">Garou who refuse their sacred duties may find spirits withdrawing support, totems turning silent, or septmates questioning their worth. Even the most feral warrior must bow to ritual when the situation demands it.</p><p data-start=\"1376\" data-end=\"1457\">Through rites, Garou accept that they are not the highest authority in existence.</p><hr data-start=\"1459\" data-end=\"1462\" /><h2 data-start=\"1464\" data-end=\"1483\">Rites of Passage</h2><p data-start=\"1485\" data-end=\"1549\">Every Garou is shaped by rites that mark their place in society.</p><p data-start=\"1551\" data-end=\"1567\">These rites may:</p><ul data-start=\"1568\" data-end=\"1723\"><li data-start=\"1568\" data-end=\"1605\"><p data-start=\"1570\" data-end=\"1605\">Acknowledge maturity or readiness</p></li><li data-start=\"1606\" data-end=\"1645\"><p data-start=\"1608\" data-end=\"1645\">Mark acceptance into a pack or sept</p></li><li data-start=\"1646\" data-end=\"1683\"><p data-start=\"1648\" data-end=\"1683\">Recognize honor, wisdom, or glory</p></li><li data-start=\"1684\" data-end=\"1723\"><p data-start=\"1686\" data-end=\"1723\">Bind a Garou more deeply to a totem</p></li></ul><p data-start=\"1725\" data-end=\"1806\">Failure during a rite can carry lasting consequences—social, spiritual, or worse.</p><hr data-start=\"1808\" data-end=\"1811\" /><h2 data-start=\"1813\" data-end=\"1827\">Caern Rites</h2><p data-start=\"1829\" data-end=\"1875\">Caerns require constant spiritual maintenance.</p><p data-start=\"1877\" data-end=\"1906\">Rituals performed at a caern:</p><ul data-start=\"1907\" data-end=\"2044\"><li data-start=\"1907\" data-end=\"1939\"><p data-start=\"1909\" data-end=\"1939\">Renew its spiritual strength</p></li><li data-start=\"1940\" data-end=\"1981\"><p data-start=\"1942\" data-end=\"1981\">Reinforce the boundary between worlds</p></li><li data-start=\"1982\" data-end=\"2008\"><p data-start=\"1984\" data-end=\"2008\">Honor resident spirits</p></li><li data-start=\"2009\" data-end=\"2044\"><p data-start=\"2011\" data-end=\"2044\">Cleanse corruption or imbalance</p></li></ul><p data-start=\"2046\" data-end=\"2115\">A neglected caern grows unstable. A violated caern may never recover.</p><p data-start=\"2117\" data-end=\"2171\">Protecting a caern is meaningless without honoring it.</p><hr data-start=\"2173\" data-end=\"2176\" /><h2 data-start=\"2178\" data-end=\"2190\">War Rites</h2><p data-start=\"2192\" data-end=\"2234\">Before battle, Garou often turn to ritual.</p><p data-start=\"2236\" data-end=\"2250\">War rites may:</p><ul data-start=\"2251\" data-end=\"2378\"><li data-start=\"2251\" data-end=\"2281\"><p data-start=\"2253\" data-end=\"2281\">Call upon ancestral memory</p></li><li data-start=\"2282\" data-end=\"2307\"><p data-start=\"2284\" data-end=\"2307\">Strengthen pack unity</p></li><li data-start=\"2308\" data-end=\"2346\"><p data-start=\"2310\" data-end=\"2346\">Focus Rage into controlled purpose</p></li><li data-start=\"2347\" data-end=\"2378\"><p data-start=\"2349\" data-end=\"2378\">Invoke spiritual protection</p></li></ul><p data-start=\"2380\" data-end=\"2457\">Such rites do not guarantee victory—but they remind the Garou why they fight.</p><hr data-start=\"2459\" data-end=\"2462\" /><h2 data-start=\"2464\" data-end=\"2484\">Duties to Spirits</h2><p data-start=\"2486\" data-end=\"2511\">Spirits remember slights.</p><p data-start=\"2513\" data-end=\"2535\">Garou are expected to:</p><ul data-start=\"2536\" data-end=\"2644\"><li data-start=\"2536\" data-end=\"2555\"><p data-start=\"2538\" data-end=\"2555\">Uphold bargains</p></li><li data-start=\"2556\" data-end=\"2579\"><p data-start=\"2558\" data-end=\"2579\">Repay spiritual aid</p></li><li data-start=\"2580\" data-end=\"2600\"><p data-start=\"2582\" data-end=\"2600\">Correct offenses</p></li><li data-start=\"2601\" data-end=\"2644\"><p data-start=\"2603\" data-end=\"2644\">Protect places tied to spirit influence</p></li></ul><p data-start=\"2646\" data-end=\"2740\">Ignoring these duties invites reprisal not just against individuals, but against entire septs.</p><hr data-start=\"2742\" data-end=\"2745\" /><h2 data-start=\"2747\" data-end=\"2771\">Who May Perform Rites</h2><p data-start=\"2773\" data-end=\"2812\">Not every Garou is trusted with ritual.</p><p data-start=\"2814\" data-end=\"2976\">Some rites are reserved for elders, spiritual leaders, or those who have proven wisdom and restraint. Others may be performed by any Garou taught the proper form.</p><p data-start=\"2978\" data-end=\"3085\">Improper rites are dangerous. A mistake can anger spirits, warp outcomes, or open doors better left sealed.</p><hr data-start=\"3087\" data-end=\"3090\" /><h2 data-start=\"3092\" data-end=\"3111\">Why Rites Endure</h2><p data-start=\"3113\" data-end=\"3150\">Steel rusts. Claws break. Rage fades.</p><p data-start=\"3152\" data-end=\"3316\">Rites endure because they bind Garou to something greater than themselves. They remind the Garou that this war is not only about survival, but about responsibility.</p><p data-start=\"3318\" data-end=\"3366\">A Garou who forgets their rites may still fight.</p><p data-start=\"3368\" data-end=\"3397\">They will not fight for long.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    }
+  ],
+  "categories": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "JournalEntry.NKq5Pt2cgKjifDxd",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769753201461,
+    "modifiedTime": 1769753201461,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

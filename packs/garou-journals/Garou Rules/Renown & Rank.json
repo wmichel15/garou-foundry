@@ -1,0 +1,63 @@
+{
+  "folder": "VFeGaCGX1hoIDD9t",
+  "name": "Renown & Rank",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Renown & Rank",
+      "type": "text",
+      "_id": "yJzXmFCC6Znjaini",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<h1 data-start=\"244\" data-end=\"259\">Renown &amp; Rank</h1><p data-start=\"261\" data-end=\"452\">Among the Garou, power is not measured solely by survival or strength. It is measured by <strong data-start=\"350\" data-end=\"360\">Renown</strong>—the recognition of deeds—and <strong data-start=\"390\" data-end=\"398\">Rank</strong>, the status earned through action, honor, and wisdom.</p><p data-start=\"454\" data-end=\"589\">A Garou’s place in society is shaped less by age or bloodline than by what they have proven before witnesses, spirits, and their peers.</p><hr data-start=\"591\" data-end=\"594\" /><h2 data-start=\"596\" data-end=\"614\">What Is Renown?</h2><p data-start=\"616\" data-end=\"679\">Renown is the spiritual and social weight of a Garou’s actions.</p><p data-start=\"681\" data-end=\"723\">It reflects how the Garou is perceived by:</p><ul data-start=\"724\" data-end=\"786\"><li data-start=\"724\" data-end=\"739\"><p data-start=\"726\" data-end=\"739\">Other Garou</p></li><li data-start=\"740\" data-end=\"762\"><p data-start=\"742\" data-end=\"762\">Spirits and totems</p></li><li data-start=\"763\" data-end=\"786\"><p data-start=\"765\" data-end=\"786\">The sept as a whole</p></li></ul><p data-start=\"788\" data-end=\"899\">Renown is earned through deeds that uphold Garou values and lost through failure, dishonor, or neglect of duty.</p><hr data-start=\"901\" data-end=\"904\" /><h2 data-start=\"906\" data-end=\"934\">The Three Paths of Renown</h2><p data-start=\"936\" data-end=\"986\">Renown is traditionally recognized in three forms:</p><h3 data-start=\"988\" data-end=\"999\">Glory</h3><p data-start=\"1000\" data-end=\"1164\">Glory is earned through courage, victory, and visible acts of strength. It is the renown of warriors, champions, and those who face impossible odds without retreat.</p><h3 data-start=\"1166\" data-end=\"1177\">Honor</h3><p data-start=\"1178\" data-end=\"1340\">Honor reflects adherence to the Litany, loyalty to one’s pack and sept, and restraint in the use of power. It is earned by those who choose duty over convenience.</p><h3 data-start=\"1342\" data-end=\"1354\">Wisdom</h3><p data-start=\"1355\" data-end=\"1523\">Wisdom is earned through insight, foresight, and spiritual understanding. It reflects patience, teaching, and the ability to see consequences beyond the present moment.</p><p data-start=\"1525\" data-end=\"1562\">No Garou excels equally in all three.</p><hr data-start=\"1564\" data-end=\"1567\" /><h2 data-start=\"1569\" data-end=\"1585\">What Is Rank?</h2><p data-start=\"1587\" data-end=\"1650\">Rank is the formal recognition of a Garou’s accumulated Renown.</p><p data-start=\"1652\" data-end=\"1666\">It determines:</p><ul data-start=\"1667\" data-end=\"1791\"><li data-start=\"1667\" data-end=\"1694\"><p data-start=\"1669\" data-end=\"1694\">Authority within a sept</p></li><li data-start=\"1695\" data-end=\"1735\"><p data-start=\"1697\" data-end=\"1735\">Eligibility to perform certain rites</p></li><li data-start=\"1736\" data-end=\"1756\"><p data-start=\"1738\" data-end=\"1756\">Leadership roles</p></li><li data-start=\"1757\" data-end=\"1791\"><p data-start=\"1759\" data-end=\"1791\">Expectations of responsibility</p></li></ul><p data-start=\"1793\" data-end=\"1864\">Rank is not automatic. It must be earned, acknowledged, and maintained.</p><hr data-start=\"1866\" data-end=\"1869\" /><h2 data-start=\"1871\" data-end=\"1898\">Advancement Through Deed</h2><p data-start=\"1900\" data-end=\"1953\">Rising in Rank requires more than raw accomplishment.</p><p data-start=\"1955\" data-end=\"1968\">A Garou must:</p><ul data-start=\"1969\" data-end=\"2106\"><li data-start=\"1969\" data-end=\"2000\"><p data-start=\"1971\" data-end=\"2000\">Demonstrate balanced Renown</p></li><li data-start=\"2001\" data-end=\"2038\"><p data-start=\"2003\" data-end=\"2038\">Be recognized by peers and elders</p></li><li data-start=\"2039\" data-end=\"2072\"><p data-start=\"2041\" data-end=\"2072\">Earn spiritual acknowledgment</p></li><li data-start=\"2073\" data-end=\"2106\"><p data-start=\"2075\" data-end=\"2106\">Accept greater responsibility</p></li></ul><p data-start=\"2108\" data-end=\"2227\">Some Garou refuse Rank, fearing the obligations it brings. Others pursue it obsessively, mistaking authority for worth.</p><hr data-start=\"2229\" data-end=\"2232\" /><h2 data-start=\"2234\" data-end=\"2264\">Social Consequences of Rank</h2><p data-start=\"2266\" data-end=\"2296\">Rank shapes every interaction.</p><p data-start=\"2298\" data-end=\"2334\">Higher-ranked Garou are expected to:</p><ul data-start=\"2335\" data-end=\"2426\"><li data-start=\"2335\" data-end=\"2362\"><p data-start=\"2337\" data-end=\"2362\">Lead in times of crisis</p></li><li data-start=\"2363\" data-end=\"2383\"><p data-start=\"2365\" data-end=\"2383\">Mediate disputes</p></li><li data-start=\"2384\" data-end=\"2404\"><p data-start=\"2386\" data-end=\"2404\">Uphold tradition</p></li><li data-start=\"2405\" data-end=\"2426\"><p data-start=\"2407\" data-end=\"2426\">Accept challenges</p></li></ul><p data-start=\"2428\" data-end=\"2463\">Lower-ranked Garou are expected to:</p><ul data-start=\"2464\" data-end=\"2533\"><li data-start=\"2464\" data-end=\"2473\"><p data-start=\"2466\" data-end=\"2473\">Learn</p></li><li data-start=\"2474\" data-end=\"2483\"><p data-start=\"2476\" data-end=\"2483\">Serve</p></li><li data-start=\"2484\" data-end=\"2512\"><p data-start=\"2486\" data-end=\"2512\">Obey reasonable commands</p></li><li data-start=\"2513\" data-end=\"2533\"><p data-start=\"2515\" data-end=\"2533\">Prove themselves</p></li></ul><p data-start=\"2535\" data-end=\"2616\">These expectations are enforced socially long before they are enforced violently.</p><hr data-start=\"2618\" data-end=\"2621\" /><h2 data-start=\"2623\" data-end=\"2640\">Loss of Renown</h2><p data-start=\"2642\" data-end=\"2660\">Renown is fragile.</p><p data-start=\"2662\" data-end=\"2855\">Violating the Litany, abandoning a sept, betraying spirits, or repeatedly succumbing to Frenzy can erode a Garou’s standing. A respected Garou can fall quickly—and recovery is never guaranteed.</p><p data-start=\"2857\" data-end=\"2882\">Some falls are permanent.</p><hr data-start=\"2884\" data-end=\"2887\" /><h2 data-start=\"2889\" data-end=\"2912\">Spirits and Judgment</h2><p data-start=\"2914\" data-end=\"2945\">Spirits observe Renown closely.</p><p data-start=\"2947\" data-end=\"3104\">A Garou may earn respect among their people and still be scorned by the Umbra. Likewise, a Garou ignored by sept politics may be favored by powerful spirits.</p><p data-start=\"3106\" data-end=\"3149\">True power lies where both recognize worth.</p><hr data-start=\"3151\" data-end=\"3154\" /><h2 data-start=\"3156\" data-end=\"3185\">Why Renown and Rank Matter</h2><p data-start=\"3187\" data-end=\"3266\">Renown and Rank define who the Garou trust, who they follow, and who they fear.</p><p data-start=\"3268\" data-end=\"3362\">They are the glue that holds Garou society together—and the fault lines along which it breaks.</p><p data-start=\"3364\" data-end=\"3492\">A Garou without Renown is invisible.<br data-start=\"3400\" data-end=\"3403\" />A Garou without restraint is dangerous.<br data-start=\"3442\" data-end=\"3445\" />A Garou with Rank must bear the weight of both.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    }
+  ],
+  "categories": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "JournalEntry.zevj69Y6MvDyzs9K",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769753206717,
+    "modifiedTime": 1769753206717,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

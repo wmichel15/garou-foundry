@@ -1,8 +1,9 @@
 {
+  "id": "garou",
   "name": "garou",
   "title": "Garou: The Apocalypse",
   "description": "A Foundry VTT module implementing the Garou class, tribes, gifts, rites, and lore for D&D 5e.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minimumCoreVersion": "13",
   "compatibleCoreVersion": "13",
   "authors": [
@@ -16,18 +17,21 @@
       "name": "garou-classes",
       "label": "Garou - Classes",
       "type": "Item",
+      "system": "dnd5e",
       "path": "packs/garou-classes"
     },
     {
       "name": "garou-features",
       "label": "Garou - Features",
       "type": "Item",
+      "system": "dnd5e",
       "path": "packs/garou-features"
     },
     {
       "name": "garou-gifts",
       "label": "Garou - Gifts & Rites",
       "type": "Item",
+      "system": "dnd5e",
       "path": "packs/garou-gifts"
     },
     {
@@ -38,3 +42,4 @@
     }
   ]
 }
+

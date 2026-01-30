@@ -1,4 +1,4 @@
-TEST UPDATE 1
+TEST UPDATE 1.2
 
 # Garou Foundry Module (D&D 5e)
 

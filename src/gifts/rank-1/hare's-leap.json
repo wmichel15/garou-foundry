@@ -1,0 +1,136 @@
+{
+  "name": "Hare's Leap",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "ANUZz6TFhoPMFyPC": {
+        "type": "utility",
+        "_id": "ANUZz6TFhoPMFyPC",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "attribute",
+              "value": "1",
+              "target": "@scale.class.gnosis",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "name": "Hare's Leap (feature)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>You channel Gnosis into your legs, propelling yourself in a single, supernatural bound.</p><p data-start=\"826\" data-end=\"1053\">As an action, you may make a long jump or high jump without requiring a running start. The distance of the jump is doubled, and you do not provoke opportunity attacks from creatures whose reach you leave during this movement.</p><p data-start=\"1060\" data-end=\"1184\">You must land on a surface capable of supporting you. This movement does not grant flight or allow you to remain airborne.</p><p data-start=\"1191\" data-end=\"1206\">Cost: 1 Gnosis.</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "mgc"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": "ki"
+    }
+  },
+  "effects": [],
+  "folder": "K9xM1eYm45J5BDK5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.PByxY5HDwa2VoKIa",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.NIlT8FJStVEA8a2n",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769832385811,
+    "modifiedTime": 1769832385815,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "name": "Sense Wyrm",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>You have an instinctive awareness of spiritual corruption and entropic taint.</p><p data-start=\"708\" data-end=\"926\">You have <strong data-start=\"717\" data-end=\"781\">advantage on Wisdom (Perception) and Wisdom (Insight) checks</strong> made to detect, identify, or interpret the presence of <strong data-start=\"837\" data-end=\"895\">Wyrm-tainted creatures, objects, effects, or locations</strong> within range of your senses.</p><p data-start=\"933\" data-end=\"1059\">This sense does not automatically reveal the source, exact nature, or identity of the taint—only that corruption is present.</p><p data-start=\"1066\" data-end=\"1219\">Mortal evil alone does not trigger this sense; only corruption that actively undermines the balance of life, death, or spirit bears the mark of the Wyrm.</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "mgc",
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "supernaturalGift",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Sense Wyrm (Spiritual Awareness)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-gifts.Item.qy4Zc8lsu9zx7rSb",
+      "_id": "RpVfHmOXKeoj8SR6",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.dnd5e.skills.prc.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "flags.dnd5e.skills.ins.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "K9xM1eYm45J5BDK5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.qy4Zc8lsu9zx7rSb",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.s9TMMNW75Zic0VwH",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769832389336,
+    "modifiedTime": 1769832389341,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

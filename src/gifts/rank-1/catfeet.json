@@ -1,0 +1,110 @@
+{
+  "name": "Catfeet",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>You move with supernatural balance and grace.</p><p data-start=\"855\" data-end=\"979\">You have advantage on Dexterity (Acrobatics) checks made to balance, land safely, or navigate unstable or narrow surfaces.</p><p data-start=\"986\" data-end=\"1093\">When you fall, you reduce any falling damage you take by an amount equal to twice your proficiency bonus.</p><p data-start=\"1100\" data-end=\"1120\">Cost: None (Passive)</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "mgc",
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "supernaturalGift",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Catfeet (Graceful Movement)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-gifts.Item.Vb79SBNRENFhULDt",
+      "_id": "i10avkBrUenhBbOC",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.dnd5e.skills.acr.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>You have advantage on Dexterity (Acrobatics) checks related to balance and landing.</p><p></p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "K9xM1eYm45J5BDK5",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.Vb79SBNRENFhULDt",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.Q2W5BRTLAUWlq8L2",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769832380866,
+    "modifiedTime": 1769832380871,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

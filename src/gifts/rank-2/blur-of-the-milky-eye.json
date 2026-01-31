@@ -1,0 +1,190 @@
+{
+  "name": "Blur of the Milky Eye",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "GKQs7ESvwBG5LKwH": {
+        "type": "utility",
+        "_id": "GKQs7ESvwBG5LKwH",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "override": false,
+          "condition": "when a creature makes an attack roll against you"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "attribute",
+              "value": "1",
+              "target": "@scale.class.gnosis",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "name": "blur"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@prof"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>When a creature makes an attack roll against you, you may use your reaction to blur your form with Luna’s light. That attack is made with disadvantage.</p><p data-start=\"2624\" data-end=\"2688\"><strong data-start=\"2624\" data-end=\"2633\">Cost:</strong> 1 Gnosis<br data-start=\"2642\" data-end=\"2645\" /><strong data-start=\"2647\" data-end=\"2656\">Uses:</strong> Proficiency bonus per long rest</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 5
+    },
+    "properties": [
+      "mgc"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": "ki"
+    }
+  },
+  "effects": [
+    {
+      "name": "Blur of the Milky Eye(effect)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-gifts.Item.oWZbOMj7x0qRhzbd",
+      "_id": "L1y02G3MxlpOONcO",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.attack.all",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "M6Pc1cg69S71yXaA",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.oWZbOMj7x0qRhzbd",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.c4MUwYImvDxQul6U",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769832399957,
+    "modifiedTime": 1769832399957,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

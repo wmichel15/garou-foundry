@@ -29,8 +29,7 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
+        "PLAYER": "OBSERVER"
       }
     },
     {
@@ -40,8 +39,7 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
+        "PLAYER": "OBSERVER"
       }
     },
     {
@@ -51,8 +49,7 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
+        "PLAYER": "OBSERVER"
       }
     },
     {
@@ -62,10 +59,17 @@
       "type": "JournalEntry",
       "system": "dnd5e",
       "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
+        "PLAYER": "OBSERVER"
       }
     }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/garou.js",
+    "scripts/gnosis-resource.js"
   ],
   "flags": {}
 }

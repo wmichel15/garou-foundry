@@ -1,0 +1,274 @@
+{
+  "name": "Jam Weapon",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "OI4W55hI30ekFvC3": {
+        "type": "utility",
+        "_id": "OI4W55hI30ekFvC3",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "attribute",
+              "value": "1",
+              "target": "@scale.class.gnosis",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": true,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "ft",
+          "override": false,
+          "special": "",
+          "value": "60"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "1",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "name": "Jam Weapon (Activate)"
+      },
+      "bRot29AWjIBteQ9A": {
+        "type": "save",
+        "_id": "bRot29AWjIBteQ9A",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": true,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "uJpXBh1ehUM3loIm",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "8 + @prof + @abilities.wis.mod"
+          }
+        },
+        "name": "Jam Weapon (Save)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"673\" data-end=\"701\">Jam Weapon (Rank 2 Gift)</strong><br data-start=\"701\" data-end=\"704\" /><strong data-start=\"706\" data-end=\"715\">Cost:</strong> 1 Gnosis<br data-start=\"724\" data-end=\"727\" /><strong data-start=\"729\" data-end=\"744\">Activation:</strong> Action<br data-start=\"751\" data-end=\"754\" /><strong data-start=\"756\" data-end=\"766\">Range:</strong> 30 ft<br data-start=\"772\" data-end=\"775\" /><strong data-start=\"777\" data-end=\"790\">Duration:</strong> 1 minute</p><p data-start=\"808\" data-end=\"1079\">As an action, you expend 1 Gnosis and target one weapon you can see within 30 feet that is being wielded by a creature. The wielder must succeed on a <strong data-start=\"958\" data-end=\"984\">Dexterity saving throw</strong> against your Gift save DC or the weapon becomes <strong data-start=\"1033\" data-end=\"1078\">jammed or bound by spiritual interference</strong>.</p><p data-start=\"1086\" data-end=\"1251\">While jammed, the weapon cannot be used to make attacks. At the end of each of the wielder’s turns, they may repeat the saving throw, ending the effect on a success.</p><p data-start=\"1258\" data-end=\"1320\">This gift has no effect on natural weapons or unarmed strikes.</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 5
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "supernaturalGift",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Jam Weapon - Disabled",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-gifts.Item.BQJ8v6XnW0VtZzwk",
+      "_id": "uJpXBh1ehUM3loIm",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.weapon.attack",
+          "mode": 2,
+          "value": "-1000",
+          "priority": 20
+        },
+        {
+          "key": "macro.CE",
+          "mode": 2,
+          "value": "Jammed",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 10,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "M6Pc1cg69S71yXaA",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.BQJ8v6XnW0VtZzwk",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.2HlLw1m6QdpG6fOb",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769879698933,
+    "modifiedTime": 1769879698941,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

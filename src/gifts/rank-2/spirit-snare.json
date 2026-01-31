@@ -1,0 +1,270 @@
+{
+  "name": "Spirit Snare",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "Gb2ohSotaSCyMGgP": {
+        "type": "utility",
+        "_id": "Gb2ohSotaSCyMGgP",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "attribute",
+              "value": "1",
+              "target": "@scale.class.gnosis",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": true,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "ft",
+          "override": false,
+          "special": "",
+          "value": "60"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creature",
+            "count": "1",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "name": "spirit snare (Activate)"
+      },
+      "br32SQHoNYPustoG": {
+        "type": "save",
+        "_id": "br32SQHoNYPustoG",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "AhNEBXgw9EHIvBAe",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "8 + @prof + @abilities.wis.mod"
+          }
+        },
+        "name": "spirit snare - save"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": "@scale.class.gnosis"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"990\" data-end=\"1015\">Spirit Snare (Rank 2)</strong><br data-start=\"1015\" data-end=\"1018\" /><strong data-start=\"1020\" data-end=\"1029\">Cost:</strong> 1 Gnosis<br data-start=\"1038\" data-end=\"1041\" /><strong data-start=\"1043\" data-end=\"1058\">Activation:</strong> Action<br data-start=\"1065\" data-end=\"1068\" /><strong data-start=\"1070\" data-end=\"1080\">Range:</strong> 30 ft<br data-start=\"1086\" data-end=\"1089\" /><strong data-start=\"1091\" data-end=\"1104\">Duration:</strong> Up to 1 minute</p><p data-start=\"1128\" data-end=\"1344\">As an action, you expend 1 Gnosis and target one creature you can see within 30 feet. The target must make a <strong data-start=\"1237\" data-end=\"1262\">Strength saving throw</strong> against your Gift save DC. On a failure, it is <strong data-start=\"1310\" data-end=\"1324\">Restrained</strong> for the duration.</p><p data-start=\"1351\" data-end=\"1455\">At the end of each of its turns, the target can repeat the saving throw, ending the effect on a success.</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 5
+    },
+    "properties": [
+      "mgc"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "supernaturalGift",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Spirit Snare-Restrained",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-gifts.Item.QNbRzwvfr0jAuR03",
+      "_id": "AhNEBXgw9EHIvBAe",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "macro.CE",
+          "mode": 2,
+          "value": "Restrained",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 10,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "M6Pc1cg69S71yXaA",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.QNbRzwvfr0jAuR03",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.3VUWaP51G1bLJeiN",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769879703810,
+    "modifiedTime": 1769879703821,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

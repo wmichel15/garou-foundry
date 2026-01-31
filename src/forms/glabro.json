@@ -1,0 +1,107 @@
+{
+  "name": "Glabro",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>Glabro is a near-human war form, blending human shape with obvious supernatural strength.</p><p>A Garou in Glabro form appears as a massively built humanoid with bestial features. This form allows the Garou to exert physical dominance without fully embracing the terror of their true war form.</p><p>Glabro balances restraint and power, making it ideal for intimidation, short bursts of violence, or conflicts where subtlety has already failed.</p><p>While in Glabro (Near-Human) form, you gain the following benefits and limitations.</p><p>Speed: 30 feet</p><p>Benefits:</p><p>• You have advantage on Strength checks.</p><p>• You gain a +1 bonus to AC.</p><p>• Bite: 1d8 + Strength modifier (piercing).</p><p>• Claw: 1d6 + Strength modifier (slashing).</p><p>Limitations:</p><p>• You have disadvantage on Charisma checks made to blend in among humanoids.</p><p></p>",
+      "chat": "<p>While in Glabro (Near-Human) form, you gain the following benefits and limitations.</p><p>Speed: 30 feet</p><p>Benefits:</p><p>• You have advantage on Strength checks.</p><p>• You gain a +1 bonus to AC.</p><p>• Bite: 1d8 + Strength modifier (piercing).</p><p>• Claw: 1d6 + Strength modifier (slashing).</p><p>Limitations:</p><p>• You have disadvantage on Charisma checks made to blend in among humanoids.</p><p></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Form: Glabro",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-features.Item.pfUSJpqU85vsChOq",
+      "_id": "6R1gWIHhgOr271ih",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "1",
+          "priority": 10
+        }
+      ],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#8b6f47",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "I7kwpaSPitkeCDxB",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.pfUSJpqU85vsChOq",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769825236529,
+    "modifiedTime": 1769825236529,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

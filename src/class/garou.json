@@ -1,0 +1,399 @@
+{
+  "name": "Garou",
+  "type": "class",
+  "img": "systems/dnd5e/icons/svg/items/class.svg",
+  "system": {
+    "advancement": [
+      {
+        "type": "HitPoints",
+        "_id": "1awYflQwmK4UjWju",
+        "configuration": {},
+        "value": {},
+        "title": "",
+        "hint": ""
+      },
+      {
+        "type": "Subclass",
+        "level": 3,
+        "_id": "avRnISGVk8eve6lp",
+        "configuration": {},
+        "value": {
+          "document": null,
+          "uuid": null
+        }
+      },
+      {
+        "type": "AbilityScoreImprovement",
+        "level": 4,
+        "_id": "EK2jt6yliAMQGLpj",
+        "configuration": {
+          "cap": 2,
+          "fixed": {},
+          "locked": [],
+          "points": 2,
+          "recommendation": null
+        },
+        "value": {
+          "type": "asi"
+        }
+      },
+      {
+        "type": "AbilityScoreImprovement",
+        "level": 8,
+        "_id": "YRFDMlzaG6nMVsZM",
+        "configuration": {
+          "cap": 2,
+          "fixed": {},
+          "locked": [],
+          "points": 2,
+          "recommendation": null
+        },
+        "value": {
+          "type": "asi"
+        }
+      },
+      {
+        "type": "AbilityScoreImprovement",
+        "level": 12,
+        "_id": "YyKvjnPUtgILQE8F",
+        "configuration": {
+          "cap": 2,
+          "fixed": {},
+          "locked": [],
+          "points": 2,
+          "recommendation": null
+        },
+        "value": {
+          "type": "asi"
+        }
+      },
+      {
+        "type": "AbilityScoreImprovement",
+        "level": 16,
+        "_id": "AVtfmiBzDxC6efPk",
+        "configuration": {
+          "cap": 2,
+          "fixed": {},
+          "locked": [],
+          "points": 2,
+          "recommendation": null
+        },
+        "value": {
+          "type": "asi"
+        }
+      },
+      {
+        "type": "AbilityScoreImprovement",
+        "level": 19,
+        "_id": "ZUSIVS2oB5DxwquF",
+        "configuration": {
+          "cap": 2,
+          "fixed": {},
+          "locked": [],
+          "points": 2,
+          "recommendation": null
+        },
+        "value": {
+          "type": "asi"
+        }
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "bvMWRhDNkCQrY5xO",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {},
+          "pool": [],
+          "restriction": {
+            "list": []
+          },
+          "spell": null,
+          "type": null
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "ocTacHj5DBhAu2Us",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.garou.garou-features.Item.igQDQUYxYEir0Ncj"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Garou Rage",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "FxBZmm8GkxvrWUSE",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-features.Item.FvQGHrfaDGaOKRtK",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Gnosis",
+        "hint": "",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "cDirgJUGqpUZY2gg",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-features.Item.SKzsFOgh7Vc0IxMZ",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Shapeshifting Forms",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "A0nQU4foKToXh6rR",
+        "configuration": {
+          "items": [
+            {
+              "optional": true,
+              "uuid": "Compendium.garou.garou-features.Item.mUoDmp8d5DLXF963"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Breed: Lupus",
+        "hint": "",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemGrant",
+        "title": "Breed: Homid",
+        "_id": "jCuh3XZrBkuDfx6v",
+        "configuration": {
+          "items": [
+            {
+              "optional": true,
+              "uuid": "Compendium.garou.garou-features.Item.F5AZ59q2eoo3W3ru"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "hint": "",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "2p1NNwQgzDuQeVPe",
+        "configuration": {
+          "items": [
+            {
+              "optional": true,
+              "uuid": "Compendium.garou.garou-features.Item.TcyPZjV8wcpy8jjL"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Breed: Metis",
+        "hint": "",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "33Nz8D64aMKgyzpn",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Compendium.garou.garou-features.Item.XzQTg4jnpRSetNFI"
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.lTIxUX8xK8ukvxkM"
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.V0W7CMbdceSe7Hje"
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.BddtRrYZYriGMogJ"
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.9D5KoZJjLSRCjApe"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": ""
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Auspice",
+        "hint": "",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ScaleValue",
+        "_id": "21RcwiZSJd8wBEvI",
+        "configuration": {
+          "identifier": "gnosis",
+          "type": "string",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": "2"
+            },
+            "2": {
+              "value": "3"
+            },
+            "4": {
+              "value": "4"
+            },
+            "5": {
+              "value": "5"
+            },
+            "6": {
+              "value": "6"
+            },
+            "8": {
+              "value": "7"
+            },
+            "9": {
+              "value": "8"
+            },
+            "10": {
+              "value": "9"
+            },
+            "11": {
+              "value": "10"
+            },
+            "13": {
+              "value": "11"
+            },
+            "14": {
+              "value": "12"
+            },
+            "15": {
+              "value": "13"
+            },
+            "17": {
+              "value": "14"
+            },
+            "18": {
+              "value": "15"
+            },
+            "19": {
+              "value": "16"
+            },
+            "20": {
+              "value": "18"
+            }
+          }
+        },
+        "value": {},
+        "title": "Gnosis Maximum",
+        "hint": "",
+        "classRestriction": "primary"
+      }
+    ],
+    "description": {
+      "value": "",
+      "chat": ""
+    },
+    "identifier": "class",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "SRD 5.2",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "startingEquipment": [],
+    "hd": {
+      "additional": "",
+      "denomination": "d12",
+      "spent": 0
+    },
+    "levels": 1,
+    "primaryAbility": {
+      "value": [
+        "str",
+        "con"
+      ],
+      "all": true
+    },
+    "properties": [],
+    "spellcasting": {
+      "progression": "none",
+      "preparation": {
+        "formula": ""
+      },
+      "ability": ""
+    },
+    "wealth": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-classes.Item.AlYneASLPdMi5B9D",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.wuRVo8iAefujIViY",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769825224080,
+    "modifiedTime": 1769825224091,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "name": "Auspice: Theurge",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [
+      {
+        "type": "Trait",
+        "_id": "z0jjMQytI9TvI6Uu",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:arc",
+                "skills:rel"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        },
+        "level": 1,
+        "title": "",
+        "hint": "",
+        "value": {}
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "MU23upMdEg7aPb7T",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [],
+          "restriction": {
+            "list": [],
+            "type": ""
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Bonus Rank 1 Gift(Theurge)",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "MWKSHzJ2pUnTh0Zy",
+        "configuration": {
+          "items": [],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Gnosis Recovery",
+        "hint": ""
+      }
+    ],
+    "description": {
+      "value": "<h1>Auspice: Theurge</h1><p>Theurge are born under the full moon and serve as the mystics and spirit-speakers of the Garou.</p><h3>Auspice Benefits:</h3><p>• Gain proficiency in Arcana or Religion (your choice).</p><p>• You have advantage on checks to interact with or identify spirits, at the GM’s discretion.</p><p>• Once per long rest, you may regain 1 Gnosis as a bonus action.</p><p>• You gain one additional Rank 1 Gift at 1st level. This bonus Gift does not count against your maximum Gifts known.</p><p></p>",
+      "chat": ""
+    },
+    "identifier": "auspice-theurge",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": "DhdGE8fuX5m8jJvr",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.9D5KoZJjLSRCjApe",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769825229321,
+    "modifiedTime": 1769825229321,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

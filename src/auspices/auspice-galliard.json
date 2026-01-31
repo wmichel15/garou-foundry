@@ -1,0 +1,243 @@
+{
+  "name": "Auspice: Galliard",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "TLdWrsbRnzy12R8w": {
+        "type": "utility",
+        "_id": "TLdWrsbRnzy12R8w",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Choose one ally who can hear you within 30 feet. That ally gains advantage on their next attack roll or ability check before the end of their next turn."
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "LutgyR7RUAUgkJbg",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "ft",
+          "override": false,
+          "special": "",
+          "value": "30"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "ally",
+            "count": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "name": "Inspire"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [
+      {
+        "type": "Trait",
+        "_id": "9mAPbB9g1DktIsE9",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:prf",
+                "skills:per"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        },
+        "level": 1,
+        "title": "",
+        "hint": "",
+        "value": {}
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "rfVsTPxodNdrfZMA",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [],
+          "restriction": {
+            "list": [],
+            "type": ""
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Bonus Rank 1 Gift(Galliard)",
+        "hint": ""
+      }
+    ],
+    "description": {
+      "value": "<blockquote data-start=\"1036\" data-end=\"1450\"><p data-start=\"1038\" data-end=\"1061\"><strong data-start=\"1038\" data-end=\"1059\">Auspice: Galliard</strong></p><p data-start=\"1068\" data-end=\"1264\">Galliards are the storytellers, singers, and emotional heart of the Garou. They preserve history through song and legend, inspire allies through performance, and remind the Nation why it fights.</p><p data-start=\"1271\" data-end=\"1450\">A Galliard commands attention when recounting Garou history, performing ritual songs, or rallying others through art, speech, or passion. Even in defeat, their words carry weight.</p></blockquote><p><strong data-start=\"2128\" data-end=\"2152\">Voice of the Nation.</strong><br data-start=\"2152\" data-end=\"2155\" />When you perform, recount Garou history, or rally others through art or speech, elders and spirits recognize your role as a Galliard. You are expected to speak at moots and gatherings, and your words carry cultural authority among the Garou.</p><p data-start=\"1452\" data-end=\"1537\"></p>",
+      "chat": ""
+    },
+    "identifier": "auspice-galliard",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Inspired (Galliard)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-features.Item.lTIxUX8xK8ukvxkM",
+      "transfer": false,
+      "_id": "LutgyR7RUAUgkJbg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "",
+          "mode": 2,
+          "value": "",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 1,
+        "turns": 1,
+        "startRound": 1,
+        "startTurn": 1
+      },
+      "description": "<p>You are emboldened by the Gallard’s words. You have advantage on your next attack roll or ability check before the end of your next turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "sheetClass": "core.ActiveEffectConfig"
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "DhdGE8fuX5m8jJvr",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.lTIxUX8xK8ukvxkM",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769825229321,
+    "modifiedTime": 1769825229321,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

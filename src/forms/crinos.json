@@ -1,0 +1,113 @@
+{
+  "name": "Crinos",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>Crinos is the legendary war form of the Garou — a towering fusion of wolf, human, and spirit.</p><p>This form embodies raw Rage and spiritual fury, inspiring terror in mortals and enemies alike. Crinos is designed for battle, domination, and the destruction of the Wyrm’s servants.</p><p>Remaining in Crinos form strains the Garou’s self-control and risks Frenzy and Delirium.</p><p>Crinos is the legendary war form of the Garou — a towering fusion of wolf, human, and spirit.</p><p>This form embodies raw Rage and spiritual fury, inspiring terror in mortals and enemies alike. Crinos is designed for battle, domination, and the destruction of the Wyrm’s servants.</p><p>Remaining in Crinos form strains the Garou’s self-control and risks Frenzy and Delirium.</p><p></p><p>While in Crinos (War Form)Form:</p><ul><li><p>Increase in size by 2 to 3 feet</p></li><li><p>Speed : 40 ft </p></li><li><p>If you have at least any rage point uses remaining, consume 1 use and enter Rage.</p></li><li><p>+2 Bonus to AC</p></li><li><p>Advantage on Strength and Constitution saving throws</p></li><li><p>Bite: 1d12 + Strength Modifier (piercing)</p></li><li><p>Claw: 1d10 + Strength Modifier (slashing)</p></li></ul><p></p><p>Limitiations:</p><ul><li><p>You cant cast spells</p></li><li><p>You cant spend Gnosis, unless a Gift explicitly states it can be used while raging</p></li><li><p>You have disadvantage on Charisma checks, and you cant attempt checks to persuade creatures to see you as non-hostile through conversation alone</p></li><li><p>Remaining in Crinos after combat may trigger a Frenzy Check (Dm's discretion)</p></li></ul><p></p>",
+      "chat": "<p>While in Crinos (War Form)Form:</p><ul><li><p>Increase in size by 2 to 3 feet</p></li><li><p>Speed : 40 ft </p></li><li><p>If you have at least any rage point uses remaining, consume 1 use and enter Rage.</p></li><li><p>+2 Bonus to AC</p></li><li><p>Advantage on Strength and Constitution saving throws</p></li><li><p>Bite: 1d12 + Strength Modifier (piercing)</p></li><li><p>Claw: 1d10 + Strength Modifier (slashing)</p></li></ul><p></p><p>Limitiations:</p><ul><li><p>You cant cast spells</p></li><li><p>You cant spend Gnosis, unless a Gift explicitly states it can be used while raging</p></li><li><p>You have disadvantage on Charisma checks, and you cant attempt checks to persuade creatures to see you as non-hostile through conversation alone</p></li><li><p>Remaining in Crinos after combat may trigger a Frenzy Check (Dm's discretion)</p></li></ul><p></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Form: Crinos",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-features.Item.8NfAsllSBWNtHeIe",
+      "_id": "gRzz6V8fiV7Vw8AG",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 5,
+          "value": "40",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "2",
+          "priority": 10
+        }
+      ],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<img src=\"assets/Red%20Talon.png\" width=\"100\" height=\"100\" />",
+      "tint": "#8b0000",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "I7kwpaSPitkeCDxB",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.8NfAsllSBWNtHeIe",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769825236529,
+    "modifiedTime": 1769825236529,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

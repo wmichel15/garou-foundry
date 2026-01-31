@@ -1,0 +1,100 @@
+{
+  "name": "Homid",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>Homid is the Garou’s human form, allowing them to move among mortal society without revealing their true nature.</p><p>In this form, a Garou appears fully human and is unaffected by the Delirium. Homid form is best suited for social interaction, subtlety, and operating within civilization.</p><p>While in Homid form, the Garou’s connection to Rage is muted, but their ability to pass unnoticed among humans is unmatched.</p><p></p><p>While in Homid Form:</p><p>• You retain your humanoid appearance.</p><p>• You can speak, cast spells, and manipulate equipment normally.</p><p>• You may not use natural weapons granted by other forms.</p><p>• This form does not grant combat bonuses.</p><p>While in Homid (humanoid form) form, you gain the following benefits and limitations.</p><p>Speed: 30 feet</p><p>Benefits:</p><p>• You cna speak, manipulate objects, and wield equipment normally</p><p>• You can spend Gnosis normally</p><p></p><p>Limitations:</p><p>• You cannot use your Claw or Bite natural weapons in this form</p><p></p>",
+      "chat": "<p>While in Homid Form:</p><p>• You retain your humanoid appearance.</p><p>• You can speak, cast spells, and manipulate equipment normally.</p><p>• You may not use natural weapons granted by other forms.</p><p>• This form does not grant combat bonuses.</p><p>While in Homid (humanoid form) form, you gain the following benefits and limitations.</p><p>Speed: 30 feet</p><p>Benefits:</p><p>• You cna speak, manipulate objects, and wield equipment normally</p><p>• You can spend Gnosis normally</p><p></p><p>Limitations:</p><p>• You cannot use your Claw or Bite natural weapons in this form</p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Form: Homid",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-features.Item.UpsKrpUJywOuqrXO",
+      "_id": "V5YMtGPAr8fDLjiF",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#d8d0c0",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "I7kwpaSPitkeCDxB",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.UpsKrpUJywOuqrXO",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769825236529,
+    "modifiedTime": 1769825236529,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

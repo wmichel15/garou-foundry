@@ -1,0 +1,107 @@
+{
+  "name": "Hispo",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>Hispo is a massive dire wolf form, far larger and more powerful than any natural beast.</p><p>In Hispo form, a Garou moves with terrifying speed and strength, excelling at pursuit, battlefield mobility, and pack combat.</p><p>While less humanoid than Crinos, Hispo still invokes fear and awe, and its presence can trigger Delirium in mortal witnesses.</p><p>While in Hispo (Dire Wolf) form, you gain the following benefits and limitations.</p><p>Speed: 40 feet</p><p>Benefits:</p><p>• You have advantage on attack rolls against creatures that are prone or restrained.</p><p>• Bite: 1d10 + Strength modifier (piercing).</p><p>• Claw: 1d6 + Strength modifier (slashing).</p><p>Limitations:</p><p>• You can’t speak.</p><p>• You can’t manipulate objects that require hands.</p><p></p>",
+      "chat": "<p>While in Hispo (Dire Wolf) form, you gain the following benefits and limitations.</p><p>Speed: 40 feet</p><p>Benefits:</p><p>• You have advantage on attack rolls against creatures that are prone or restrained.</p><p>• Bite: 1d10 + Strength modifier (piercing).</p><p>• Claw: 1d6 + Strength modifier (slashing).</p><p>Limitations:</p><p>• You can’t speak.</p><p>• You can’t manipulate objects that require hands.</p><p></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Form: Hispo",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-features.Item.zVACRixq3U1VA5dK",
+      "_id": "5B2tqDoBfZzO3FcV",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 5,
+          "value": "40",
+          "priority": 10
+        }
+      ],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#5a3e2b",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "I7kwpaSPitkeCDxB",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.zVACRixq3U1VA5dK",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769825236529,
+    "modifiedTime": 1769825236529,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

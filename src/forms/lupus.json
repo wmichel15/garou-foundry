@@ -1,0 +1,107 @@
+{
+  "name": "Lupus",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>Lupus is the Garou’s natural wolf form, allowing them to fully embrace their animal instincts.</p><p>In this form, a Garou blends seamlessly into the wild, gaining heightened awareness of the natural world and strong ties to spirits and the Umbra.</p><p>Lupus form favors instinct, perception, and spiritual connection over raw force or social interaction.</p><p>While in Lupus (Wolf) form, you gain the following benefits and limitations.</p><p>Speed: 50 feet</p><p>Benefits:</p><p>• You have advantage on Dexterity (Stealth) checks.</p><p>• You have advantage on Wisdom (Perception) checks that rely on smell.</p><p>• Bite: 1d6 + Strength modifier (piercing).</p><p>• Claw: 1d4 + Strength modifier (slashing).</p><p>Limitations:</p><p>• You can’t wield manufactured weapons or use items requiring hands.</p><p>• You can attempt to communicate in humanoid languages at disadvantage (DC 10).</p><p></p>",
+      "chat": "<p>While in Lupus (Wolf) form, you gain the following benefits and limitations.</p><p>Speed: 50 feet</p><p>Benefits:</p><p>• You have advantage on Dexterity (Stealth) checks.</p><p>• You have advantage on Wisdom (Perception) checks that rely on smell.</p><p>• Bite: 1d6 + Strength modifier (piercing).</p><p>• Claw: 1d4 + Strength modifier (slashing).</p><p>Limitations:</p><p>• You can’t wield manufactured weapons or use items requiring hands.</p><p>• You can attempt to communicate in humanoid languages at disadvantage (DC 10).</p><p></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Form: Lupus",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-features.Item.sp4sul0jz8xGhvHt",
+      "_id": "OpfaNyFyFTg2wXwx",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 5,
+          "value": "50",
+          "priority": 10
+        }
+      ],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#6b6b6b",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "I7kwpaSPitkeCDxB",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.sp4sul0jz8xGhvHt",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769825236529,
+    "modifiedTime": 1769825236529,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

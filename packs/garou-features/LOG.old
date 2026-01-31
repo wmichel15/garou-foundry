@@ -1,5 +1,5 @@
-2026/01/30-11:53:48.326 6cac Recovering log #36
-2026/01/30-11:53:48.326 6cac Level-0 table #38: started
-2026/01/30-11:53:48.329 6cac Level-0 table #38: 43696 bytes OK
-2026/01/30-11:53:48.331 6cac Delete type=0 #36
-2026/01/30-11:53:48.331 6cac Delete type=3 #35
+2026/01/30-13:23:30.803 7d24 Recovering log #39
+2026/01/30-13:23:30.803 7d24 Level-0 table #41: started
+2026/01/30-13:23:30.804 7d24 Level-0 table #41: 19512 bytes OK
+2026/01/30-13:23:30.806 7d24 Delete type=0 #39
+2026/01/30-13:23:30.806 7d24 Delete type=3 #37

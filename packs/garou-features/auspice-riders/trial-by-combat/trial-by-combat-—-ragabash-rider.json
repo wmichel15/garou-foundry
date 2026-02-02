@@ -1,5 +1,5 @@
 {
-  "name": "Trial by Combat — Ahroun Rider",
+  "name": "Trial by Combat — Ragabash Rider",
   "type": "feat",
   "img": "systems/dnd5e/icons/svg/items/feature.svg",
   "system": {
@@ -11,10 +11,10 @@
     },
     "advancement": [],
     "description": {
-      "value": "<p>Once per turn, you may add your proficiency bonus to the damage of your first hit against your Challenged Foe.</p>",
+      "value": "<p>You gain advantage on your first attack roll against a creature that has not yet acted in combat.</p>",
       "chat": ""
     },
-    "identifier": "feature-5",
+    "identifier": "feature",
     "source": {
       "revision": 1,
       "rules": "2024"
@@ -26,29 +26,26 @@
       "repeatable": false,
       "level": null
     },
-    "properties": [
-      "trait"
-    ],
+    "properties": [],
     "requirements": "",
     "type": {
-      "value": "feat",
+      "value": "",
       "subtype": ""
     }
   },
   "effects": [],
   "folder": "w2aSfMCxvzAP1ely",
-  "flags": {
-    "garou": {
+  "flags": {"garou": {
       "riderFor": "trialByCombat",
-      "auspice": "ahroun"
+      "auspice": "ragabash"
     }
   },
   "_stats": {
-    "compendiumSource": "Compendium.garou.garou-features.Item.n1cGJ1uzEgGxqA2W",
+    "compendiumSource": "Compendium.garou.garou-features.Item.4dlEA2J2E53mHKev",
     "duplicateSource": null,
     "exportSource": {
       "worldId": "vindara-5e",
-      "uuid": "Item.bQf8C8V0r0R9Ol2Q",
+      "uuid": "Item.YAgQPYlwK8IhA59F",
       "coreVersion": "13.351",
       "systemId": "dnd5e",
       "systemVersion": "5.2.5"
@@ -56,8 +53,8 @@
     "coreVersion": "13.351",
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
-    "createdTime": 1770050671129,
-    "modifiedTime": 1770050671135,
+    "createdTime": 1770050358929,
+    "modifiedTime": 1770051130770,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

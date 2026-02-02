@@ -69,7 +69,8 @@
   },
   "esmodules": [
     "scripts/garou.js",
-    "scripts/gnosis-resource.js"
+    "scripts/gnosis-resource.js",
+    "scripts/auspice-riders.js"
   ],
   "flags": {}
 }

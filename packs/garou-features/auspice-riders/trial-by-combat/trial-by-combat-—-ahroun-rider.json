@@ -1,5 +1,5 @@
 {
-  "name": "Trial by Combat",
+  "name": "Trial by Combat — Ahroun Rider",
   "type": "feat",
   "img": "systems/dnd5e/icons/svg/items/feature.svg",
   "system": {
@@ -11,10 +11,10 @@
     },
     "advancement": [],
     "description": {
-      "value": "",
+      "value": "<p>Once per turn, you may add your proficiency bonus to the damage of your first hit against your Challenged Foe.</p>",
       "chat": ""
     },
-    "identifier": "feature",
+    "identifier": "feature-5",
     "source": {
       "revision": 1,
       "rules": "2024"
@@ -26,26 +26,24 @@
       "repeatable": false,
       "level": null
     },
-    "properties": [],
+    "properties": [
+      "trait"
+    ],
     "requirements": "",
     "type": {
-      "value": "",
+      "value": "feat",
       "subtype": ""
     }
   },
   "effects": [],
-  "folder": "O3UXjDXIgsDe8OZV",
-  "flags": {
-    "garou": {
-      "featureKey": "trialByCombat"
-    }
-  },
+  "folder": "w2aSfMCxvzAP1ely",
+  "flags": {},
   "_stats": {
-    "compendiumSource": null,
+    "compendiumSource": "Compendium.garou.garou-features.Item.n1cGJ1uzEgGxqA2W",
     "duplicateSource": null,
     "exportSource": {
       "worldId": "vindara-5e",
-      "uuid": "Item.jl0THC7YoERaPWM5",
+      "uuid": "Item.bQf8C8V0r0R9Ol2Q",
       "coreVersion": "13.351",
       "systemId": "dnd5e",
       "systemVersion": "5.2.5"
@@ -53,8 +51,8 @@
     "coreVersion": "13.351",
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
-    "createdTime": 1770048732436,
-    "modifiedTime": 1770048732436,
+    "createdTime": 1770050671129,
+    "modifiedTime": 1770050671135,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

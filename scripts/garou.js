@@ -152,9 +152,19 @@ if (!actor) {
   return;
 }
 
-const formEffects = actor.effects.filter(e =>
-  FORMS.some(f => (e.name || "") === EFFECT_PREFIX + f)
-);
+// Form effects can live on the actor or on owned form items (Homid, Glabro, etc.)
+function getFormEffects(actor) {
+  const fromActor = (actor.effects || []).filter(e =>
+    FORMS.some(f => (e.name || "") === EFFECT_PREFIX + f)
+  );
+  const fromItems = (actor.items || [])
+    .filter(i => FORMS.includes((i.name || "").trim()))
+    .flatMap(i => (i.effects || []).filter(e =>
+      FORMS.some(f => (e.name || "") === EFFECT_PREFIX + f)
+    ));
+  return [...fromActor, ...fromItems];
+}
+const formEffects = getFormEffects(actor);
 
 if (!formEffects.length) {
   ui.notifications.warn(
@@ -226,6 +236,19 @@ async function ensureChooseFormMacro() {
   }
 }
 
+// Items that should trigger the Choose Form macro (built into module for all users).
+function isChooseFormTriggerItem(item) {
+  if (!item) return false;
+  const name = (item.name ?? "").trim().toLowerCase();
+  const id = (item.system?.identifier ?? "").trim();
+  return (
+    name.includes("shapeshifting forms") ||
+    id === "shapeshifting-forms" ||
+    name.includes("choose garou form") ||
+    id === "choose-garou-form"
+  );
+}
+
 // When Shapeshifting Forms is used (via Midi-QOL), run the Choose Form macro so the dialog opens.
 function isShapeshiftingFormsItem(item) {
   if (!item) return false;
@@ -236,11 +259,34 @@ function isShapeshiftingFormsItem(item) {
 
 Hooks.on("midi-qol.preItemRoll", async (workflow) => {
   if (!workflow?.item || !isShapeshiftingFormsItem(workflow.item)) return;
-  // If the item already has the macro on its flag, Midi-QOL will run it; don't run twice.
   const onUse = workflow.item.flags?.["midi-qol"]?.onUseMacroName ?? "";
   if (onUse.includes(CHOOSE_FORM_MACRO_NAME)) return;
   const macro = game.macros?.find(m => m.name === CHOOSE_FORM_MACRO_NAME);
   if (macro) await macro.execute(undefined, [workflow]);
+});
+
+// Built-in: add "Choose Form" button to Shapeshifting Forms / Choose Garou Form item sheets (works for everyone, no Item Macro or Midi-QOL required).
+Hooks.on("renderItemSheet", (app, html, data) => {
+  if (!app.object?.isItem || !isChooseFormTriggerItem(app.object)) return;
+  if (html[0]?.querySelector(".garou-choose-form-trigger")) return; // already added
+  const actor = app.object.actor ?? app.object.parent;
+  const macro = game.macros?.find(m => m.name === CHOOSE_FORM_MACRO_NAME);
+  if (!macro) return;
+
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "garou-choose-form-trigger";
+  btn.innerHTML = '<i class="fas fa-paw"></i> Choose Form';
+  btn.title = "Open the Garou form picker dialog";
+  btn.style.marginLeft = "0.5em";
+
+  const header = html[0]?.querySelector(".window-header") ?? html[0]?.querySelector(".sheet-header") ?? html[0]?.querySelector("h4")?.parentElement ?? html[0];
+  if (header) {
+    header.appendChild(btn);
+    btn.addEventListener("click", async () => {
+      await macro.execute(false, [{ actor, token: actor?.getActiveTokens?.()?.[0] ?? null, item: app.object }]);
+    });
+  }
 });
 
 // Safety net: on ready, create Midi-QOL macro if missing, then normalize existing Garou actors once.

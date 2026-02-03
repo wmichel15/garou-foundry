@@ -1,11 +1,28 @@
 # Firing the Garou: Choose Form Macro (Built Into Module)
 
-The module provides two ways to run the **Garou: Choose Form** macro from an item (no hotbar needed if you use Item Macro):
+**Built-in (no setup):** When a user opens the **Shapeshifting Forms** or **Choose Garou Form** item sheet, the module adds a **"Choose Form"** button in the header. Clicking it runs the form picker. No Item Macro, Midi-QOL activity macro, or hotbar required.
+
+The module provides two item-based ways to run the macro (both use **Item Macro**; activity macro field is unreliable for this):
 
 1. **Shapeshifting Forms** – The feat has an embedded **Item Macro** that calls the world macro when you use the item. With the **Item Macro** module and **Override preUseItem Hook** enabled, using Shapeshifting Forms (or clicking its use button) runs the macro.
 2. **Choose Garou Form** – A separate feat in **Garou – Features** (Core). Drag it onto a character sheet; using it runs the same macro. Handy if you want a dedicated “form picker” button without opening Shapeshifting Forms.
 
 **Requirements:** Install the **Item Macro** module, then in **Game Settings → Module Settings → Item Macro** enable **Override `preUseItem` Hook** and save. The world macro **Garou: Choose Form** must exist (the Garou module creates it on world load if missing).
+
+### Hotbar macro (optional)
+
+Create a **macro** with this and drag it to the hotbar:
+
+```javascript
+const macroName = "Garou: Choose Form";
+const payload = {
+  actor: canvas.tokens?.controlled?.[0]?.actor ?? game.user?.character,
+  token: canvas.tokens?.controlled?.[0],
+  item: null
+};
+const macro = game.macros?.find(m => m.name === macroName);
+if (macro) macro.execute(false, [payload]);
+```
 
 ---
 

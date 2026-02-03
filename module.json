@@ -20,14 +20,13 @@
         "compatibility": {}
       }
     ],
-    "requires": [
+    "requires": [],
+    "optional": [
       {
         "id": "midi-qol",
         "type": "module",
         "compatibility": {}
-      }
-    ],
-    "optional": [
+      },
       {
         "id": "itemacro",
         "type": "module",

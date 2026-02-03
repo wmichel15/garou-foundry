@@ -4,7 +4,7 @@
   "img": "icons/svg/dice-target.svg",
   "system": {
     "description": {
-      "value": "<p><strong>Utility (built into module).</strong> Use this item to open the Garou form picker dialog and switch between Homid, Glabro, Crinos, Hispo, and Lupus. Requires the <em>Item Macro</em> module with <strong>Override preUseItem Hook</strong> enabled, or drag the world macro <em>Garou: Choose Form</em> to your hotbar.</p><p>Garou with the Shapeshifting Forms feature can drag this onto their sheet for quick access, or use the Shapeshifting Forms feat itself (if Item Macro is enabled).</p>",
+      "value": "<p><strong>Utility (built into module).</strong> Opens the Garou form picker to switch between Homid, Glabro, Crinos, Hispo, and Lupus.</p><p><strong>Easiest:</strong> Open this item's sheet and click <em>Choose Form</em> in the header — no other modules needed.</p><p>Optional: With <em>Item Macro</em> (Override preUseItem Hook), using the item from the sheet runs the dialog. You can also drag the world macro <em>Garou: Choose Form</em> to your hotbar.</p>",
       "chat": ""
     },
     "identifier": "choose-garou-form",

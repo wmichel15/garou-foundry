@@ -103,14 +103,39 @@ if (formName && FORMS.includes(formName)) {
   return;
 }
 
+// When choosing from Shapeshifting Forms dialog: try to "fire" the form item's "Shift to This Form" activity.
+// If dnd5e item.use(activityId) runs that activity (and its Midi macro applies the form), we skip applyForm to avoid double apply.
+// If not, we fall back to applying the form effect directly.
+const FORM_ACTIVITY_ID = "shift-to-this-form";
+async function tryUseFormItemActivity(actor, chosenForm) {
+  const formItem = actor.items.find(i => (i.name || "").trim() === chosenForm);
+  if (!formItem) return false;
+  const activities = formItem.system?.activities ?? {};
+  if (!activities[FORM_ACTIVITY_ID]) return false;
+  try {
+    if (typeof formItem.use === "function") {
+      await formItem.use({ activityId: FORM_ACTIVITY_ID });
+      return true;
+    }
+  } catch (_) {}
+  return false;
+}
+
 const buttons = [
   ...FORMS.map((f, i) => ({
     label: f,
     action: f.toLowerCase(),
     default: i === 0,
-    callback: async () => { await applyForm(actor, f, formEffectsList); }
+    callback: async () => {
+      const fired = await tryUseFormItemActivity(actor, f);
+      if (!fired) await applyForm(actor, f, formEffectsList);
+    }
   })),
-  { label: "Disable All Forms", action: "none", callback: async () => { await applyForm(actor, "none", formEffectsList); } }
+  {
+    label: "Disable All Forms",
+    action: "none",
+    callback: async () => { await applyForm(actor, "none", formEffectsList); }
+  }
 ];
 
 await DialogV2.wait({

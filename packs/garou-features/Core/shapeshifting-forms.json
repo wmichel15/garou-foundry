@@ -3,101 +3,323 @@
   "type": "feat",
   "img": "systems/dnd5e/icons/svg/items/feature.svg",
   "system": {
-    "description": {
-      "value": "<p>A Garou can assume multiple sacred forms, each representing a balance between human, wolf, and spirit.</p><p>These forms alter how the Garou interacts with the world, affecting combat presence, social impact, movement, and spiritual resonance.</p><p><strong>Forms:</strong></p><ul><li>Homid – Human form</li><li>Glabro – Near-human war form</li><li>Crinos – War form of legend</li><li>Hispo – Dire wolf form</li><li>Lupus – Natural wolf form</li></ul><p>The effects of each form are defined by additional Garou features (Form items) granted by this feature.</p>",
-      "chat": ""
-    },
-    "identifier": "shapeshifting-forms",
-    "source": { "revision": 1, "rules": "2024" },
-    "type": { "value": "class", "subtype": "" },
-    "requirements": "",
-    "properties": [],
-    "prerequisites": { "items": [], "repeatable": false, "level": 1 },
-    "uses": { "spent": 0, "recovery": [], "max": "" },
-
     "activities": {
-      "choose-form": {
+      "YUaZPZnJM4GR6reZ": {
         "type": "utility",
-        "_id": "choose-form",
+        "_id": "YUaZPZnJM4GR6reZ",
         "sort": 0,
-        "name": "Choose Form",
         "activation": {
           "type": "bonus",
           "override": false,
           "condition": ""
         },
         "consumption": {
-          "scaling": { "allowed": false },
-          "spellSlot": false,
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
           "targets": []
+        },
+        "description": {
+          "chatFlavor": "shapeshift"
         },
         "duration": {
           "units": "inst",
           "concentration": false,
           "override": false
         },
+        "effects": [],
+        "flags": {},
         "range": {
           "units": "self",
           "override": false,
-          "special": "",
-          "value": ""
+          "special": ""
         },
         "target": {
-          "template": { "contiguous": false, "units": "ft", "type": "" },
-          "affects": { "choice": false, "type": "self", "special": "" },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
           "override": false,
-          "prompt": false
+          "prompt": true
         },
-        "effects": [],
-        "flags": {},
-        "roll": { "prompt": false, "visible": false, "name": "", "formula": "" },
-        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
         "visibility": {
-          "level": { "min": null, "max": null },
+          "level": {
+            "min": null,
+            "max": null
+          },
           "requireAttunement": false,
           "requireIdentification": false,
           "requireMagic": false,
           "identifier": ""
-        }
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "Chose Form",
+          "command": "// Run the global macro by name\nawait game.macros.getName(\"Garou: Choose Form\")?.execute();"
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Chose Form"
+      },
+      "23A7HIVzmsjpBwoA": {
+        "type": "utility",
+        "_id": "23A7HIVzmsjpBwoA",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "Choose Form (Macro)",
+          "command": "game.macros.getName(\"Garou: Choose Form\")?.execute()"
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Choose Form (Macro)"
       }
     },
-
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
     "advancement": [
       {
         "type": "ItemGrant",
         "_id": "xfs81QBjvpmPRb7w",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-features.Item.UpsKrpUJywOuqrXO",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.pfUSJpqU85vsChOq",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.8NfAsllSBWNtHeIe",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.zVACRixq3U1VA5dK",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.sp4sul0jz8xGhvHt",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
         "level": 1,
         "title": "",
-        "hint": "",
-        "configuration": {
-          "optional": false,
-          "spell": null,
-          "items": [
-            { "uuid": "Compendium.garou.garou-features.Item.UpsKrpUJywOuqrXO", "optional": false },
-            { "uuid": "Compendium.garou.garou-features.Item.pfUSJpqU85vsChOq", "optional": false },
-            { "uuid": "Compendium.garou.garou-features.Item.8NfAsllSBWNtHeIe", "optional": false },
-            { "uuid": "Compendium.garou.garou-features.Item.zVACRixq3U1VA5dK", "optional": false },
-            { "uuid": "Compendium.garou.garou-features.Item.sp4sul0jz8xGhvHt", "optional": false }
-          ]
-        },
-        "value": {}
+        "hint": ""
       }
     ],
-
+    "description": {
+      "value": "<p>A Garou can assume multiple sacred forms, each representing a balance between human, wolf, and spirit</p><p>These forms alter how the Garou interacts with the world, affecting combat presence, social impact, movement, and spiritual resonance.</p><p>The Garou’s forms include:</p><p>• Homid – Human form</p><p>• Glabro – Near-human war form</p><p>• Crinos – War form of legend</p><p>• Hispo – Dire wolf form</p><p>• Lupus – Natural wolf form</p><p>Each form has unique strengths, limitations, and interactions with Rage, Gnosis, and Delirium. The effects of each form are defined by additional Garou features.</p><p></p><p>Rules:</p><ul data-start=\"362\" data-end=\"523\"><li data-start=\"362\" data-end=\"385\"><p data-start=\"364\" data-end=\"385\">What shapeshifting is</p></li><li data-start=\"386\" data-end=\"430\"><p data-start=\"388\" data-end=\"430\">Action economy (bonus action, free revert)</p></li><li data-start=\"431\" data-end=\"450\"><p data-start=\"433\" data-end=\"450\">Rage requirements</p></li><li data-start=\"451\" data-end=\"470\"><p data-start=\"453\" data-end=\"470\">Equipment melding</p></li><li data-start=\"471\" data-end=\"497\"><p data-start=\"473\" data-end=\"497\">Reversion when Rage ends</p></li><li data-start=\"498\" data-end=\"523\"><p data-start=\"500\" data-end=\"523\">Any general limitations</p></li></ul><p></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
     "enchant": {},
-    "crewed": false
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
   },
-
   "effects": [
     {
       "name": "Garou Base Movement",
       "img": "systems/dnd5e/icons/svg/items/feature.svg",
-      "origin": "",
+      "origin": "Compendium.garou.garou-features.Item.SKzsFOgh7Vc0IxMZ",
       "_id": "aOFXf3ekwmo8jcbs",
       "type": "base",
       "system": {},
       "changes": [
-        { "key": "system.attributes.movement.walk", "mode": 5, "value": "30", "priority": 10 }
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 5,
+          "value": "30",
+          "priority": 10
+        }
       ],
       "disabled": false,
       "duration": {
@@ -114,17 +336,74 @@
       "transfer": true,
       "statuses": [],
       "sort": 0,
-      "flags": {}
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
     }
   ],
-
   "folder": "khoiWkeO9DUdZXsm",
-
   "flags": {
-    "midi-qol": {
-      "onUseMacroName": "[preItemRoll] Garou: Choose Form"
+    "core": {
+      "sheetClass": "dnd5e.ItemSheet5e"
+    },
+    "itemacro": {
+      "macro": {
+        "name": "Shapeshifting Forms",
+        "type": "script",
+        "scope": "global",
+        "command": "// ===== Garou: Shapeshifting Forms (Item Macro) =====\n\nconst FORMS = [\"Homid\", \"Glabro\", \"Crinos\", \"Hispo\", \"Lupus\"];\nconst EFFECT_PREFIX = \"Form: \";\n\nfunction getTargetActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nconst actor = getTargetActor();\nif (!actor) {\n  ui.notifications.error(\"No actor found for Shapeshifting Forms.\");\n  return;\n}\n\n// Collect form effects from the actor\nconst formEffects = actor.effects.filter(e =>\n  FORMS.some(f => e.name === `${EFFECT_PREFIX}${f}`)\n);\n\nif (!formEffects.length) {\n  ui.notifications.warn(\n    \"No Garou form effects found on this actor.\\n\" +\n    \"Make sure the form items are owned and their effects are applied.\"\n  );\n  return;\n}\n\n// Build dialog\nnew Dialog({\n  title: \"Choose Garou Form\",\n  content: `\n    <form>\n      <div class=\"form-group\">\n        <label>Form</label>\n        <select id=\"garou-form\">\n          ${FORMS.map(f => `<option value=\"${f}\">${f}</option>`).join(\"\")}\n        </select>\n      </div>\n    </form>\n  `,\n  buttons: {\n    confirm: {\n      label: \"Shift\",\n      callback: async (html) => {\n        const chosen = html.find(\"#garou-form\").val();\n\n        for (const ef of formEffects) {\n          await ef.update({ disabled: ef.name !== `${EFFECT_PREFIX}${chosen}` });\n        }\n\n        ui.notifications.info(`Shifted into ${chosen} form.`);\n      }\n    },\n    cancel: { label: \"Cancel\" }\n  }\n}).render(true);",
+        "author": "1MqF4AiaVyJDlXbK",
+        "_id": null,
+        "img": "icons/svg/dice-target.svg",
+        "folder": null,
+        "sort": 0,
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_stats": {
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5",
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null,
+          "exportSource": null
+        }
+      }
     }
   },
-
-  "ownership": { "default": 0 }
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-features.Item.SKzsFOgh7Vc0IxMZ",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.rbWyQkynRq0BO03g",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770128722222,
+    "modifiedTime": 1770128722233,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
 }

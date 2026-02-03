@@ -5,23 +5,23 @@
   "system": {
     "activities": {
       "yl2uTMDjXBH2XOcG": {
-        "type": "transform",
+        "type": "utility",
         "_id": "yl2uTMDjXBH2XOcG",
         "sort": 0,
         "activation": {
           "type": "bonus",
           "override": false,
-          "condition": "Must have Shapeshifting Forms feature or Must not be Incapacitated"
+          "condition": "Must not be Incapacitated."
         },
         "consumption": {
           "scaling": {
             "allowed": false
           },
-          "spellSlot": true,
+          "spellSlot": false,
           "targets": []
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "Choose a Garou form."
         },
         "duration": {
           "units": "inst",
@@ -47,7 +47,7 @@
             "special": ""
           },
           "override": false,
-          "prompt": true
+          "prompt": false
         },
         "uses": {
           "spent": 0,
@@ -64,63 +64,13 @@
           "requireMagic": false,
           "identifier": ""
         },
-        "profiles": [],
-        "settings": null,
-        "transform": {
-          "customize": false,
-          "mode": "cr",
-          "preset": ""
-        },
-        "name": "",
-        "useConditionText": "",
-        "useConditionReason": "",
-        "effectConditionText": "",
-        "macroData": {
+        "roll": {
+          "prompt": false,
+          "visible": false,
           "name": "",
-          "command": ""
+          "formula": ""
         },
-        "ignoreTraits": {
-          "idi": false,
-          "idr": false,
-          "idv": false,
-          "ida": false,
-          "idm": false
-        },
-        "midiProperties": {
-          "ignoreTraits": [],
-          "triggeredActivityId": "none",
-          "triggeredActivityConditionText": "",
-          "triggeredActivityTargets": "targets",
-          "triggeredActivityRollAs": "self",
-          "autoConsume": false,
-          "forceConsumeDialog": "default",
-          "forceRollDialog": "default",
-          "forceDamageDialog": "default",
-          "confirmTargets": "default",
-          "autoTargetType": "any",
-          "autoTargetAction": "default",
-          "automationOnly": false,
-          "otherActivityCompatible": true,
-          "otherActivityAsParentType": true,
-          "identifier": "",
-          "displayActivityName": false,
-          "rollMode": "default",
-          "chooseEffects": false,
-          "toggleEffect": false,
-          "ignoreFullCover": false,
-          "removeChatButtons": "default",
-          "magicEffect": false,
-          "magicDamage": false,
-          "noConcentrationCheck": false,
-          "skipConcentrationCheck": false,
-          "autoCEEffects": "default"
-        },
-        "isOverTimeFlag": false,
-        "overTimeProperties": {
-          "saveRemoves": true,
-          "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
-        }
+        "name": "Choose Form"
       }
     },
     "uses": {
@@ -165,7 +115,7 @@
       }
     ],
     "description": {
-      "value": "<p>A Garou can assume multiple sacred forms, each representing a balance between human, wolf, and spirit</p><p>These forms alter how the Garou interacts with the world, affecting combat presence, social impact, movement, and spiritual resonance.</p><p>The Garou’s forms include:</p><p>• Homid – Human form</p><p>• Glabro – Near-human war form</p><p>• Crinos – War form of legend</p><p>• Hispo – Dire wolf form</p><p>• Lupus – Natural wolf form</p><p>Each form has unique strengths, limitations, and interactions with Rage, Gnosis, and Delirium. The effects of each form are defined by additional Garou features.</p><p></p><p>Rules:</p><ul data-start=\"362\" data-end=\"523\"><li data-start=\"362\" data-end=\"385\"><p data-start=\"364\" data-end=\"385\">What shapeshifting is</p></li><li data-start=\"386\" data-end=\"430\"><p data-start=\"388\" data-end=\"430\">Action economy (bonus action, free revert)</p></li><li data-start=\"431\" data-end=\"450\"><p data-start=\"433\" data-end=\"450\">Rage requirements</p></li><li data-start=\"451\" data-end=\"470\"><p data-start=\"453\" data-end=\"470\">Equipment melding</p></li><li data-start=\"471\" data-end=\"497\"><p data-start=\"473\" data-end=\"497\">Reversion when Rage ends</p></li><li data-start=\"498\" data-end=\"523\"><p data-start=\"500\" data-end=\"523\">Any general limitations</p></li></ul><p></p>",
+      "value": "<p>A Garou can assume multiple sacred forms, each representing a balance between human, wolf, and spirit</p><p>These forms alter how the Garou interacts with the world, affecting combat presence, social impact, movement, and spiritual resonance.</p><p>The Garou’s forms include:</p><p>• Homid – Human form</p><p>• Glabro – Near-human war form</p><p>• Crinos – War form of legend</p><p>• Hispo – Dire wolf form</p><p>• Lupus – Natural wolf form</p><p>Each form has unique strengths, limitations, and interactions with Rage, Gnosis, and Delirium. The effects of each form are defined by additional Garou features.</p><p></p>",
       "chat": ""
     },
     "identifier": "feature",
@@ -241,53 +191,9 @@
     "core": {
       "sheetClass": "dnd5e.ItemSheet5e"
     },
-    "itemacro": {
-      "macro": {
-        "name": "Shapeshifting Forms",
-        "type": "script",
-        "scope": "global",
-        "command": "// ===== Garou: Shapeshifting Forms (Item Macro) =====\n\nconst FORMS = [\"Homid\", \"Glabro\", \"Crinos\", \"Hispo\", \"Lupus\"];\nconst EFFECT_PREFIX = \"Form: \";\n\nfunction getTargetActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nconst actor = getTargetActor();\nif (!actor) {\n  ui.notifications.error(\"No actor found for Shapeshifting Forms.\");\n  return;\n}\n\n// Collect form effects from the actor\nconst formEffects = actor.effects.filter(e =>\n  FORMS.some(f => e.name === `${EFFECT_PREFIX}${f}`)\n);\n\nif (!formEffects.length) {\n  ui.notifications.warn(\n    \"No Garou form effects found on this actor.\\n\" +\n    \"Make sure the form items are owned and their effects are applied.\"\n  );\n  return;\n}\n\n// Build dialog\nnew Dialog({\n  title: \"Choose Garou Form\",\n  content: `\n    <form>\n      <div class=\"form-group\">\n        <label>Form</label>\n        <select id=\"garou-form\">\n          ${FORMS.map(f => `<option value=\"${f}\">${f}</option>`).join(\"\")}\n        </select>\n      </div>\n    </form>\n  `,\n  buttons: {\n    confirm: {\n      label: \"Shift\",\n      callback: async (html) => {\n        const chosen = html.find(\"#garou-form\").val();\n\n        for (const ef of formEffects) {\n          await ef.update({ disabled: ef.name !== `${EFFECT_PREFIX}${chosen}` });\n        }\n\n        ui.notifications.info(`Shifted into ${chosen} form.`);\n      }\n    },\n    cancel: { label: \"Cancel\" }\n  }\n}).render(true);",
-        "author": "1MqF4AiaVyJDlXbK",
-        "_id": null,
-        "img": "icons/svg/dice-target.svg",
-        "folder": null,
-        "sort": 0,
-        "ownership": {
-          "default": 0
-        },
-        "flags": {
-          "midi-qol": {
-            "oneUseMacroName": "[preItemRoll] Garou: Choose Form"
-          }
-        },
-        "_stats": {
-          "coreVersion": "13.351",
-          "systemId": "dnd5e",
-          "systemVersion": "5.2.5",
-          "lastModifiedBy": null,
-          "compendiumSource": null,
-          "duplicateSource": null,
-          "exportSource": null
-        }
-      }
+    "midi-qol": {
+      "onUseMacroName": "[preItemRoll] Garou: Choose Form"
     }
-  },
-  "_stats": {
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": {
-      "worldId": "vindara-5e",
-      "uuid": "Item.SKzsFOgh7Vc0IxMZ",
-      "coreVersion": "13.351",
-      "systemId": "dnd5e",
-      "systemVersion": "5.2.5"
-    },
-    "coreVersion": "13.351",
-    "systemId": "dnd5e",
-    "systemVersion": "5.2.5",
-    "createdTime": 1769825234734,
-    "modifiedTime": 1769825234734,
-    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {
     "default": 0

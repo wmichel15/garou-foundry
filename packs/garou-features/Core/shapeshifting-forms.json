@@ -31,7 +31,7 @@
         "effects": [],
         "flags": {
           "midi-qol": {
-            "onUseMacroName": "Garou: Choose Form"
+            "onUseMacroName": "[preItemRoll] Garou: Choose Form"
           }
         },
         "range": {

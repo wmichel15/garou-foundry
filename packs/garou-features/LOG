@@ -1,0 +1,5 @@
+2026/02/03-12:43:05.896 76fc Recovering log #123
+2026/02/03-12:43:05.896 76fc Level-0 table #125: started
+2026/02/03-12:43:05.897 76fc Level-0 table #125: 11791 bytes OK
+2026/02/03-12:43:05.899 76fc Delete type=0 #123
+2026/02/03-12:43:05.900 76fc Delete type=3 #122

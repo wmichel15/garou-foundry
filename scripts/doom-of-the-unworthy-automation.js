@@ -100,23 +100,20 @@ Hooks.on("midi-qol.DamageBonus", async (workflow) => {
     if (getHP(targetActor) >= getHP(actor)) return {};
 
     // Must have a use available (1/LR)
-    // If your item doesn't have uses configured, this won't block (but you should set it).
-    const okUse = await consumeFeatureUse(featureItem);
-    if (!okUse) return {};
-
-    // Prompt player
-    const ok = await promptUse(actor, targetActor);
-    if (!ok) {
-      // If they declined, refund the use we just spent.
-      // Safer: only spend AFTER confirming. We'll do that instead.
-      // Undo quick hack: restore spent-1 if possible.
-      const uses = featureItem.system?.uses;
-      if (uses?.max) {
-        const spent = Number(uses.spent) || 0;
-        await featureItem.update({ "system.uses.spent": Math.max(0, spent - 1) });
-      }
-      return {};
+    const uses = featureItem.system?.uses;
+    if (uses?.max) {
+      const max = Number(uses.max) || 0;
+      const spent = Number(uses.spent) || 0;
+      if ((max - spent) <= 0) return {};
     }
+
+    // Prompt player first; only consume use after they confirm
+    const ok = await promptUse(actor, targetActor);
+    if (!ok) return {};
+
+    // Consume feature use (1/LR)
+    const consumed = await consumeFeatureUse(featureItem);
+    if (!consumed) return {};
 
     // Mark workflow to maximize damage later
     workflow.setFlag(GAROU.scope, GAROU.wfFlag, true);

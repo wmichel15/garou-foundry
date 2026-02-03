@@ -12,7 +12,7 @@
           "type": "recoverAll"
         }
       ],
-      "max": "@scale.class.gnosis"
+      "max": "@scale.garou.gnosis"
     },
     "advancement": [],
     "description": {

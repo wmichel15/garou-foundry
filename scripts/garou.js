@@ -136,7 +136,7 @@ const EFFECT_PREFIX = "Form: ";
 const DialogV2 = foundry.applications.api.DialogV2;
 
 function getTargetActor() {
-  const w = args[0];
+  const w = (typeof args !== "undefined" && args?.length) ? args[0] : null;
   if (w?.actor) return w.actor;
   if (w?.token?.actor) return w.token.actor;
   return (
@@ -148,7 +148,9 @@ function getTargetActor() {
 
 const actor = getTargetActor();
 if (!actor) {
-  ui.notifications.error("No actor found for Shapeshifting Forms.");
+  ui.notifications.error(
+    "Garou: Choose Form — No actor. Select a token on the canvas first, or assign a character to your user (right-click actor → Assign to User)."
+  );
   return;
 }
 
@@ -168,9 +170,8 @@ const formEffects = getFormEffects(actor);
 
 if (!formEffects.length) {
   ui.notifications.warn(
-    "No Garou form effects found on this actor. " +
-    "Make sure the form items are owned and their effects are applied. " +
-    "Expected: Form: Homid, Form: Glabro, Form: Crinos, Form: Hispo, Form: Lupus"
+    "Garou: Choose Form — No form effects on " + actor.name + ". " +
+    "Add the Shapeshifting Forms feature and the form items (Homid, Glabro, Crinos, Hispo, Lupus) from Garou – Features so the actor has Form: X effects."
   );
   return;
 }
@@ -249,20 +250,45 @@ function isChooseFormTriggerItem(item) {
   );
 }
 
-// When Shapeshifting Forms is used (via Midi-QOL), run the Choose Form macro so the dialog opens.
-function isShapeshiftingFormsItem(item) {
-  if (!item) return false;
-  const name = (item.name ?? "").trim().toLowerCase();
-  const id = item.system?.identifier ?? "";
-  return name.includes("shapeshifting forms") || id === "shapeshifting-forms";
+// When the user *uses* Shapeshifting Forms or Choose Garou Form, run the form picker.
+// We wrap item.use() so we run before Midi-QOL and handle the item ourselves (no workflow, no removeWorkflow noise).
+const CHOOSE_FORM_MACRO_ALIASES = ["Garou: Choose Form", "Garou - Shapeshift"];
+
+function runChooseFormForItem(item) {
+  if (!item || !isChooseFormTriggerItem(item)) return false;
+  const actor = item.actor ?? item.parent;
+  if (!(actor instanceof Actor)) return false;
+  const macro = CHOOSE_FORM_MACRO_ALIASES.map(name => game.macros?.find(m => m.name === name)).find(Boolean);
+  if (!macro) return false;
+  const token = actor.getActiveTokens?.()?.[0] ?? null;
+  const scope = { actor, token, item };
+  macro.execute(scope).catch(err => console.error("Garou: Choose Form macro error", err));
+  return true;
 }
 
-Hooks.on("midi-qol.preItemRoll", async (workflow) => {
-  if (!workflow?.item || !isShapeshiftingFormsItem(workflow.item)) return;
-  const onUse = workflow.item.flags?.["midi-qol"]?.onUseMacroName ?? "";
-  if (onUse.includes(CHOOSE_FORM_MACRO_NAME)) return;
-  const macro = game.macros?.find(m => m.name === CHOOSE_FORM_MACRO_NAME);
-  if (macro) await macro.execute(undefined, [workflow]);
+// Register wrapper in "ready" so CONFIG.Item is set (dnd5e or Midi-QOL). Use CONFIG path so libWrapper can resolve when documentClass is MidiItem.
+Hooks.once("ready", () => {
+  if (typeof libWrapper === "undefined") {
+    console.warn("Garou: lib-wrapper not found. Install the 'libWrapper' module so using Shapeshifting Forms opens the form picker and avoids Midi-QOL workflow.");
+    return;
+  }
+  const ItemClass = CONFIG.Item?.documentClass;
+  if (!ItemClass?.prototype?.use) return;
+  const target = "CONFIG.Item.documentClass.prototype.use";
+  libWrapper.register(
+    "garou",
+    target,
+    function (wrapped, ...args) {
+      if (runChooseFormForItem(this)) return Promise.resolve();
+      return wrapped.apply(this, args);
+    },
+    "OVERRIDE"
+  );
+});
+
+// Fallback when lib-wrapper is not installed: dnd5e.preUseItem (may not run before Midi-QOL macro/rollItem path).
+Hooks.on("dnd5e.preUseItem", (item, config, options) => {
+  if (runChooseFormForItem(item)) return true;
 });
 
 // Built-in: add "Choose Form" button to Shapeshifting Forms / Choose Garou Form item sheets (works for everyone, no Item Macro or Midi-QOL required).
@@ -289,7 +315,7 @@ Hooks.on("renderItemSheet", (app, html, data) => {
   }
 });
 
-// Safety net: on ready, create Midi-QOL macro if missing, then normalize existing Garou actors once.
+// Safety net: on ready, create Choose Form world macro if missing, then normalize existing Garou actors once.
 Hooks.once("ready", async () => {
   await ensureChooseFormMacro();
 

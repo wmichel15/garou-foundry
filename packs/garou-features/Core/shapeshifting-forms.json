@@ -73,7 +73,7 @@
         "useConditionReason": "",
         "effectConditionText": "",
         "macroData": {
-          "name": "Chose Form",
+          "name": "Choose Form",
           "command": "// Run the global macro by name\nawait game.macros.getName(\"Garou: Choose Form\")?.execute();"
         },
         "ignoreTraits": {
@@ -356,45 +356,15 @@
   ],
   "folder": "khoiWkeO9DUdZXsm",
   "flags": {
-<<<<<<< HEAD
-    "midi-qol": {
-      "onUseMacroName": "[preItemRoll] Garou: Choose Form"
-    },
-    "itemacro": {
-      "macro": {
-        "name": "Choose Garou Form",
-        "type": "script",
-        "scope": "global",
-        "command": "const macro = game.macros.find(m => m.name === \"Garou: Choose Form\"); if (macro) await macro.execute(false, [{ actor: this.actor || this.item?.actor, token: this.token, item: this.item }]);"
-=======
     "core": {
       "sheetClass": "dnd5e.ItemSheet5e"
     },
     "itemacro": {
       "macro": {
-        "name": "Shapeshifting Forms",
+        "name": "Choose Form",
         "type": "script",
         "scope": "global",
-        "command": "// ===== Garou: Shapeshifting Forms (Item Macro) =====\n\nconst FORMS = [\"Homid\", \"Glabro\", \"Crinos\", \"Hispo\", \"Lupus\"];\nconst EFFECT_PREFIX = \"Form: \";\n\nfunction getTargetActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nconst actor = getTargetActor();\nif (!actor) {\n  ui.notifications.error(\"No actor found for Shapeshifting Forms.\");\n  return;\n}\n\n// Collect form effects from the actor\nconst formEffects = actor.effects.filter(e =>\n  FORMS.some(f => e.name === `${EFFECT_PREFIX}${f}`)\n);\n\nif (!formEffects.length) {\n  ui.notifications.warn(\n    \"No Garou form effects found on this actor.\\n\" +\n    \"Make sure the form items are owned and their effects are applied.\"\n  );\n  return;\n}\n\n// Build dialog\nnew Dialog({\n  title: \"Choose Garou Form\",\n  content: `\n    <form>\n      <div class=\"form-group\">\n        <label>Form</label>\n        <select id=\"garou-form\">\n          ${FORMS.map(f => `<option value=\"${f}\">${f}</option>`).join(\"\")}\n        </select>\n      </div>\n    </form>\n  `,\n  buttons: {\n    confirm: {\n      label: \"Shift\",\n      callback: async (html) => {\n        const chosen = html.find(\"#garou-form\").val();\n\n        for (const ef of formEffects) {\n          await ef.update({ disabled: ef.name !== `${EFFECT_PREFIX}${chosen}` });\n        }\n\n        ui.notifications.info(`Shifted into ${chosen} form.`);\n      }\n    },\n    cancel: { label: \"Cancel\" }\n  }\n}).render(true);",
-        "author": "1MqF4AiaVyJDlXbK",
-        "_id": null,
-        "img": "icons/svg/dice-target.svg",
-        "folder": null,
-        "sort": 0,
-        "ownership": {
-          "default": 0
-        },
-        "flags": {},
-        "_stats": {
-          "coreVersion": "13.351",
-          "systemId": "dnd5e",
-          "systemVersion": "5.2.5",
-          "lastModifiedBy": null,
-          "compendiumSource": null,
-          "duplicateSource": null,
-          "exportSource": null
-        }
->>>>>>> e12e3c353970b65b8c9faf8a31e23c3ad54cae6e
+        "command": "const macro = game.macros.find(m => m.name === \"Garou: Choose Form\"); if (macro) await macro.execute(false, [{ actor: this.actor || this.item?.actor, token: this.token, item: this.item }]);"
       }
     }
   },

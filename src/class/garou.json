@@ -160,6 +160,26 @@
             {
               "uuid": "Compendium.garou.garou-features.Item.SKzsFOgh7Vc0IxMZ",
               "optional": false
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.UpsKrpUJywOuqrXO",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.pfUSJpqU85vsChOq",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.8NfAsllSBWNtHeIe",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.zVACRixq3U1VA5dK",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.garou.garou-features.Item.sp4sul0jz8xGhvHt",
+              "optional": false
             }
           ],
           "optional": false,
@@ -240,19 +260,19 @@
           },
           "pool": [
             {
-              "uuid": "Compendium.garou.garou-features.Item.XzQTg4jnpRSetNFI"
+              "uuid": "Compendium.garou.garou-features.Item.uYxFs8EdRKb18W47"
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.lTIxUX8xK8ukvxkM"
+              "uuid": "Compendium.garou.garou-features.Item.cBdahnOuciHlTjLs"
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.V0W7CMbdceSe7Hje"
+              "uuid": "Compendium.garou.garou-features.Item.vVtAtIk1iMgs5AZw"
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.BddtRrYZYriGMogJ"
+              "uuid": "Compendium.garou.garou-features.Item.b32Jp3ZfwSyt6YT6"
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.9D5KoZJjLSRCjApe"
+              "uuid": "Compendium.garou.garou-features.Item.mXXa77Wej9Dluima"
             }
           ],
           "restriction": {
@@ -340,7 +360,7 @@
       "value": "",
       "chat": ""
     },
-    "identifier": "class",
+    "identifier": "garou",
     "source": {
       "revision": 1,
       "rules": "2024",
@@ -390,7 +410,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825224080,
-    "modifiedTime": 1769825224091,
+    "modifiedTime": 1770155048904,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

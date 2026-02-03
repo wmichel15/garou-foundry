@@ -26,7 +26,7 @@ if (macro) macro.execute(false, [payload]);
 
 ---
 
-# Midi-QOL Activity Macro Not Firing
+# Why not Midi-QOL for Shapeshifting Forms?
 
 ## Why the activity macro may not run
 

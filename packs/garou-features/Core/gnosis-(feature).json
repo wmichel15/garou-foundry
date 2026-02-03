@@ -12,7 +12,7 @@
           "type": "recoverAll"
         }
       ],
-      "max": "@scale.class.gnosis"
+      "max": "@scale.garou.gnosis"
     },
     "advancement": [],
     "description": {
@@ -42,7 +42,9 @@
   },
   "effects": [],
   "folder": "khoiWkeO9DUdZXsm",
-  "flags": {},
+  "flags": {
+    "dnd5e": {}
+  },
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
@@ -57,7 +59,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825234734,
-    "modifiedTime": 1769825234734,
+    "modifiedTime": 1770157164511,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

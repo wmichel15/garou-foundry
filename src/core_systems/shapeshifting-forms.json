@@ -73,7 +73,7 @@
         "useConditionReason": "",
         "effectConditionText": "",
         "macroData": {
-          "name": "Chose Form",
+          "name": "Choose Form",
           "command": "// Run the global macro by name\nawait game.macros.getName(\"Garou: Choose Form\")?.execute();"
         },
         "ignoreTraits": {

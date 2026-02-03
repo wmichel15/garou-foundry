@@ -124,8 +124,113 @@ Hooks.on("createActiveEffect", async (effect, options) => {
   }
 });
 
-// Safety net: on ready, normalize existing Garou actors once.
+// Macro name expected by Midi-QOL (shapeshifting-forms feature flag)
+const CHOOSE_FORM_MACRO_NAME = "Garou: Choose Form";
+
+// Script for the "Garou: Choose Form" world macro (used by Midi-QOL onUseMacroName).
+// Uses DialogV2 (Foundry v12+) to avoid V1 Application deprecation.
+function getChooseFormMacroCommand() {
+  return `
+const FORMS = ["Homid", "Glabro", "Crinos", "Hispo", "Lupus"];
+const EFFECT_PREFIX = "Form: ";
+const DialogV2 = foundry.applications.api.DialogV2;
+
+function getTargetActor() {
+  const w = args[0];
+  if (w?.actor) return w.actor;
+  if (w?.token?.actor) return w.token.actor;
+  return (
+    canvas?.tokens?.controlled?.[0]?.actor ??
+    game.user?.character ??
+    null
+  );
+}
+
+const actor = getTargetActor();
+if (!actor) {
+  ui.notifications.error("No actor found for Shapeshifting Forms.");
+  return;
+}
+
+const formEffects = actor.effects.filter(e =>
+  FORMS.some(f => (e.name || "") === EFFECT_PREFIX + f)
+);
+
+if (!formEffects.length) {
+  ui.notifications.warn(
+    "No Garou form effects found on this actor. " +
+    "Make sure the form items are owned and their effects are applied. " +
+    "Expected: Form: Homid, Form: Glabro, Form: Crinos, Form: Hispo, Form: Lupus"
+  );
+  return;
+}
+
+const content = '<div class="form-group"><label>Form</label><select name="garou-form">' +
+  FORMS.map(f => '<option value="' + f + '">' + f + '</option>').join("") +
+  '</select></div>';
+
+await DialogV2.wait({
+  window: { title: "Choose Garou Form" },
+  content: content,
+  rejectClose: false,
+  buttons: [
+    {
+      label: "Shift",
+      action: "shift",
+      default: true,
+      callback: async (event, button) => {
+        const el = button.form.elements["garou-form"];
+        const chosen = el ? el.value : "";
+        if (!chosen || !FORMS.includes(chosen)) return;
+        for (const ef of formEffects) {
+          await ef.update({ disabled: ef.name !== (EFFECT_PREFIX + chosen) });
+        }
+        ui.notifications.info("Shifted into " + chosen + " form.");
+        return chosen;
+      }
+    },
+    { label: "Cancel", action: "cancel" }
+  ]
+});
+`.trim();
+}
+
+async function ensureChooseFormMacro() {
+  const command = getChooseFormMacroCommand();
+  const existing = game.macros?.find(m => m.name === CHOOSE_FORM_MACRO_NAME);
+
+  if (existing) {
+    const needsUpdate = existing.command?.includes("new Dialog(") || !existing.command?.includes("DialogV2");
+    if (needsUpdate) {
+      try {
+        await existing.update({ command }, { renderSheet: false });
+        console.log("Garou: Updated world macro '" + CHOOSE_FORM_MACRO_NAME + "' to use DialogV2.");
+      } catch (err) {
+        console.error("Garou: Failed to update macro:", err);
+      }
+    }
+    return;
+  }
+
+  try {
+    await Macro.create({
+      name: CHOOSE_FORM_MACRO_NAME,
+      type: "script",
+      scope: "global",
+      command,
+      img: "icons/svg/dice-target.svg",
+      flags: { garou: { autoCreated: true } }
+    }, { renderSheet: false });
+    console.log("Garou: Created world macro '" + CHOOSE_FORM_MACRO_NAME + "'.");
+  } catch (err) {
+    console.error("Garou: Failed to create macro '" + CHOOSE_FORM_MACRO_NAME + "':", err);
+  }
+}
+
+// Safety net: on ready, create Midi-QOL macro if missing, then normalize existing Garou actors once.
 Hooks.once("ready", async () => {
+  await ensureChooseFormMacro();
+
   for (const actor of game.actors.contents) {
     if (!actorHasGarouClass(actor)) continue;
     try {

@@ -1,0 +1,187 @@
+{
+  "name": "Doom of the Unworthy",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "7CXob7rAtR08jjbN": {
+        "type": "utility",
+        "_id": "7CXob7rAtR08jjbN",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "You end the fight with brutal finality."
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Doom of the Unworthy(Capstone)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"609\" data-end=\"633\">Doom of the Unworthy</strong><br data-start=\"633\" data-end=\"636\" /><em data-start=\"638\" data-end=\"672\">17th-level Get of Fenris feature</em></p><p data-start=\"677\" data-end=\"743\">You end battles decisively, leaving no doubt as to your supremacy.</p><p data-start=\"748\" data-end=\"903\">While raging, when you hit a creature that has <strong data-start=\"795\" data-end=\"824\">fewer hit points than you</strong>, you may choose to deal <strong data-start=\"849\" data-end=\"867\">maximum damage</strong> for that attack instead of rolling.</p><p data-start=\"908\" data-end=\"992\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"978\" data-end=\"991\">long rest</strong>.</p><p data-start=\"997\" data-end=\"1023\">When this feature is used:</p><ul data-start=\"1026\" data-end=\"1116\"><li data-start=\"1026\" data-end=\"1076\"><p data-start=\"1028\" data-end=\"1076\">Your <strong data-start=\"1033\" data-end=\"1058\">Rage immediately ends</strong> after the attack.</p></li><li data-start=\"1079\" data-end=\"1116\"><p data-start=\"1081\" data-end=\"1116\">You gain <strong data-start=\"1090\" data-end=\"1115\">1 level of exhaustion</strong>.</p></li></ul>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 17
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": "O3UXjDXIgsDe8OZV",
+  "flags": {
+    "garou": {
+      "featureKey": "doomOfTheUnworthy"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.bYfjpDxKEZUPCG4k",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.6AB5GFWyIvT9mOIP",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770090235102,
+    "modifiedTime": 1770090235108,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -71,7 +71,10 @@
     "scripts/garou.js",
     "scripts/gnosis-resource.js",
     "scripts/trial-by-combat-automation.js",
-    "scripts/auspice-riders.js"
+    "scripts/auspice-riders.js",
+    "scripts/relentless-assault-automation.js",
+    "scripts/fenrisian-endurance-automation.js",
+    "scripts/doom-of-the-unworthy-automation.js"
   ],
   "flags": {}
 }

@@ -1,0 +1,121 @@
+{
+  "name": "Get of Fenris",
+  "type": "subclass",
+  "img": "assets/Get%20of%20Fenris.png",
+  "system": {
+    "advancement": [
+      {
+        "type": "ItemGrant",
+        "_id": "DmGMxyVXhxHorX6H",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.jl0THC7YoERaPWM5",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Trial by Combat",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "bl7SBQpShaBwuoPW",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.5mZO7HrRLgTUPqvv",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Relentless Assault",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "R4IF0xUK7XR0peCB",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.KhhcvWNrIUCshN4B",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Fenerisian Endurance",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "GU5ofZ9obUpwKAUm",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.bYfjpDxKEZUPCG4k",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "Doom of the Unworthy",
+        "hint": ""
+      }
+    ],
+    "description": {
+      "value": "<p>The <strong data-start=\"389\" data-end=\"406\">Get of Fenris</strong> are the warriors of the Garou, forged in hardship and tempered by war. They believe that the world is a battlefield shaped by tooth, claw, and resolve—and that only those strong enough to endure its cruelty deserve to shape its future.</p><p data-start=\"644\" data-end=\"993\">In ancient ages, when giants still strode the north and gods walked openly among mortals, the Get of Fenris were born beneath storm-torn skies and blood-soaked snow. They claim descent from a time when survival itself was a sacred trial, and weakness was a luxury the world could not afford. To the Get, strength is not cruelty—it is responsibility.</p><p data-start=\"995\" data-end=\"1387\">Among the Garou, the Get serve as shock troops, champions, and executioners. When a foe must be broken, a line held at all costs, or a wyrm-tainted horror torn apart before it can fester, the Get of Fenris are called. They do not seek glory for its own sake; they seek proof—proof that they are worthy to stand among legends, and proof that the Garou are not yet too weak to defend the world.</p><p data-start=\"1389\" data-end=\"1679\">Yet their creed is not without controversy. The Get believe that mercy extended too freely invites decay, that hesitation breeds corruption, and that failure must be answered with iron resolve. This has earned them admiration, fear, and no small amount of resentment among the other tribes.</p><p data-start=\"1681\" data-end=\"1833\">To walk the path of Fenris is to accept that you may become a monster in the eyes of others—so long as you remain a weapon against the greater darkness.</p><p></p><h2 data-start=\"1840\" data-end=\"1862\">“Words of Fenris”</h2><p data-start=\"1863\" data-end=\"1937\"><em data-start=\"1863\" data-end=\"1937\">Common sayings and unguarded opinions, overheard around Fenrir campfires</em></p><blockquote data-start=\"1939\" data-end=\"2029\"><p data-start=\"1941\" data-end=\"2029\"><em data-start=\"1941\" data-end=\"2004\">“A world that cannot be defended does not deserve to endure.”</em><br data-start=\"2004\" data-end=\"2007\" />— Fenrir war-proverb</p></blockquote><hr data-start=\"2031\" data-end=\"2034\" /><h3 data-start=\"2036\" data-end=\"2077\">Get of Fenris on the <strong data-start=\"2061\" data-end=\"2077\">Silver Fangs</strong></h3><blockquote data-start=\"2078\" data-end=\"2153\"><p data-start=\"2080\" data-end=\"2153\">“Born with crowns they never earned. Some are kings. Most are just loud.”</p></blockquote><blockquote data-start=\"2155\" data-end=\"2289\"><p data-start=\"2157\" data-end=\"2289\">“When a Silver Fang leads with wisdom, we follow gladly. When they lead with pride… we watch their back so they don’t die stupidly.”</p></blockquote><hr data-start=\"2291\" data-end=\"2294\" /><h3 data-start=\"2296\" data-end=\"2337\">Get of Fenris on the <strong data-start=\"2321\" data-end=\"2337\">Shadow Lords</strong></h3><blockquote data-start=\"2338\" data-end=\"2421\"><p data-start=\"2340\" data-end=\"2421\">“Clever wolves. Dangerous wolves. Always counting the cost instead of paying it.”</p></blockquote><blockquote data-start=\"2423\" data-end=\"2491\"><p data-start=\"2425\" data-end=\"2491\">“A Shadow Lord will win the war tomorrow. A Fenrir ends it today.”</p></blockquote><hr data-start=\"2493\" data-end=\"2496\" /><h3 data-start=\"2498\" data-end=\"2543\">Get of Fenris on the <strong data-start=\"2523\" data-end=\"2543\">Children of Gaia</strong></h3><blockquote data-start=\"2544\" data-end=\"2599\"><p data-start=\"2546\" data-end=\"2599\">“They would try to make peace with a burning forest.”</p></blockquote><blockquote data-start=\"2601\" data-end=\"2693\"><p data-start=\"2603\" data-end=\"2693\">“Good hearts. Soft hands. Someone has to do the killing while they pray it was necessary.”</p></blockquote><hr data-start=\"2695\" data-end=\"2698\" /><h3 data-start=\"2700\" data-end=\"2741\">Get of Fenris on the <strong data-start=\"2725\" data-end=\"2741\">Bone Gnawers</strong></h3><blockquote data-start=\"2742\" data-end=\"2795\"><p data-start=\"2744\" data-end=\"2795\">“They survive where kings fall. Never forget that.”</p></blockquote><blockquote data-start=\"2797\" data-end=\"2873\"><p data-start=\"2799\" data-end=\"2873\">“Filthy, desperate, and tougher than they look. Like rats. Like us, once.”</p></blockquote><hr data-start=\"2875\" data-end=\"2878\" /><h3 data-start=\"2880\" data-end=\"2915\">Get of Fenris on the <strong data-start=\"2905\" data-end=\"2915\">Fianna</strong></h3><blockquote data-start=\"2916\" data-end=\"2993\"><p data-start=\"2918\" data-end=\"2993\">“They fight like storms and sing like poets. Hard to tell which is louder.”</p></blockquote><blockquote data-start=\"2995\" data-end=\"3075\"><p data-start=\"2997\" data-end=\"3075\">“When the Fianna rage, the world listens. When they drink, the world suffers.”</p></blockquote><hr data-start=\"3077\" data-end=\"3080\" /><h3 data-start=\"3082\" data-end=\"3124\">Get of Fenris on the <strong data-start=\"3107\" data-end=\"3124\">Glass Walkers</strong></h3><blockquote data-start=\"3125\" data-end=\"3198\"><p data-start=\"3127\" data-end=\"3198\">“They trust steel they didn’t forge and spirits they don’t understand.”</p></blockquote><blockquote data-start=\"3200\" data-end=\"3264\"><p data-start=\"3202\" data-end=\"3264\">“Effective. Fragile. When the lights go out, they look to us.”</p></blockquote><hr data-start=\"3266\" data-end=\"3269\" /><h3 data-start=\"3271\" data-end=\"3312\">Get of Fenris on the <strong data-start=\"3296\" data-end=\"3312\">Black Furies</strong></h3><blockquote data-start=\"3313\" data-end=\"3340\"><p data-start=\"3315\" data-end=\"3340\">“They do not bend. Ever.”</p></blockquote><blockquote data-start=\"3342\" data-end=\"3392\"><p data-start=\"3344\" data-end=\"3392\">“Cross them, and you deserve what happens next.”</p></blockquote><hr data-start=\"3394\" data-end=\"3397\" /><h3 data-start=\"3399\" data-end=\"3438\">Get of Fenris on the <strong data-start=\"3424\" data-end=\"3438\">Red Talons</strong></h3><blockquote data-start=\"3439\" data-end=\"3470\"><p data-start=\"3441\" data-end=\"3470\">“They remember what we were.”</p></blockquote><blockquote data-start=\"3472\" data-end=\"3567\"><p data-start=\"3474\" data-end=\"3567\">“They would burn the village to save the forest. We would burn the forest to save the world.”</p></blockquote>",
+      "chat": ""
+    },
+    "identifier": "get-of-fenris",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "classIdentifier": "garou",
+    "spellcasting": {
+      "progression": "none",
+      "preparation": {
+        "formula": ""
+      },
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": "2Aaay67uj4HI6U6z",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-classes.Item.KpXflORRz4pcIDBz",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.ZYKTcjNe02bDMRtG",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770091417283,
+    "modifiedTime": 1770091417283,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

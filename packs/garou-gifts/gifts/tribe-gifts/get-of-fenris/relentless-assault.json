@@ -1,0 +1,65 @@
+{
+  "name": "Relentless Assault",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"544\" data-end=\"566\">Relentless Assault</strong><br data-start=\"566\" data-end=\"569\" /><em data-start=\"571\" data-end=\"604\">6th-level Get of Fenris feature</em></p><p data-start=\"609\" data-end=\"646\">You press the attack without mercy.</p><p data-start=\"651\" data-end=\"844\">While raging, if you move at least <strong data-start=\"686\" data-end=\"724\">10 feet straight toward a creature</strong> and hit it with a melee weapon attack or natural weapon attack on the same turn, you deal an additional <strong data-start=\"829\" data-end=\"843\">1d6 damage</strong>.</p><p data-start=\"849\" data-end=\"901\">You can benefit from this feature <strong data-start=\"883\" data-end=\"900\">once per turn</strong>.</p><p data-start=\"906\" data-end=\"953\">This damage increases to <strong data-start=\"931\" data-end=\"952\">1d8 at 14th level</strong>.</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 6
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": "O3UXjDXIgsDe8OZV",
+  "flags": {
+    "garou": {
+      "featureKey": "relentlessAssault"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.5mZO7HrRLgTUPqvv",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.Ysk9quuvNnHBAUKQ",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770086204041,
+    "modifiedTime": 1770086204046,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

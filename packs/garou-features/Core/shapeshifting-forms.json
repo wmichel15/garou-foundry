@@ -29,11 +29,7 @@
           "override": false
         },
         "effects": [],
-        "flags": {
-          "midi-qol": {
-            "onUseMacroName": "[preItemRoll] Garou: Choose Form"
-          }
-        },
+        "flags": {},
         "range": {
           "units": "self",
           "override": false,
@@ -259,7 +255,11 @@
         "ownership": {
           "default": 0
         },
-        "flags": {},
+        "flags": {
+          "midi-qol": {
+            "oneUseMacroName": "[preItemRoll] Garou: Choose Form"
+          }
+        },
         "_stats": {
           "coreVersion": "13.351",
           "systemId": "dnd5e",

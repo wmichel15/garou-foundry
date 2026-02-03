@@ -95,6 +95,14 @@ if (!formEffectsList.length) {
   return;
 }
 
+// If a form was passed (e.g. from using a form item's "Shift to This Form" activity), apply it and skip the dialog.
+const preSelectedForm = passed.form ?? passed.formName ?? passed.item?.name ?? passed.workflow?.item?.name;
+const formName = (typeof preSelectedForm === "string" && preSelectedForm.trim()) || null;
+if (formName && FORMS.includes(formName)) {
+  await applyForm(actor, formName, formEffectsList);
+  return;
+}
+
 const buttons = [
   ...FORMS.map((f, i) => ({
     label: f,

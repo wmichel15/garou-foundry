@@ -9,7 +9,7 @@
         "_id": "nrpHe1OY1uy3SBFe",
         "sort": 0,
         "activation": {
-          "type": "action",
+          "type": "",
           "override": false,
           "condition": ""
         },
@@ -28,7 +28,12 @@
           "concentration": false,
           "override": false
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "V5YMtGPAr8fDLjiF",
+            "level": {}
+          }
+        ],
         "flags": {},
         "range": {
           "units": "self",
@@ -66,8 +71,8 @@
         "roll": {
           "prompt": false,
           "visible": false,
-          "formula": "",
-          "name": ""
+          "name": "",
+          "formula": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
@@ -212,7 +217,7 @@
     "duplicateSource": null,
     "exportSource": {
       "worldId": "vindara-5e",
-      "uuid": "Item.vqX4joxOCZUF6qX0",
+      "uuid": "Item.lyNgO9dMLlDX02Vl",
       "coreVersion": "13.351",
       "systemId": "dnd5e",
       "systemVersion": "5.2.5"
@@ -220,8 +225,8 @@
     "coreVersion": "13.351",
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
-    "createdTime": 1770140466285,
-    "modifiedTime": 1770140466296,
+    "createdTime": 1770141272399,
+    "modifiedTime": 1770141272407,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

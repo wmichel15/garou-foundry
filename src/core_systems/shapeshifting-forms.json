@@ -4,14 +4,132 @@
   "img": "systems/dnd5e/icons/svg/items/feature.svg",
   "system": {
     "activities": {
-      "yl2uTMDjXBH2XOcG": {
-        "type": "transform",
-        "_id": "yl2uTMDjXBH2XOcG",
+      "YUaZPZnJM4GR6reZ": {
+        "type": "utility",
+        "_id": "YUaZPZnJM4GR6reZ",
         "sort": 0,
         "activation": {
           "type": "bonus",
           "override": false,
-          "condition": "Must have Shapeshifting Forms feature or Must not be Incapacitated"
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "shapeshift"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "Chose Form",
+          "command": "// Run the global macro by name\nawait game.macros.getName(\"Garou: Choose Form\")?.execute();"
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Chose Form"
+      },
+      "23A7HIVzmsjpBwoA": {
+        "type": "utility",
+        "_id": "23A7HIVzmsjpBwoA",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
         },
         "consumption": {
           "scaling": {
@@ -43,8 +161,7 @@
           },
           "affects": {
             "choice": false,
-            "type": "self",
-            "special": ""
+            "type": ""
           },
           "override": false,
           "prompt": true
@@ -64,14 +181,64 @@
           "requireMagic": false,
           "identifier": ""
         },
-        "profiles": [],
-        "settings": null,
-        "transform": {
-          "customize": false,
-          "mode": "cr",
-          "preset": ""
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
         },
-        "name": ""
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "Choose Form (Macro)",
+          "command": "game.macros.getName(\"Garou: Choose Form\")?.execute()"
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Choose Form (Macro)"
       }
     },
     "uses": {
@@ -220,11 +387,11 @@
     }
   },
   "_stats": {
-    "compendiumSource": null,
+    "compendiumSource": "Compendium.garou.garou-features.Item.SKzsFOgh7Vc0IxMZ",
     "duplicateSource": null,
     "exportSource": {
       "worldId": "vindara-5e",
-      "uuid": "Item.SKzsFOgh7Vc0IxMZ",
+      "uuid": "Item.MI8WKEfjaiNQesQq",
       "coreVersion": "13.351",
       "systemId": "dnd5e",
       "systemVersion": "5.2.5"
@@ -232,8 +399,8 @@
     "coreVersion": "13.351",
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
-    "createdTime": 1769825234734,
-    "modifiedTime": 1769825234734,
+    "createdTime": 1770140458004,
+    "modifiedTime": 1770140458015,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

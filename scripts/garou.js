@@ -180,13 +180,15 @@ await DialogV2.wait({
       default: true,
       callback: async (event, button) => {
         const el = button.form.elements["garou-form"];
-        const chosen = el ? el.value : "";
-        if (!chosen || !FORMS.includes(chosen)) return;
+        const chosen = el ? (el.value || "").trim() : "";
+        if (!chosen || !FORMS.includes(chosen)) return null;
+        const effectName = EFFECT_PREFIX + chosen;
         for (const ef of formEffects) {
-          await ef.update({ disabled: ef.name !== (EFFECT_PREFIX + chosen) });
+          await ef.update({ disabled: ef.name !== effectName });
         }
+        if (actor.setFlag) actor.setFlag("garou", "currentForm", effectName);
         ui.notifications.info("Shifted into " + chosen + " form.");
-        return chosen;
+        return effectName;
       }
     },
     { label: "Cancel", action: "cancel" }
@@ -200,14 +202,11 @@ async function ensureChooseFormMacro() {
   const existing = game.macros?.find(m => m.name === CHOOSE_FORM_MACRO_NAME);
 
   if (existing) {
-    const needsUpdate = existing.command?.includes("new Dialog(") || !existing.command?.includes("DialogV2");
-    if (needsUpdate) {
-      try {
-        await existing.update({ command }, { renderSheet: false });
-        console.log("Garou: Updated world macro '" + CHOOSE_FORM_MACRO_NAME + "' to use DialogV2.");
-      } catch (err) {
-        console.error("Garou: Failed to update macro:", err);
-      }
+    try {
+      await existing.update({ command }, { renderSheet: false });
+      console.log("Garou: Synced world macro '" + CHOOSE_FORM_MACRO_NAME + "' (DialogV2).");
+    } catch (err) {
+      console.error("Garou: Failed to update macro '" + CHOOSE_FORM_MACRO_NAME + "':", err);
     }
     return;
   }
@@ -226,6 +225,23 @@ async function ensureChooseFormMacro() {
     console.error("Garou: Failed to create macro '" + CHOOSE_FORM_MACRO_NAME + "':", err);
   }
 }
+
+// When Shapeshifting Forms is used (via Midi-QOL), run the Choose Form macro so the dialog opens.
+function isShapeshiftingFormsItem(item) {
+  if (!item) return false;
+  const name = (item.name ?? "").trim().toLowerCase();
+  const id = item.system?.identifier ?? "";
+  return name.includes("shapeshifting forms") || id === "shapeshifting-forms";
+}
+
+Hooks.on("midi-qol.preItemRoll", async (workflow) => {
+  if (!workflow?.item || !isShapeshiftingFormsItem(workflow.item)) return;
+  // If the item already has the macro on its flag, Midi-QOL will run it; don't run twice.
+  const onUse = workflow.item.flags?.["midi-qol"]?.onUseMacroName ?? "";
+  if (onUse.includes(CHOOSE_FORM_MACRO_NAME)) return;
+  const macro = game.macros?.find(m => m.name === CHOOSE_FORM_MACRO_NAME);
+  if (macro) await macro.execute(undefined, [workflow]);
+});
 
 // Safety net: on ready, create Midi-QOL macro if missing, then normalize existing Garou actors once.
 Hooks.once("ready", async () => {

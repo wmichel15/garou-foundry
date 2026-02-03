@@ -123,6 +123,14 @@
   "flags": {
     "midi-qol": {
       "onUseMacroName": "[preItemRoll] Garou: Choose Form"
+    },
+    "itemacro": {
+      "macro": {
+        "name": "Choose Garou Form",
+        "type": "script",
+        "scope": "global",
+        "command": "const macro = game.macros.find(m => m.name === \"Garou: Choose Form\"); if (macro) await macro.execute(false, [{ actor: this.actor || this.item?.actor, token: this.token, item: this.item }]);"
+      }
     }
   },
 

@@ -24,7 +24,14 @@
       {
         "id": "midi-qol",
         "type": "module",
-        "compatibility":{}
+        "compatibility": {}
+      }
+    ],
+    "optional": [
+      {
+        "id": "itemacro",
+        "type": "module",
+        "compatibility": {}
       }
     ]
   },

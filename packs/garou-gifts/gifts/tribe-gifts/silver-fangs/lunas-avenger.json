@@ -1,0 +1,63 @@
+{
+  "_id": "SF17LunasAvngr1",
+  "name": "Luna's Avenger",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Luna's Avenger</strong><br><em>17th-level Silver Fangs feature</em></p><p>At the apex of Silver Fang power, you become the living silver of the moon—an avatar of Luna's wrath. (Replace this with the exact text from your PDF.)</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 17
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "garou": {
+      "featureKey": "lunasAvenger"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.SF17LunasAvngr1",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

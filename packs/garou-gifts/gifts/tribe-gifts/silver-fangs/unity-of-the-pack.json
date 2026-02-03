@@ -1,0 +1,63 @@
+{
+  "_id": "SF6UnityPack001",
+  "name": "Unity of the Pack",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Unity of the Pack</strong><br><em>6th-level Silver Fangs feature</em></p><p>While you are present and conscious, your pack fights as one. (Replace this with the exact text from your PDF.)</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 6
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "garou": {
+      "featureKey": "unityOfThePack"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.SF6UnityPack001",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

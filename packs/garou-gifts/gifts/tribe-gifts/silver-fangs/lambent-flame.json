@@ -1,0 +1,61 @@
+{
+  "_id": "SF3LambentFlm01",
+  "name": "Lambent Flame",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Lambent Flame</strong><br><em>3rd-level Silver Fangs feature</em></p><p>Your body can ignite with silver light—the lambent flame of Luna—shedding light and reflecting the majesty of your bloodline. (Replace this with the exact text from your PDF.)</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "garou": {
+      "featureKey": "lambentFlame"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.SF3LambentFlm01",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

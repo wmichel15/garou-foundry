@@ -1,0 +1,118 @@
+{
+  "name": "Silver Fangs",
+  "type": "subclass",
+  "img": "systems/dnd5e/icons/svg/items/class.svg",
+  "system": {
+    "advancement": [
+      {
+        "type": "ItemGrant",
+        "_id": "SF3Advancement01",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.SF3LambentFlm01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Lambent Flame",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "SF6Advancement01",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.SF6UnityPack001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Unity of the Pack",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "SF11Advancement01",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.SF11ClaimAuth01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Claim of Authority",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "SF17Advancement01",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.SF17LunasAvngr1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "Luna's Avenger",
+        "hint": ""
+      }
+    ],
+    "description": {
+      "value": "<p>The <strong>Silver Fangs</strong> are the nobility of the Garou—proud, ancient, and bound by bloodlines that stretch back to the first kings of the tribes. They believe that leadership is not taken but inherited, and that the weight of the crown demands both majesty and sacrifice.</p><p>Where the Get of Fenris are the fist of the Garou, the Silver Fangs are its face and voice. They hold the great caerns, arbitrate between tribes, and stand as living symbols of the people's unity. To be Silver Fang is to carry the expectation that you will lead, inspire, and, when necessary, burn with the lambent flame of Luna herself.</p><p>Their gifts reflect their role: light in darkness, unity among the pack, the claim of rightful authority, and at the apex of their power, the avenging silver of the moon.</p><h2>“Words of the Fang”</h2><p><em>Common sayings among the Silver Fangs</em></p><blockquote><p><em>“A crown is not worn. It is borne.”</em></p></blockquote>",
+      "chat": ""
+    },
+    "identifier": "silver-fangs",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "classIdentifier": "garou",
+    "spellcasting": {
+      "progression": "none",
+      "preparation": {
+        "formula": ""
+      },
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.SilverFangsSubclass01",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

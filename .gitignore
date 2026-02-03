@@ -15,6 +15,10 @@ packs/**/LOG
 packs/**/LOG.old
 packs/**/MANIFEST-*
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e12e3c353970b65b8c9faf8a31e23c3ad54cae6e
 # Runtime data
 pids
 *.pid

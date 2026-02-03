@@ -4,6 +4,7 @@
   "img": "systems/dnd5e/icons/svg/items/feature.svg",
   "system": {
     "activities": {
+<<<<<<< HEAD
       "shift-to-this-form": {
         "type": "utility",
         "_id": "shift-to-this-form",
@@ -19,6 +20,130 @@
         "roll": { "prompt": false, "visible": false, "name": "", "formula": "" },
         "uses": { "spent": 0, "recovery": [], "max": "" },
         "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" }
+=======
+      "nrpHe1OY1uy3SBFe": {
+        "type": "utility",
+        "_id": "nrpHe1OY1uy3SBFe",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "V5YMtGPAr8fDLjiF",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "homid shift",
+          "command": "await game.macros.getName(\"Garou: Choose Form\")?.execute();"
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "homid shift"
+>>>>>>> e12e3c353970b65b8c9faf8a31e23c3ad54cae6e
       }
     },
     "uses": {
@@ -59,7 +184,7 @@
       "type": "base",
       "system": {},
       "changes": [],
-      "disabled": true,
+      "disabled": false,
       "duration": {
         "startTime": null,
         "combat": null,
@@ -79,6 +204,17 @@
           "riders": {
             "statuses": []
           }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
         }
       },
       "_stats": {
@@ -95,11 +231,11 @@
   "folder": "I7kwpaSPitkeCDxB",
   "flags": {},
   "_stats": {
-    "compendiumSource": null,
+    "compendiumSource": "Compendium.garou.garou-features.Item.UpsKrpUJywOuqrXO",
     "duplicateSource": null,
     "exportSource": {
       "worldId": "vindara-5e",
-      "uuid": "Item.UpsKrpUJywOuqrXO",
+      "uuid": "Item.lyNgO9dMLlDX02Vl",
       "coreVersion": "13.351",
       "systemId": "dnd5e",
       "systemVersion": "5.2.5"
@@ -107,8 +243,8 @@
     "coreVersion": "13.351",
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
-    "createdTime": 1769825236529,
-    "modifiedTime": 1769825236529,
+    "createdTime": 1770141272399,
+    "modifiedTime": 1770141272407,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

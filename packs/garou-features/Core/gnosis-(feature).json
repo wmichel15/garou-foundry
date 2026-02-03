@@ -1,0 +1,66 @@
+{
+  "name": "Gnosis (Feature)",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@scale.class.gnosis"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>Gnosis represents a Garou’s spiritual connection to the Umbra, spirits, and the primal forces of the world.</p><p>Gnosis fuels supernatural abilities such as Gifts, rites, umbral interactions, and spiritual resistance. Unlike Rage, Gnosis is calm, focused, and reflective of a Garou’s harmony with the spirit world.</p><p>Many Garou abilities require the expenditure of Gnosis, and certain forms or actions may restrict or regenerate it.</p><p></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [
+      "mgc"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": "ki"
+    }
+  },
+  "effects": [],
+  "folder": "khoiWkeO9DUdZXsm",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.FvQGHrfaDGaOKRtK",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769825234734,
+    "modifiedTime": 1769825234734,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -74,7 +74,8 @@
     "scripts/auspice-riders.js",
     "scripts/relentless-assault-automation.js",
     "scripts/fenrisian-endurance-automation.js",
-    "scripts/doom-of-the-unworthy-automation.js"
+    "scripts/doom-of-the-unworthy-automation.js",
+    "scripts/garou-forms.js"
   ],
   "flags": {}
 }

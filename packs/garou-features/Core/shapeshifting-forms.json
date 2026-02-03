@@ -31,7 +31,7 @@
         "effects": [],
         "flags": {
           "midi-qol": {
-            "onUseMacroName": "Garou: Shapeshifting Forms"
+            "onUseMacroName": "Garou: Choose Form"
           }
         },
         "range": {

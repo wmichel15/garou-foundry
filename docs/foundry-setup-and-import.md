@@ -120,3 +120,6 @@ If the Garou module compendia are read‑only, use **world** compendia for your 
 
 - **Development: changes to JSON not showing**  
   Foundry reads the pack **database** (e.g. `.ldb`), not the loose JSON. Re‑import the updated JSON into the compendium (or world compendium) and refresh, or rebuild the pack from JSON if you have a build step.
+
+- **“Bonus Rank 1 Gift” shows “Chosen: 0 of 1” with nothing to pick**  
+  The auspice’s **ItemChoice** advancement has an empty **pool**. Edit the auspice item (e.g. **Auspice: Theurge**) → **Advancement** tab → click the **edit (pencil)** on “Bonus Rank 1 Gift(Theurge)” → in the configuration, add items to the **Pool** by dragging Rank 1 gift items from **Garou - Gifts & Rites** (or your gifts compendium) into the pool area. Save. If you don’t have core Rank 1 gifts in the compendium, import them first (e.g. from `src/gifts/rank-1/`: Catfeet, Hare's Leap, Heightened Senses, Luna's Armor, Sense Wyrm).

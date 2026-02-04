@@ -1,5 +1,4 @@
 {
-  "_id": "lTIxUX8xK8ukvxkM",
   "name": "Auspice: Galliard",
   "type": "feat",
   "img": "systems/dnd5e/icons/svg/items/feature.svg",
@@ -86,7 +85,58 @@
           "name": "",
           "formula": ""
         },
-        "name": "Inspire"
+        "name": "Inspire",
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
       }
     },
     "uses": {
@@ -128,7 +178,23 @@
               "replacement": true
             }
           },
-          "pool": [],
+          "pool": [
+            {
+              "uuid": "Item.139NjT8gJ7yr0kGs"
+            },
+            {
+              "uuid": "Item.bsAdIGCKFq2DvQxH"
+            },
+            {
+              "uuid": "Item.zudgV6nIJaqwgKp0"
+            },
+            {
+              "uuid": "Item.kHghjMCTjj9ZqTGt"
+            },
+            {
+              "uuid": "Item.C0oHT6uWKOK3rC3U"
+            }
+          ],
           "restriction": {
             "list": [],
             "type": ""
@@ -221,9 +287,10 @@
   ],
   "folder": "DhdGE8fuX5m8jJvr",
   "flags": {
-    "garou":{
+    "garou": {
       "auspice": "galliard"
-    }
+    },
+    "dnd5e": {}
   },
   "_stats": {
     "compendiumSource": null,
@@ -239,7 +306,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825229321,
-    "modifiedTime": 1769825229321,
+    "modifiedTime": 1770174497377,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

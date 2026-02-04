@@ -1,5 +1,4 @@
 {
-  "_id": "9D5KoZJjLSRCjApe",
   "name": "Auspice: Theurge",
   "type": "feat",
   "img": "systems/dnd5e/icons/svg/items/feature.svg",
@@ -44,7 +43,23 @@
               "replacement": true
             }
           },
-          "pool": [],
+          "pool": [
+            {
+              "uuid": "Item.139NjT8gJ7yr0kGs"
+            },
+            {
+              "uuid": "Item.bsAdIGCKFq2DvQxH"
+            },
+            {
+              "uuid": "Item.zudgV6nIJaqwgKp0"
+            },
+            {
+              "uuid": "Item.kHghjMCTjj9ZqTGt"
+            },
+            {
+              "uuid": "Item.C0oHT6uWKOK3rC3U"
+            }
+          ],
           "restriction": {
             "list": [],
             "type": ""
@@ -63,12 +78,17 @@
         "type": "ItemGrant",
         "_id": "MWKSHzJ2pUnTh0Zy",
         "configuration": {
-          "items": [],
+          "items": [
+            {
+              "uuid": "Item.4fSyxP6xTj2SCqpC",
+              "optional": false
+            }
+          ],
           "optional": false,
           "spell": null
         },
         "value": {},
-        "level": 0,
+        "level": 1,
         "title": "Gnosis Recovery",
         "hint": ""
       }
@@ -99,9 +119,10 @@
   "effects": [],
   "folder": "DhdGE8fuX5m8jJvr",
   "flags": {
-    "garou":{
+    "garou": {
       "auspice": "theurge"
-    }
+    },
+    "dnd5e": {}
   },
   "_stats": {
     "compendiumSource": null,
@@ -117,7 +138,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825229321,
-    "modifiedTime": 1769825229321,
+    "modifiedTime": 1770174021678,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

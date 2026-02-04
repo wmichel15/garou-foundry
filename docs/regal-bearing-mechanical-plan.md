@@ -28,9 +28,9 @@
   - `system.description.value`: Full feature text (above).
   - `system.uses.max`: 1
   - `system.uses.recovery`: short rest + long rest (dnd5e recovery array).
-- **Grant:** Add an **ItemGrant** in `packs/garou-classes/subclasses/silver-fangs.json` at level 3 (e.g. alongside Lambent Flame — two ItemGrants at 3).
+- **Grant:** Add an **ItemGrant** in `packs/garou-classes/subclasses/silver-fangs.json`
+### 1.2 Five rider items at level 3 (e.g. alongside Lambent Flame — two ItemGrants at 3).
 
-### 1.2 Five rider items
 
 - **Where:** `packs/garou-features/auspice-riders/regal-bearing/` (five JSONs).
 - Each rider: `name` e.g. "Regal Bearing — Ragabash Rider", `flags.garou.riderFor`: `"regalBearing"`, `flags.garou.auspice`: `"ragabash"` | `"theurge"` | `"philodox"` | `"galliard"` | `"ahroun"`, plus description of that rider.

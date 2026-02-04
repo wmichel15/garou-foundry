@@ -1,0 +1,64 @@
+{
+  "folder": "s6Kg1UABjxtsx8lK",
+  "name": "Oath of Vengeance — Galliard",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Auspice Interaction — Galliard</strong></p><p>When you reduce your Sworn Foe to 0 hit points, one ally within 30 feet gains temporary hit points equal to your proficiency bonus.</p>",
+      "chat": ""
+    },
+    "identifier": "feature-3",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "oathOfVengeance",
+      "auspice": "galliard"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-features.Item.kVyQ7fxJLhzZqCQO",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.lNN06bG33ssILuEd",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770213045018,
+    "modifiedTime": 1770213045025,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

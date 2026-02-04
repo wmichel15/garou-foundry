@@ -1,0 +1,121 @@
+{
+  "folder": "2Aaay67uj4HI6U6z",
+  "name": "Black Furies",
+  "type": "subclass",
+  "img": "systems/dnd5e/icons/svg/items/subclass.svg",
+  "system": {
+    "advancement": [
+      {
+        "type": "ItemGrant",
+        "_id": "OathOfVengeanceL3",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.vHPTrGwdhEKUzl2I",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Oath of Vengeance",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "PunishTheGuiltyL6",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.3MDmI6BI58salty0",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Punish the Guilty",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "UnyieldingProtectorL11",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.WuB2e09Affzstbzk",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Unyielding Protector",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "FuryAbsoluteL17",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.EUgsrf4M0ghWlyFU",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "Fury Absolute",
+        "hint": ""
+      }
+    ],
+    "description": {
+      "value": "<p><strong>The Black Furies are the living memory of Gaia’s fury made flesh.</strong></p><p>They are protectors of the wounded, avengers of the violated, and the unyielding shield raised against those who prey on the helpless.</p><p>Where others see war, the Black Furies see injustice. Where others hesitate, they strike.</p><p>Bound by ancient rites, matriarchal traditions, and sacred oaths, the Black Furies defend women, children, and the powerless — not as an abstract ideal, but as a lived responsibility.</p><p><em>“We are not cruel. We are exact.”</em></p><p>To the Black Furies, rage guided by purpose is sacred. Mercy is not weakness — but wrath is not sin when it answers suffering.</p><hr /><p><strong>How the Black Furies View the Other Tribes</strong></p><p><strong>Children of Gaia:</strong> “They speak of peace while the innocent bleed. Kind hearts — but hesitant hands.”</p><p><strong>Get of Fenris:</strong> “They respect strength, but confuse dominance with justice.”</p><p><strong>Shadow Lords:</strong> “They understand power. We just don’t trust their motives.”</p><p><strong>Silver Fangs:</strong> “Once kings. Now stories pretending to rule.”</p><p><strong>Bone Gnawers:</strong> “They protect their own. That earns respect.”</p><p><strong>Fianna:</strong> “They remember joy. We remember why it must be defended.”</p><p><strong>Glass Walkers:</strong> “They fight the future with tools, not wisdom.”</p><p><strong>Red Talons:</strong> “They feel Gaia’s pain — but strike without restraint.”</p><p><em>These are cultural stereotypes passed down within the tribe, not universal truths.</em></p>",
+      "chat": ""
+    },
+    "identifier": "black-furies",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "classIdentifier": "garou",
+    "spellcasting": {
+      "progression": "none",
+      "preparation": {
+        "formula": ""
+      },
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-classes.Item.Ch4R6q5v32yCrjTf",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.0OmVe1AsB8xNMCoF",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770213078957,
+    "modifiedTime": 1770213078963,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

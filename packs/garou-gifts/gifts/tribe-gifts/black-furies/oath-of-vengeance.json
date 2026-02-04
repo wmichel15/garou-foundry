@@ -1,0 +1,63 @@
+{
+  "folder": "C5QLfrPvhCsvnTtJ",
+  "name": "Oath of Vengeance",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Oath of Vengeance</strong></p><p>When you see a creature harm an ally or a helpless creature within 30 feet of you, you may mark that creature as your <strong>Sworn Foe</strong> (no action required).</p><p><strong>Until the end of your next turn, while raging:</strong></p><ul><li>You gain a +1 bonus to attack rolls against your Sworn Foe.</li><li>The first time you hit your Sworn Foe, the target takes additional damage equal to your proficiency bonus.</li></ul><p>You can have only one Sworn Foe at a time.</p><hr /><p><strong>Auspice Interaction (Choose One)</strong></p><p>Your Auspice grants an additional rider when you swear your vengeance. This rider is determined by your Auspice.</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "featureKey": "oathOfVengeance"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.vHPTrGwdhEKUzl2I",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.4otD9FItcnSJJbJl",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770212980033,
+    "modifiedTime": 1770212980033,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

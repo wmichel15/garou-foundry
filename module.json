@@ -92,12 +92,16 @@
     "scripts/trial-by-combat-automation.js",
     "scripts/auspice-riders.js",
     "scripts/regal-bearing.js",
+    "scripts/oath-of-vengeance.js",
     "scripts/command-the-pack-automation.js",
     "scripts/noble-resilience.js",
     "scripts/crown-of-the-firstborn.js",
     "scripts/relentless-assault-automation.js",
     "scripts/fenrisian-endurance-automation.js",
     "scripts/doom-of-the-unworthy-automation.js",
+    "scripts/punish-the-guilty-automation.js",
+    "scripts/unyielding-protector-automation.js",
+    "scripts/fury-absolute-automation.js",
     "scripts/garou-forms.js"
   ],
   "flags": {}

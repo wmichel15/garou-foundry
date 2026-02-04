@@ -1,0 +1,64 @@
+{
+  "folder": "s6Kg1UABjxtsx8lK",
+  "name": "Oath of Vengeance — Philodox",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Auspice Interaction — Philodox</strong></p><p>When your Sworn Foe attacks a creature other than you, you may use your reaction to impose disadvantage on that attack.</p>",
+      "chat": ""
+    },
+    "identifier": "feature-4",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "oathOfVengeance",
+      "auspice": "philodox"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-features.Item.tj51D3UgWaSG37pB",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.P91y1hsXrmmYnRSu",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770213046812,
+    "modifiedTime": 1770213046821,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

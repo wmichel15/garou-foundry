@@ -1,0 +1,64 @@
+{
+  "folder": "s6Kg1UABjxtsx8lK",
+  "name": "Oath of Vengeance — Ahroun",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Auspice Interaction — Ahroun</strong></p><p>Once per turn, you may add your proficiency bonus to the damage of your first hit against your Sworn Foe.</p>",
+      "chat": ""
+    },
+    "identifier": "feature-2",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "oathOfVengeance",
+      "auspice": "ahroun"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-features.Item.odu9SuWgu8Mp6gZN",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.wAZTVHvZpLxJhIzx",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770213043339,
+    "modifiedTime": 1770213043345,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

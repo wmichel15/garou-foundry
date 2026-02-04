@@ -1,0 +1,64 @@
+{
+  "folder": "s6Kg1UABjxtsx8lK",
+  "name": "Oath of Vengeance — Ragabash",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Auspice Interaction — Ragabash</strong></p><p>Once per Rage, when you hit your Sworn Foe, you may move up to 10 feet without provoking opportunity attacks.</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "oathOfVengeance",
+      "auspice": "ragabash"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-features.Item.sUlj54uVMIkLaRgJ",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.deM4eWhwBkU3bRlf",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770213048601,
+    "modifiedTime": 1770213048611,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

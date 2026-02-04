@@ -159,6 +159,10 @@
         "configuration": {
           "items": [
             {
+              "uuid": "Compendium.garou.garou-features.Item.SKzsFOgh7Vc0IxMZ",
+              "optional": false
+            },
+            {
               "uuid": "Compendium.garou.garou-features.Item.UpsKrpUJywOuqrXO",
               "optional": false
             },
@@ -185,6 +189,62 @@
         "value": {},
         "level": 1,
         "title": "Shapeshifting Forms",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "A0nQU4foKToXh6rR",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.mUoDmp8d5DLXF963",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Breed: Lupus",
+        "hint": "",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemGrant",
+        "title": "Breed: Homid",
+        "_id": "jCuh3XZrBkuDfx6v",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.F5AZ59q2eoo3W3ru",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "hint": "",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "2p1NNwQgzDuQeVPe",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.TcyPZjV8wcpy8jjL",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Breed: Metis",
         "hint": "",
         "classRestriction": "primary"
       },
@@ -330,42 +390,6 @@
         "title": "Rage Uses",
         "hint": "",
         "classRestriction": "primary"
-      },
-      {
-        "type": "ItemChoice",
-        "_id": "OwRp21VL7SIYzL5T",
-        "configuration": {
-          "allowDrops": false,
-          "choices": {
-            "1": {
-              "count": 1,
-              "replacement": false
-            }
-          },
-          "pool": [
-            {
-              "uuid": "Item.F5AZ59q2eoo3W3ru"
-            },
-            {
-              "uuid": "Item.mUoDmp8d5DLXF963"
-            },
-            {
-              "uuid": "Item.TcyPZjV8wcpy8jjL"
-            }
-          ],
-          "restriction": {
-            "list": []
-          },
-          "spell": null,
-          "type": null
-        },
-        "value": {
-          "added": {},
-          "replaced": {}
-        },
-        "title": "Breed",
-        "hint": "",
-        "classRestriction": "primary"
       }
     ],
     "description": {
@@ -422,7 +446,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825224080,
-    "modifiedTime": 1770217418282,
+    "modifiedTime": 1770216158608,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

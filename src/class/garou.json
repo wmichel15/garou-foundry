@@ -121,8 +121,8 @@
         "configuration": {
           "items": [
             {
-              "optional": false,
-              "uuid": "Compendium.garou.garou-features.Item.igQDQUYxYEir0Ncj"
+              "uuid": "Item.igQDQUYxYEir0Ncj",
+              "optional": false
             }
           ],
           "optional": false,
@@ -131,7 +131,8 @@
         "value": {},
         "level": 1,
         "title": "Garou Rage",
-        "hint": ""
+        "hint": "",
+        "classRestriction": "primary"
       },
       {
         "type": "ItemGrant",
@@ -354,6 +355,41 @@
         "title": "Gnosis Maximum",
         "hint": "",
         "classRestriction": "primary"
+      },
+      {
+        "type": "ScaleValue",
+        "_id": "NaGgHoP7evGqCYyd",
+        "configuration": {
+          "identifier": "rage",
+          "type": "string",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": "1"
+            },
+            "2": {
+              "value": "2"
+            },
+            "5": {
+              "value": "3"
+            },
+            "9": {
+              "value": "4"
+            },
+            "13": {
+              "value": "5"
+            },
+            "16": {
+              "value": "6"
+            }
+          }
+        },
+        "value": {},
+        "title": "Rage Uses",
+        "hint": "",
+        "classRestriction": "primary"
       }
     ],
     "description": {
@@ -410,7 +446,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825224080,
-    "modifiedTime": 1770155048904,
+    "modifiedTime": 1770172976057,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

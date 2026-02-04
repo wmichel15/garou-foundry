@@ -88,6 +88,7 @@
   "esmodules": [
     "scripts/garou.js",
     "scripts/gnosis-resource.js",
+    "scripts/rage-resource.js",
     "scripts/trial-by-combat-automation.js",
     "scripts/auspice-riders.js",
     "scripts/regal-bearing.js",

@@ -6,8 +6,13 @@
     "activities": {},
     "uses": {
       "spent": 0,
-      "recovery": [],
-      "max": ""
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@scale.garou.rage"
     },
     "advancement": [],
     "description": {

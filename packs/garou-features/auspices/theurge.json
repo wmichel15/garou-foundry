@@ -1,7 +1,7 @@
 {
   "name": "Auspice: Theurge",
   "type": "feat",
-  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "img": "assets/Auspice/theurge.png",
   "system": {
     "activities": {},
     "uses": {
@@ -138,7 +138,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825229321,
-    "modifiedTime": 1770174021678,
+    "modifiedTime": 1770176826564,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

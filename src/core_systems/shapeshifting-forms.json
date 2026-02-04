@@ -1,7 +1,7 @@
 {
   "name": "Shapeshifting Forms",
   "type": "feat",
-  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "img": "assets/5%20forms.png",
   "system": {
     "activities": {
       "YUaZPZnJM4GR6reZ": {
@@ -384,7 +384,8 @@
           "exportSource": null
         }
       }
-    }
+    },
+    "dnd5e": {}
   },
   "_stats": {
     "compendiumSource": "Compendium.garou.garou-features.Item.SKzsFOgh7Vc0IxMZ",
@@ -400,7 +401,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1770140458004,
-    "modifiedTime": 1770140458015,
+    "modifiedTime": 1770176895180,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

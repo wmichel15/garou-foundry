@@ -1,8 +1,7 @@
 {
-  "_id": "XzQTg4jnpRSetNFI",
   "name": "Auspice: Ahroun",
   "type": "feat",
-  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "img": "assets/Auspice/ahroun.png",
   "system": {
     "activities": {
       "rgFrb3HkRpGWxWbf": {
@@ -83,7 +82,58 @@
           "name": "",
           "formula": ""
         },
-        "name": "Intimidating Command"
+        "name": "Intimidating Command",
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
       }
     },
     "uses": {
@@ -243,16 +293,17 @@
   ],
   "folder": "DhdGE8fuX5m8jJvr",
   "flags": {
-    "garou":{
+    "garou": {
       "auspice": "ahroun"
-    }
+    },
+    "dnd5e": {}
   },
   "_stats": {
-    "compendiumSource": null,
+    "compendiumSource": "Compendium.garou.garou-features.Item.3tYIPis4ujAbIuNu",
     "duplicateSource": null,
     "exportSource": {
       "worldId": "vindara-5e",
-      "uuid": "Item.XzQTg4jnpRSetNFI",
+      "uuid": "Item.FwwmqRZ3mRqV0O8d",
       "coreVersion": "13.351",
       "systemId": "dnd5e",
       "systemVersion": "5.2.5"
@@ -260,8 +311,8 @@
     "coreVersion": "13.351",
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
-    "createdTime": 1769825229321,
-    "modifiedTime": 1769825229321,
+    "createdTime": 1770154336576,
+    "modifiedTime": 1770176379212,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

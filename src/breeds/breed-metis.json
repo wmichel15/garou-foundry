@@ -1,12 +1,13 @@
 {
   "name": "Breed: Metis",
   "type": "feat",
-  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "img": "assets/breed/metis.png",
   "system": {
     "activities": {},
     "uses": {
       "spent": 0,
-      "recovery": []
+      "recovery": [],
+      "max": ""
     },
     "advancement": [
       {
@@ -70,7 +71,8 @@
     "enchant": {},
     "prerequisites": {
       "items": [],
-      "repeatable": false
+      "repeatable": false,
+      "level": null
     },
     "properties": [],
     "requirements": "",
@@ -137,7 +139,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825231965,
-    "modifiedTime": 1769825231965,
+    "modifiedTime": 1770176196555,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

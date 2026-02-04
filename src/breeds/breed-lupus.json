@@ -1,7 +1,7 @@
 {
   "name": "Breed: Lupus",
   "type": "feat",
-  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "img": "assets/breed/lupus.png",
   "system": {
     "activities": {},
     "uses": {
@@ -71,7 +71,9 @@
           "key": "system.attributes.movement.walk",
           "mode": 2,
           "value": "5",
-          "priority": 20
+          "priority": 20,
+          "fieldName": "Movement Speed (Walk)",
+          "fieldDescription": ""
         }
       ],
       "disabled": false,
@@ -123,7 +125,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825231965,
-    "modifiedTime": 1769825231965,
+    "modifiedTime": 1770176117980,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

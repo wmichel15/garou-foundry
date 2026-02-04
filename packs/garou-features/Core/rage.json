@@ -1,7 +1,7 @@
 {
   "name": "Rage",
   "type": "feat",
-  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "img": "assets/rage.png",
   "system": {
     "activities": {},
     "uses": {
@@ -40,7 +40,9 @@
   },
   "effects": [],
   "folder": "khoiWkeO9DUdZXsm",
-  "flags": {},
+  "flags": {
+    "dnd5e": {}
+  },
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
@@ -55,7 +57,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825234734,
-    "modifiedTime": 1769825234734,
+    "modifiedTime": 1770177154896,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

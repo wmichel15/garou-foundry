@@ -1,7 +1,7 @@
 {
   "name": "Gnosis (Feature)",
   "type": "feat",
-  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "img": "assets/gnosis.png",
   "system": {
     "activities": {},
     "uses": {
@@ -42,9 +42,11 @@
   },
   "effects": [],
   "folder": "khoiWkeO9DUdZXsm",
-  "flags": {},
+  "flags": {
+    "dnd5e": {}
+  },
   "_stats": {
-    "compendiumSource": null,
+    "compendiumSource": "Item.FvQGHrfaDGaOKRtK",
     "duplicateSource": null,
     "exportSource": {
       "worldId": "vindara-5e",
@@ -57,7 +59,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825234734,
-    "modifiedTime": 1769825234734,
+    "modifiedTime": 1770176962034,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

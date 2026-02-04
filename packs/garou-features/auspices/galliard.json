@@ -1,7 +1,7 @@
 {
   "name": "Auspice: Galliard",
   "type": "feat",
-  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "img": "assets/Auspice/galliard.png",
   "system": {
     "activities": {
       "TLdWrsbRnzy12R8w": {
@@ -306,7 +306,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825229321,
-    "modifiedTime": 1770174497377,
+    "modifiedTime": 1770176619594,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

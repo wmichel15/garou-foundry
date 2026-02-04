@@ -1,8 +1,7 @@
 {
-  "_id": "BddtRrYZYriGMogJ",
   "name": "Auspice: Ragabash",
   "type": "feat",
-  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "img": "assets/Auspice/ragabash.png",
   "system": {
     "activities": {
       "1pRQHG2SS2rJxzWe": {
@@ -82,7 +81,58 @@
           "name": "",
           "formula": ""
         },
-        "name": "Veil of Misdirection"
+        "name": "Veil of Misdirection",
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
       }
     },
     "uses": {
@@ -235,9 +285,10 @@
   ],
   "folder": "DhdGE8fuX5m8jJvr",
   "flags": {
-    "garou":{
+    "garou": {
       "auspice": "ragabash"
-    }
+    },
+    "dnd5e": {}
   },
   "_stats": {
     "compendiumSource": null,
@@ -253,7 +304,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825229321,
-    "modifiedTime": 1769825229321,
+    "modifiedTime": 1770176775220,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

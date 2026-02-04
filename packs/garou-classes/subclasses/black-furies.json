@@ -2,16 +2,16 @@
   "folder": "2Aaay67uj4HI6U6z",
   "name": "Black Furies",
   "type": "subclass",
-  "img": "systems/dnd5e/icons/svg/items/subclass.svg",
+  "img": "assets/Black%20Furies.png",
   "system": {
     "advancement": [
       {
         "type": "ItemGrant",
-        "_id": "OathOfVengeanceL3",
+        "_id": "gLmBIaplmQupMkYl",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-gifts.Item.vHPTrGwdhEKUzl2I",
+              "uuid": "Item.4otD9FItcnSJJbJl",
               "optional": false
             }
           ],
@@ -25,11 +25,11 @@
       },
       {
         "type": "ItemGrant",
-        "_id": "PunishTheGuiltyL6",
+        "_id": "jFO02YlMvxrkH4aQ",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-gifts.Item.3MDmI6BI58salty0",
+              "uuid": "Item.cPBHpj1z6wrUC6CE",
               "optional": false
             }
           ],
@@ -43,11 +43,11 @@
       },
       {
         "type": "ItemGrant",
-        "_id": "UnyieldingProtectorL11",
+        "_id": "dBk59f04xefLTkfn",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-gifts.Item.WuB2e09Affzstbzk",
+              "uuid": "Item.PJyifNVuTAlnfaHK",
               "optional": false
             }
           ],
@@ -61,11 +61,11 @@
       },
       {
         "type": "ItemGrant",
-        "_id": "FuryAbsoluteL17",
+        "_id": "a3ogv3jm2kuQvTMs",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-gifts.Item.EUgsrf4M0ghWlyFU",
+              "uuid": "Item.Bhg03RmbTkcnpu7y",
               "optional": false
             }
           ],
@@ -112,7 +112,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1770213078957,
-    "modifiedTime": 1770213078963,
+    "modifiedTime": 1770219018249,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

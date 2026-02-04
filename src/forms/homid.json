@@ -1,26 +1,9 @@
 {
   "name": "Homid",
   "type": "feat",
-  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "img": "assets/Forms/homid1.png",
   "system": {
     "activities": {
-<<<<<<< HEAD
-      "shift-to-this-form": {
-        "type": "utility",
-        "_id": "shift-to-this-form",
-        "sort": 0,
-        "name": "Shift to This Form",
-        "activation": { "type": "bonus", "override": false, "condition": "" },
-        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
-        "duration": { "units": "inst", "concentration": false, "override": false },
-        "range": { "units": "self", "override": false, "special": "", "value": "" },
-        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "self", "special": "" }, "override": false, "prompt": false },
-        "effects": [],
-        "flags": {},
-        "roll": { "prompt": false, "visible": false, "name": "", "formula": "" },
-        "uses": { "spent": 0, "recovery": [], "max": "" },
-        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" }
-=======
       "nrpHe1OY1uy3SBFe": {
         "type": "utility",
         "_id": "nrpHe1OY1uy3SBFe",
@@ -143,7 +126,6 @@
         "otherActivityId": "none",
         "otherActivityAsParentType": true,
         "name": "homid shift"
->>>>>>> e12e3c353970b65b8c9faf8a31e23c3ad54cae6e
       }
     },
     "uses": {
@@ -229,7 +211,9 @@
     }
   ],
   "folder": "I7kwpaSPitkeCDxB",
-  "flags": {},
+  "flags": {
+    "dnd5e": {}
+  },
   "_stats": {
     "compendiumSource": "Compendium.garou.garou-features.Item.UpsKrpUJywOuqrXO",
     "duplicateSource": null,
@@ -244,7 +228,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1770141272399,
-    "modifiedTime": 1770141272407,
+    "modifiedTime": 1770220054066,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

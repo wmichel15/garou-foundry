@@ -1,7 +1,7 @@
 {
   "name": "Garou",
   "type": "class",
-  "img": "systems/dnd5e/icons/svg/items/class.svg",
+  "img": "assets/garou%20class.png",
   "system": {
     "advancement": [
       {
@@ -422,7 +422,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825224080,
-    "modifiedTime": 1770217418282,
+    "modifiedTime": 1770218992668,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

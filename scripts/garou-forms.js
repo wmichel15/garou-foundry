@@ -1,10 +1,13 @@
 // scripts/garou-forms.js
 // Auto-enforce only one Garou form ActiveEffect enabled at a time.
+// Ensures Garou characters have Shapeshifting Forms + 5 form items (grant if missing after creation).
 
 const GAROU_CLASS_IDENTIFIER = "garou";      // your class identifier
 const FORM_PREFIX = "Form: ";
 const FORM_NAMES = ["Homid", "Glabro", "Crinos", "Hispo", "Lupus"];
 const GUARD_OPTION = "garouAutoForms";
+const FEATURES_PACK_KEY = "garou.garou-features";
+const SHAPESHIFTING_FORMS_NAME = "Shapeshifting Forms";
 
 function isGarouActor(actor) {
   if (!actor || actor.type !== "character") return false;
@@ -22,6 +25,63 @@ function isFormEffect(effect) {
 
 function getFormEffects(actor) {
   return actor.effects.filter(isFormEffect);
+}
+
+/** Check if actor has the Shapeshifting Forms feature item (by name). */
+function hasShapeshiftingFormsItem(actor) {
+  if (!actor?.items) return false;
+  return actor.items.some(i => (i.name ?? "").trim() === SHAPESHIFTING_FORMS_NAME);
+}
+
+/** Check if actor has a form item (e.g. Homid, Glabro). Match by name or "Form: X". */
+function hasFormItem(actor, formName) {
+  if (!actor?.items) return false;
+  const want = formName.trim();
+  const wantPrefixed = `${FORM_PREFIX}${want}`;
+  return actor.items.some(i => {
+    const n = (i.name ?? "").trim();
+    return n === want || n === wantPrefixed;
+  });
+}
+
+/** Ensure Garou characters have Shapeshifting Forms + all 5 form items; grant from compendium if missing. */
+async function ensureFormsGranted(actor) {
+  if (!actor || actor.type !== "character") return;
+  if (!isGarouActor(actor)) return;
+
+  const pack = game.packs.get(FEATURES_PACK_KEY);
+  if (!pack) return;
+
+  const toGrant = [];
+  if (!hasShapeshiftingFormsItem(actor)) {
+    const entry = pack.index.find(e => (e.name ?? "").trim() === SHAPESHIFTING_FORMS_NAME);
+    if (entry) toGrant.push(entry);
+  }
+  for (const formName of FORM_NAMES) {
+    if (!hasFormItem(actor, formName)) {
+      const entry = pack.index.find(e => {
+        const n = (e.name ?? "").trim();
+        return n === formName || n === `${FORM_PREFIX}${formName}`;
+      });
+      if (entry) toGrant.push(entry);
+    }
+  }
+  if (toGrant.length === 0) return;
+
+  const seen = new Set();
+  for (const entry of toGrant) {
+    if (seen.has(entry._id)) continue;
+    seen.add(entry._id);
+    try {
+      const doc = await pack.getDocument(entry._id);
+      if (!doc) continue;
+      const data = doc.toObject();
+      delete data._id;
+      await actor.createEmbeddedDocuments("Item", [data]);
+    } catch (err) {
+      console.warn("[garou] ensureFormsGranted: could not grant", entry.name, err);
+    }
+  }
 }
 
 async function enforceSingleForm(actor, preferredEffectId = null) {
@@ -84,9 +144,42 @@ Hooks.on("updateActiveEffect", (effect, changed, options) => {
   enforceSingleForm(actor, effect.id).catch(err => console.error("[garou] enforceSingleForm error:", err));
 });
 
-// Safety net: when sheet opens, normalize (helps after imports)
+// Safety net: when sheet opens, normalize (helps after imports); also ensure forms are granted
 Hooks.on("renderActorSheet", (app) => {
   const actor = app.actor;
   if (!isGarouActor(actor)) return;
-  enforceSingleForm(actor).catch(err => console.error("[garou] enforceSingleForm (render) error:", err));
+  ensureFormsGranted(actor).then(() => enforceSingleForm(actor)).catch(err => console.error("[garou] garou-forms (render) error:", err));
+});
+
+Hooks.on("createActor", (actor) => {
+  if (actor?.type === "character" && isGarouActor(actor)) {
+    ensureFormsGranted(actor).catch(err => console.error("[garou] ensureFormsGranted (createActor):", err));
+  }
+});
+
+Hooks.on("updateActor", (actor, changed) => {
+  if (!changed.items || actor?.type !== "character") return;
+  if (!isGarouActor(actor)) return;
+  ensureFormsGranted(actor).then(() => enforceSingleForm(actor)).catch(err => console.error("[garou] garou-forms (updateActor):", err));
+});
+
+Hooks.on("updateItem", (item, changed, options) => {
+  if (item.type !== "class" || (item.actor ?? item.parent)?.type !== "character") return;
+  const id = (item.system?.identifier ?? "").toLowerCase();
+  const name = (item.name ?? "").toLowerCase();
+  if (id !== "garou" && name !== "garou") return;
+  const actor = item.actor ?? item.parent;
+  if (actor) ensureFormsGranted(actor).catch(err => console.error("[garou] ensureFormsGranted (updateItem):", err));
+});
+
+Hooks.once("ready", async () => {
+  for (const actor of game.actors?.contents ?? []) {
+    if (actor.type !== "character" || !isGarouActor(actor)) continue;
+    try {
+      await ensureFormsGranted(actor);
+      await enforceSingleForm(actor);
+    } catch (err) {
+      console.error("[garou] garou-forms (ready):", err);
+    }
+  }
 });

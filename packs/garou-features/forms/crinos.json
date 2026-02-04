@@ -1,0 +1,250 @@
+{
+  "name": "Crinos",
+  "type": "feat",
+  "img": "assets/Forms/crinos.png",
+  "system": {
+    "activities": {
+      "JWxTUFDu3qi2jdwa": {
+        "type": "utility",
+        "_id": "JWxTUFDu3qi2jdwa",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "gRzz6V8fiV7Vw8AG",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "crinos shift",
+          "command": "await game.macros.getName(\"Garou: Choose Form\")?.execute();"
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "crinos shift"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>Crinos is the legendary war form of the Garou — a towering fusion of wolf, human, and spirit.</p><p>This form embodies raw Rage and spiritual fury, inspiring terror in mortals and enemies alike. Crinos is designed for battle, domination, and the destruction of the Wyrm’s servants.</p><p>Remaining in Crinos form strains the Garou’s self-control and risks Frenzy and Delirium.</p><p>Crinos is the legendary war form of the Garou — a towering fusion of wolf, human, and spirit.</p><p>This form embodies raw Rage and spiritual fury, inspiring terror in mortals and enemies alike. Crinos is designed for battle, domination, and the destruction of the Wyrm’s servants.</p><p>Remaining in Crinos form strains the Garou’s self-control and risks Frenzy and Delirium.</p><p></p><p>While in Crinos (War Form)Form:</p><ul><li><p>Increase in size by 2 to 3 feet</p></li><li><p>Speed : 40 ft </p></li><li><p>If you have at least any rage point uses remaining, consume 1 use and enter Rage.</p></li><li><p>+2 Bonus to AC</p></li><li><p>Advantage on Strength and Constitution saving throws</p></li><li><p>Bite: 1d12 + Strength Modifier (piercing)</p></li><li><p>Claw: 1d10 + Strength Modifier (slashing)</p></li></ul><p></p><p>Limitiations:</p><ul><li><p>You cant cast spells</p></li><li><p>You cant spend Gnosis, unless a Gift explicitly states it can be used while raging</p></li><li><p>You have disadvantage on Charisma checks, and you cant attempt checks to persuade creatures to see you as non-hostile through conversation alone</p></li><li><p>Remaining in Crinos after combat may trigger a Frenzy Check (Dm's discretion)</p></li></ul><p></p>",
+      "chat": "<p>While in Crinos (War Form)Form:</p><ul><li><p>Increase in size by 2 to 3 feet</p></li><li><p>Speed : 40 ft </p></li><li><p>If you have at least any rage point uses remaining, consume 1 use and enter Rage.</p></li><li><p>+2 Bonus to AC</p></li><li><p>Advantage on Strength and Constitution saving throws</p></li><li><p>Bite: 1d12 + Strength Modifier (piercing)</p></li><li><p>Claw: 1d10 + Strength Modifier (slashing)</p></li></ul><p></p><p>Limitiations:</p><ul><li><p>You cant cast spells</p></li><li><p>You cant spend Gnosis, unless a Gift explicitly states it can be used while raging</p></li><li><p>You have disadvantage on Charisma checks, and you cant attempt checks to persuade creatures to see you as non-hostile through conversation alone</p></li><li><p>Remaining in Crinos after combat may trigger a Frenzy Check (Dm's discretion)</p></li></ul><p></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Form: Crinos",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-features.Item.8NfAsllSBWNtHeIe",
+      "_id": "gRzz6V8fiV7Vw8AG",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 5,
+          "value": "40",
+          "priority": 10
+        },
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "2",
+          "priority": 10
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<img src=\"assets/Red%20Talon.png\" width=\"100\" height=\"100\" />",
+      "tint": "#8b0000",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "I7kwpaSPitkeCDxB",
+  "flags": {
+    "dnd5e": {}
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-features.Item.8NfAsllSBWNtHeIe",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.NsTrUkRvE4dhGdJo",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770141267115,
+    "modifiedTime": 1770177265151,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

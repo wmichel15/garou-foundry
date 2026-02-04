@@ -1,0 +1,121 @@
+{
+  "folder": "2Aaay67uj4HI6U6z",
+  "name": "Shadow Lords",
+  "type": "subclass",
+  "img": "assets/Shadow%20Lord.png",
+  "system": {
+    "advancement": [
+      {
+        "type": "ItemGrant",
+        "_id": "Gt55wqSAJFz0YVRr",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.x9G1dcTuJ0hPV5ZP",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "mantle of dread",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "EGQN0kKkFU8Ug1IP",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.hpOEoJzkMrDg9kBu",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "calculated cruelty",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "yHwoDwcNqQlPKbP2",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.WiwQlDeBqCKjC3DP",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "tyrant's poise",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "pDW4IItfgMLKGeoe",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.loBKvSaN5GxZbZvF",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "rule through fear",
+        "hint": ""
+      }
+    ],
+    "description": {
+      "value": "<p><strong data-start=\"380\" data-end=\"396\">Shadow Lords</strong> are the tribe of dominion, strategy, and ruthless survival. Where other Garou charge headfirst into battle, the Shadow Lords win wars through <strong data-start=\"539\" data-end=\"550\">control</strong> — controlling information, fear, alliances, and the battlefield itself.</p><p data-start=\"624\" data-end=\"825\">A Shadow Lord believes the Apocalypse will not be stopped by honor alone. It will be stopped by the Garou willing to do what others won’t: <strong data-start=\"763\" data-end=\"825\">plan ahead, strike first, and sacrifice pride for victory.</strong></p><p data-start=\"827\" data-end=\"984\">They are the wolves who rule from the dark — tacticians, warlords, spies, and kings-without-thrones. They don’t need to be loved. They need to be <strong data-start=\"973\" data-end=\"983\">obeyed</strong>.</p><h3 data-start=\"986\" data-end=\"1006\">“Fear is not cruelty. Fear is clarity.”</h3><h2 data-start=\"2061\" data-end=\"2103\">What Shadow Lords Think of Other Tribes</h2><h3 data-start=\"2105\" data-end=\"2121\">Black Furies</h3><blockquote data-start=\"2122\" data-end=\"2183\"><p data-start=\"2124\" data-end=\"2183\">“They mistake rage for justice. It makes them predictable.”</p></blockquote><h3 data-start=\"2185\" data-end=\"2201\">Bone Gnawers</h3><blockquote data-start=\"2202\" data-end=\"2283\"><p data-start=\"2204\" data-end=\"2283\">“They see everything. That’s why we keep them close — and never let them lead.”</p></blockquote><h3 data-start=\"2285\" data-end=\"2305\">Children of Gaia</h3><blockquote data-start=\"2306\" data-end=\"2366\"><p data-start=\"2308\" data-end=\"2366\">“They want peace. The Wyrm wants extinction. Do the math.”</p></blockquote><h3 data-start=\"2368\" data-end=\"2378\">Fianna</h3><blockquote data-start=\"2379\" data-end=\"2459\"><p data-start=\"2381\" data-end=\"2459\">“They’ll sing as the world burns. Gods help you if they decide you’re family.”</p></blockquote><h3 data-start=\"2461\" data-end=\"2478\">Get of Fenris</h3><blockquote data-start=\"2479\" data-end=\"2541\"><p data-start=\"2481\" data-end=\"2541\">“A hammer is useful… until it decides everything is a nail.”</p></blockquote><h3 data-start=\"2543\" data-end=\"2560\">Glass Walkers</h3><blockquote data-start=\"2561\" data-end=\"2649\"><p data-start=\"2563\" data-end=\"2649\">“They’ll sell their soul to win a war.<br data-start=\"2601\" data-end=\"2604\" />We’ll just take their soul and win anyway.”</p></blockquote><h3 data-start=\"2651\" data-end=\"2665\">Red Talons</h3><blockquote data-start=\"2666\" data-end=\"2701\"><p data-start=\"2668\" data-end=\"2701\">“Pure predators. Pure stupidity.”</p></blockquote><h3 data-start=\"2703\" data-end=\"2722\">Silent Striders</h3><blockquote data-start=\"2723\" data-end=\"2772\"><p data-start=\"2725\" data-end=\"2772\">“They carry secrets like bones in their teeth.”</p></blockquote><h3 data-start=\"2774\" data-end=\"2790\">Silver Fangs</h3><blockquote data-start=\"2791\" data-end=\"2865\"><p data-start=\"2793\" data-end=\"2865\">“They think birth makes them kings. We think kings should be competent.”</p></blockquote><h3 data-start=\"2867\" data-end=\"2881\">Stargazers</h3><blockquote data-start=\"2882\" data-end=\"2936\"><p data-start=\"2884\" data-end=\"2936\">“They call hesitation ‘wisdom.’ I call it weakness.”</p></blockquote><h3 data-start=\"2938\" data-end=\"2948\">Uktena</h3><blockquote data-start=\"2949\" data-end=\"3011\"><p data-start=\"2951\" data-end=\"3011\">“Never threaten an Uktena. You will not see what kills you.”</p></blockquote><h3 data-start=\"3013\" data-end=\"3024\">Wendigo</h3><blockquote data-start=\"3025\" data-end=\"3085\"><p data-start=\"3027\" data-end=\"3085\">“They remember every betrayal. That makes them dangerous.”</p></blockquote>",
+      "chat": ""
+    },
+    "identifier": "shadow-lords",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "classIdentifier": "garou",
+    "spellcasting": {
+      "progression": "none",
+      "preparation": {
+        "formula": ""
+      },
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-classes.Item.guidGa5VxYSgM8mm",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.giJ3TVsw0sCgowIf",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770231725667,
+    "modifiedTime": 1770233056398,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -159,23 +159,23 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-features.Item.UpsKrpUJywOuqrXO",
+              "uuid": "Compendium.garou.garou-features.Item.T1jyHJbWsBUF00Au",
               "optional": false
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.pfUSJpqU85vsChOq",
+              "uuid": "Compendium.garou.garou-features.Item.itbPQTye52dMayy5",
               "optional": false
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.8NfAsllSBWNtHeIe",
+              "uuid": "Compendium.garou.garou-features.Item.WdT6sMTMoQWTSu9m",
               "optional": false
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.zVACRixq3U1VA5dK",
+              "uuid": "Compendium.garou.garou-features.Item.to2RLM9mFFpNkPiL",
               "optional": false
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.sp4sul0jz8xGhvHt",
+              "uuid": "Compendium.garou.garou-features.Item.TGqpo1ajfFIATT4q",
               "optional": false
             }
           ],
@@ -422,7 +422,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825224080,
-    "modifiedTime": 1770218992668,
+    "modifiedTime": 1770233988800,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

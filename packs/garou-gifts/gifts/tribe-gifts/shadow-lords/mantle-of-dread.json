@@ -1,0 +1,217 @@
+{
+  "folder": "TTMLaPUgElDpNjCt",
+  "name": "Mantle of Dread",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "ANQZGpvetqHAGt0a": {
+        "type": "forward",
+        "_id": "ANQZGpvetqHAGt0a",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "when a creature affected by Mantle of Dread targets an ally, you may use your reaction to impose disadvantage on that attack"
+        },
+        "flags": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "activity": {
+          "id": null
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "never",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "Impose Disadvantage (Reaction)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><em data-start=\"1428\" data-end=\"1460\">3rd-level Shadow Lords feature</em></p><p data-start=\"1464\" data-end=\"1683\">Your presence radiates menace. While raging, creatures of your choice within <strong data-start=\"1541\" data-end=\"1552\">10 feet</strong> of you suffer a <strong data-start=\"1569\" data-end=\"1583\">−1 penalty</strong> to attack rolls made against creatures other than you.<br data-start=\"1638\" data-end=\"1641\" />This effect ends if you are incapacitated.</p><p data-start=\"1685\" data-end=\"1723\"><strong data-start=\"1685\" data-end=\"1721\">Auspice Interaction (Choose One)</strong></p><ul data-start=\"1724\" data-end=\"2423\"><li data-start=\"1724\" data-end=\"1876\"><p data-start=\"1726\" data-end=\"1876\"><strong data-start=\"1726\" data-end=\"1739\">Ragabash:</strong> Once per Rage, when a creature misses an attack due to this penalty, you may move up to 10 feet without provoking opportunity attacks.</p></li><li data-start=\"1877\" data-end=\"1999\"><p data-start=\"1879\" data-end=\"1999\"><strong data-start=\"1879\" data-end=\"1891\">Theurge:</strong> While Mantle of Dread is active, you gain advantage on saving throws against being charmed or frightened.</p></li><li data-start=\"2000\" data-end=\"2158\"><p data-start=\"2002\" data-end=\"2158\"><strong data-start=\"2002\" data-end=\"2015\">Philodox:</strong> Once per Rage, when a creature affected by Mantle of Dread targets an ally, you may use your reaction to impose disadvantage on that attack.</p></li><li data-start=\"2159\" data-end=\"2282\"><p data-start=\"2161\" data-end=\"2282\"><strong data-start=\"2161\" data-end=\"2174\">Galliard:</strong> When Mantle of Dread first activates, one ally within 30 feet gains advantage on their next saving throw.</p></li><li data-start=\"2283\" data-end=\"2423\"><p data-start=\"2285\" data-end=\"2423\"><strong data-start=\"2285\" data-end=\"2296\">Ahroun:</strong> Once per turn, when you hit a creature affected by Mantle of Dread, you may deal extra damage equal to your proficiency bonus.</p></li></ul>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "flags": {
+      "garou": {
+        "featureKey": "mantleOfDread"
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Mantle of Dread — Philodox",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-gifts.Item.Z1wuNFlwKPiowaxq",
+      "_id": "tqNeVyGKUbxgVX7R",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>Philodox: Once per Rage, when a creature affected by Mantle of Dread targets an ally, you may use you</p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": [
+            "1Reaction"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.Z1wuNFlwKPiowaxq",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.x9G1dcTuJ0hPV5ZP",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770231522445,
+    "modifiedTime": 1770231522453,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -13,7 +13,8 @@ const RIDER_FOR_FLAG = "riderFor";       // flags.garou.riderFor
 const TRIAL_BY_COMBAT_KEY = "trialByCombat";
 const REGAL_BEARING_KEY = "regalBearing";
 const OATH_OF_VENGEANCE_KEY = "oathOfVengeance";
-const RIDER_BASE_KEYS = [TRIAL_BY_COMBAT_KEY, REGAL_BEARING_KEY, OATH_OF_VENGEANCE_KEY];
+const MANTLE_OF_DREAD_KEY = "mantleOfDread";
+const RIDER_BASE_KEYS = [TRIAL_BY_COMBAT_KEY, REGAL_BEARING_KEY, OATH_OF_VENGEANCE_KEY, MANTLE_OF_DREAD_KEY];
 const VALID_AUSPICES = new Set(["ragabash", "theurge", "philodox", "galliard", "ahroun"]);
 
 const _actorQueue = new Map();

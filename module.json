@@ -102,6 +102,7 @@
     "scripts/punish-the-guilty-automation.js",
     "scripts/unyielding-protector-automation.js",
     "scripts/fury-absolute-automation.js",
+    "scripts/mantle-of-dread-automation.js",
     "scripts/garou-forms.js"
   ],
   "flags": {}

@@ -1,0 +1,148 @@
+{
+  "name": "Breed: Metis",
+  "type": "feat",
+  "img": "assets/breed/metis.png",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [
+      {
+        "type": "AbilityScoreImprovement",
+        "_id": "WV3AofWR8hceb28Y",
+        "configuration": {
+          "cap": null,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [],
+          "points": 1,
+          "recommendation": null,
+          "max": 20
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 1,
+        "title": "",
+        "hint": "Due to your born Crinos nature, you gain an advancement on your abilities being born this way."
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "yjB7zq3lWzKQi69Q",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {},
+          "pool": [],
+          "restriction": {
+            "list": [],
+            "type": "supernaturalGift",
+            "subtype": ""
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Rank 1 Gift",
+        "hint": "You learn one additional Rank 1 Gift at 1st level.\n                                This does not increase your maximum Gifts known\n                                by rank."
+      }
+    ],
+    "description": {
+      "value": "",
+      "chat": ""
+    },
+    "identifier": "breed-metis",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Metis Deformity",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-features.Item.TcyPZjV8wcpy8jjL",
+      "_id": "4DGobwbhIjvwoX4i",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<blockquote data-start=\"216\" data-end=\"691\"><p data-start=\"218\" data-end=\"328\"><strong data-start=\"218\" data-end=\"326\">Metis bear a deformity—physical, sensory, or spiritual—that marks them as outcasts even among the Garou.</strong></p><p data-start=\"335\" data-end=\"577\">The DM may impose disadvantage on Charisma-based ability checks when the deformity would meaningfully affect social interactions. Other Garou instinctively recognize that the Metis is different, even if they cannot immediately identify why.</p><p data-start=\"584\" data-end=\"691\">The specific nature of the deformity should be determined during character creation and approved by the DM.</p></blockquote><p data-start=\"693\" data-end=\"749\"><strong data-start=\"693\" data-end=\"749\">Example Deformities (choose one or invent your own):</strong></p><ul data-start=\"750\" data-end=\"1222\"><li data-start=\"750\" data-end=\"783\"><p data-start=\"752\" data-end=\"783\">Misshapen or asymmetrical limbs</p></li><li data-start=\"784\" data-end=\"835\"><p data-start=\"786\" data-end=\"835\">Permanently glowing, animalistic, or clouded eyes</p></li><li data-start=\"836\" data-end=\"880\"><p data-start=\"838\" data-end=\"880\">A constant animal musk or unsettling scent</p></li><li data-start=\"881\" data-end=\"911\"><p data-start=\"883\" data-end=\"911\">A distorted or bestial voice</p></li><li data-start=\"912\" data-end=\"968\"><p data-start=\"914\" data-end=\"968\">Unnatural body temperature (always cold or fever-warm)</p></li><li data-start=\"969\" data-end=\"1033\"><p data-start=\"971\" data-end=\"1033\">Patchy fur, exposed skin, or visible scarring that never heals</p></li><li data-start=\"1034\" data-end=\"1100\"><p data-start=\"1036\" data-end=\"1100\">A faint spiritual echo or unsettling aura perceptible to spirits</p></li><li data-start=\"1101\" data-end=\"1160\"><p data-start=\"1103\" data-end=\"1160\">Reflexive snarling, twitching, or predatory body language</p></li><li data-start=\"1161\" data-end=\"1222\"><p data-start=\"1163\" data-end=\"1222\">Difficulty fully concealing claws, fangs, or other features</p></li><li data-start=\"1161\" data-end=\"1222\"><p>Horns</p></li></ul>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "0xaIORSsUyifhTeM",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.TcyPZjV8wcpy8jjL",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1769825231965,
+    "modifiedTime": 1770176196555,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "folder": "LaFWEjkN52siRhJA",
+  "name": "Regal Bearing — Ahroun Rider",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><span style=\"animation:0.25s ease 0s 1 normal none running fade-in\"><span class=\"markdown-italics-text\" style=\"animation:0.25s ease 0s 1 normal none running fade-in;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;font-style:italic\"><em>\"<strong>Battle Standard.</strong> The chosen ally gains a +2 bonus to damage on the first successful weapon attack it hits with before the end of its first turn.\"</em></span></span></p>",
+      "chat": "<p><span style=\"animation:0.25s ease 0s 1 normal none running fade-in;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-style:italic;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"><em>ally gains +2 damage on first successful weapon attack on their first turn.</em></span></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-features.Item.9nUXX4ObBT0sX9ME",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.nPxNSM7X1eVXu6DY",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770165606533,
+    "modifiedTime": 1770165606538,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

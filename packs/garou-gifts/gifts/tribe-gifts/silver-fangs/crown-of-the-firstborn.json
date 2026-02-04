@@ -1,0 +1,197 @@
+{
+  "name": "Crown of the Firstborn",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "k12U2JAHBFxx9ZvB": {
+        "type": "utility",
+        "_id": "k12U2JAHBFxx9ZvB",
+        "sort": 0,
+        "activation": {
+          "type": "minute",
+          "override": false,
+          "value": 1,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Crown of the Firstborn (activation)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<h2 data-start=\"479\" data-end=\"506\">Crown of the Firstborn</h2><p data-start=\"507\" data-end=\"539\"><em data-start=\"507\" data-end=\"539\">17th-level Silver Fang feature</em></p><p data-start=\"541\" data-end=\"623\">Your authority is unquestionable, carrying the weight of Luna’s oldest bloodlines.</p><p data-start=\"625\" data-end=\"788\">As an <strong data-start=\"631\" data-end=\"641\">action</strong>, you assert absolute command for <strong data-start=\"675\" data-end=\"687\">1 minute</strong>, radiating an aura of dominance and resolve. While this aura is active, the following effects apply:</p><ul data-start=\"790\" data-end=\"1225\"><li data-start=\"790\" data-end=\"928\"><p data-start=\"792\" data-end=\"928\"><strong data-start=\"792\" data-end=\"812\">Unyielding Will.</strong> Allied creatures within <strong data-start=\"837\" data-end=\"848\">30 feet</strong> of you have <strong data-start=\"861\" data-end=\"927\">advantage on saving throws against being frightened or charmed</strong>.</p></li><li data-start=\"929\" data-end=\"1225\"><p data-start=\"931\" data-end=\"1225\"><strong data-start=\"931\" data-end=\"957\">Mandate of Perfection.</strong> The <strong data-start=\"962\" data-end=\"987\">first time each round</strong> that an allied creature within the aura <strong data-start=\"1028\" data-end=\"1053\">misses an attack roll</strong>, that creature may <strong data-start=\"1073\" data-end=\"1096\">add 1d6 to the roll</strong>, potentially turning the miss into a hit. This decision is made <strong data-start=\"1161\" data-end=\"1188\">after seeing the result</strong>, but before the outcome is resolved.</p></li></ul><p data-start=\"1227\" data-end=\"1287\">When this effect ends, you suffer <strong data-start=\"1261\" data-end=\"1286\">1 level of exhaustion</strong>.</p><p data-start=\"1289\" data-end=\"1372\">Once you use this feature, you can’t use it again until you finish a <strong data-start=\"1358\" data-end=\"1371\">long rest</strong>.</p><p data-start=\"1374\" data-end=\"1419\">You <strong data-start=\"1378\" data-end=\"1418\">cannot use this feature while raging</strong>.</p>",
+      "chat": ""
+    },
+    "identifier": "feature-2",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 17
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": "ZHPDvq1LB4Zp4rDb",
+  "flags": {
+    "garou": {
+      "featureKey": "crownOfTheFirstborn"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Item.2OaNTRbe3wZfNIIL",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.2OaNTRbe3wZfNIIL",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770159838035,
+    "modifiedTime": 1770169940744,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

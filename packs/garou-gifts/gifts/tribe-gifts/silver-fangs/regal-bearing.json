@@ -1,0 +1,64 @@
+{
+  "name": "Regal Bearing",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>Your presence demands attention and respect, rallying the pack at the moment of greatest danger.</p><p data-start=\"555\" data-end=\"892\">When you roll initiative, you may choose a number of allied creatures within <strong data-start=\"632\" data-end=\"643\">30 feet</strong> of you equal to your <strong data-start=\"665\" data-end=\"686\">proficiency bonus</strong> (including yourself). Until the end of each chosen creature’s <strong data-start=\"749\" data-end=\"763\">first turn</strong> in this combat, that creature has <strong data-start=\"798\" data-end=\"852\">advantage on the first attack roll or saving throw</strong> it makes during that turn (its choice).</p><p data-start=\"894\" data-end=\"986\">Once you use this feature, you can’t use it again until you finish a <strong data-start=\"963\" data-end=\"985\">short or long rest</strong>.</p><p></p><h2 data-start=\"993\" data-end=\"1017\">Auspice Interaction</h2><p data-start=\"1018\" data-end=\"1140\">When you use <strong data-start=\"1031\" data-end=\"1048\">Regal Bearing</strong>, choose <strong data-start=\"1057\" data-end=\"1064\">one</strong> of the affected allies to gain an additional benefit based on your Auspice.</p><h3 data-start=\"1142\" data-end=\"1173\">Ragabash — Shadowed Command</h3><p data-start=\"1174\" data-end=\"1257\">The chosen ally may take the <strong data-start=\"1203\" data-end=\"1236\">Hide action as a bonus action</strong> on their first turn.</p><blockquote data-start=\"1259\" data-end=\"1345\"><p data-start=\"1261\" data-end=\"1345\"><em data-start=\"1261\" data-end=\"1345\">This enables repositioning, ambush play, and misdirection without raw damage gain.</em></p></blockquote><hr data-start=\"1347\" data-end=\"1350\" /><h3 data-start=\"1352\" data-end=\"1380\">Theurge — Warded by Luna</h3><p data-start=\"1381\" data-end=\"1522\">The chosen ally has <strong data-start=\"1401\" data-end=\"1488\">advantage on the first saving throw it makes against a spell or supernatural effect</strong> before the end of its first turn.</p><blockquote data-start=\"1524\" data-end=\"1644\"><p data-start=\"1526\" data-end=\"1644\"><em data-start=\"1526\" data-end=\"1644\">“Supernatural effect” is intentionally broader than spells, catching monster abilities, curses, and magical hazards.</em></p></blockquote><hr data-start=\"1646\" data-end=\"1649\" /><h3 data-start=\"1651\" data-end=\"1685\">Philodox — Weight of Authority</h3><p data-start=\"1686\" data-end=\"1799\">The chosen ally has <strong data-start=\"1706\" data-end=\"1756\">advantage on the first contested ability check</strong> it makes before the end of its first turn.</p><blockquote data-start=\"1801\" data-end=\"1880\"><p data-start=\"1803\" data-end=\"1880\"><em data-start=\"1803\" data-end=\"1880\">This cleanly covers grapples, shoves, social contests, and control moments.</em></p></blockquote><hr data-start=\"1882\" data-end=\"1885\" /><h3 data-start=\"1887\" data-end=\"1914\">Galliard — Stirring Cry</h3><p data-start=\"1915\" data-end=\"1994\">The chosen ally gains <strong data-start=\"1937\" data-end=\"1993\">temporary hit points equal to your proficiency bonus</strong>.</p><blockquote data-start=\"1996\" data-end=\"2072\"><p data-start=\"1998\" data-end=\"2072\"><em data-start=\"1998\" data-end=\"2072\">This is modest, scales naturally, and reinforces the inspirational role.</em></p></blockquote><hr data-start=\"2074\" data-end=\"2077\" /><h3 data-start=\"2079\" data-end=\"2107\">Ahroun — Battle Standard</h3><p data-start=\"2108\" data-end=\"2243\">The chosen ally gains a <strong data-start=\"2132\" data-end=\"2154\">+2 bonus to damage</strong> on the <strong data-start=\"2162\" data-end=\"2196\">first successful weapon attack</strong> it hits with before the end of its first turn.</p><blockquote data-start=\"2245\" data-end=\"2337\"><p data-start=\"2247\" data-end=\"2337\"><em data-start=\"2247\" data-end=\"2337\">Specifying “weapon attack” avoids spell abuse and keeps this in line with martial burst.</em></p></blockquote>",
+      "chat": ""
+    },
+    "identifier": "feature-3",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": "ZHPDvq1LB4Zp4rDb",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.crTw05v06wlmnVUQ",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.crTw05v06wlmnVUQ",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770159840918,
+    "modifiedTime": 1770165816053,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "name": "Command the Pack",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "RVdLvI0mPfMyj2Ia": {
+        "type": "utility",
+        "_id": "RVdLvI0mPfMyj2Ia",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "sr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": ""
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><em data-start=\"301\" data-end=\"332\">6th-level Silver Fang feature</em></p><p data-start=\"334\" data-end=\"480\">Silver Fangs do not merely fight alongside their pack—they <strong data-start=\"393\" data-end=\"422\">direct the flow of battle</strong>, issuing sharp commands that turn hesitation into action.</p><p data-start=\"482\" data-end=\"674\">As a <strong data-start=\"487\" data-end=\"503\">bonus action</strong>, you may choose one allied creature within <strong data-start=\"547\" data-end=\"558\">30 feet</strong> of you that can see or hear you. That creature may immediately use its <strong data-start=\"630\" data-end=\"642\">reaction</strong> to do <strong data-start=\"649\" data-end=\"656\">one</strong> of the following:</p><ul data-start=\"676\" data-end=\"849\"><li data-start=\"676\" data-end=\"783\"><p data-start=\"678\" data-end=\"783\"><strong data-start=\"678\" data-end=\"700\">Commanded Advance.</strong> The creature moves up to <strong data-start=\"726\" data-end=\"744\">half its speed</strong> without provoking opportunity attacks.</p></li><li data-start=\"784\" data-end=\"849\"><p data-start=\"786\" data-end=\"849\"><strong data-start=\"786\" data-end=\"807\">Commanded Strike.</strong> The creature makes <strong data-start=\"827\" data-end=\"848\">one weapon attack</strong>.</p></li></ul><p data-start=\"851\" data-end=\"943\">Once you use this feature, you can’t use it again until you finish a <strong data-start=\"920\" data-end=\"942\">short or long rest</strong>.</p><p data-start=\"945\" data-end=\"990\">You <strong data-start=\"949\" data-end=\"989\">cannot use this feature while raging</strong>.</p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 6
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": "ZHPDvq1LB4Zp4rDb",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.8ZE0fb3k8y1O6feT",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.8ZE0fb3k8y1O6feT",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770159829352,
+    "modifiedTime": 1770166665524,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

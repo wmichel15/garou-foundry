@@ -1,18 +1,27 @@
 {
-  "_id": "SF17LunasAvngr1",
-  "name": "Luna's Avenger",
+  "_id": "RBregalBearing01",
+  "name": "Regal Bearing",
   "type": "feat",
   "img": "systems/dnd5e/icons/svg/items/feature.svg",
   "system": {
     "activities": {},
     "uses": {
       "spent": 0,
-      "recovery": [],
-      "max": ""
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        },
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
     },
     "advancement": [],
     "description": {
-      "value": "<p><strong>Luna's Avenger</strong><br><em>17th-level Silver Fangs feature</em></p><p>At the apex of Silver Fang power, you become the living silver of the moon—an avatar of Luna's wrath. (Replace this with the exact text from your PDF.)</p>",
+      "value": "<p>Your presence demands attention and respect.</p><p>When you roll initiative, you may choose a number of allies within 30 feet of you equal to your proficiency bonus (including yourself). Until the end of each chosen creature's first turn in this combat, that creature has advantage on the first attack roll or saving throw it makes during that turn.</p><p>Once you use this feature, you can't use it again until you finish a short or long rest.</p><p>Depending on your auspice, each chosen ally also gains an additional benefit (see your auspice rider on this sheet).</p>",
       "chat": ""
     },
     "identifier": "feature",
@@ -25,7 +34,7 @@
     "prerequisites": {
       "items": [],
       "repeatable": false,
-      "level": 17
+      "level": 3
     },
     "properties": [
       "trait"
@@ -40,7 +49,7 @@
   "folder": null,
   "flags": {
     "garou": {
-      "featureKey": "lunasAvenger"
+      "featureKey": "regalBearing"
     }
   },
   "_stats": {
@@ -48,7 +57,7 @@
     "duplicateSource": null,
     "exportSource": {
       "worldId": "vindara-5e",
-      "uuid": "Item.SF17LunasAvngr1",
+      "uuid": "Item.RBregalBearing01",
       "coreVersion": "13.351",
       "systemId": "dnd5e",
       "systemVersion": "5.2.5"

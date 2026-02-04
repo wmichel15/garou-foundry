@@ -11,6 +11,8 @@ const BASE_KEY_FLAG = "featureKey";      // flags.garou.featureKey
 const RIDER_FOR_FLAG = "riderFor";       // flags.garou.riderFor
 
 const TRIAL_BY_COMBAT_KEY = "trialByCombat";
+const REGAL_BEARING_KEY = "regalBearing";
+const RIDER_BASE_KEYS = [TRIAL_BY_COMBAT_KEY, REGAL_BEARING_KEY];
 const VALID_AUSPICES = new Set(["ragabash", "theurge", "philodox", "galliard", "ahroun"]);
 
 const _actorQueue = new Map();
@@ -60,7 +62,7 @@ async function findRiderInFeaturesPack(riderForKey, auspiceKey) {
   return await pack.getDocument(match._id);
 }
 
-async function ensureTrialByCombatRider(actor) {
+async function ensureRiderForBase(actor, baseKey) {
   if (!actor || actor.type !== "character") return;
   if (game.system.id !== "dnd5e") return;
   if (_actorLock.has(actor.id)) return;
@@ -68,28 +70,24 @@ async function ensureTrialByCombatRider(actor) {
   const auspiceKey = getActorAuspiceKey(actor);
   if (!auspiceKey) return;
 
-  // Only apply if actor has Trial by Combat base feature
-  if (!actorHasBaseFeature(actor, TRIAL_BY_COMBAT_KEY)) return;
+  if (!actorHasBaseFeature(actor, baseKey)) return;
 
-  const currentRiders = getActorRiderItems(actor, TRIAL_BY_COMBAT_KEY);
+  const currentRiders = getActorRiderItems(actor, baseKey);
   const correct = currentRiders.find(i => (i.getFlag(FLAG_SCOPE, AUSPICE_FLAG) || "").toLowerCase() === auspiceKey);
   const incorrect = currentRiders.filter(i => (i.getFlag(FLAG_SCOPE, AUSPICE_FLAG) || "").toLowerCase() !== auspiceKey);
 
   _actorLock.add(actor.id);
   try {
-    // Remove incorrect riders
     if (incorrect.length) {
       await actor.deleteEmbeddedDocuments("Item", incorrect.map(i => i.id));
     }
 
-    // If correct rider already present, done
     if (correct) return;
 
-    // Pull correct rider from garou.garou-features
-    const riderDoc = await findRiderInFeaturesPack(TRIAL_BY_COMBAT_KEY, auspiceKey);
+    const riderDoc = await findRiderInFeaturesPack(baseKey, auspiceKey);
     if (!riderDoc) {
-      console.warn(`[${GAROU_MODULE_ID}] Missing rider in ${FEATURES_PACK_KEY} for ${TRIAL_BY_COMBAT_KEY}:${auspiceKey}`);
-      ui.notifications?.warn?.(`Garou: Missing ${auspiceKey} rider for Trial by Combat in Features pack.`);
+      console.warn(`[${GAROU_MODULE_ID}] Missing rider in ${FEATURES_PACK_KEY} for ${baseKey}:${auspiceKey}`);
+      ui.notifications?.warn?.(`Garou: Missing ${auspiceKey} rider for ${baseKey} in Features pack.`);
       return;
     }
 
@@ -99,18 +97,24 @@ async function ensureTrialByCombatRider(actor) {
   }
 }
 
+async function ensureAllRiders(actor) {
+  for (const baseKey of RIDER_BASE_KEYS) {
+    await ensureRiderForBase(actor, baseKey);
+  }
+}
+
 // Re-check when actor items change
 Hooks.on("updateActor", (actor, changed) => {
   if (!changed.items) return;
-  debounceActor(actor.id, () => ensureTrialByCombatRider(actor).catch(err => {
-    console.error(`[${GAROU_MODULE_ID}] ensureTrialByCombatRider error:`, err);
+  debounceActor(actor.id, () => ensureAllRiders(actor).catch(err => {
+    console.error(`[${GAROU_MODULE_ID}] ensureAllRiders error:`, err);
   }));
 });
 
 // Also re-check when sheet opens (helps for imported actors)
 Hooks.on("renderActorSheet", (app) => {
   const actor = app.actor;
-  debounceActor(actor.id, () => ensureTrialByCombatRider(actor).catch(err => {
-    console.error(`[${GAROU_MODULE_ID}] ensureTrialByCombatRider error:`, err);
+  debounceActor(actor.id, () => ensureAllRiders(actor).catch(err => {
+    console.error(`[${GAROU_MODULE_ID}] ensureAllRiders error:`, err);
   }), 50);
 });

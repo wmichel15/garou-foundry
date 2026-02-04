@@ -1,16 +1,16 @@
 {
   "name": "Silver Fangs",
   "type": "subclass",
-  "img": "systems/dnd5e/icons/svg/items/class.svg",
+  "img": "assets/Silverfangs.png",
   "system": {
     "advancement": [
       {
         "type": "ItemGrant",
-        "_id": "SF3Advancement01",
+        "_id": "8nJBQwyJDFiyXmiz",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-gifts.Item.SF3LambentFlm01",
+              "uuid": "Item.8ZE0fb3k8y1O6feT",
               "optional": false
             }
           ],
@@ -24,11 +24,29 @@
       },
       {
         "type": "ItemGrant",
-        "_id": "SF6Advancement01",
+        "_id": "RBregalBearingL3",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-gifts.Item.SF6UnityPack001",
+              "uuid": "Compendium.garou.garou-features.Item.RBregalBearing01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Regal Bearing",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "xJyDdbmJjS610mdF",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.2OaNTRbe3wZfNIIL",
               "optional": false
             }
           ],
@@ -42,11 +60,11 @@
       },
       {
         "type": "ItemGrant",
-        "_id": "SF11Advancement01",
+        "_id": "yZ565ML0gsUEHR4x",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-gifts.Item.SF11ClaimAuth01",
+              "uuid": "Item.crTw05v06wlmnVUQ",
               "optional": false
             }
           ],
@@ -60,11 +78,11 @@
       },
       {
         "type": "ItemGrant",
-        "_id": "SF17Advancement01",
+        "_id": "Tw9d6ApTZKscUDf0",
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-gifts.Item.SF17LunasAvngr1",
+              "uuid": "Item.8hv0tBNpLBiEvY2J",
               "optional": false
             }
           ],
@@ -78,10 +96,10 @@
       }
     ],
     "description": {
-      "value": "<p>The <strong>Silver Fangs</strong> are the nobility of the Garou—proud, ancient, and bound by bloodlines that stretch back to the first kings of the tribes. They believe that leadership is not taken but inherited, and that the weight of the crown demands both majesty and sacrifice.</p><p>Where the Get of Fenris are the fist of the Garou, the Silver Fangs are its face and voice. They hold the great caerns, arbitrate between tribes, and stand as living symbols of the people's unity. To be Silver Fang is to carry the expectation that you will lead, inspire, and, when necessary, burn with the lambent flame of Luna herself.</p><p>Their gifts reflect their role: light in darkness, unity among the pack, the claim of rightful authority, and at the apex of their power, the avenging silver of the moon.</p><h2>“Words of the Fang”</h2><p><em>Common sayings among the Silver Fangs</em></p><blockquote><p><em>“A crown is not worn. It is borne.”</em></p></blockquote>",
+      "value": "",
       "chat": ""
     },
-    "identifier": "silver-fangs",
+    "identifier": "subclass",
     "source": {
       "revision": 1,
       "rules": "2024"
@@ -96,21 +114,24 @@
     }
   },
   "effects": [],
-  "folder": null,
+  "folder": "2Aaay67uj4HI6U6z",
   "flags": {},
   "_stats": {
-    "compendiumSource": null,
+    "compendiumSource": "Compendium.garou.garou-classes.Item.h7aYCxobW976ON18",
     "duplicateSource": null,
     "exportSource": {
       "worldId": "vindara-5e",
-      "uuid": "Item.SilverFangsSubclass01",
+      "uuid": "Item.Pdp5hcHk7i68yafu",
       "coreVersion": "13.351",
       "systemId": "dnd5e",
       "systemVersion": "5.2.5"
     },
     "coreVersion": "13.351",
     "systemId": "dnd5e",
-    "systemVersion": "5.2.5"
+    "systemVersion": "5.2.5",
+    "createdTime": 1770159770910,
+    "modifiedTime": 1770161162080,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {
     "default": 0

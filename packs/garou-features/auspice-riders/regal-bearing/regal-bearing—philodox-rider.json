@@ -1,0 +1,59 @@
+{
+  "folder": "LaFWEjkN52siRhJA",
+  "name": "Regal Bearing — Philodox Rider",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><span style=\"animation:0.25s ease 0s 1 normal none running fade-in;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-style:italic;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"><em>\"</em></span><span style=\"animation:0.25s ease 0s 1 normal none running fade-in\"><span class=\"markdown-bold-text\" style=\"animation:0.25s ease 0s 1 normal none running fade-in;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-style:italic;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;font-weight:600\"><em><strong>Weight of Authority.</strong></em></span></span><span style=\"animation:0.25s ease 0s 1 normal none running fade-in;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-style:italic;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"><em> The chosen ally has advantage on the first contested ability check it makes before the end of its first turn.\"</em></span></p>",
+      "chat": "<p><span style=\"animation:0.25s ease 0s 1 normal none running fade-in;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-style:italic;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"><em>ally has advantage on first contested ability check on their first turn.</em></span></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-features.Item.Mo7SpZD8ieQso6h6",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.nUyEffrYNLrakLlX",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770165610113,
+    "modifiedTime": 1770165610119,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -266,7 +266,7 @@ function runChooseFormForItem(item) {
   return true;
 }
 
-// Register wrapper in "ready" so CONFIG.Item is set (dnd5e or Midi-QOL). Use CONFIG path so libWrapper can resolve when documentClass is MidiItem.
+// Single Item.use wrapper so Crown, Command the Pack, and Choose Form are all handled without duplicate libWrapper registration.
 Hooks.once("ready", () => {
   if (typeof libWrapper === "undefined") {
     console.warn("Garou: lib-wrapper not found. Install the 'libWrapper' module so using Shapeshifting Forms opens the form picker and avoids Midi-QOL workflow.");
@@ -278,11 +278,23 @@ Hooks.once("ready", () => {
   libWrapper.register(
     "garou",
     target,
-    function (wrapped, ...args) {
-      if (runChooseFormForItem(this)) return Promise.resolve();
+    async function (wrapped, ...args) {
+      const item = this;
+      const actor = item.actor ?? item.parent;
+      if (actor instanceof Actor && (actor.isOwner || game.user.isGM)) {
+        if (game.garou?.isCrownItem?.(item)) {
+          const handled = await game.garou.runCrownFlow(item, actor);
+          if (handled) return Promise.resolve();
+        }
+        if (game.garou?.isCommandThePackItem?.(item)) {
+          const handled = await game.garou.runCommandThePackFlow(item, actor, null);
+          if (handled) return Promise.resolve();
+        }
+      }
+      if (runChooseFormForItem(item)) return Promise.resolve();
       return wrapped.apply(this, args);
     },
-    "OVERRIDE"
+    "WRAPPER"
   );
 });
 

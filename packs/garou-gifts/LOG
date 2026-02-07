@@ -1,0 +1,12 @@
+2026/02/07-04:49:47.654 1c14 Recovering log #164
+2026/02/07-04:49:47.655 1c14 Level-0 table #166: started
+2026/02/07-04:49:47.658 1c14 Level-0 table #166: 204487 bytes OK
+2026/02/07-04:49:47.660 1c14 Delete type=0 #164
+2026/02/07-04:49:47.660 1c14 Delete type=3 #162
+2026/02/07-05:40:43.115 6cfc Compacting 2@0 + 1@1 files
+2026/02/07-05:40:43.118 6cfc Generated table #168@0: 73 keys, 62405 bytes
+2026/02/07-05:40:43.118 6cfc Compacted 2@0 + 1@1 files => 62405 bytes
+2026/02/07-05:40:43.118 6cfc compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/02/07-05:40:43.118 6cfc Delete type=2 #155
+2026/02/07-05:40:43.119 6cfc Delete type=2 #163
+2026/02/07-05:40:43.119 6cfc Delete type=2 #166

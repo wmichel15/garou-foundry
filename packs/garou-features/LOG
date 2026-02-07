@@ -1,0 +1,14 @@
+2026/02/07-04:49:47.609 48d4 Recovering log #202
+2026/02/07-04:49:47.609 48d4 Level-0 table #204: started
+2026/02/07-04:49:47.611 48d4 Level-0 table #204: 44955 bytes OK
+2026/02/07-04:49:47.613 48d4 Delete type=0 #202
+2026/02/07-04:49:47.613 48d4 Delete type=3 #200
+2026/02/07-04:49:47.613 6cfc Compacting 4@0 + 1@1 files
+2026/02/07-04:49:47.630 6cfc Generated table #206@0: 65 keys, 56037 bytes
+2026/02/07-04:49:47.630 6cfc Compacted 4@0 + 1@1 files => 56037 bytes
+2026/02/07-04:49:47.631 6cfc compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/02/07-04:49:47.631 6cfc Delete type=2 #191
+2026/02/07-04:49:47.631 6cfc Delete type=2 #195
+2026/02/07-04:49:47.631 6cfc Delete type=2 #198
+2026/02/07-04:49:47.631 6cfc Delete type=2 #201
+2026/02/07-04:49:47.631 6cfc Delete type=2 #204

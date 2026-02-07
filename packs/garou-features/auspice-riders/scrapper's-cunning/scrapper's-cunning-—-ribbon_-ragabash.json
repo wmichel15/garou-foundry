@@ -1,0 +1,64 @@
+{
+  "folder": "dCrl5AWt8CWIdYRw",
+  "name": "Scrapper’s Cunning — Ribbon: Ragabash",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<h3 data-start=\"3210\" data-end=\"3222\">Ragabash</h3><p data-start=\"3223\" data-end=\"3284\"><strong data-start=\"3223\" data-end=\"3245\">[Ribbon: Ragabash]</strong><br data-start=\"3245\" data-end=\"3248\" /><strong data-start=\"3248\" data-end=\"3260\">Trigger:</strong> While you are bloodied.</p><p data-start=\"3286\" data-end=\"3357\"><strong data-start=\"3286\" data-end=\"3297\">Effect:</strong> Opportunity attacks against you are made with disadvantage.</p><p data-start=\"3359\" data-end=\"3418\"><code data-start=\"3359\" data-end=\"3418\">[GAROU_RIBBON] parent=scrappers-cunning; auspice=ragabash</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "scrappersCunning",
+      "auspice": "ragabash"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.Jz8GBO0V2s4TzPgt",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770467635215,
+    "modifiedTime": 1770467635215,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "folder": "2e87bZj3LQz3frDU",
+  "name": "Nothing Left to Lose",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "JFEMge2qSjh4c4zL": {
+        "type": "utility",
+        "_id": "JFEMge2qSjh4c4zL",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Nothing Left to Lose — Triggered You are raging and bloodied; the feature activates. Cost: Gain 1 level of exhaustion. Benefits (while active): Resist nonmagical B/P/S; once per turn +1d8 damage on a hit.  [GAROU_TRIGGER] id=nothing-left-to-lose; condition=raging+bloodied; exhaustion=1; bonusDamage=1d8; resist=nonmagicalBPS"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Nothing Left to Lose — Triggered (Manual)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"395\" data-end=\"446\">Nothing Left to Lose (Passive; Rage + Bloodied)</strong><br data-start=\"446\" data-end=\"449\" />When you are cornered, you become terrifying.</p><p data-start=\"496\" data-end=\"613\">While you are <strong data-start=\"510\" data-end=\"520\">raging</strong> and <strong data-start=\"525\" data-end=\"537\">bloodied</strong> (at or below half your hit point maximum), you gain the following benefits:</p><ul data-start=\"615\" data-end=\"806\"><li data-start=\"615\" data-end=\"719\"><p data-start=\"617\" data-end=\"719\">You have <strong data-start=\"626\" data-end=\"640\">resistance</strong> to <strong data-start=\"644\" data-end=\"683\">bludgeoning, piercing, and slashing</strong> damage from <strong data-start=\"696\" data-end=\"718\">nonmagical attacks</strong>.</p></li><li data-start=\"720\" data-end=\"806\"><p data-start=\"722\" data-end=\"806\"><strong data-start=\"722\" data-end=\"739\">Once per turn</strong>, when you hit a creature, you may deal <strong data-start=\"779\" data-end=\"805\">+1d8 additional damage</strong>.</p></li></ul><p data-start=\"808\" data-end=\"882\"><strong data-start=\"808\" data-end=\"846\">When this feature first activates:</strong> You gain <strong data-start=\"856\" data-end=\"881\">1 level of exhaustion</strong>.</p><p data-start=\"884\" data-end=\"958\">This feature ends if your <strong data-start=\"910\" data-end=\"923\">Rage ends</strong> or you are <strong data-start=\"935\" data-end=\"957\">no longer bloodied</strong>.</p><hr data-start=\"960\" data-end=\"963\" /><p data-start=\"965\" data-end=\"1027\"><br /><code data-start=\"986\" data-end=\"1027\">[GAROU_FEATURE] id=nothing-left-to-lose</code></p>",
+      "chat": "<p><strong data-start=\"395\" data-end=\"446\">Nothing Left to Lose (Passive; Rage + Bloodied)</strong><br data-start=\"446\" data-end=\"449\" />When you are cornered, you become terrifying.</p><p data-start=\"496\" data-end=\"613\">While you are <strong data-start=\"510\" data-end=\"520\">raging</strong> and <strong data-start=\"525\" data-end=\"537\">bloodied</strong> (at or below half your hit point maximum), you gain the following benefits:</p><ul data-start=\"615\" data-end=\"806\"><li data-start=\"615\" data-end=\"719\"><p data-start=\"617\" data-end=\"719\">You have <strong data-start=\"626\" data-end=\"640\">resistance</strong> to <strong data-start=\"644\" data-end=\"683\">bludgeoning, piercing, and slashing</strong> damage from <strong data-start=\"696\" data-end=\"718\">nonmagical attacks</strong>.</p></li><li data-start=\"720\" data-end=\"806\"><p data-start=\"722\" data-end=\"806\"><strong data-start=\"722\" data-end=\"739\">Once per turn</strong>, when you hit a creature, you may deal <strong data-start=\"779\" data-end=\"805\">+1d8 additional damage</strong>.</p></li></ul><p data-start=\"808\" data-end=\"882\"><strong data-start=\"808\" data-end=\"846\">When this feature first activates:</strong> You gain <strong data-start=\"856\" data-end=\"881\">1 level of exhaustion</strong>.</p><p data-start=\"884\" data-end=\"958\">This feature ends if your <strong data-start=\"910\" data-end=\"923\">Rage ends</strong> or you are <strong data-start=\"935\" data-end=\"957\">no longer bloodied</strong>.</p><hr data-start=\"960\" data-end=\"963\" /><p data-start=\"965\" data-end=\"1027\"><br /><code data-start=\"986\" data-end=\"1027\">[GAROU_FEATURE] id=nothing-left-to-lose</code></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 17
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "flags": {
+    "garou": {
+      "featureKey": "nothingLeftToLose"
+    }
+  },
+  "effects": [
+    {
+      "name": "Nothing Left to Lose — Active (Toggle)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-gifts.Item.yM73kuZv4T25WCM1",
+      "_id": "yEuHsxF6345rZMfH",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.yM73kuZv4T25WCM1",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.NvfbXFlNmqLjgrXw",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770468317413,
+    "modifiedTime": 1770468317424,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "folder": "dCrl5AWt8CWIdYRw",
+  "name": "Scrapper’s Cunning — Ribbon: Ahroun",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"4102\" data-end=\"4122\">[Ribbon: Ahroun]</strong><br data-start=\"4122\" data-end=\"4125\" /><strong data-start=\"4125\" data-end=\"4137\">Trigger:</strong> While you are bloodied.</p><p data-start=\"4163\" data-end=\"4276\"><strong data-start=\"4163\" data-end=\"4174\">Effect:</strong> Once per turn you may reroll one damage die on a melee or natural weapon attack and use the new roll.</p><p data-start=\"4278\" data-end=\"4335\"><code data-start=\"4278\" data-end=\"4335\">[GAROU_RIBBON] parent=scrappers-cunning; auspice=ahroun</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "scrappersCunning",
+      "auspice": "ahroun"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.v2z6AtweNhbo1mex",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770467635215,
+    "modifiedTime": 1770467635215,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

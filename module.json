@@ -104,6 +104,10 @@
     "scripts/fury-absolute-automation.js",
     "scripts/mantle-of-dread-automation.js",
     "scripts/voice-of-calm-automation.js",
+    "scripts/scrappers-cunning-automation.js",
+    "scripts/refuse-to-fall-automation.js",
+    "scripts/hard-to-kill-automation.js",
+    "scripts/nothing-left-to-lose-automation.js",
     "scripts/garou-forms.js"
   ],
   "flags": {}

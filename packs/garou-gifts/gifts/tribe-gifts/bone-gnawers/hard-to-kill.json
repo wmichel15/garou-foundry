@@ -1,0 +1,63 @@
+{
+  "folder": "2e87bZj3LQz3frDU",
+  "name": "Hard to Kill",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<h3 data-start=\"206\" data-end=\"238\"><strong data-start=\"210\" data-end=\"225\">Description</strong> (copy/paste)</h3><p data-start=\"239\" data-end=\"309\"><strong data-start=\"239\" data-end=\"265\">Hard to Kill (Passive)</strong><br data-start=\"265\" data-end=\"268\" />Pain slows you, but it does not stop you.</p><p data-start=\"311\" data-end=\"375\">While <strong data-start=\"317\" data-end=\"327\">raging</strong>, you have <strong data-start=\"338\" data-end=\"374\">advantage on death saving throws</strong>.</p><p data-start=\"377\" data-end=\"507\">In addition, when you <strong data-start=\"399\" data-end=\"434\">succeed on a death saving throw</strong>, you may immediately <strong data-start=\"456\" data-end=\"479\">stand up from prone</strong> without expending movement.</p><hr data-start=\"509\" data-end=\"512\" /><p data-start=\"514\" data-end=\"568\"><br /><code data-start=\"535\" data-end=\"568\">[GAROU_FEATURE] id=hard-to-kill</code></p>",
+      "chat": "<h3 data-start=\"206\" data-end=\"238\"><strong data-start=\"210\" data-end=\"225\">Description</strong> (copy/paste)</h3><p data-start=\"239\" data-end=\"309\"><strong data-start=\"239\" data-end=\"265\">Hard to Kill (Passive)</strong><br data-start=\"265\" data-end=\"268\" />Pain slows you, but it does not stop you.</p><p data-start=\"311\" data-end=\"375\">While <strong data-start=\"317\" data-end=\"327\">raging</strong>, you have <strong data-start=\"338\" data-end=\"374\">advantage on death saving throws</strong>.</p><p data-start=\"377\" data-end=\"507\">In addition, when you <strong data-start=\"399\" data-end=\"434\">succeed on a death saving throw</strong>, you may immediately <strong data-start=\"456\" data-end=\"479\">stand up from prone</strong> without expending movement.</p><hr data-start=\"509\" data-end=\"512\" /><p data-start=\"514\" data-end=\"568\"><br /><code data-start=\"535\" data-end=\"568\">[GAROU_FEATURE] id=hard-to-kill</code></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 11
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "featureKey": "hardToKill"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.6VA3SEzdklTlJGSl",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.G3tDIZBi0PO6tYHY",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770468103426,
+    "modifiedTime": 1770468103436,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

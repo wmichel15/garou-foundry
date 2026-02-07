@@ -1,0 +1,121 @@
+{
+  "folder": "2Aaay67uj4HI6U6z",
+  "name": "Bone Gnawers",
+  "type": "subclass",
+  "img": "assets/Bone%20Gnawers.png",
+  "system": {
+    "advancement": [
+      {
+        "type": "ItemGrant",
+        "_id": "MmPXPja36jE6in6T",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.NlX2vNQi5imdc99x",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Scrapper's Cunning",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "2auJrwjzjAbuzTpo",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.C60VxXikFcTigSvA",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "refuse to fall",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "GQqGLkVcZTzWgke6",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.G3tDIZBi0PO6tYHY",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "hard to kill",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "xWAgj1Pc9na8QGX3",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.NvfbXFlNmqLjgrXw",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "nothing left to lose",
+        "hint": ""
+      }
+    ],
+    "description": {
+      "value": "",
+      "chat": ""
+    },
+    "identifier": "bone-gnawers",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "classIdentifier": "garou",
+    "spellcasting": {
+      "progression": "none",
+      "preparation": {
+        "formula": ""
+      },
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-classes.Item.ssE7VvSEExuBxfs5",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.tgYGnhWND0gLvg0q",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770469744315,
+    "modifiedTime": 1770469744325,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

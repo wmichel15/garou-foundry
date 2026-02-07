@@ -1,0 +1,117 @@
+{
+  "folder": "2e87bZj3LQz3frDU",
+  "name": "Scrapper’s Cunning",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"373\" data-end=\"415\">Scrapper’s Cunning (Passive; Bloodied)</strong><br data-start=\"415\" data-end=\"418\" />You thrive in desperate conditions.</p><p data-start=\"455\" data-end=\"561\">While you are <strong data-start=\"469\" data-end=\"481\">bloodied</strong> (at or below <strong data-start=\"495\" data-end=\"526\">half your hit point maximum</strong>), you gain the following benefits:</p><ul data-start=\"563\" data-end=\"806\"><li data-start=\"563\" data-end=\"654\"><p data-start=\"565\" data-end=\"654\">You have <strong data-start=\"574\" data-end=\"587\">advantage</strong> on <strong data-start=\"591\" data-end=\"615\">Strength (Athletics)</strong> and <strong data-start=\"620\" data-end=\"646\">Dexterity (Acrobatics)</strong> checks.</p></li><li data-start=\"655\" data-end=\"806\"><p data-start=\"657\" data-end=\"806\"><strong data-start=\"657\" data-end=\"674\">Once per turn</strong>, when you hit with a <strong data-start=\"696\" data-end=\"712\">melee weapon</strong> or <strong data-start=\"716\" data-end=\"734\">natural weapon</strong> attack, you deal <strong data-start=\"752\" data-end=\"805\">additional damage equal to your proficiency bonus</strong>.</p></li></ul><p data-start=\"808\" data-end=\"857\">These benefits end if you are no longer bloodied.</p><hr data-start=\"859\" data-end=\"862\" /><h3 data-start=\"864\" data-end=\"899\"><strong data-start=\"868\" data-end=\"899\">Auspice Ribbon (Choose One)</strong></h3><ul data-start=\"900\" data-end=\"1438\"><li data-start=\"900\" data-end=\"993\"><p data-start=\"902\" data-end=\"993\"><strong data-start=\"902\" data-end=\"915\">Ragabash:</strong> While bloodied, opportunity attacks against you are made with disadvantage.</p></li><li data-start=\"994\" data-end=\"1090\"><p data-start=\"996\" data-end=\"1090\"><strong data-start=\"996\" data-end=\"1008\">Theurge:</strong> While bloodied, you have advantage on saving throws against poison and disease.</p></li><li data-start=\"1091\" data-end=\"1172\"><p data-start=\"1093\" data-end=\"1172\"><strong data-start=\"1093\" data-end=\"1106\">Philodox:</strong> While bloodied, you have advantage on contested ability checks.</p></li><li data-start=\"1173\" data-end=\"1306\"><p data-start=\"1175\" data-end=\"1306\"><strong data-start=\"1175\" data-end=\"1188\">Galliard:</strong> When you first become bloodied, one ally within 30 feet gains temporary hit points equal to your proficiency bonus.</p></li><li data-start=\"1307\" data-end=\"1438\"><p data-start=\"1309\" data-end=\"1438\"><strong data-start=\"1309\" data-end=\"1320\">Ahroun:</strong> While bloodied, once per turn you may reroll one damage die on a melee or natural weapon attack and use the new roll.</p></li></ul><hr data-start=\"1440\" data-end=\"1443\" /><p data-start=\"1445\" data-end=\"1504\"><br /><code data-start=\"1466\" data-end=\"1504\">[GAROU_FEATURE] id=scrappers-cunning</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Scrapper’s Cunning — Bloodied (Toggle)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-gifts.Item.i63ADp7VrG6O5FO9",
+      "_id": "faHXJwWJghbZknDn",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "featureKey": "scrappersCunning"
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.i63ADp7VrG6O5FO9",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.NlX2vNQi5imdc99x",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770467768256,
+    "modifiedTime": 1770467768266,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

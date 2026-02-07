@@ -1,0 +1,64 @@
+{
+  "folder": "dCrl5AWt8CWIdYRw",
+  "name": "Scrapper’s Cunning — Ribbon: Galliard",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"3857\" data-end=\"3879\">[Ribbon: Galliard]</strong><br data-start=\"3879\" data-end=\"3882\" /><strong data-start=\"3882\" data-end=\"3894\">Trigger:</strong> When you first become bloodied.</p><p data-start=\"3928\" data-end=\"4023\"><strong data-start=\"3928\" data-end=\"3939\">Effect:</strong> One ally within 30 feet gains temporary hit points equal to your proficiency bonus.</p><p data-start=\"4025\" data-end=\"4084\"><code data-start=\"4025\" data-end=\"4084\">[GAROU_RIBBON] parent=scrappers-cunning; auspice=galliard</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "scrappersCunning",
+      "auspice": "galliard"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.WHvqxbVCNToUUUNq",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770467635215,
+    "modifiedTime": 1770467635215,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

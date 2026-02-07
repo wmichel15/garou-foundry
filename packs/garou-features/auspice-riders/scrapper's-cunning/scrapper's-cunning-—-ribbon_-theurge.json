@@ -1,0 +1,64 @@
+{
+  "folder": "dCrl5AWt8CWIdYRw",
+  "name": "Scrapper’s Cunning — Ribbon: Theurge",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"3437\" data-end=\"3458\">[Ribbon: Theurge]</strong><br data-start=\"3458\" data-end=\"3461\" /><strong data-start=\"3461\" data-end=\"3473\">Trigger:</strong> While you are bloodied.</p><p data-start=\"3499\" data-end=\"3574\"><strong data-start=\"3499\" data-end=\"3510\">Effect:</strong> You have advantage on saving throws against poison and disease.</p><p data-start=\"3576\" data-end=\"3634\"><code data-start=\"3576\" data-end=\"3634\">[GAROU_RIBBON] parent=scrappers-cunning; auspice=theurge</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "scrappersCunning",
+      "auspice": "theurge"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.DV8a5PVBxFX5CibL",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770467635215,
+    "modifiedTime": 1770467635215,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

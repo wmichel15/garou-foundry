@@ -15,7 +15,8 @@ const REGAL_BEARING_KEY = "regalBearing";
 const OATH_OF_VENGEANCE_KEY = "oathOfVengeance";
 const MANTLE_OF_DREAD_KEY = "mantleOfDread";
 const VOICE_OF_CALM_KEY = "voiceOfCalm";
-const RIDER_BASE_KEYS = [TRIAL_BY_COMBAT_KEY, REGAL_BEARING_KEY, OATH_OF_VENGEANCE_KEY, MANTLE_OF_DREAD_KEY, VOICE_OF_CALM_KEY];
+const SCRAPPERS_CUNNING_KEY = "scrappersCunning";
+const RIDER_BASE_KEYS = [TRIAL_BY_COMBAT_KEY, REGAL_BEARING_KEY, OATH_OF_VENGEANCE_KEY, MANTLE_OF_DREAD_KEY, VOICE_OF_CALM_KEY, SCRAPPERS_CUNNING_KEY];
 const VALID_AUSPICES = new Set(["ragabash", "theurge", "philodox", "galliard", "ahroun"]);
 
 const _actorQueue = new Map();

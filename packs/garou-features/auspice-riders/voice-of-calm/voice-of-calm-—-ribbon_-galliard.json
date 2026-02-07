@@ -1,0 +1,64 @@
+{
+  "folder": "eK6T3LUAPHWx8UYU",
+  "name": "Voice of Calm — Ribbon: Galliard",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"1401\" data-end=\"1423\">[Ribbon: Galliard]</strong><br data-start=\"1423\" data-end=\"1426\" /><strong data-start=\"1426\" data-end=\"1438\">Trigger:</strong> When you use <strong data-start=\"1452\" data-end=\"1469\">Voice of Calm</strong>.</p><p data-start=\"1474\" data-end=\"1593\"><strong data-start=\"1474\" data-end=\"1485\">Effect:</strong> One additional creature within <strong data-start=\"1517\" data-end=\"1528\">10 feet</strong> of the target also gains the <strong data-start=\"1558\" data-end=\"1575\">base benefits</strong> of Voice of Calm.</p><hr data-start=\"1595\" data-end=\"1598\" /><p data-start=\"1600\" data-end=\"1655\"><code data-start=\"1600\" data-end=\"1655\">[GAROU_RIBBON] parent=voice-of-calm; auspice=galliard</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "voiceOfCalm",
+      "auspice": "galliard"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.pqKMd2A3lseNEH9e",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770463327276,
+    "modifiedTime": 1770463327276,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

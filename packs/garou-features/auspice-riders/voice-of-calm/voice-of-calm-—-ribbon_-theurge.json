@@ -1,0 +1,66 @@
+{
+  "folder": "eK6T3LUAPHWx8UYU",
+  "name": "Voice of Calm — Ribbon: Theurge",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"717\" data-end=\"738\">[Ribbon: Theurge]</strong><br data-start=\"738\" data-end=\"741\" /><strong data-start=\"741\" data-end=\"753\">Trigger:</strong> When you use <strong data-start=\"767\" data-end=\"784\">Voice of Calm</strong>.</p><p data-start=\"789\" data-end=\"905\"><strong data-start=\"789\" data-end=\"800\">Effect:</strong> The target also gains <strong data-start=\"823\" data-end=\"861\">advantage on its next saving throw</strong> against a <strong data-start=\"872\" data-end=\"904\">spell or supernatural effect</strong>.</p><hr data-start=\"907\" data-end=\"910\" /><p data-start=\"912\" data-end=\"966\"><code data-start=\"912\" data-end=\"966\">[GAROU_RIBBON] parent=voice-of-calm; auspice=theurge</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "voiceOfCalm",
+      "auspice": "theurge"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.ttpgf9s2CVQ14umf",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770463327276,
+    "modifiedTime": 1770463327276,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

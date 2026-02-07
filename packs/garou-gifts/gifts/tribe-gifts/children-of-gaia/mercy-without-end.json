@@ -1,0 +1,198 @@
+{
+  "folder": "qV7hxDdG6njzFdJP",
+  "name": "Mercy Without End",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "4MgNXYCKp0GG0XlK": {
+        "type": "utility",
+        "_id": "4MgNXYCKp0GG0XlK",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "Mercy Without End (Reaction) Trigger: An ally you can see within 30 ft would drop to 0 HP.  Effect: That ally drops to 1 HP instead.  Cost:  You gain 2 levels of exhaustion immediately.  Your Rage ends immediately (if active).  Recharge: 1/Long Rest.  [GAROU_REACTION] id=mercy-without-end; range=30ft; trigger=ally-drop-to-0; setHP=1; exhaustion=2; endRage=true"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "ft",
+          "override": false,
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "ally",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Mercy Without End (Reaction)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"397\" data-end=\"442\">Mercy Without End (Reaction; 1/Long Rest)</strong><br data-start=\"442\" data-end=\"445\" />You refuse to surrender compassion, even at great cost.</p><p data-start=\"502\" data-end=\"661\">When an ally you can see within <strong data-start=\"534\" data-end=\"545\">30 feet</strong> would be reduced to <strong data-start=\"566\" data-end=\"582\">0 hit points</strong>, you may use your <strong data-start=\"601\" data-end=\"613\">reaction</strong> to instead reduce that ally to <strong data-start=\"645\" data-end=\"660\">1 hit point</strong>.</p><p data-start=\"663\" data-end=\"682\"><strong data-start=\"663\" data-end=\"682\">When you do so:</strong></p><ul data-start=\"683\" data-end=\"777\"><li data-start=\"683\" data-end=\"732\"><p data-start=\"685\" data-end=\"732\">You immediately gain <strong data-start=\"706\" data-end=\"732\">2 levels of exhaustion</strong></p></li><li data-start=\"733\" data-end=\"777\"><p data-start=\"735\" data-end=\"777\">Your <strong data-start=\"740\" data-end=\"753\">Rage ends</strong> immediately (if active)</p></li></ul><p data-start=\"779\" data-end=\"867\"><strong data-start=\"779\" data-end=\"809\">Once you use this feature,</strong> you cannot use it again until you finish a <strong data-start=\"853\" data-end=\"866\">long rest</strong>.</p><p data-start=\"869\" data-end=\"928\"><br /><code data-start=\"890\" data-end=\"928\">[GAROU_FEATURE] id=mercy-without-end</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 17
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.K3L4tg7iGbtfsdcX",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.sXy5zr6cPUiI0mVx",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770464518294,
+    "modifiedTime": 1770464518302,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

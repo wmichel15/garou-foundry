@@ -1,0 +1,66 @@
+{
+  "folder": "eK6T3LUAPHWx8UYU",
+  "name": "Voice of Calm — Ribbon: Ahroun",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"1741\" data-end=\"1761\">[Ribbon: Ahroun]</strong><br data-start=\"1761\" data-end=\"1764\" /><strong data-start=\"1764\" data-end=\"1776\">Trigger:</strong> When you use <strong data-start=\"1790\" data-end=\"1807\">Voice of Calm</strong>.</p><p data-start=\"1812\" data-end=\"1918\"><strong data-start=\"1812\" data-end=\"1823\">Effect:</strong> If the target makes an attack during the duration, it gains a <strong data-start=\"1886\" data-end=\"1917\">+2 bonus to the damage roll</strong>.</p><hr data-start=\"1920\" data-end=\"1923\" /><p data-start=\"1925\" data-end=\"1978\"><code data-start=\"1925\" data-end=\"1978\">[GAROU_RIBBON] parent=voice-of-calm; auspice=ahroun</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "voiceOfCalm",
+      "auspice": "ahroun"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.hoKv9klbaEp20UEM",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770463327276,
+    "modifiedTime": 1770463327276,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

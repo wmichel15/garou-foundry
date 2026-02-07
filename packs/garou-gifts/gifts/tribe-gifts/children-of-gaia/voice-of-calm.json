@@ -1,0 +1,262 @@
+{
+  "folder": "qV7hxDdG6njzFdJP",
+  "name": "Voice of Calm",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "1sA7zOBoNNNAXanA": {
+        "type": "utility",
+        "_id": "1sA7zOBoNNNAXanA",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "e4pvLhLqgVzUVIBN",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "ft",
+          "override": false,
+          "special": "",
+          "value": "30"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "ally",
+            "count": "1",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "sr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Voice of Calm (Activate)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"495\" data-end=\"541\">Voice of Calm (Bonus Action; 1/Short Rest)</strong><br data-start=\"541\" data-end=\"544\" />Your presence tempers fury and steadies the spirit.</p><p data-start=\"597\" data-end=\"727\"><strong data-start=\"597\" data-end=\"614\">Bonus Action:</strong> Choose <strong data-start=\"622\" data-end=\"653\">one creature within 30 feet</strong> that can see or hear you. Until the <strong data-start=\"690\" data-end=\"726\">end of that creature’s next turn</strong>:</p><ul data-start=\"728\" data-end=\"958\"><li data-start=\"728\" data-end=\"822\"><p data-start=\"730\" data-end=\"822\">The creature has <strong data-start=\"747\" data-end=\"777\">advantage on saving throws</strong> against being <strong data-start=\"792\" data-end=\"806\">frightened</strong> or <strong data-start=\"810\" data-end=\"821\">charmed</strong>.</p></li><li data-start=\"823\" data-end=\"958\"><p data-start=\"825\" data-end=\"958\">If the creature is <strong data-start=\"844\" data-end=\"854\">raging</strong> (or under a similar rage-like effect), it has <strong data-start=\"901\" data-end=\"957\">advantage on its next Frenzy / loss-of-control check</strong>.</p></li></ul><p data-start=\"960\" data-end=\"1014\"><strong data-start=\"960\" data-end=\"1014\">Auspice Ribbon (Choose One at Subclass Selection):</strong></p><ul data-start=\"1015\" data-end=\"1554\"><li data-start=\"1015\" data-end=\"1117\"><p data-start=\"1017\" data-end=\"1117\"><strong data-start=\"1017\" data-end=\"1030\">Ragabash:</strong> The target may immediately move up to 10 feet without provoking opportunity attacks.</p></li><li data-start=\"1118\" data-end=\"1231\"><p data-start=\"1120\" data-end=\"1231\"><strong data-start=\"1120\" data-end=\"1132\">Theurge:</strong> The target also gains advantage on its next saving throw against a spell or supernatural effect.</p></li><li data-start=\"1232\" data-end=\"1353\"><p data-start=\"1234\" data-end=\"1353\"><strong data-start=\"1234\" data-end=\"1247\">Philodox:</strong> If the target fails a saving throw during the duration, it may reroll the save and take the new result.</p></li><li data-start=\"1354\" data-end=\"1449\"><p data-start=\"1356\" data-end=\"1449\"><strong data-start=\"1356\" data-end=\"1369\">Galliard:</strong> One additional creature within 10 feet of the target gains the base benefits.</p></li><li data-start=\"1450\" data-end=\"1554\"><p data-start=\"1452\" data-end=\"1554\"><strong data-start=\"1452\" data-end=\"1463\">Ahroun:</strong> If the target makes an attack during the duration, it gains a +2 bonus to the damage roll.</p></li></ul>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Voice of Calm — Base",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Compendium.garou.garou-gifts.Item.VcsyhMdet3VyIgii",
+      "_id": "e4pvLhLqgVzUVIBN",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "",
+          "value": "",
+          "mode": 2,
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-gifts.Item.VcsyhMdet3VyIgii",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.k2x9RNQAR8d91Fn3",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770463353312,
+    "modifiedTime": 1770466398233,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

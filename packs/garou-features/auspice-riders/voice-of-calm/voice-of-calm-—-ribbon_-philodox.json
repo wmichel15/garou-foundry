@@ -1,0 +1,66 @@
+{
+  "folder": "eK6T3LUAPHWx8UYU",
+  "name": "Voice of Calm — Ribbon: Philodox",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"1054\" data-end=\"1076\">[Ribbon: Philodox]</strong><br data-start=\"1076\" data-end=\"1079\" /><strong data-start=\"1079\" data-end=\"1091\">Trigger:</strong> When you use <strong data-start=\"1105\" data-end=\"1122\">Voice of Calm</strong>.</p><p data-start=\"1127\" data-end=\"1251\"><strong data-start=\"1127\" data-end=\"1138\">Effect:</strong> If the target fails a saving throw during the duration, it may <strong data-start=\"1202\" data-end=\"1221\">reroll the save</strong> and must take the new result.</p><hr data-start=\"1253\" data-end=\"1256\" /><p data-start=\"1258\" data-end=\"1313\"><code data-start=\"1258\" data-end=\"1313\">[GAROU_RIBBON] parent=voice-of-calm; auspice=philodox</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "voiceOfCalm",
+      "auspice": "philodox"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.0EjSRQIUz31OVlf7",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770463327276,
+    "modifiedTime": 1770463327276,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

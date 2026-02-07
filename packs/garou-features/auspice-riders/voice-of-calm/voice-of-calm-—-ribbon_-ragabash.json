@@ -1,0 +1,66 @@
+{
+  "folder": "eK6T3LUAPHWx8UYU",
+  "name": "Voice of Calm — Ribbon: Ragabash",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"395\" data-end=\"417\">[Ribbon: Ragabash]</strong><br data-start=\"417\" data-end=\"420\" /><strong data-start=\"420\" data-end=\"432\">Trigger:</strong> When you use <strong data-start=\"446\" data-end=\"463\">Voice of Calm</strong>.</p><p data-start=\"468\" data-end=\"568\"><strong data-start=\"468\" data-end=\"479\">Effect:</strong> The target may immediately move up to <strong data-start=\"518\" data-end=\"529\">10 feet</strong> without provoking opportunity attacks.</p><hr data-start=\"570\" data-end=\"573\" /><p data-start=\"575\" data-end=\"630\"><code data-start=\"575\" data-end=\"630\">[GAROU_RIBBON] parent=voice-of-calm; auspice=ragabash</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "voiceOfCalm",
+      "auspice": "ragabash"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.dTRjQcNYPMpZaZDa",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770463327276,
+    "modifiedTime": 1770463327276,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

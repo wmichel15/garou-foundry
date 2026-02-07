@@ -1,0 +1,121 @@
+{
+  "folder": "2Aaay67uj4HI6U6z",
+  "name": "Children of Gaia",
+  "type": "subclass",
+  "img": "assets/Children%20of%20Gaia.png",
+  "system": {
+    "advancement": [
+      {
+        "type": "ItemGrant",
+        "_id": "rjTBf90zBtDAZPkp",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.k2x9RNQAR8d91Fn3",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Voice of Calm",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "6mQ4MjL8vmoLeFvE",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.8Hz9XfRY91XI71oD",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Shared Burden",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "xjY6yZeX5Mn4lJ8x",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.EvttlBdvD1NQKeQz",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Sanctuary of Gaia",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "76zcrtI6PbPVyhAO",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-gifts.Item.sXy5zr6cPUiI0mVx",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "Mercy Without End",
+        "hint": ""
+      }
+    ],
+    "description": {
+      "value": "<p><strong data-start=\"735\" data-end=\"755\">Children of Gaia</strong><br data-start=\"755\" data-end=\"758\" />The Children of Gaia are healers, peacemakers, and defenders of the balance. Where others answer violence with rage, they answer with protection, compassion, and endurance.</p><p data-start=\"932\" data-end=\"953\"><strong data-start=\"932\" data-end=\"953\">Subclass Features</strong></p><ul data-start=\"954\" data-end=\"1053\"><li data-start=\"954\" data-end=\"976\"><p data-start=\"956\" data-end=\"976\">3rd: Voice of Calm</p></li><li data-start=\"977\" data-end=\"999\"><p data-start=\"979\" data-end=\"999\">6th: Shared Burden</p></li><li data-start=\"1000\" data-end=\"1027\"><p data-start=\"1002\" data-end=\"1027\">11th: Sanctuary of Gaia</p></li><li data-start=\"1028\" data-end=\"1053\"><p data-start=\"1030\" data-end=\"1053\">17th: Mercy Without End</p></li></ul><p data-start=\"1055\" data-end=\"1107\">Optional tag:<br /><code data-start=\"1069\" data-end=\"1107\">[GAROU_SUBCLASS] id=children-of-gaia</code></p>",
+      "chat": ""
+    },
+    "identifier": "children-of-gaia",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "classIdentifier": "garou",
+    "spellcasting": {
+      "progression": "none",
+      "preparation": {
+        "formula": ""
+      },
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-classes.Item.BIu451yR0sLunT5m",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.5GcCQhIMo1ybOm60",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770464925591,
+    "modifiedTime": 1770466276500,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

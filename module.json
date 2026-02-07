@@ -103,6 +103,7 @@
     "scripts/unyielding-protector-automation.js",
     "scripts/fury-absolute-automation.js",
     "scripts/mantle-of-dread-automation.js",
+    "scripts/voice-of-calm-automation.js",
     "scripts/garou-forms.js"
   ],
   "flags": {}

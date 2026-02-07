@@ -1,0 +1,187 @@
+{
+  "folder": "jPdqerlztH8J6Aw0",
+  "name": "Bloodsong",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "N3HRPeFcBdJq6O1O": {
+        "type": "utility",
+        "_id": "N3HRPeFcBdJq6O1O",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Trigger (Once per Turn) A creature you can see within 30 ft drops to 0 HP while you are raging. You ride the moment.  Choose one:  Temp HP: You gain temp HP = your PB  War Cry: One ally within 30 ft gains advantage on their next attack roll  [GAROU_TRIGGER] id=bloodsong; condition=raging; range=30ft; trigger=creature-drop-to-0; options=tempHP@prof|allyAdvNextAttack; limit=oncePerTurn"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "ft",
+          "override": false,
+          "value": "30",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Bloodsong (trigger)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"560\" data-end=\"589\">Bloodsong (Passive; Rage)</strong><br data-start=\"589\" data-end=\"592\" />You ride the rhythm of battle, feeding on triumph and loss alike.</p><p data-start=\"659\" data-end=\"800\">While <strong data-start=\"665\" data-end=\"675\">raging</strong>, when a creature you can see within <strong data-start=\"712\" data-end=\"723\">30 feet</strong> is reduced to <strong data-start=\"738\" data-end=\"754\">0 hit points</strong>, you may choose one of the following effects:</p><ul data-start=\"802\" data-end=\"953\"><li data-start=\"802\" data-end=\"877\"><p data-start=\"804\" data-end=\"877\">You gain <strong data-start=\"813\" data-end=\"869\">temporary hit points equal to your proficiency bonus</strong>, <strong data-start=\"871\" data-end=\"877\">or</strong></p></li><li data-start=\"878\" data-end=\"953\"><p data-start=\"880\" data-end=\"953\">One ally within <strong data-start=\"896\" data-end=\"907\">30 feet</strong> gains <strong data-start=\"914\" data-end=\"953\">advantage on their next attack roll</strong></p></li></ul><p data-start=\"955\" data-end=\"1002\">You can trigger this feature <strong data-start=\"984\" data-end=\"1001\">once per turn</strong>.</p><hr data-start=\"1004\" data-end=\"1007\" /><p data-start=\"1009\" data-end=\"1060\">Optional script tag:<br /><code data-start=\"1030\" data-end=\"1060\">[GAROU_FEATURE] id=bloodsong</code></p>",
+      "chat": "<p><strong data-start=\"560\" data-end=\"589\">Bloodsong (Passive; Rage)</strong><br data-start=\"589\" data-end=\"592\" />You ride the rhythm of battle, feeding on triumph and loss alike.</p><p data-start=\"659\" data-end=\"800\">While <strong data-start=\"665\" data-end=\"675\">raging</strong>, when a creature you can see within <strong data-start=\"712\" data-end=\"723\">30 feet</strong> is reduced to <strong data-start=\"738\" data-end=\"754\">0 hit points</strong>, you may choose one of the following effects:</p><ul data-start=\"802\" data-end=\"953\"><li data-start=\"802\" data-end=\"877\"><p data-start=\"804\" data-end=\"877\">You gain <strong data-start=\"813\" data-end=\"869\">temporary hit points equal to your proficiency bonus</strong>, <strong data-start=\"871\" data-end=\"877\">or</strong></p></li><li data-start=\"878\" data-end=\"953\"><p data-start=\"880\" data-end=\"953\">One ally within <strong data-start=\"896\" data-end=\"907\">30 feet</strong> gains <strong data-start=\"914\" data-end=\"953\">advantage on their next attack roll</strong></p></li></ul><p data-start=\"955\" data-end=\"1002\">You can trigger this feature <strong data-start=\"984\" data-end=\"1001\">once per turn</strong>.</p><hr data-start=\"1004\" data-end=\"1007\" /><p data-start=\"1009\" data-end=\"1060\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 6
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "featureKey": "bloodsong"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.TftuH8t6ZgBHkP4F",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770483109800,
+    "modifiedTime": 1770483255678,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

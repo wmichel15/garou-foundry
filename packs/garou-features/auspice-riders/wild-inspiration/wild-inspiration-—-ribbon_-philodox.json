@@ -1,0 +1,66 @@
+{
+  "folder": "lKaSxCsPMw5ASYwc",
+  "name": "Wild Inspiration — Ribbon: Philodox",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"3923\" data-end=\"3945\">[Ribbon: Philodox]</strong><br data-start=\"3945\" data-end=\"3948\" /><strong data-start=\"3948\" data-end=\"3960\">Trigger:</strong> When you use <strong data-start=\"3974\" data-end=\"3994\">Wild Inspiration</strong>.</p><p data-start=\"3997\" data-end=\"4076\"><strong data-start=\"3997\" data-end=\"4008\">Effect:</strong> The target gains <strong data-start=\"4026\" data-end=\"4075\">advantage on its next contested ability check</strong>.</p><p data-start=\"4078\" data-end=\"4136\"><code data-start=\"4078\" data-end=\"4136\">[GAROU_RIBBON] parent=wild-inspiration; auspice=philodox</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "wildInspiration",
+      "auspice": "philodox"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.e1zVSHf1lumyzMpd",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770482789488,
+    "modifiedTime": 1770482912487,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

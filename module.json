@@ -108,6 +108,10 @@
     "scripts/refuse-to-fall-automation.js",
     "scripts/hard-to-kill-automation.js",
     "scripts/nothing-left-to-lose-automation.js",
+    "scripts/wild-inspiration-automation.js",
+    "scripts/bloodsong-automation.js",
+    "scripts/echoes-of-glory-automation.js",
+    "scripts/saga-unending-automation.js",
     "scripts/garou-forms.js"
   ],
   "flags": {}

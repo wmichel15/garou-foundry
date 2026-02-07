@@ -1,5 +1,14 @@
-2026/02/04-12:08:20.148 16d8 Recovering log #166
-2026/02/04-12:08:20.148 16d8 Level-0 table #168: started
-2026/02/04-12:08:20.149 16d8 Level-0 table #168: 30793 bytes OK
-2026/02/04-12:08:20.152 16d8 Delete type=0 #166
-2026/02/04-12:08:20.152 16d8 Delete type=3 #164
+2026/02/07-04:49:47.582 4118 Recovering log #169
+2026/02/07-04:49:47.582 4118 Level-0 table #171: started
+2026/02/07-04:49:47.584 4118 Level-0 table #171: 26702 bytes OK
+2026/02/07-04:49:47.586 4118 Delete type=0 #169
+2026/02/07-04:49:47.586 4118 Delete type=3 #167
+2026/02/07-04:49:47.586 6cfc Compacting 4@0 + 1@1 files
+2026/02/07-04:49:47.593 6cfc Generated table #173@0: 8 keys, 16973 bytes
+2026/02/07-04:49:47.593 6cfc Compacted 4@0 + 1@1 files => 16973 bytes
+2026/02/07-04:49:47.593 6cfc compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/02/07-04:49:47.593 6cfc Delete type=2 #158
+2026/02/07-04:49:47.593 6cfc Delete type=2 #162
+2026/02/07-04:49:47.594 6cfc Delete type=2 #165
+2026/02/07-04:49:47.594 6cfc Delete type=2 #168
+2026/02/07-04:49:47.594 6cfc Delete type=2 #171

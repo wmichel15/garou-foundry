@@ -1,0 +1,256 @@
+{
+  "folder": "jPdqerlztH8J6Aw0",
+  "name": "Saga Unending",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "cToigdRH25MwXzKa": {
+        "type": "utility",
+        "_id": "cToigdRH25MwXzKa",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "round",
+          "concentration": false,
+          "override": false,
+          "value": "10"
+        },
+        "effects": [
+          {
+            "_id": "nvsEPmRQDTGn3nQ6",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Saga Unending (Activate)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"338\" data-end=\"377\">Saga Unending (Action; 1/Long Rest)</strong><br data-start=\"377\" data-end=\"380\" />Your legend feeds itself, carrying you forward on waves of triumph and terror.</p><p data-start=\"460\" data-end=\"545\">As an action, you begin a saga that lasts for <strong data-start=\"506\" data-end=\"518\">1 minute</strong>. While the saga is active:</p><ul data-start=\"547\" data-end=\"765\"><li data-start=\"547\" data-end=\"635\"><p data-start=\"549\" data-end=\"635\">Allies within <strong data-start=\"563\" data-end=\"574\">30 feet</strong> who can see or hear you gain a <strong data-start=\"606\" data-end=\"634\">+1 bonus to attack rolls</strong>.</p></li><li data-start=\"636\" data-end=\"765\"><p data-start=\"638\" data-end=\"765\">Hostile creatures within <strong data-start=\"663\" data-end=\"674\">30 feet</strong> who can see or hear you have <strong data-start=\"704\" data-end=\"748\">disadvantage on their first saving throw</strong> during the saga.</p></li></ul><p data-start=\"767\" data-end=\"790\"><strong data-start=\"767\" data-end=\"790\">When the saga ends:</strong></p><ul data-start=\"791\" data-end=\"872\"><li data-start=\"791\" data-end=\"827\"><p data-start=\"793\" data-end=\"827\">You gain <strong data-start=\"802\" data-end=\"827\">1 level of exhaustion</strong></p></li><li data-start=\"828\" data-end=\"872\"><p data-start=\"830\" data-end=\"872\">Your <strong data-start=\"835\" data-end=\"848\">Rage ends</strong> immediately (if active)</p></li></ul><p data-start=\"874\" data-end=\"958\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"944\" data-end=\"957\">long rest</strong>.</p><hr data-start=\"960\" data-end=\"963\" /><p data-start=\"965\" data-end=\"1020\">Optional script tag:<br /><code data-start=\"986\" data-end=\"1020\">[GAROU_FEATURE] id=saga-unending</code></p>",
+      "chat": "<p><strong data-start=\"338\" data-end=\"377\">Saga Unending (Action; 1/Long Rest)</strong><br data-start=\"377\" data-end=\"380\" />Your legend feeds itself, carrying you forward on waves of triumph and terror.</p><p data-start=\"460\" data-end=\"545\">As an action, you begin a saga that lasts for <strong data-start=\"506\" data-end=\"518\">1 minute</strong>. While the saga is active:</p><ul data-start=\"547\" data-end=\"765\"><li data-start=\"547\" data-end=\"635\"><p data-start=\"549\" data-end=\"635\">Allies within <strong data-start=\"563\" data-end=\"574\">30 feet</strong> who can see or hear you gain a <strong data-start=\"606\" data-end=\"634\">+1 bonus to attack rolls</strong>.</p></li><li data-start=\"636\" data-end=\"765\"><p data-start=\"638\" data-end=\"765\">Hostile creatures within <strong data-start=\"663\" data-end=\"674\">30 feet</strong> who can see or hear you have <strong data-start=\"704\" data-end=\"748\">disadvantage on their first saving throw</strong> during the saga.</p></li></ul><p data-start=\"767\" data-end=\"790\"><strong data-start=\"767\" data-end=\"790\">When the saga ends:</strong></p><ul data-start=\"791\" data-end=\"872\"><li data-start=\"791\" data-end=\"827\"><p data-start=\"793\" data-end=\"827\">You gain <strong data-start=\"802\" data-end=\"827\">1 level of exhaustion</strong></p></li><li data-start=\"828\" data-end=\"872\"><p data-start=\"830\" data-end=\"872\">Your <strong data-start=\"835\" data-end=\"848\">Rage ends</strong> immediately (if active)</p></li></ul><p data-start=\"874\" data-end=\"958\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"944\" data-end=\"957\">long rest</strong>.</p><hr data-start=\"960\" data-end=\"963\" /><p data-start=\"965\" data-end=\"1020\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 17
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Saga Unending — Aura (30 ft)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.9zW7l2eYztNHmc12",
+      "_id": "nvsEPmRQDTGn3nQ6",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 10,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>You raise your voice — a battle hymn, a dirge, a victory chant. The air itself remembers.</p><p data-start=\"1887\" data-end=\"1969\">For <strong data-start=\"1891\" data-end=\"1903\">1 minute</strong>, creatures within <strong data-start=\"1922\" data-end=\"1931\">30 ft</strong> who can see or hear you are affected:</p><h3 data-start=\"1971\" data-end=\"1981\">Allies</h3><ul data-start=\"1982\" data-end=\"2011\"><li data-start=\"1982\" data-end=\"2011\"><p data-start=\"1984\" data-end=\"2011\">Gain <strong data-start=\"1989\" data-end=\"2011\">+1 to attack rolls</strong></p></li></ul><h3 data-start=\"2013\" data-end=\"2025\">Hostiles</h3><ul data-start=\"2026\" data-end=\"2093\"><li data-start=\"2026\" data-end=\"2093\"><p data-start=\"2028\" data-end=\"2093\">Have <strong data-start=\"2033\" data-end=\"2077\">disadvantage on their first saving throw</strong> during the saga</p></li></ul><h3 data-start=\"2095\" data-end=\"2117\">When the saga ends</h3><ul data-start=\"2118\" data-end=\"2199\"><li data-start=\"2118\" data-end=\"2154\"><p data-start=\"2120\" data-end=\"2154\">You gain <strong data-start=\"2129\" data-end=\"2154\">1 level of exhaustion</strong></p></li><li data-start=\"2155\" data-end=\"2199\"><p data-start=\"2157\" data-end=\"2199\">Your <strong data-start=\"2162\" data-end=\"2175\">Rage ends</strong> immediately (if active)</p></li></ul><p data-start=\"2201\" data-end=\"2322\"><code data-start=\"2201\" data-end=\"2322\">[GAROU_AURA] id=saga-unending; radius=30ft; duration=1min; allies=atk+1; hostiles=disFirstSave; end=exhaustion1+endRage</code></p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        },
+        "garou": {
+          "sagaUnendingActive": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770483659635,
+        "modifiedTime": 1770483877047,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "featureKey": "sagaUnending"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.9zW7l2eYztNHmc12",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770483523531,
+    "modifiedTime": 1770483881474,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

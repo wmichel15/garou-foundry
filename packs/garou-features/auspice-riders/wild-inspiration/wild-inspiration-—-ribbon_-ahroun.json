@@ -1,0 +1,66 @@
+{
+  "folder": "lKaSxCsPMw5ASYwc",
+  "name": "Wild Inspiration — Ribbon: Ahroun",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<h3 data-start=\"4424\" data-end=\"4434\">Ahroun</h3><p data-start=\"4435\" data-end=\"4505\"><strong data-start=\"4435\" data-end=\"4455\">[Ribbon: Ahroun]</strong><br data-start=\"4455\" data-end=\"4458\" /><strong data-start=\"4458\" data-end=\"4470\">Trigger:</strong> When you use <strong data-start=\"4484\" data-end=\"4504\">Wild Inspiration</strong>.</p><p data-start=\"4507\" data-end=\"4622\"><strong data-start=\"4507\" data-end=\"4518\">Effect:</strong> The target gains a <strong data-start=\"4538\" data-end=\"4569\">+2 bonus to the damage roll</strong> of its <strong data-start=\"4577\" data-end=\"4601\">first successful hit</strong> during the duration.</p><p data-start=\"4624\" data-end=\"4680\"><code data-start=\"4624\" data-end=\"4680\">[GAROU_RIBBON] parent=wild-inspiration; auspice=ahroun</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "wildInspiration",
+      "auspice": "ahroun"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.mRC74AhVRsj52Ca1",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770482808988,
+    "modifiedTime": 1770482939048,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

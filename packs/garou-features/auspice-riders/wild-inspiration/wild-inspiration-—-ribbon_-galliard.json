@@ -1,0 +1,66 @@
+{
+  "folder": "lKaSxCsPMw5ASYwc",
+  "name": "Wild Inspiration — Ribbon: Galliard",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<h3 data-start=\"4143\" data-end=\"4155\">Galliard</h3><p data-start=\"4156\" data-end=\"4228\"><strong data-start=\"4156\" data-end=\"4178\">[Ribbon: Galliard]</strong><br data-start=\"4178\" data-end=\"4181\" /><strong data-start=\"4181\" data-end=\"4193\">Trigger:</strong> When you use <strong data-start=\"4207\" data-end=\"4227\">Wild Inspiration</strong>.</p><p data-start=\"4230\" data-end=\"4357\"><strong data-start=\"4230\" data-end=\"4241\">Effect:</strong> Choose a second creature within <strong data-start=\"4274\" data-end=\"4285\">10 feet</strong> of the original target. That creature also gains the <strong data-start=\"4339\" data-end=\"4356\">base benefits</strong>.</p><p data-start=\"4359\" data-end=\"4417\"><code data-start=\"4359\" data-end=\"4417\">[GAROU_RIBBON] parent=wild-inspiration; auspice=galliard</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "wildInspiration",
+      "auspice": "galliard"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.qbdSiMkInOnPfP3F",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770482799405,
+    "modifiedTime": 1770482928026,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

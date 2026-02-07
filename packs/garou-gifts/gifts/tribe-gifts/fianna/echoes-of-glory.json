@@ -1,0 +1,198 @@
+{
+  "folder": "jPdqerlztH8J6Aw0",
+  "name": "Echoes of Glory",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "2COcr8NdMH7cm3Ql": {
+        "type": "utility",
+        "_id": "2COcr8NdMH7cm3Ql",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "You reduce a creature to 0 HP.  Choose one creature within 30 ft that can see or hear you. Until the end of its next turn:  Ally: gains advantage on its next saving throw  Hostile: suffers disadvantage on its next attack roll  [GAROU_TRIGGER] id=echoes-of-glory; trigger=you-kill; range=30ft; duration=1round; ally=advNextSave; hostile=disNextAttack; recharge=shortRest"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Echoes of Glory — Trigger"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"343\" data-end=\"386\">Echoes of Glory (Special; 1/Short Rest)</strong><br data-start=\"386\" data-end=\"389\" />Your deeds linger in the air, inspiring allies and unnerving foes.</p><p data-start=\"457\" data-end=\"625\">When you <strong data-start=\"466\" data-end=\"503\">reduce a creature to 0 hit points</strong>, you may choose <strong data-start=\"520\" data-end=\"551\">one creature within 30 feet</strong> that can see or hear you. Until the <strong data-start=\"588\" data-end=\"624\">end of that creature’s next turn</strong>:</p><ul data-start=\"627\" data-end=\"803\"><li data-start=\"627\" data-end=\"709\"><p data-start=\"629\" data-end=\"709\">If the creature is an <strong data-start=\"651\" data-end=\"659\">ally</strong>, it gains <strong data-start=\"670\" data-end=\"708\">advantage on its next saving throw</strong>.</p></li><li data-start=\"710\" data-end=\"803\"><p data-start=\"712\" data-end=\"803\">If the creature is a <strong data-start=\"733\" data-end=\"753\">hostile creature</strong>, it has <strong data-start=\"762\" data-end=\"802\">disadvantage on its next attack roll</strong>.</p></li></ul><p data-start=\"805\" data-end=\"898\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"875\" data-end=\"897\">short or long rest</strong>.</p><hr data-start=\"900\" data-end=\"903\" /><p data-start=\"905\" data-end=\"962\">Optional script tag:<br /><code data-start=\"926\" data-end=\"962\">[GAROU_FEATURE] id=echoes-of-glory</code></p>",
+      "chat": "<p><strong data-start=\"343\" data-end=\"386\">Echoes of Glory (Special; 1/Short Rest)</strong><br data-start=\"386\" data-end=\"389\" />Your deeds linger in the air, inspiring allies and unnerving foes.</p><p data-start=\"457\" data-end=\"625\">When you <strong data-start=\"466\" data-end=\"503\">reduce a creature to 0 hit points</strong>, you may choose <strong data-start=\"520\" data-end=\"551\">one creature within 30 feet</strong> that can see or hear you. Until the <strong data-start=\"588\" data-end=\"624\">end of that creature’s next turn</strong>:</p><ul data-start=\"627\" data-end=\"803\"><li data-start=\"627\" data-end=\"709\"><p data-start=\"629\" data-end=\"709\">If the creature is an <strong data-start=\"651\" data-end=\"659\">ally</strong>, it gains <strong data-start=\"670\" data-end=\"708\">advantage on its next saving throw</strong>.</p></li><li data-start=\"710\" data-end=\"803\"><p data-start=\"712\" data-end=\"803\">If the creature is a <strong data-start=\"733\" data-end=\"753\">hostile creature</strong>, it has <strong data-start=\"762\" data-end=\"802\">disadvantage on its next attack roll</strong>.</p></li></ul><p data-start=\"805\" data-end=\"898\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"875\" data-end=\"897\">short or long rest</strong>.</p><hr data-start=\"900\" data-end=\"903\" /><p data-start=\"905\" data-end=\"962\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 11
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "featureKey": "echoesOfGlory"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.0tprw9OVeWE7r3DF",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770483303107,
+    "modifiedTime": 1770483488487,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

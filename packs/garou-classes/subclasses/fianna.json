@@ -1,0 +1,121 @@
+{
+  "folder": "2Aaay67uj4HI6U6z",
+  "name": "Fianna",
+  "type": "subclass",
+  "img": "assets/Fianna.png",
+  "system": {
+    "advancement": [
+      {
+        "type": "ItemGrant",
+        "_id": "leeJcz7ZuqyB4CXI",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.DyCb83EELiBArklo",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "wild inspiration",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "kNJwYfTa3OKQcPuG",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.0tprw9OVeWE7r3DF",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "echoes of glory",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "9oFbDEk7gQKlxEGg",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.9zW7l2eYztNHmc12",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "saga unending",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "g2gj6EmhKkqh6iGF",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.TftuH8t6ZgBHkP4F",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "bloodsong",
+        "hint": ""
+      }
+    ],
+    "description": {
+      "value": "<h2 data-start=\"126\" data-end=\"146\">Fianna (Expanded)</h2><p data-start=\"148\" data-end=\"169\"><strong data-start=\"148\" data-end=\"169\">Emotion is power.</strong></p><p data-start=\"171\" data-end=\"394\">The Fianna live loudly. They sing, boast, mourn, and terrify in equal measure. To them, battle is not just violence — it is <strong data-start=\"295\" data-end=\"340\">a story being written in blood and breath</strong>, and those who feel it most deeply shape how it ends.</p><p data-start=\"396\" data-end=\"660\">A Fianna does not merely <em data-start=\"421\" data-end=\"426\">win</em>. They <strong data-start=\"433\" data-end=\"464\">make victory mean something</strong>. They turn fear into fuel, grief into fury, and laughter into a blade. Their howls are not only war cries — they are <strong data-start=\"582\" data-end=\"620\">songs that carry through the Umbra</strong>, echoing into spirits and hearts alike.</p><p data-start=\"662\" data-end=\"866\">Where other Garou prize discipline, logic, or purity, the Fianna prize <strong data-start=\"733\" data-end=\"742\">truth</strong> — the kind that can’t be spoken cleanly. The truth of rage, the truth of love, the truth of sacrifice, the truth of terror.</p><p data-start=\"868\" data-end=\"892\">And the Fianna remember.</p><p data-start=\"894\" data-end=\"970\">They remember who stood.<br data-start=\"918\" data-end=\"921\" />They remember who ran.<br data-start=\"943\" data-end=\"946\" />They remember who broke.</p><h3 data-start=\"972\" data-end=\"998\">Stereotypes (In-World)</h3><p data-start=\"1000\" data-end=\"1033\"><strong data-start=\"1000\" data-end=\"1033\">How the Fianna see themselves</strong></p><blockquote data-start=\"1034\" data-end=\"1097\"><p data-start=\"1036\" data-end=\"1097\">“A war without a song is just slaughter. We give it meaning.”</p></blockquote><blockquote data-start=\"1099\" data-end=\"1163\"><p data-start=\"1101\" data-end=\"1163\">“We do not fight because we hate. We fight because we <em data-start=\"1155\" data-end=\"1161\">feel</em>.”</p></blockquote><blockquote data-start=\"1165\" data-end=\"1268\"><p data-start=\"1167\" data-end=\"1268\">“A hero is not the strongest. A hero is the one who keeps standing when the world begs them to fall.”</p></blockquote><hr data-start=\"1270\" data-end=\"1273\" /><h2 data-start=\"1275\" data-end=\"1316\">Fianna Quotes About the Other Tribes</h2><p data-start=\"1317\" data-end=\"1409\"><em data-start=\"1317\" data-end=\"1409\">(in-world stereotypes; the kind of shit a Fianna would say at a moot after too much drink)</em></p><h3 data-start=\"1411\" data-end=\"1427\">Black Furies</h3><blockquote data-start=\"1428\" data-end=\"1512\"><p data-start=\"1430\" data-end=\"1512\">“They carry vengeance like a torch. Beautiful. Terrifying. Don’t stand too close.”</p></blockquote><h3 data-start=\"1514\" data-end=\"1530\">Bone Gnawers</h3><blockquote data-start=\"1531\" data-end=\"1618\"><p data-start=\"1533\" data-end=\"1618\">“They survive what should kill them. That’s not weakness — that’s a kind of miracle.”</p></blockquote><h3 data-start=\"1620\" data-end=\"1640\">Children of Gaia</h3><blockquote data-start=\"1641\" data-end=\"1764\"><p data-start=\"1643\" data-end=\"1764\">“They try to calm the storm. Sometimes I envy them. Sometimes I want to shake them until they remember the world bleeds.”</p></blockquote><h3 data-start=\"1766\" data-end=\"1783\">Glass Walkers</h3><blockquote data-start=\"1784\" data-end=\"1888\"><p data-start=\"1786\" data-end=\"1888\">“They bargain with the Weaver like it won’t put a leash on their throat. Clever dogs… but still dogs.”</p></blockquote><h3 data-start=\"1890\" data-end=\"1907\">Get of Fenris</h3><blockquote data-start=\"1908\" data-end=\"1999\"><p data-start=\"1910\" data-end=\"1999\">“They think courage is volume. It isn’t. But damn, they make good stories when they die.”</p></blockquote><h3 data-start=\"2001\" data-end=\"2015\">Red Talons</h3><blockquote data-start=\"2016\" data-end=\"2098\"><p data-start=\"2018\" data-end=\"2098\">“They don’t speak our language — not anymore. Just teeth, hunger, and old pain.”</p></blockquote><h3 data-start=\"2100\" data-end=\"2116\">Shadow Lords</h3><blockquote data-start=\"2117\" data-end=\"2208\"><p data-start=\"2119\" data-end=\"2208\">“They love control more than victory. They’d rather rule a graveyard than share a feast.”</p></blockquote><h3 data-start=\"2210\" data-end=\"2226\">Silver Fangs</h3><blockquote data-start=\"2227\" data-end=\"2330\"><p data-start=\"2229\" data-end=\"2330\">“They’re a crown with a cracked skull underneath. Still… a crown draws eyes. And eyes can be useful.”</p></blockquote><h3 data-start=\"2332\" data-end=\"2346\"></h3>",
+      "chat": ""
+    },
+    "identifier": "fianna",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "classIdentifier": "garou",
+    "spellcasting": {
+      "progression": "none",
+      "preparation": {
+        "formula": ""
+      },
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.qbFLUYHJPqaPmec9",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770483914628,
+    "modifiedTime": 1770484215656,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "folder": "lKaSxCsPMw5ASYwc",
+  "name": "Wild Inspiration — Ribbon: Ragabash",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"3402\" data-end=\"3424\">[Ribbon: Ragabash]</strong><br data-start=\"3424\" data-end=\"3427\" /><strong data-start=\"3427\" data-end=\"3439\">Trigger:</strong> When you use <strong data-start=\"3453\" data-end=\"3473\">Wild Inspiration</strong>.</p><p data-start=\"3476\" data-end=\"3576\"><strong data-start=\"3476\" data-end=\"3487\">Effect:</strong> The target may immediately move up to <strong data-start=\"3526\" data-end=\"3537\">10 feet</strong> without provoking opportunity attacks.</p><p data-start=\"3578\" data-end=\"3636\"><code data-start=\"3578\" data-end=\"3636\">[GAROU_RIBBON] parent=wild-inspiration; auspice=ragabash</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "wildInspiration",
+      "auspice": "ragabash"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.1t9SXo8KOOFCzQjt",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770482766121,
+    "modifiedTime": 1770482877933,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

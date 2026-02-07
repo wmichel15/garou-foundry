@@ -1,0 +1,66 @@
+{
+  "folder": "lKaSxCsPMw5ASYwc",
+  "name": "Wild Inspiration — Ribbon: Theurge",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"3655\" data-end=\"3676\">[Ribbon: Theurge]</strong><br data-start=\"3676\" data-end=\"3679\" /><strong data-start=\"3679\" data-end=\"3691\">Trigger:</strong> When you use <strong data-start=\"3705\" data-end=\"3725\">Wild Inspiration</strong>.</p><p data-start=\"3728\" data-end=\"3844\"><strong data-start=\"3728\" data-end=\"3739\">Effect:</strong> The target also gains <strong data-start=\"3762\" data-end=\"3800\">advantage on its next saving throw</strong> against a <strong data-start=\"3811\" data-end=\"3843\">spell or supernatural effect</strong>.</p><p data-start=\"3846\" data-end=\"3903\"><code data-start=\"3846\" data-end=\"3903\">[GAROU_RIBBON] parent=wild-inspiration; auspice=theurge</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "wildInspiration",
+      "auspice": "theurge"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.FWLhT5kwPryGVJ2u",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770482779371,
+    "modifiedTime": 1770482897259,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

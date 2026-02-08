@@ -1,5 +1,5 @@
-2026/02/07-10:35:42.968 2104 Recovering log #172
-2026/02/07-10:35:42.968 2104 Level-0 table #175: started
-2026/02/07-10:35:42.970 2104 Level-0 table #175: 27711 bytes OK
-2026/02/07-10:35:42.972 2104 Delete type=0 #172
-2026/02/07-10:35:42.973 2104 Delete type=3 #170
+2026/02/08-07:25:43.827 2dbc Recovering log #176
+2026/02/08-07:25:43.827 2dbc Level-0 table #178: started
+2026/02/08-07:25:43.830 2dbc Level-0 table #178: 7057 bytes OK
+2026/02/08-07:25:43.832 2dbc Delete type=0 #176
+2026/02/08-07:25:43.832 2dbc Delete type=3 #174

@@ -1,0 +1,66 @@
+{
+  "folder": "KRakrc15o8TYyXhx",
+  "name": "Apex Instinct — Ribbon: Ahroun",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"4597\" data-end=\"4617\">[Ribbon: Ahroun]</strong><br data-start=\"4617\" data-end=\"4620\" /><strong data-start=\"4620\" data-end=\"4632\">Trigger:</strong> While in a natural environment.</p><p data-start=\"4666\" data-end=\"4779\"><strong data-start=\"4666\" data-end=\"4677\">Effect:</strong> Once per turn you may reroll one damage die on a melee or natural weapon attack and use the new roll.</p><p data-start=\"4781\" data-end=\"4834\"><code data-start=\"4781\" data-end=\"4834\">[GAROU_RIBBON] parent=apex-instinct; auspice=ahroun</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "apexInstinct",
+      "auspice": "ahroun"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.FtTH7JfB5pvQTxjA",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770561210131,
+    "modifiedTime": 1770561484364,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

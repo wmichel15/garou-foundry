@@ -1,0 +1,172 @@
+{
+  "folder": "skSenDPQj7fetjq5",
+  "name": "Untamed Ferocity",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"396\" data-end=\"432\">Untamed Ferocity (Passive; Rage)</strong><br data-start=\"432\" data-end=\"435\" />Your savagery overwhelms civilized tactics.</p><p data-start=\"480\" data-end=\"600\">While <strong data-start=\"486\" data-end=\"496\">raging</strong>, you gain <strong data-start=\"507\" data-end=\"521\">resistance</strong> to <strong data-start=\"525\" data-end=\"564\">bludgeoning, piercing, and slashing</strong> damage from <strong data-start=\"577\" data-end=\"599\">nonmagical weapons</strong>.</p><p data-start=\"602\" data-end=\"747\">In addition, <strong data-start=\"615\" data-end=\"650\">hostile creatures within 5 feet</strong> of you have <strong data-start=\"663\" data-end=\"703\">disadvantage on Concentration checks</strong> made to maintain spells or similar effects.</p><hr data-start=\"749\" data-end=\"752\" /><p data-start=\"754\" data-end=\"812\"><br /><code data-start=\"775\" data-end=\"812\">[GAROU_FEATURE] id=untamed-ferocity</code></p>",
+      "chat": "<p><strong data-start=\"396\" data-end=\"432\">Untamed Ferocity (Passive; Rage)</strong><br data-start=\"432\" data-end=\"435\" />Your savagery overwhelms civilized tactics.</p><p data-start=\"480\" data-end=\"600\">While <strong data-start=\"486\" data-end=\"496\">raging</strong>, you gain <strong data-start=\"507\" data-end=\"521\">resistance</strong> to <strong data-start=\"525\" data-end=\"564\">bludgeoning, piercing, and slashing</strong> damage from <strong data-start=\"577\" data-end=\"599\">nonmagical weapons</strong>.</p><p data-start=\"602\" data-end=\"747\">In addition, <strong data-start=\"615\" data-end=\"650\">hostile creatures within 5 feet</strong> of you have <strong data-start=\"663\" data-end=\"703\">disadvantage on Concentration checks</strong> made to maintain spells or similar effects.</p><hr data-start=\"749\" data-end=\"752\" /><p data-start=\"754\" data-end=\"812\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 11
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Untamed Ferocity — Rage Active (Marker)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.NJxKHaaP9TF4vpL9",
+      "_id": "8iI9i9pWA7BxAzLR",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770562090619,
+        "modifiedTime": 1770562103610,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    },
+    {
+      "name": "Untamed Ferocity — Pressure (5 ft) (Marker)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.NJxKHaaP9TF4vpL9",
+      "_id": "802VqvgaEowLMMSO",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770562104924,
+        "modifiedTime": 1770562128793,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "featureKey": "untamedFerocity"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.NJxKHaaP9TF4vpL9",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770562004677,
+    "modifiedTime": 1770562062675,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

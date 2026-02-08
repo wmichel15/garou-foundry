@@ -1,0 +1,121 @@
+{
+  "folder": "2Aaay67uj4HI6U6z",
+  "name": "Red Talons",
+  "type": "subclass",
+  "img": "assets/Red%20Talon%20Main.png",
+  "system": {
+    "advancement": [
+      {
+        "type": "ItemGrant",
+        "_id": "5O2MVVO27U1xzK6D",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.M8zAP9qcYWmbZ4VT",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "apex instinct",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "NTqxhszSDYS2l2Lx",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.CMvI6vVkDrWWIEyc",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "relentless pursuit",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "8jVDwbgGDJekyAe2",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.NJxKHaaP9TF4vpL9",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "untamed ferocity",
+        "hint": ""
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "k8CZgtbynwPIJ6mz",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.5gEnEKp3AxUXdoVV",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "extinction drive",
+        "hint": ""
+      }
+    ],
+    "description": {
+      "value": "<p><strong data-start=\"26\" data-end=\"56\">Civilization is the enemy.</strong></p><p data-start=\"58\" data-end=\"264\">The Red Talons reject the trappings of humanity. They are predators first and last, bound to the wild places of the world. Where cities weaken the Garou spirit, the wilderness sharpens it to a killing edge.</p><p data-start=\"266\" data-end=\"323\">To a Red Talon, the war is simple — not easy, but simple.</p><p data-start=\"325\" data-end=\"458\">The Wyrm spreads where humanity spreads.<br data-start=\"365\" data-end=\"368\" />The Weaver builds cages out of roads and laws.<br data-start=\"414\" data-end=\"417\" />The Wyld is strangled one acre at a time.</p><p data-start=\"460\" data-end=\"525\">So the Red Talons do what wolves have always done: <strong data-start=\"511\" data-end=\"525\">they hunt.</strong></p><p data-start=\"527\" data-end=\"779\">They do not trust cities. They do not trust compromise. They do not trust the idea that humans can be “guided” or “taught” their way out of destruction. The Talons have watched too many forests fall and too many rivers rot to believe in slow solutions.</p><p data-start=\"781\" data-end=\"878\">Where other Garou see humanity as a tragic necessity, the Red Talons see a plague wearing a face.</p><p data-start=\"880\" data-end=\"909\">And if that makes them cruel?</p><p data-start=\"911\" data-end=\"976\">They would tell you the wilderness doesn’t care what you call it.</p><h3 data-start=\"978\" data-end=\"1004\">Stereotypes (In-World)</h3><p data-start=\"1006\" data-end=\"1043\"><strong data-start=\"1006\" data-end=\"1043\">How the Red Talons see themselves</strong></p><blockquote data-start=\"1044\" data-end=\"1098\"><p data-start=\"1046\" data-end=\"1098\">“We were wolves before your ancestors learned fire.”</p></blockquote><blockquote data-start=\"1100\" data-end=\"1183\"><p data-start=\"1102\" data-end=\"1183\">“The wild doesn’t need your permission to survive. It needs your enemies to die.”</p></blockquote><blockquote data-start=\"1185\" data-end=\"1252\"><p data-start=\"1187\" data-end=\"1252\">“A city is a wound in the world. We are the teeth that close it.”</p></blockquote><hr data-start=\"1254\" data-end=\"1257\" /><h2 data-start=\"1259\" data-end=\"1303\">Red Talon Quotes About the Other Tribes</h2><p data-start=\"1304\" data-end=\"1371\"><em data-start=\"1304\" data-end=\"1371\">(in-world stereotypes; blunt, feral, and not remotely diplomatic)</em></p><h3 data-start=\"1373\" data-end=\"1389\">Black Furies</h3><blockquote data-start=\"1390\" data-end=\"1458\"><p data-start=\"1392\" data-end=\"1458\">“They still carry the fury of the hunt. Good. Let it burn hotter.”</p></blockquote><h3 data-start=\"1460\" data-end=\"1476\">Bone Gnawers</h3><blockquote data-start=\"1477\" data-end=\"1548\"><p data-start=\"1479\" data-end=\"1548\">“They roll in human filth and call it survival. I call it surrender.”</p></blockquote><h3 data-start=\"1550\" data-end=\"1570\">Children of Gaia</h3><blockquote data-start=\"1571\" data-end=\"1650\"><p data-start=\"1573\" data-end=\"1650\">“They try to make peace with a species that eats the world. That is madness.”</p></blockquote><h3 data-start=\"1652\" data-end=\"1662\">Fianna</h3><blockquote data-start=\"1663\" data-end=\"1750\"><p data-start=\"1665\" data-end=\"1750\">“They sing while the forests die. Their songs are pretty. Their priorities are weak.”</p></blockquote><h3 data-start=\"1752\" data-end=\"1769\">Glass Walkers</h3><blockquote data-start=\"1770\" data-end=\"1865\"><p data-start=\"1772\" data-end=\"1865\">“They claim the city as a battlefield. The city is not a battlefield. It is the enemy’s den.”</p></blockquote><h3 data-start=\"1867\" data-end=\"1884\">Get of Fenris</h3><blockquote data-start=\"1885\" data-end=\"1957\"><p data-start=\"1887\" data-end=\"1957\">“They understand strength. They just waste it on pride and posturing.”</p></blockquote><h3 data-start=\"1959\" data-end=\"1975\">Shadow Lords</h3><blockquote data-start=\"1976\" data-end=\"2039\"><p data-start=\"1978\" data-end=\"2039\">“They want to rule. Rule what? Ashes? Corpses? A dead world?”</p></blockquote><h3 data-start=\"2041\" data-end=\"2057\">Silver Fangs</h3><blockquote data-start=\"2058\" data-end=\"2130\"><p data-start=\"2060\" data-end=\"2130\">“They pretend the blood makes them leaders. Blood makes you prey too.”</p></blockquote>",
+      "chat": ""
+    },
+    "identifier": "red-talons",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "classIdentifier": "garou",
+    "spellcasting": {
+      "progression": "none",
+      "preparation": {
+        "formula": ""
+      },
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.ZvGOjKnZ25odDtv1",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770560847651,
+    "modifiedTime": 1770562578748,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

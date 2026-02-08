@@ -1,0 +1,66 @@
+{
+  "folder": "Ju1BNRFFtqsrY85l",
+  "name": "Urban Adaptation — Ribbon: Ahroun",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"5040\" data-end=\"5060\">[Ribbon: Ahroun]</strong><br data-start=\"5060\" data-end=\"5063\" /><strong data-start=\"5063\" data-end=\"5075\">Trigger:</strong> Once per turn, when you move at least <strong data-start=\"5114\" data-end=\"5125\">10 feet</strong> before hitting a creature in urban terrain.</p><p data-start=\"5171\" data-end=\"5233\"><strong data-start=\"5171\" data-end=\"5182\">Effect:</strong> Add your <strong data-start=\"5192\" data-end=\"5213\">proficiency bonus</strong> to the damage roll.</p><p data-start=\"5235\" data-end=\"5291\"><code data-start=\"5235\" data-end=\"5291\">[GAROU_RIBBON] parent=urban-adaptation; auspice=ahroun</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "urbanAdaptation",
+      "auspice": "ahroun"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.ny0tUr9tJEWAs0Od",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770558097467,
+    "modifiedTime": 1770558342166,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

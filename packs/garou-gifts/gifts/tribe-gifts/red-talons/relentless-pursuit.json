@@ -1,0 +1,246 @@
+{
+  "folder": "skSenDPQj7fetjq5",
+  "name": "Relentless Pursuit",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "j8mQfdsaU8Q7hBd7": {
+        "type": "utility",
+        "_id": "j8mQfdsaU8Q7hBd7",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Relentless Pursuit — Apply (Once per Turn) Trigger: While raging, when you hit a creature.  Effect: Reduce the target’s speed until the end of its next turn:  -10 ft normally  -20 ft if the target is restrained, grappled, or prone  [GAROU_ONHIT] id=relentless-pursuit; condition=raging; target=speedDelta; base=-10; boosted=-20; boostedIf=restrained|grappled|prone; duration=1round; limit=oncePerTurn"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "J6giJT5tFKRLFKUA",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "ft",
+          "override": false,
+          "value": "5",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Relentless Pursuit (Apply)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"528\" data-end=\"550\">Relentless Pursuit</strong></p><h3 data-start=\"552\" data-end=\"584\"><strong data-start=\"556\" data-end=\"571\">Description</strong> (copy/paste)</h3><p data-start=\"585\" data-end=\"664\"><strong data-start=\"585\" data-end=\"623\">Relentless Pursuit (Passive; Rage)</strong><br data-start=\"623\" data-end=\"626\" />No prey escapes once the chase begins.</p><p data-start=\"666\" data-end=\"800\">While <strong data-start=\"672\" data-end=\"682\">raging</strong>, when you <strong data-start=\"693\" data-end=\"711\">hit a creature</strong>, you may reduce that creature’s <strong data-start=\"744\" data-end=\"764\">speed by 10 feet</strong> until the <strong data-start=\"775\" data-end=\"799\">end of its next turn</strong>.</p><p data-start=\"802\" data-end=\"905\">If the creature is already <strong data-start=\"829\" data-end=\"863\">restrained, grappled, or prone</strong>, this reduction increases to <strong data-start=\"893\" data-end=\"904\">20 feet</strong>.</p><p data-start=\"907\" data-end=\"951\">You can apply this effect <strong data-start=\"933\" data-end=\"950\">once per turn</strong>.</p><hr data-start=\"953\" data-end=\"956\" /><p data-start=\"958\" data-end=\"1018\"><code data-start=\"979\" data-end=\"1018\">[GAROU_FEATURE] id=relentless-pursuit</code></p>",
+      "chat": "<p><strong data-start=\"528\" data-end=\"550\">Relentless Pursuit</strong></p><h3 data-start=\"552\" data-end=\"584\"><strong data-start=\"556\" data-end=\"571\">Description</strong> (copy/paste)</h3><p data-start=\"585\" data-end=\"664\"><strong data-start=\"585\" data-end=\"623\">Relentless Pursuit (Passive; Rage)</strong><br data-start=\"623\" data-end=\"626\" />No prey escapes once the chase begins.</p><p data-start=\"666\" data-end=\"800\">While <strong data-start=\"672\" data-end=\"682\">raging</strong>, when you <strong data-start=\"693\" data-end=\"711\">hit a creature</strong>, you may reduce that creature’s <strong data-start=\"744\" data-end=\"764\">speed by 10 feet</strong> until the <strong data-start=\"775\" data-end=\"799\">end of its next turn</strong>.</p><p data-start=\"802\" data-end=\"905\">If the creature is already <strong data-start=\"829\" data-end=\"863\">restrained, grappled, or prone</strong>, this reduction increases to <strong data-start=\"893\" data-end=\"904\">20 feet</strong>.</p><p data-start=\"907\" data-end=\"951\">You can apply this effect <strong data-start=\"933\" data-end=\"950\">once per turn</strong>.</p><hr data-start=\"953\" data-end=\"956\" /><p data-start=\"958\" data-end=\"1018\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 6
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "flags": {
+    "garou": {
+      "featureKey": "relentlessPursuit"
+    }
+  },
+  "effects": [
+    {
+      "name": "Relentless Pursuit — Slowed (1 round)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.CMvI6vVkDrWWIEyc",
+      "_id": "J6giJT5tFKRLFKUA",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770561904053,
+        "modifiedTime": 1770561937316,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    }
+  ],
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.CMvI6vVkDrWWIEyc",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770561732567,
+    "modifiedTime": 1770561976243,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

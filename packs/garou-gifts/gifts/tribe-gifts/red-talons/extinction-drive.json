@@ -1,0 +1,266 @@
+{
+  "folder": "skSenDPQj7fetjq5",
+  "name": "Extinction Drive",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "5pnoE0426lTJcmyr": {
+        "type": "utility",
+        "_id": "5pnoE0426lTJcmyr",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Extinction Drive — Activate Your breath turns to steam. The world narrows. Everything becomes prey.  For 1 minute (10 rounds):  Speed +10 ft  Advantage on melee and natural weapon attack rolls  Once per turn: on a hit, deal +1d10 damage  When it ends:  Gain 2 levels of exhaustion  Your Rage ends immediately (if active)  Recharge: 1/Long Rest.  [GAROU_MODE] id=extinction-drive; duration=1min; speed=+10; advAttacks=melee+natural; bonusDamage=1d10; limit=oncePerTurn; end=exhaustion2+endRage; recharge=longRest"
+        },
+        "duration": {
+          "units": "round",
+          "concentration": false,
+          "override": false,
+          "value": "10"
+        },
+        "effects": [
+          {
+            "_id": "tITQxv3hCMFIGiRW",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "extinction drive (activate)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"494\" data-end=\"536\">Extinction Drive (Action; 1/Long Rest)</strong><br data-start=\"536\" data-end=\"539\" />You become the embodiment of the hunt.</p><p data-start=\"579\" data-end=\"678\">As an action, you enter a state of absolute predation for <strong data-start=\"637\" data-end=\"649\">1 minute</strong>. While this state is active:</p><ul data-start=\"680\" data-end=\"901\"><li data-start=\"680\" data-end=\"727\"><p data-start=\"682\" data-end=\"727\">Your movement speed increases by <strong data-start=\"715\" data-end=\"726\">10 feet</strong>.</p></li><li data-start=\"728\" data-end=\"813\"><p data-start=\"730\" data-end=\"813\">You have <strong data-start=\"739\" data-end=\"752\">advantage</strong> on all <strong data-start=\"760\" data-end=\"776\">melee weapon</strong> and <strong data-start=\"781\" data-end=\"799\">natural weapon</strong> attack rolls.</p></li><li data-start=\"814\" data-end=\"901\"><p data-start=\"816\" data-end=\"901\"><strong data-start=\"816\" data-end=\"833\">Once per turn</strong>, when you hit a creature, you may deal <strong data-start=\"873\" data-end=\"900\">+1d10 additional damage</strong>.</p></li></ul><p data-start=\"903\" data-end=\"928\"><strong data-start=\"903\" data-end=\"928\">When this state ends:</strong></p><ul data-start=\"929\" data-end=\"1011\"><li data-start=\"929\" data-end=\"966\"><p data-start=\"931\" data-end=\"966\">You gain <strong data-start=\"940\" data-end=\"966\">2 levels of exhaustion</strong></p></li><li data-start=\"967\" data-end=\"1011\"><p data-start=\"969\" data-end=\"1011\">Your <strong data-start=\"974\" data-end=\"987\">Rage ends</strong> immediately (if active)</p></li></ul><p data-start=\"1013\" data-end=\"1097\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"1083\" data-end=\"1096\">long rest</strong>.</p><hr data-start=\"1099\" data-end=\"1102\" /><p data-start=\"1104\" data-end=\"1162\"><br /><code data-start=\"1125\" data-end=\"1162\">[GAROU_FEATURE] id=extinction-drive</code></p>",
+      "chat": "<p><strong data-start=\"494\" data-end=\"536\">Extinction Drive (Action; 1/Long Rest)</strong><br data-start=\"536\" data-end=\"539\" />You become the embodiment of the hunt.</p><p data-start=\"579\" data-end=\"678\">As an action, you enter a state of absolute predation for <strong data-start=\"637\" data-end=\"649\">1 minute</strong>. While this state is active:</p><ul data-start=\"680\" data-end=\"901\"><li data-start=\"680\" data-end=\"727\"><p data-start=\"682\" data-end=\"727\">Your movement speed increases by <strong data-start=\"715\" data-end=\"726\">10 feet</strong>.</p></li><li data-start=\"728\" data-end=\"813\"><p data-start=\"730\" data-end=\"813\">You have <strong data-start=\"739\" data-end=\"752\">advantage</strong> on all <strong data-start=\"760\" data-end=\"776\">melee weapon</strong> and <strong data-start=\"781\" data-end=\"799\">natural weapon</strong> attack rolls.</p></li><li data-start=\"814\" data-end=\"901\"><p data-start=\"816\" data-end=\"901\"><strong data-start=\"816\" data-end=\"833\">Once per turn</strong>, when you hit a creature, you may deal <strong data-start=\"873\" data-end=\"900\">+1d10 additional damage</strong>.</p></li></ul><p data-start=\"903\" data-end=\"928\"><strong data-start=\"903\" data-end=\"928\">When this state ends:</strong></p><ul data-start=\"929\" data-end=\"1011\"><li data-start=\"929\" data-end=\"966\"><p data-start=\"931\" data-end=\"966\">You gain <strong data-start=\"940\" data-end=\"966\">2 levels of exhaustion</strong></p></li><li data-start=\"967\" data-end=\"1011\"><p data-start=\"969\" data-end=\"1011\">Your <strong data-start=\"974\" data-end=\"987\">Rage ends</strong> immediately (if active)</p></li></ul><p data-start=\"1013\" data-end=\"1097\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"1083\" data-end=\"1096\">long rest</strong>.</p><hr data-start=\"1099\" data-end=\"1102\" /><p data-start=\"1104\" data-end=\"1162\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 17
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "flags": {
+    "garou": {
+      "featureKey": "extinctionDrive"
+    }
+  },
+  "effects": [
+    {
+      "name": "Extinction Drive — Active (1 minute)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.5gEnEKp3AxUXdoVV",
+      "_id": "tITQxv3hCMFIGiRW",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 0,
+          "value": "10",
+          "priority": 10
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 10,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "garou": {
+          "extinctionDriveActive": true
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770562336718,
+        "modifiedTime": 1770562359882,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    }
+  ],
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.5gEnEKp3AxUXdoVV",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770562194434,
+    "modifiedTime": 1770562390082,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "folder": "KRakrc15o8TYyXhx",
+  "name": "Apex Instinct — Ribbon: Theurge",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"3766\" data-end=\"3787\">[Ribbon: Theurge]</strong><br data-start=\"3787\" data-end=\"3790\" /><strong data-start=\"3790\" data-end=\"3802\">Trigger:</strong> While in a natural environment.</p><p data-start=\"3836\" data-end=\"3985\"><strong data-start=\"3836\" data-end=\"3847\">Effect:</strong> You have advantage on saving throws against spells or supernatural effects that originate from creatures or objects tied to civilization.</p><p data-start=\"3987\" data-end=\"4041\"><code data-start=\"3987\" data-end=\"4041\">[GAROU_RIBBON] parent=apex-instinct; auspice=theurge</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "apexInstinct",
+      "auspice": "theurge"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.P9NJCKvYXqMUKZaM",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770561162245,
+    "modifiedTime": 1770561401906,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

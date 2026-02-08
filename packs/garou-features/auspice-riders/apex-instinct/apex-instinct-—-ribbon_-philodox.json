@@ -1,0 +1,66 @@
+{
+  "folder": "KRakrc15o8TYyXhx",
+  "name": "Apex Instinct — Ribbon: Philodox",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"4061\" data-end=\"4083\">[Ribbon: Philodox]</strong><br data-start=\"4083\" data-end=\"4086\" /><strong data-start=\"4086\" data-end=\"4098\">Trigger:</strong> While in a natural environment.</p><p data-start=\"4132\" data-end=\"4191\"><strong data-start=\"4132\" data-end=\"4143\">Effect:</strong> You have advantage on contested ability checks.</p><p data-start=\"4193\" data-end=\"4248\"><code data-start=\"4193\" data-end=\"4248\">[GAROU_RIBBON] parent=apex-instinct; auspice=philodox</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "apexInstinct",
+      "auspice": "philodox"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.QPfICmp9xDwnGxjK",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770561174663,
+    "modifiedTime": 1770561429428,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "folder": "6lKdfOXQ5DPyvAV2",
+  "name": "Tactical Environment",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "GNIgUtMVi1UxTno8": {
+        "type": "utility",
+        "_id": "GNIgUtMVi1UxTno8",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "Tactical Environment You exploit the terrain — a shove into a wall, a boot on a cable, a slam into a car door.  Bonus Action: Choose 1 creature within 10 ft standing on/adjacent to a solid surface. Until the end of your next turn:  Disadvantage on its next attack roll  Speed -10 ft  Restriction: Cannot be used while raging. Recharge: 1/Short Rest.  [GAROU_DEBUFF] id=tactical-environment; range=10ft; duration=1round; disNextAttack=true; speedDelta=-10; requiresSolidSurface=true; blockWhileRaging=true"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "ROHXrGb1aXlSaU9k",
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "ft",
+          "override": false,
+          "value": "10",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "sr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Tactical Environment (activate)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"393\" data-end=\"446\">Tactical Environment (Bonus Action; 1/Short Rest)</strong><br data-start=\"446\" data-end=\"449\" />You use terrain as a weapon.</p><p data-start=\"479\" data-end=\"673\">As a bonus action, choose one creature within <strong data-start=\"525\" data-end=\"536\">10 feet</strong> of you that is standing on or adjacent to a <strong data-start=\"581\" data-end=\"598\">solid surface</strong> (floor, wall, vehicle, or structure). Until the <strong data-start=\"647\" data-end=\"672\">end of your next turn</strong>:</p><ul data-start=\"675\" data-end=\"783\"><li data-start=\"675\" data-end=\"734\"><p data-start=\"677\" data-end=\"734\">The creature has <strong data-start=\"694\" data-end=\"734\">disadvantage on its next attack roll</strong></p></li><li data-start=\"735\" data-end=\"783\"><p data-start=\"737\" data-end=\"783\">The creature’s <strong data-start=\"752\" data-end=\"783\">speed is reduced by 10 feet</strong></p></li></ul><p data-start=\"785\" data-end=\"878\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"855\" data-end=\"877\">short or long rest</strong>.</p><p data-start=\"880\" data-end=\"942\"><strong data-start=\"880\" data-end=\"896\">Restriction:</strong> You cannot use this feature while <strong data-start=\"931\" data-end=\"941\">raging</strong>.</p><hr data-start=\"944\" data-end=\"947\" /><p data-start=\"949\" data-end=\"1011\"><br /><code data-start=\"970\" data-end=\"1011\">[GAROU_FEATURE] id=tactical-environment</code></p>",
+      "chat": "<p><strong data-start=\"393\" data-end=\"446\">Tactical Environment (Bonus Action; 1/Short Rest)</strong><br data-start=\"446\" data-end=\"449\" />You use terrain as a weapon.</p><p data-start=\"479\" data-end=\"673\">As a bonus action, choose one creature within <strong data-start=\"525\" data-end=\"536\">10 feet</strong> of you that is standing on or adjacent to a <strong data-start=\"581\" data-end=\"598\">solid surface</strong> (floor, wall, vehicle, or structure). Until the <strong data-start=\"647\" data-end=\"672\">end of your next turn</strong>:</p><ul data-start=\"675\" data-end=\"783\"><li data-start=\"675\" data-end=\"734\"><p data-start=\"677\" data-end=\"734\">The creature has <strong data-start=\"694\" data-end=\"734\">disadvantage on its next attack roll</strong></p></li><li data-start=\"735\" data-end=\"783\"><p data-start=\"737\" data-end=\"783\">The creature’s <strong data-start=\"752\" data-end=\"783\">speed is reduced by 10 feet</strong></p></li></ul><p data-start=\"785\" data-end=\"878\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"855\" data-end=\"877\">short or long rest</strong>.</p><p data-start=\"880\" data-end=\"942\"><strong data-start=\"880\" data-end=\"896\">Restriction:</strong> You cannot use this feature while <strong data-start=\"931\" data-end=\"941\">raging</strong>.</p><hr data-start=\"944\" data-end=\"947\" /><p data-start=\"949\" data-end=\"1011\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 6
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Tactical Environment — Target Debuffed (1 round)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.vr0DdNPCxDi1fZLm",
+      "_id": "ROHXrGb1aXlSaU9k",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770559168980,
+        "modifiedTime": 1770559193754,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.vr0DdNPCxDi1fZLm",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770558403679,
+    "modifiedTime": 1770559245460,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

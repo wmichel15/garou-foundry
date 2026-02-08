@@ -1,0 +1,122 @@
+{
+  "folder": "skSenDPQj7fetjq5",
+  "name": "Apex Instinct",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<h3 data-start=\"587\" data-end=\"619\"><strong data-start=\"591\" data-end=\"606\">Description</strong> (copy/paste)</h3><p data-start=\"620\" data-end=\"716\"><strong data-start=\"620\" data-end=\"664\">Apex Instinct (Passive; Natural Terrain)</strong><br data-start=\"664\" data-end=\"667\" />Your senses and instincts are honed for the hunt.</p><p data-start=\"718\" data-end=\"859\">While you are in a <strong data-start=\"737\" data-end=\"760\">natural environment</strong> (forests, plains, mountains, swamps, tundra, or similar terrain), you gain the following benefits:</p><ul data-start=\"861\" data-end=\"1159\"><li data-start=\"861\" data-end=\"946\"><p data-start=\"863\" data-end=\"946\">You have <strong data-start=\"872\" data-end=\"885\">advantage</strong> on <strong data-start=\"889\" data-end=\"912\">Wisdom (Perception)</strong> and <strong data-start=\"917\" data-end=\"938\">Wisdom (Survival)</strong> checks.</p></li><li data-start=\"947\" data-end=\"992\"><p data-start=\"949\" data-end=\"992\">You have <strong data-start=\"958\" data-end=\"991\">advantage on initiative rolls</strong>.</p></li><li data-start=\"993\" data-end=\"1159\"><p data-start=\"995\" data-end=\"1159\"><strong data-start=\"995\" data-end=\"1012\">Once per turn</strong>, when you hit a creature with a <strong data-start=\"1045\" data-end=\"1061\">melee weapon</strong> or <strong data-start=\"1065\" data-end=\"1083\">natural weapon</strong> attack, you may deal <strong data-start=\"1105\" data-end=\"1158\">additional damage equal to your proficiency bonus</strong>.</p></li></ul><p data-start=\"1161\" data-end=\"1212\">These benefits end while you are <strong data-start=\"1194\" data-end=\"1211\">incapacitated</strong>.</p><hr data-start=\"1214\" data-end=\"1217\" /><h3 data-start=\"1219\" data-end=\"1254\"><strong data-start=\"1223\" data-end=\"1254\">Auspice Ribbon (Choose One)</strong></h3><ul data-start=\"1255\" data-end=\"1954\"><li data-start=\"1255\" data-end=\"1384\"><p data-start=\"1257\" data-end=\"1384\"><strong data-start=\"1257\" data-end=\"1270\">Ragabash:</strong> While in a natural environment, you may take the <strong data-start=\"1320\" data-end=\"1328\">Dash</strong> action as a <strong data-start=\"1341\" data-end=\"1357\">bonus action</strong> once per <strong data-start=\"1367\" data-end=\"1381\">short rest</strong>.</p></li><li data-start=\"1385\" data-end=\"1571\"><p data-start=\"1387\" data-end=\"1571\"><strong data-start=\"1387\" data-end=\"1399\">Theurge:</strong> While in a natural environment, you have advantage on saving throws against spells or supernatural effects that originate from creatures or objects tied to civilization.</p></li><li data-start=\"1572\" data-end=\"1669\"><p data-start=\"1574\" data-end=\"1669\"><strong data-start=\"1574\" data-end=\"1587\">Philodox:</strong> While in a natural environment, you have advantage on contested ability checks.</p></li><li data-start=\"1670\" data-end=\"1806\"><p data-start=\"1672\" data-end=\"1806\"><strong data-start=\"1672\" data-end=\"1685\">Galliard:</strong> When you roll initiative in a natural environment, one ally within 30 feet gains advantage on their first attack roll.</p></li><li data-start=\"1807\" data-end=\"1954\"><p data-start=\"1809\" data-end=\"1954\"><strong data-start=\"1809\" data-end=\"1820\">Ahroun:</strong> While in a natural environment, once per turn you may reroll one damage die on a melee or natural weapon attack and use the new roll.</p></li></ul><hr data-start=\"1956\" data-end=\"1959\" /><p data-start=\"1961\" data-end=\"2016\"><br /><code data-start=\"1982\" data-end=\"2016\">[GAROU_FEATURE] id=apex-instinct</code></p>",
+      "chat": "<h3 data-start=\"587\" data-end=\"619\"><strong data-start=\"591\" data-end=\"606\">Description</strong> (copy/paste)</h3><p data-start=\"620\" data-end=\"716\"><strong data-start=\"620\" data-end=\"664\">Apex Instinct (Passive; Natural Terrain)</strong><br data-start=\"664\" data-end=\"667\" />Your senses and instincts are honed for the hunt.</p><p data-start=\"718\" data-end=\"859\">While you are in a <strong data-start=\"737\" data-end=\"760\">natural environment</strong> (forests, plains, mountains, swamps, tundra, or similar terrain), you gain the following benefits:</p><ul data-start=\"861\" data-end=\"1159\"><li data-start=\"861\" data-end=\"946\"><p data-start=\"863\" data-end=\"946\">You have <strong data-start=\"872\" data-end=\"885\">advantage</strong> on <strong data-start=\"889\" data-end=\"912\">Wisdom (Perception)</strong> and <strong data-start=\"917\" data-end=\"938\">Wisdom (Survival)</strong> checks.</p></li><li data-start=\"947\" data-end=\"992\"><p data-start=\"949\" data-end=\"992\">You have <strong data-start=\"958\" data-end=\"991\">advantage on initiative rolls</strong>.</p></li><li data-start=\"993\" data-end=\"1159\"><p data-start=\"995\" data-end=\"1159\"><strong data-start=\"995\" data-end=\"1012\">Once per turn</strong>, when you hit a creature with a <strong data-start=\"1045\" data-end=\"1061\">melee weapon</strong> or <strong data-start=\"1065\" data-end=\"1083\">natural weapon</strong> attack, you may deal <strong data-start=\"1105\" data-end=\"1158\">additional damage equal to your proficiency bonus</strong>.</p></li></ul><p data-start=\"1161\" data-end=\"1212\">These benefits end while you are <strong data-start=\"1194\" data-end=\"1211\">incapacitated</strong>.</p><hr data-start=\"1214\" data-end=\"1217\" /><h3 data-start=\"1219\" data-end=\"1254\"><strong data-start=\"1223\" data-end=\"1254\">Auspice Ribbon (Choose One)</strong></h3><ul data-start=\"1255\" data-end=\"1954\"><li data-start=\"1255\" data-end=\"1384\"><p data-start=\"1257\" data-end=\"1384\"><strong data-start=\"1257\" data-end=\"1270\">Ragabash:</strong> While in a natural environment, you may take the <strong data-start=\"1320\" data-end=\"1328\">Dash</strong> action as a <strong data-start=\"1341\" data-end=\"1357\">bonus action</strong> once per <strong data-start=\"1367\" data-end=\"1381\">short rest</strong>.</p></li><li data-start=\"1385\" data-end=\"1571\"><p data-start=\"1387\" data-end=\"1571\"><strong data-start=\"1387\" data-end=\"1399\">Theurge:</strong> While in a natural environment, you have advantage on saving throws against spells or supernatural effects that originate from creatures or objects tied to civilization.</p></li><li data-start=\"1572\" data-end=\"1669\"><p data-start=\"1574\" data-end=\"1669\"><strong data-start=\"1574\" data-end=\"1587\">Philodox:</strong> While in a natural environment, you have advantage on contested ability checks.</p></li><li data-start=\"1670\" data-end=\"1806\"><p data-start=\"1672\" data-end=\"1806\"><strong data-start=\"1672\" data-end=\"1685\">Galliard:</strong> When you roll initiative in a natural environment, one ally within 30 feet gains advantage on their first attack roll.</p></li><li data-start=\"1807\" data-end=\"1954\"><p data-start=\"1809\" data-end=\"1954\"><strong data-start=\"1809\" data-end=\"1820\">Ahroun:</strong> While in a natural environment, once per turn you may reroll one damage die on a melee or natural weapon attack and use the new roll.</p></li></ul><hr data-start=\"1956\" data-end=\"1959\" /><p data-start=\"1961\" data-end=\"2016\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Apex Instinct — In Natural Terrain (Toggle)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.M8zAP9qcYWmbZ4VT",
+      "_id": "2XK6IQwcjMQk0bBW",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        },
+        "garou": {
+          "apexInstinctActive": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770561030266,
+        "modifiedTime": 1770561049049,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "featureKey": "apexInstinct"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.M8zAP9qcYWmbZ4VT",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770560958140,
+    "modifiedTime": 1770561018795,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

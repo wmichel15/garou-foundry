@@ -1,0 +1,198 @@
+{
+  "folder": "o4BVN1g2V4iUUJFx",
+  "name": "Glorious Past — Ancestral Witness",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "lnb5M9tmroElRcoo": {
+        "type": "utility",
+        "_id": "lnb5M9tmroElRcoo",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "Ancestral Witness — Moot Benefit (Consume) Choose one benefit for the next Moot Rite in this Caern:  Corruption −1 (minimum 0), or  Spiritual legitimacy recognized by allied septs and local spirits (ST adjudication)  After this is chosen, Ancestral Witness is consumed.  [GAROU_CAERN_TRIGGER] id=ancestral-witness; consumedBy=moot; choose=corruption-1|legitimacy"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Apply Ancestral Witness (Consume)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"861\" data-end=\"898\">Glorious Past — Ancestral Witness</strong><br data-start=\"898\" data-end=\"901\" /><em data-start=\"901\" data-end=\"947\">Caern State (from Rite of the Glorious Past)</em></p><p data-start=\"949\" data-end=\"995\">The spirits remember. The Caern bears witness.</p><p data-start=\"997\" data-end=\"1153\"><strong data-start=\"997\" data-end=\"1055\">Effect (Active while this state remains on the Caern):</strong><br data-start=\"1055\" data-end=\"1058\" />The <strong data-start=\"1062\" data-end=\"1080\">next Moot Rite</strong> performed in this Caern gains one benefit (chosen when the Moot begins):</p><ul data-start=\"1155\" data-end=\"1347\"><li data-start=\"1155\" data-end=\"1215\"><p data-start=\"1157\" data-end=\"1215\">Reduce the Caern’s <strong data-start=\"1176\" data-end=\"1195\">Corruption by 1</strong> (minimum 0), <strong data-start=\"1209\" data-end=\"1215\">or</strong></p></li><li data-start=\"1216\" data-end=\"1347\"><p data-start=\"1218\" data-end=\"1347\">The Moot’s decisions are widely recognized as spiritually legitimate by allied septs and local spirits (Storyteller adjudication)</p></li></ul><p data-start=\"1349\" data-end=\"1358\"><strong data-start=\"1349\" data-end=\"1358\">Limit</strong></p><ul data-start=\"1359\" data-end=\"1500\"><li data-start=\"1359\" data-end=\"1410\"><p data-start=\"1361\" data-end=\"1410\">Only <strong data-start=\"1366\" data-end=\"1373\">one</strong> Moot may benefit from this effect.</p></li><li data-start=\"1411\" data-end=\"1500\"><p data-start=\"1413\" data-end=\"1500\">After the Moot begins and the benefit is chosen, this state is considered <strong data-start=\"1487\" data-end=\"1499\">consumed</strong>.</p></li></ul><p data-start=\"1502\" data-end=\"1655\"><strong data-start=\"1502\" data-end=\"1526\">Tag (do not remove):</strong><br data-start=\"1526\" data-end=\"1529\" /><code data-start=\"1529\" data-end=\"1655\">[GAROU_CAERN_STATE] parent=glorious-past; effect=ancestral-witness; exclusiveGroup=glorious-past; charges=1; consumedBy=moot</code></p>",
+      "chat": "<p><strong data-start=\"861\" data-end=\"898\">Glorious Past — Ancestral Witness</strong><br data-start=\"898\" data-end=\"901\" /><em data-start=\"901\" data-end=\"947\">Caern State (from Rite of the Glorious Past)</em></p><p data-start=\"949\" data-end=\"995\">The spirits remember. The Caern bears witness.</p><p data-start=\"997\" data-end=\"1153\"><strong data-start=\"997\" data-end=\"1055\">Effect (Active while this state remains on the Caern):</strong><br data-start=\"1055\" data-end=\"1058\" />The <strong data-start=\"1062\" data-end=\"1080\">next Moot Rite</strong> performed in this Caern gains one benefit (chosen when the Moot begins):</p><ul data-start=\"1155\" data-end=\"1347\"><li data-start=\"1155\" data-end=\"1215\"><p data-start=\"1157\" data-end=\"1215\">Reduce the Caern’s <strong data-start=\"1176\" data-end=\"1195\">Corruption by 1</strong> (minimum 0), <strong data-start=\"1209\" data-end=\"1215\">or</strong></p></li><li data-start=\"1216\" data-end=\"1347\"><p data-start=\"1218\" data-end=\"1347\">The Moot’s decisions are widely recognized as spiritually legitimate by allied septs and local spirits (Storyteller adjudication)</p></li></ul><p data-start=\"1349\" data-end=\"1358\"><strong data-start=\"1349\" data-end=\"1358\">Limit</strong></p><ul data-start=\"1359\" data-end=\"1500\"><li data-start=\"1359\" data-end=\"1410\"><p data-start=\"1361\" data-end=\"1410\">Only <strong data-start=\"1366\" data-end=\"1373\">one</strong> Moot may benefit from this effect.</p></li><li data-start=\"1411\" data-end=\"1500\"><p data-start=\"1413\" data-end=\"1500\">After the Moot begins and the benefit is chosen, this state is considered <strong data-start=\"1487\" data-end=\"1499\">consumed</strong>.</p></li></ul><p data-start=\"1502\" data-end=\"1655\"><strong data-start=\"1502\" data-end=\"1526\">Tag (do not remove):</strong><br data-start=\"1526\" data-end=\"1529\" /><code data-start=\"1529\" data-end=\"1655\">[GAROU_CAERN_STATE] parent=glorious-past; effect=ancestral-witness; exclusiveGroup=glorious-past; charges=1; consumedBy=moot</code></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.ukQfzbyVyjyXNO4d",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770568396242,
+    "modifiedTime": 1770568569135,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

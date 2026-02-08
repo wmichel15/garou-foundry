@@ -1,0 +1,66 @@
+{
+  "folder": "KRakrc15o8TYyXhx",
+  "name": "Apex Instinct — Ribbon: Galliard",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"4268\" data-end=\"4290\">[Ribbon: Galliard]</strong><br data-start=\"4290\" data-end=\"4293\" /><strong data-start=\"4293\" data-end=\"4305\">Trigger:</strong> When you roll initiative in a natural environment.</p><p data-start=\"4358\" data-end=\"4445\"><strong data-start=\"4358\" data-end=\"4369\">Effect:</strong> One ally within <strong data-start=\"4386\" data-end=\"4397\">30 feet</strong> gains advantage on their <strong data-start=\"4423\" data-end=\"4444\">first attack roll</strong>.</p><p data-start=\"4447\" data-end=\"4502\"><code data-start=\"4447\" data-end=\"4502\">[GAROU_RIBBON] parent=apex-instinct; auspice=galliard</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "apexInstinct",
+      "auspice": "galliard"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.0VJU7uYBtbq93pTs",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770561183813,
+    "modifiedTime": 1770561466036,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

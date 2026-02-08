@@ -1,0 +1,64 @@
+{
+  "folder": "Ju1BNRFFtqsrY85l",
+  "name": "Urban Adaptation — Ribbon: Philodox",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"4441\" data-end=\"4463\">[Ribbon: Philodox]</strong><br data-start=\"4463\" data-end=\"4466\" /><strong data-start=\"4466\" data-end=\"4478\">Trigger:</strong> In urban terrain.</p><p data-start=\"4498\" data-end=\"4596\"><strong data-start=\"4498\" data-end=\"4509\">Effect:</strong> You have advantage on contested ability checks made to <strong data-start=\"4565\" data-end=\"4585\">shove or grapple</strong> creatures.</p><p data-start=\"4598\" data-end=\"4656\"><code data-start=\"4598\" data-end=\"4656\">[GAROU_RIBBON] parent=urban-adaptation; auspice=philodox</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "urbanAdaptation",
+      "auspice": "philodox"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.89f2WGjiOOqu9rWN",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770558077600,
+    "modifiedTime": 1770558311623,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

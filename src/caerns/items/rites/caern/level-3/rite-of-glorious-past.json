@@ -1,0 +1,179 @@
+{
+  "folder": "281qpIFnrgndnoAx",
+  "name": "Rite of Glorious Past",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "NXBLvhggDDVwn0tC": {
+        "type": "utility",
+        "_id": "NXBLvhggDDVwn0tC",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Rite of the Glorious Past (6 hours) You bind ancestral memory into the Caern through story, symbol, and spiritual invocation.  Cost: Invest 5 Gnosis (may be shared). If the full cost is paid, the Rite succeeds automatically.  Choose one Caern blessing until replaced:  Legacy of Resolve — Garou in the Caern gain advantage vs supernatural fear.  Ancestral Witness — The next Moot Rite gains Corruption −1 or spiritual legitimacy.  Storied Ground — Once, ignore Corruption from a missed upkeep.  [GAROU_RITE_USE] id=glorious-past; applyTo=caern; exclusive=true"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of the Glorious Past"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"1211\" data-end=\"1240\">Rite of the Glorious Past</strong><br data-start=\"1240\" data-end=\"1243\" /><em data-start=\"1243\" data-end=\"1265\">Caern Rite • Level 3</em></p><p data-start=\"1267\" data-end=\"1446\"><strong data-start=\"1267\" data-end=\"1276\">Time:</strong> 6 hours<br data-start=\"1284\" data-end=\"1287\" /><strong data-start=\"1287\" data-end=\"1301\">Frequency:</strong> Once per season per Caern<br data-start=\"1327\" data-end=\"1330\" /><strong data-start=\"1330\" data-end=\"1339\">Cost:</strong> 5 Gnosis (may be shared by multiple Garou)<br data-start=\"1382\" data-end=\"1385\" /><strong data-start=\"1385\" data-end=\"1401\">Requirement:</strong> Must be performed within a functioning Caern</p><hr data-start=\"1448\" data-end=\"1451\" /><p data-start=\"1453\" data-end=\"1703\"><strong data-start=\"1453\" data-end=\"1468\">Description</strong><br data-start=\"1468\" data-end=\"1471\" />The Rite of the Glorious Past binds the memory of ancestral deeds to the Caern itself. Through story, symbol, and spiritual invocation, the Garou remind both spirits and sept that this place stands upon sacrifice, victory, and loss.</p><p data-start=\"1705\" data-end=\"1828\">This Rite does not summon ancestors or grant their strength.<br data-start=\"1765\" data-end=\"1768\" />It ensures that their legacy is remembered and acknowledged.</p><hr data-start=\"1830\" data-end=\"1833\" /><p data-start=\"1835\" data-end=\"1919\"><strong data-start=\"1835\" data-end=\"1845\">Effect</strong><br data-start=\"1845\" data-end=\"1848\" />When the full Gnosis cost is invested, the Rite succeeds automatically.</p><p data-start=\"1921\" data-end=\"2051\">Choose <strong data-start=\"1928\" data-end=\"1935\">one</strong> of the following effects. The chosen effect remains active until this Rite is performed again or the Caern is lost.</p><ul data-start=\"2053\" data-end=\"2728\"><li data-start=\"2053\" data-end=\"2219\"><p data-start=\"2055\" data-end=\"2219\"><strong data-start=\"2055\" data-end=\"2076\">Legacy of Resolve</strong><br data-start=\"2076\" data-end=\"2079\" />While within the Caern, Garou have advantage on saving throws made to resist being frightened or overwhelmed by supernatural fear effects.</p></li><li data-start=\"2221\" data-end=\"2585\"><p data-start=\"2223\" data-end=\"2585\"><strong data-start=\"2223\" data-end=\"2244\">Ancestral Witness</strong><br data-start=\"2244\" data-end=\"2247\" />The next Moot Rite performed in the Caern gains one benefit (chosen when the Moot begins):<br data-start=\"2339\" data-end=\"2342\" />• Reduce the Caern’s Corruption by 1 (minimum 0), <strong data-start=\"2394\" data-end=\"2400\">or</strong><br data-start=\"2400\" data-end=\"2403\" />• The Moot’s decisions are widely recognized as spiritually legitimate by allied septs and local spirits (Storyteller adjudication).<br data-start=\"2537\" data-end=\"2540\" />Only one Moot may benefit from this effect.</p></li><li data-start=\"2587\" data-end=\"2728\"><p data-start=\"2589\" data-end=\"2728\"><strong data-start=\"2589\" data-end=\"2607\">Storied Ground</strong><br data-start=\"2607\" data-end=\"2610\" />Once before this Rite is performed again, the Caern may ignore the Corruption gained from one missed monthly upkeep.</p></li></ul><hr data-start=\"2730\" data-end=\"2733\" /><p data-start=\"2735\" data-end=\"2750\"><strong data-start=\"2735\" data-end=\"2750\">Limitations</strong></p><ul data-start=\"2751\" data-end=\"2936\"><li data-start=\"2751\" data-end=\"2809\"><p data-start=\"2753\" data-end=\"2809\">Only one effect from this Rite may be active at a time</p></li><li data-start=\"2810\" data-end=\"2869\"><p data-start=\"2812\" data-end=\"2869\">Performing this Rite again replaces the previous effect</p></li><li data-start=\"2870\" data-end=\"2936\"><p data-start=\"2872\" data-end=\"2936\">This Rite grants no combat bonuses and does not affect non-Garou</p></li></ul><hr data-start=\"2938\" data-end=\"2941\" /><p data-start=\"2943\" data-end=\"3054\"><strong data-start=\"2943\" data-end=\"2967\">Tag (do not remove):</strong><br data-start=\"2967\" data-end=\"2970\" /><code data-start=\"2970\" data-end=\"3054\">[GAROU_RITE] type=caern; id=glorious-past; level=3; cadence=season; requires=caern</code></p>",
+      "chat": "<p><strong data-start=\"1211\" data-end=\"1240\">Rite of the Glorious Past</strong><br data-start=\"1240\" data-end=\"1243\" /><em data-start=\"1243\" data-end=\"1265\">Caern Rite • Level 3</em></p><p data-start=\"1267\" data-end=\"1446\"><strong data-start=\"1267\" data-end=\"1276\">Time:</strong> 6 hours<br data-start=\"1284\" data-end=\"1287\" /><strong data-start=\"1287\" data-end=\"1301\">Frequency:</strong> Once per season per Caern<br data-start=\"1327\" data-end=\"1330\" /><strong data-start=\"1330\" data-end=\"1339\">Cost:</strong> 5 Gnosis (may be shared by multiple Garou)<br data-start=\"1382\" data-end=\"1385\" /><strong data-start=\"1385\" data-end=\"1401\">Requirement:</strong> Must be performed within a functioning Caern</p><hr data-start=\"1448\" data-end=\"1451\" /><p data-start=\"1453\" data-end=\"1703\"><strong data-start=\"1453\" data-end=\"1468\">Description</strong><br data-start=\"1468\" data-end=\"1471\" />The Rite of the Glorious Past binds the memory of ancestral deeds to the Caern itself. Through story, symbol, and spiritual invocation, the Garou remind both spirits and sept that this place stands upon sacrifice, victory, and loss.</p><p data-start=\"1705\" data-end=\"1828\">This Rite does not summon ancestors or grant their strength.<br data-start=\"1765\" data-end=\"1768\" />It ensures that their legacy is remembered and acknowledged.</p><hr data-start=\"1830\" data-end=\"1833\" /><p data-start=\"1835\" data-end=\"1919\"><strong data-start=\"1835\" data-end=\"1845\">Effect</strong><br data-start=\"1845\" data-end=\"1848\" />When the full Gnosis cost is invested, the Rite succeeds automatically.</p><p data-start=\"1921\" data-end=\"2051\">Choose <strong data-start=\"1928\" data-end=\"1935\">one</strong> of the following effects. The chosen effect remains active until this Rite is performed again or the Caern is lost.</p><ul data-start=\"2053\" data-end=\"2728\"><li data-start=\"2053\" data-end=\"2219\"><p data-start=\"2055\" data-end=\"2219\"><strong data-start=\"2055\" data-end=\"2076\">Legacy of Resolve</strong><br data-start=\"2076\" data-end=\"2079\" />While within the Caern, Garou have advantage on saving throws made to resist being frightened or overwhelmed by supernatural fear effects.</p></li><li data-start=\"2221\" data-end=\"2585\"><p data-start=\"2223\" data-end=\"2585\"><strong data-start=\"2223\" data-end=\"2244\">Ancestral Witness</strong><br data-start=\"2244\" data-end=\"2247\" />The next Moot Rite performed in the Caern gains one benefit (chosen when the Moot begins):<br data-start=\"2339\" data-end=\"2342\" />• Reduce the Caern’s Corruption by 1 (minimum 0), <strong data-start=\"2394\" data-end=\"2400\">or</strong><br data-start=\"2400\" data-end=\"2403\" />• The Moot’s decisions are widely recognized as spiritually legitimate by allied septs and local spirits (Storyteller adjudication).<br data-start=\"2537\" data-end=\"2540\" />Only one Moot may benefit from this effect.</p></li><li data-start=\"2587\" data-end=\"2728\"><p data-start=\"2589\" data-end=\"2728\"><strong data-start=\"2589\" data-end=\"2607\">Storied Ground</strong><br data-start=\"2607\" data-end=\"2610\" />Once before this Rite is performed again, the Caern may ignore the Corruption gained from one missed monthly upkeep.</p></li></ul><hr data-start=\"2730\" data-end=\"2733\" /><p data-start=\"2735\" data-end=\"2750\"><strong data-start=\"2735\" data-end=\"2750\">Limitations</strong></p><ul data-start=\"2751\" data-end=\"2936\"><li data-start=\"2751\" data-end=\"2809\"><p data-start=\"2753\" data-end=\"2809\">Only one effect from this Rite may be active at a time</p></li><li data-start=\"2810\" data-end=\"2869\"><p data-start=\"2812\" data-end=\"2869\">Performing this Rite again replaces the previous effect</p></li><li data-start=\"2870\" data-end=\"2936\"><p data-start=\"2872\" data-end=\"2936\">This Rite grants no combat bonuses and does not affect non-Garou</p></li></ul><hr data-start=\"2938\" data-end=\"2941\" /><p data-start=\"2943\" data-end=\"3054\"><strong data-start=\"2943\" data-end=\"2967\">Tag (do not remove):</strong><br data-start=\"2967\" data-end=\"2970\" /><code data-start=\"2970\" data-end=\"3054\">[GAROU_RITE] type=caern; id=glorious-past; level=3; cadence=season; requires=caern</code></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.wuUEOVKbArP66F2k",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770565107273,
+    "modifiedTime": 1770567762562,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

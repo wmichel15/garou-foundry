@@ -1,0 +1,259 @@
+{
+  "folder": "6lKdfOXQ5DPyvAV2",
+  "name": "Master of the Concrete Hunt",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "seKg6hjjev6oWzUG": {
+        "type": "utility",
+        "_id": "seKg6hjjev6oWzUG",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "Master of the Concrete Hunt — Activate You slip into the city’s angles and shadows like they were born for you.  Duration: 1 minute (10 rounds) — urban environments only.  While active:  Move on walls/ceilings/vehicles without falling (must end on a solid surface)  Opportunity attacks against you are at disadvantage  Once per turn: after moving 15+ ft this turn, your next hit can deal +1d8 damage  On activation: Gain 1 level of exhaustion. Recharge: 1/Long Rest.  [GAROU_MODE] id=master-of-the-concrete-hunt; terrain=urban; duration=1min; OA=dis; wallwalk=true; bonusDamage=1d8; bonusDamageReq=move15ft; exhaustion=1"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "1"
+        },
+        "effects": [
+          {
+            "_id": "ma9isz3ivkEytlAh",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "master of the Concrete Hunt (activate)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"794\" data-end=\"849\">Master of the Concrete Hunt (Activate; 1/Long Rest)</strong><br data-start=\"849\" data-end=\"852\" />You move through civilization as an apex predator.</p><p data-start=\"904\" data-end=\"1061\">While you are in an <strong data-start=\"924\" data-end=\"945\">urban environment</strong>, you can <strong data-start=\"955\" data-end=\"967\">activate</strong> this feature to enter a hunt-state that lasts for <strong data-start=\"1018\" data-end=\"1030\">1 minute</strong>. While it is active, you gain:</p><ul data-start=\"1063\" data-end=\"1406\"><li data-start=\"1063\" data-end=\"1209\"><p data-start=\"1065\" data-end=\"1209\">You may move along <strong data-start=\"1084\" data-end=\"1116\">walls, ceilings, or vehicles</strong> during your movement without falling, provided you end your movement on a <strong data-start=\"1191\" data-end=\"1208\">solid surface</strong>.</p></li><li data-start=\"1210\" data-end=\"1275\"><p data-start=\"1212\" data-end=\"1275\">Opportunity attacks against you are made with <strong data-start=\"1258\" data-end=\"1274\">disadvantage</strong>.</p></li><li data-start=\"1276\" data-end=\"1406\"><p data-start=\"1278\" data-end=\"1406\"><strong data-start=\"1278\" data-end=\"1295\">Once per turn</strong>, when you hit a creature after moving at least <strong data-start=\"1343\" data-end=\"1354\">15 feet</strong> this turn, you may deal <strong data-start=\"1379\" data-end=\"1405\">+1d8 additional damage</strong>.</p></li></ul><p data-start=\"1408\" data-end=\"1559\"><strong data-start=\"1408\" data-end=\"1426\">On activation:</strong> You gain <strong data-start=\"1436\" data-end=\"1461\">1 level of exhaustion</strong>.<br data-start=\"1462\" data-end=\"1465\" />This feature lasts <strong data-start=\"1484\" data-end=\"1496\">1 minute</strong>, and you cannot use it again until you finish a <strong data-start=\"1545\" data-end=\"1558\">long rest</strong>.</p><hr data-start=\"1561\" data-end=\"1564\" /><p data-start=\"1566\" data-end=\"1635\"><br /><code data-start=\"1587\" data-end=\"1635\">[GAROU_FEATURE] id=master-of-the-concrete-hunt</code></p>",
+      "chat": "<p><strong data-start=\"794\" data-end=\"849\">Master of the Concrete Hunt (Activate; 1/Long Rest)</strong><br data-start=\"849\" data-end=\"852\" />You move through civilization as an apex predator.</p><p data-start=\"904\" data-end=\"1061\">While you are in an <strong data-start=\"924\" data-end=\"945\">urban environment</strong>, you can <strong data-start=\"955\" data-end=\"967\">activate</strong> this feature to enter a hunt-state that lasts for <strong data-start=\"1018\" data-end=\"1030\">1 minute</strong>. While it is active, you gain:</p><ul data-start=\"1063\" data-end=\"1406\"><li data-start=\"1063\" data-end=\"1209\"><p data-start=\"1065\" data-end=\"1209\">You may move along <strong data-start=\"1084\" data-end=\"1116\">walls, ceilings, or vehicles</strong> during your movement without falling, provided you end your movement on a <strong data-start=\"1191\" data-end=\"1208\">solid surface</strong>.</p></li><li data-start=\"1210\" data-end=\"1275\"><p data-start=\"1212\" data-end=\"1275\">Opportunity attacks against you are made with <strong data-start=\"1258\" data-end=\"1274\">disadvantage</strong>.</p></li><li data-start=\"1276\" data-end=\"1406\"><p data-start=\"1278\" data-end=\"1406\"><strong data-start=\"1278\" data-end=\"1295\">Once per turn</strong>, when you hit a creature after moving at least <strong data-start=\"1343\" data-end=\"1354\">15 feet</strong> this turn, you may deal <strong data-start=\"1379\" data-end=\"1405\">+1d8 additional damage</strong>.</p></li></ul><p data-start=\"1408\" data-end=\"1559\"><strong data-start=\"1408\" data-end=\"1426\">On activation:</strong> You gain <strong data-start=\"1436\" data-end=\"1461\">1 level of exhaustion</strong>.<br data-start=\"1462\" data-end=\"1465\" />This feature lasts <strong data-start=\"1484\" data-end=\"1496\">1 minute</strong>, and you cannot use it again until you finish a <strong data-start=\"1545\" data-end=\"1558\">long rest</strong>.</p><hr data-start=\"1561\" data-end=\"1564\" /><p data-start=\"1566\" data-end=\"1635\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 17
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Master of the Concrete Hunt — Active (1 minute)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.qJ21vvmiG3sJVpyw",
+      "_id": "ma9isz3ivkEytlAh",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": 10,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770559578571,
+        "modifiedTime": 1770559596442,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.qJ21vvmiG3sJVpyw",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770559450269,
+    "modifiedTime": 1770559651452,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

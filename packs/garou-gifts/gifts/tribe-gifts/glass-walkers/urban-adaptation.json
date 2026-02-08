@@ -1,0 +1,122 @@
+{
+  "folder": "6lKdfOXQ5DPyvAV2",
+  "name": "Urban Adaptation",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"604\" data-end=\"661\">Urban Adaptation (Passive; Urban/Constructed Terrain)</strong><br data-start=\"661\" data-end=\"664\" />You instinctively exploit the advantages of civilized terrain.</p><p data-start=\"728\" data-end=\"876\">While you are in an <strong data-start=\"748\" data-end=\"784\">urban or constructed environment</strong> (streets, buildings, ruins, vehicles, or similar terrain), you gain the following benefits:</p><ul data-start=\"878\" data-end=\"1130\"><li data-start=\"878\" data-end=\"924\"><p data-start=\"880\" data-end=\"924\">You <strong data-start=\"884\" data-end=\"923\">ignore nonmagical difficult terrain</strong>.</p></li><li data-start=\"925\" data-end=\"1069\"><p data-start=\"927\" data-end=\"1069\">You have <strong data-start=\"936\" data-end=\"949\">advantage</strong> on <strong data-start=\"953\" data-end=\"976\">Dexterity (Stealth)</strong> and <strong data-start=\"981\" data-end=\"1004\">Wisdom (Perception)</strong> checks made to <strong data-start=\"1020\" data-end=\"1049\">detect or avoid creatures</strong> in the environment.</p></li><li data-start=\"1070\" data-end=\"1130\"><p data-start=\"1072\" data-end=\"1130\">You gain a <strong data-start=\"1083\" data-end=\"1129\">+1 bonus to AC against opportunity attacks</strong>.</p></li></ul><p data-start=\"1132\" data-end=\"1183\">These benefits end while you are <strong data-start=\"1165\" data-end=\"1182\">incapacitated</strong>.</p><hr data-start=\"1185\" data-end=\"1188\" /><h3 data-start=\"1190\" data-end=\"1225\"><strong data-start=\"1194\" data-end=\"1225\">Auspice Ribbon (Choose One)</strong></h3><ul data-start=\"1226\" data-end=\"1884\"><li data-start=\"1226\" data-end=\"1354\"><p data-start=\"1228\" data-end=\"1354\"><strong data-start=\"1228\" data-end=\"1241\">Ragabash:</strong> While in an urban environment, you may take the <strong data-start=\"1290\" data-end=\"1298\">Hide</strong> action as a <strong data-start=\"1311\" data-end=\"1327\">bonus action</strong> once per <strong data-start=\"1337\" data-end=\"1351\">short rest</strong>.</p></li><li data-start=\"1355\" data-end=\"1501\"><p data-start=\"1357\" data-end=\"1501\"><strong data-start=\"1357\" data-end=\"1369\">Theurge:</strong> You have advantage on <strong data-start=\"1392\" data-end=\"1424\">Intelligence (Investigation)</strong> checks to identify supernatural effects tied to <strong data-start=\"1473\" data-end=\"1498\">objects or structures</strong>.</p></li><li data-start=\"1502\" data-end=\"1623\"><p data-start=\"1504\" data-end=\"1623\"><strong data-start=\"1504\" data-end=\"1517\">Philodox:</strong> You have advantage on contested ability checks made to <strong data-start=\"1573\" data-end=\"1593\">shove or grapple</strong> creatures in urban terrain.</p></li><li data-start=\"1624\" data-end=\"1734\"><p data-start=\"1626\" data-end=\"1734\"><strong data-start=\"1626\" data-end=\"1639\">Galliard:</strong> One ally within <strong data-start=\"1656\" data-end=\"1667\">10 feet</strong> of you gains <strong data-start=\"1681\" data-end=\"1731\">advantage on their next Dexterity saving throw</strong>.</p></li><li data-start=\"1735\" data-end=\"1884\"><p data-start=\"1737\" data-end=\"1884\"><strong data-start=\"1737\" data-end=\"1748\">Ahroun:</strong> Once per turn, when you move at least <strong data-start=\"1787\" data-end=\"1798\">10 feet</strong> before hitting a creature, you may add your <strong data-start=\"1843\" data-end=\"1864\">proficiency bonus</strong> to the damage roll.</p></li></ul><hr data-start=\"1886\" data-end=\"1889\" /><p data-start=\"1891\" data-end=\"1949\"><br /><code data-start=\"1912\" data-end=\"1949\">[GAROU_FEATURE] id=urban-adaptation</code></p>",
+      "chat": "<p><strong data-start=\"604\" data-end=\"661\">Urban Adaptation (Passive; Urban/Constructed Terrain)</strong><br data-start=\"661\" data-end=\"664\" />You instinctively exploit the advantages of civilized terrain.</p><p data-start=\"728\" data-end=\"876\">While you are in an <strong data-start=\"748\" data-end=\"784\">urban or constructed environment</strong> (streets, buildings, ruins, vehicles, or similar terrain), you gain the following benefits:</p><ul data-start=\"878\" data-end=\"1130\"><li data-start=\"878\" data-end=\"924\"><p data-start=\"880\" data-end=\"924\">You <strong data-start=\"884\" data-end=\"923\">ignore nonmagical difficult terrain</strong>.</p></li><li data-start=\"925\" data-end=\"1069\"><p data-start=\"927\" data-end=\"1069\">You have <strong data-start=\"936\" data-end=\"949\">advantage</strong> on <strong data-start=\"953\" data-end=\"976\">Dexterity (Stealth)</strong> and <strong data-start=\"981\" data-end=\"1004\">Wisdom (Perception)</strong> checks made to <strong data-start=\"1020\" data-end=\"1049\">detect or avoid creatures</strong> in the environment.</p></li><li data-start=\"1070\" data-end=\"1130\"><p data-start=\"1072\" data-end=\"1130\">You gain a <strong data-start=\"1083\" data-end=\"1129\">+1 bonus to AC against opportunity attacks</strong>.</p></li></ul><p data-start=\"1132\" data-end=\"1183\">These benefits end while you are <strong data-start=\"1165\" data-end=\"1182\">incapacitated</strong>.</p><hr data-start=\"1185\" data-end=\"1188\" /><h3 data-start=\"1190\" data-end=\"1225\"><strong data-start=\"1194\" data-end=\"1225\">Auspice Ribbon (Choose One)</strong></h3><ul data-start=\"1226\" data-end=\"1884\"><li data-start=\"1226\" data-end=\"1354\"><p data-start=\"1228\" data-end=\"1354\"><strong data-start=\"1228\" data-end=\"1241\">Ragabash:</strong> While in an urban environment, you may take the <strong data-start=\"1290\" data-end=\"1298\">Hide</strong> action as a <strong data-start=\"1311\" data-end=\"1327\">bonus action</strong> once per <strong data-start=\"1337\" data-end=\"1351\">short rest</strong>.</p></li><li data-start=\"1355\" data-end=\"1501\"><p data-start=\"1357\" data-end=\"1501\"><strong data-start=\"1357\" data-end=\"1369\">Theurge:</strong> You have advantage on <strong data-start=\"1392\" data-end=\"1424\">Intelligence (Investigation)</strong> checks to identify supernatural effects tied to <strong data-start=\"1473\" data-end=\"1498\">objects or structures</strong>.</p></li><li data-start=\"1502\" data-end=\"1623\"><p data-start=\"1504\" data-end=\"1623\"><strong data-start=\"1504\" data-end=\"1517\">Philodox:</strong> You have advantage on contested ability checks made to <strong data-start=\"1573\" data-end=\"1593\">shove or grapple</strong> creatures in urban terrain.</p></li><li data-start=\"1624\" data-end=\"1734\"><p data-start=\"1626\" data-end=\"1734\"><strong data-start=\"1626\" data-end=\"1639\">Galliard:</strong> One ally within <strong data-start=\"1656\" data-end=\"1667\">10 feet</strong> of you gains <strong data-start=\"1681\" data-end=\"1731\">advantage on their next Dexterity saving throw</strong>.</p></li><li data-start=\"1735\" data-end=\"1884\"><p data-start=\"1737\" data-end=\"1884\"><strong data-start=\"1737\" data-end=\"1748\">Ahroun:</strong> Once per turn, when you move at least <strong data-start=\"1787\" data-end=\"1798\">10 feet</strong> before hitting a creature, you may add your <strong data-start=\"1843\" data-end=\"1864\">proficiency bonus</strong> to the damage roll.</p></li></ul><hr data-start=\"1886\" data-end=\"1889\" /><p data-start=\"1891\" data-end=\"1949\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 3
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Urban Adaptation — In Urban Terrain (Toggle)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.xlCxlav9eLqk26ko",
+      "_id": "jZEEjkw2U568ugFb",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        },
+        "garou": {
+          "urbanAdaptationActive": true
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770557979606,
+        "modifiedTime": 1770557995783,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "featureKey": "urbanAdaptation"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.xlCxlav9eLqk26ko",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770557920661,
+    "modifiedTime": 1770557969557,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

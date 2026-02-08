@@ -1,0 +1,193 @@
+{
+  "folder": "o4BVN1g2V4iUUJFx",
+  "name": "Glorious Past — Legacy of Resolve",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "tmIuNSiyCOigHOfm": {
+        "type": "utility",
+        "_id": "tmIuNSiyCOigHOfm",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "Storied Ground — Ignore Missed Upkeep (Consume) When this Caern would gain Corruption from a missed monthly upkeep, you may ignore that Corruption once.  After this is used, Storied Ground is spent.  [GAROU_CAERN_TRIGGER] id=storied-ground; consumedBy=missed-upkeep; prevent=corruption+1"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Ignore Missed Upkeep Corruption (Consume)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"623\" data-end=\"660\">Glorious Past — Legacy of Resolve</strong><br data-start=\"660\" data-end=\"663\" /><em data-start=\"663\" data-end=\"709\">Caern State (from Rite of the Glorious Past)</em></p><p data-start=\"711\" data-end=\"768\">The Caern is bound to remembered sacrifice and endurance.</p><p data-start=\"770\" data-end=\"989\"><strong data-start=\"770\" data-end=\"828\">Effect (Active while this state remains on the Caern):</strong><br data-start=\"828\" data-end=\"831\" />While within this Caern’s area, <strong data-start=\"863\" data-end=\"872\">Garou</strong> have advantage on saving throws made to resist being <strong data-start=\"926\" data-end=\"940\">frightened</strong> or overwhelmed by <strong data-start=\"959\" data-end=\"988\">supernatural fear effects</strong>.</p><p data-start=\"991\" data-end=\"1000\"><strong data-start=\"991\" data-end=\"1000\">Notes</strong></p><ul data-start=\"1001\" data-end=\"1189\"><li data-start=\"1001\" data-end=\"1048\"><p data-start=\"1003\" data-end=\"1048\">Applies only <strong data-start=\"1016\" data-end=\"1048\">within the Caern’s influence</strong></p></li><li data-start=\"1049\" data-end=\"1073\"><p data-start=\"1051\" data-end=\"1073\">Affects <strong data-start=\"1059\" data-end=\"1073\">Garou only</strong></p></li><li data-start=\"1074\" data-end=\"1189\"><p data-start=\"1076\" data-end=\"1189\">This state remains until <strong data-start=\"1101\" data-end=\"1130\">Rite of the Glorious Past</strong> is performed again (replacing it) or the <strong data-start=\"1172\" data-end=\"1189\">Caern is lost</strong></p></li></ul><p data-start=\"1191\" data-end=\"1316\"><strong data-start=\"1191\" data-end=\"1215\">Tag (do not remove):</strong><br data-start=\"1215\" data-end=\"1218\" /><code data-start=\"1218\" data-end=\"1316\">[GAROU_CAERN_STATE] parent=glorious-past; effect=legacy-of-resolve; exclusiveGroup=glorious-past</code></p>",
+      "chat": "<p><strong data-start=\"2944\" data-end=\"2978\">Glorious Past — Storied Ground</strong><br data-start=\"2978\" data-end=\"2981\" /><em data-start=\"2981\" data-end=\"3027\">Caern State (from Rite of the Glorious Past)</em></p><p data-start=\"3029\" data-end=\"3096\">The Caern’s story is heavy enough to withstand a moment of neglect.</p><p data-start=\"3098\" data-end=\"3283\"><strong data-start=\"3098\" data-end=\"3156\">Effect (Active while this state remains on the Caern):</strong><br data-start=\"3156\" data-end=\"3159\" />Once before this Rite is performed again, the Caern may <strong data-start=\"3215\" data-end=\"3247\">ignore the Corruption gained</strong> from <strong data-start=\"3253\" data-end=\"3282\">one missed monthly upkeep</strong>.</p><ul data-start=\"3285\" data-end=\"3454\"><li data-start=\"3285\" data-end=\"3338\"><p data-start=\"3287\" data-end=\"3338\">This does not prevent Corruption from other causes.</p></li><li data-start=\"3339\" data-end=\"3454\"><p data-start=\"3341\" data-end=\"3454\">After it is used once, this state is considered <strong data-start=\"3389\" data-end=\"3398\">spent</strong> (but may remain as a “0 uses” reminder until replaced).</p></li></ul><p data-start=\"3456\" data-end=\"3615\"><strong data-start=\"3456\" data-end=\"3480\">Tag (do not remove):</strong><br data-start=\"3480\" data-end=\"3483\" /><code data-start=\"3483\" data-end=\"3615\">[GAROU_CAERN_STATE] parent=glorious-past; effect=storied-ground; exclusiveGroup=glorious-past; charges=1; consumedBy=missed-upkeep</code></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.CoIwHfRt2naoh0jy",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.CoIwHfRt2naoh0jy",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770567847906,
+    "modifiedTime": 1770568694536,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

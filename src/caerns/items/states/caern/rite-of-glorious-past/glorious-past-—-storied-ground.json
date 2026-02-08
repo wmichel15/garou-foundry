@@ -1,0 +1,66 @@
+{
+  "folder": "o4BVN1g2V4iUUJFx",
+  "name": "Glorious Past — Storied Ground",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"2944\" data-end=\"2978\">Glorious Past — Storied Ground</strong><br data-start=\"2978\" data-end=\"2981\" /><em data-start=\"2981\" data-end=\"3027\">Caern State (from Rite of the Glorious Past)</em></p><p data-start=\"3029\" data-end=\"3096\">The Caern’s story is heavy enough to withstand a moment of neglect.</p><p data-start=\"3098\" data-end=\"3283\"><strong data-start=\"3098\" data-end=\"3156\">Effect (Active while this state remains on the Caern):</strong><br data-start=\"3156\" data-end=\"3159\" />Once before this Rite is performed again, the Caern may <strong data-start=\"3215\" data-end=\"3247\">ignore the Corruption gained</strong> from <strong data-start=\"3253\" data-end=\"3282\">one missed monthly upkeep</strong>.</p><ul data-start=\"3285\" data-end=\"3454\"><li data-start=\"3285\" data-end=\"3338\"><p data-start=\"3287\" data-end=\"3338\">This does not prevent Corruption from other causes.</p></li><li data-start=\"3339\" data-end=\"3454\"><p data-start=\"3341\" data-end=\"3454\">After it is used once, this state is considered <strong data-start=\"3389\" data-end=\"3398\">spent</strong> (but may remain as a “0 uses” reminder until replaced).</p></li></ul><p data-start=\"3456\" data-end=\"3615\"><strong data-start=\"3456\" data-end=\"3480\">Tag (do not remove):</strong><br data-start=\"3480\" data-end=\"3483\" /><code data-start=\"3483\" data-end=\"3615\">[GAROU_CAERN_STATE] parent=glorious-past; effect=storied-ground; exclusiveGroup=glorious-past; charges=1; consumedBy=missed-upkeep</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.07PfPBSEz1V14m6o",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770568581432,
+    "modifiedTime": 1770568632450,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "folder": "6lKdfOXQ5DPyvAV2",
+  "name": "Cityborn Resilience",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "U5Np1LYlViiQEPG6": {
+        "type": "utility",
+        "_id": "U5Np1LYlViiQEPG6",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Cityborn Resilience (Reaction) Trigger: You fail a Dexterity or Constitution saving throw.  Effect: Reroll the saving throw and take the new result.  Recharge: 1/Short Rest.  [GAROU_REACTION] id=cityborn-resilience; trigger=fail-save; saves=dex+con; reroll=true; recharge=shortRest"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "sr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "cityborn resilience (activate)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"372\" data-end=\"420\">Cityborn Resilience (Reaction; 1/Short Rest)</strong><br data-start=\"420\" data-end=\"423\" />You are hardened by constant danger.</p><p data-start=\"461\" data-end=\"606\">When you <strong data-start=\"470\" data-end=\"519\">fail a Dexterity or Constitution saving throw</strong>, you may use your <strong data-start=\"538\" data-end=\"550\">reaction</strong> to <strong data-start=\"554\" data-end=\"564\">reroll</strong> the saving throw and take the new result.</p><p data-start=\"608\" data-end=\"701\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"678\" data-end=\"700\">short or long rest</strong>.</p><hr data-start=\"703\" data-end=\"706\" /><p data-start=\"708\" data-end=\"769\"><br /><code data-start=\"729\" data-end=\"769\">[GAROU_FEATURE] id=cityborn-resilience</code></p>",
+      "chat": "<p><strong data-start=\"372\" data-end=\"420\">Cityborn Resilience (Reaction; 1/Short Rest)</strong><br data-start=\"420\" data-end=\"423\" />You are hardened by constant danger.</p><p data-start=\"461\" data-end=\"606\">When you <strong data-start=\"470\" data-end=\"519\">fail a Dexterity or Constitution saving throw</strong>, you may use your <strong data-start=\"538\" data-end=\"550\">reaction</strong> to <strong data-start=\"554\" data-end=\"564\">reroll</strong> the saving throw and take the new result.</p><p data-start=\"608\" data-end=\"701\">Once you use this feature, you cannot use it again until you finish a <strong data-start=\"678\" data-end=\"700\">short or long rest</strong>.</p><hr data-start=\"703\" data-end=\"706\" /><p data-start=\"708\" data-end=\"769\"></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 11
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.6Q6Q1tasULfs1tsR",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770559266510,
+    "modifiedTime": 1770559426996,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

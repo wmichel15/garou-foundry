@@ -1,0 +1,64 @@
+{
+  "folder": "Ju1BNRFFtqsrY85l",
+  "name": "Urban Adaptation — Ribbon: Theurge",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"4139\" data-end=\"4160\">[Ribbon: Theurge]</strong><br data-start=\"4160\" data-end=\"4163\" /><strong data-start=\"4163\" data-end=\"4175\">Trigger:</strong> In an urban/constructed environment.</p><p data-start=\"4214\" data-end=\"4359\"><strong data-start=\"4214\" data-end=\"4225\">Effect:</strong> You have advantage on <strong data-start=\"4248\" data-end=\"4280\">Intelligence (Investigation)</strong> checks to identify <strong data-start=\"4300\" data-end=\"4324\">supernatural effects</strong> tied to <strong data-start=\"4333\" data-end=\"4358\">objects or structures</strong>.</p><p data-start=\"4361\" data-end=\"4418\"><code data-start=\"4361\" data-end=\"4418\">[GAROU_RIBBON] parent=urban-adaptation; auspice=theurge</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "urbanAdaptation",
+      "auspice": "theurge"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.3cYU8cIlCnVUTRgf",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770558065551,
+    "modifiedTime": 1770558367860,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

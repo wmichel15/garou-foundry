@@ -1,0 +1,80 @@
+{
+  "folder": "Ju1BNRFFtqsrY85l",
+  "name": "Urban Adaptation — Ribbon: Galliard",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "urbanGalliardGrant": {
+        "type": "utility",
+        "_id": "urbanGalliardGrant",
+        "sort": 0,
+        "activation": { "type": "bonus", "override": false, "condition": "" },
+        "description": { "chatFlavor": "One ally within 10 feet gains advantage on their next Dexterity saving throw. (Urban only)" },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "ft", "value": 10, "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "ally", "special": "" }, "override": false, "prompt": true },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "name": "Grant Ally Next Dex Save"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"4679\" data-end=\"4701\">[Ribbon: Galliard]</strong><br data-start=\"4701\" data-end=\"4704\" /><strong data-start=\"4704\" data-end=\"4716\">Trigger:</strong> In an urban environment.</p><p data-start=\"4743\" data-end=\"4847\"><strong data-start=\"4743\" data-end=\"4754\">Effect:</strong> One ally within <strong data-start=\"4771\" data-end=\"4782\">10 feet</strong> of you gains <strong data-start=\"4796\" data-end=\"4846\">advantage on their next Dexterity saving throw</strong>.</p><p data-start=\"4849\" data-end=\"4907\"><code data-start=\"4849\" data-end=\"4907\">[GAROU_RIBBON] parent=urban-adaptation; auspice=galliard</code></p>",
+      "chat": ""
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "garou": {
+      "riderFor": "urbanAdaptation",
+      "auspice": "galliard"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.thZxm3uzfBOR2KbT",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770558087417,
+    "modifiedTime": 1770558330127,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

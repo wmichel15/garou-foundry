@@ -79,6 +79,36 @@
       "ownership": {
         "PLAYER": "OBSERVER"
       }
+    },
+    {
+      "name": "garou-caerns-actors",
+      "label": "Garou — Caerns",
+      "path": "packs/garou-caerns-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "garou-caern-rites",
+      "label": "Garou — Caern Rites",
+      "path": "packs/garou-caern-rites",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "garou-caern-states",
+      "label": "Garou — Caern States",
+      "path": "packs/garou-caern-states",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
     }
   ],
   "compatibility": {
@@ -112,7 +142,12 @@
     "scripts/bloodsong-automation.js",
     "scripts/echoes-of-glory-automation.js",
     "scripts/saga-unending-automation.js",
-    "scripts/garou-forms.js"
+    "scripts/urban-adaptation-automation.js",
+    "scripts/apex-instinct-automation.js",
+    "scripts/relentless-pursuit-automation.js",
+    "scripts/untamed-ferocity-automation.js",
+    "scripts/extinction-drive-automation.js",
+    "scripts/garou-forms.js","scripts/caerns/index.js"
   ],
   "flags": {}
 }

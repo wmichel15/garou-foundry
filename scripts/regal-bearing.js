@@ -243,23 +243,11 @@ function onInitiativeRolled(combat, rolledCombatantIds) {
   }
 }
 
-// Hook: after initiative is rolled (wrap Combat.prototype.rollInitiative)
+// Expose handler for shared initiative wrapper (registered in apex-instinct-automation.js)
 Hooks.once("ready", () => {
-  if (typeof libWrapper === "undefined") return;
-  const CombatClass = CONFIG.Combat?.documentClass;
-  if (!CombatClass?.prototype?.rollInitiative) return;
-  libWrapper.register(
-    "garou",
-    "Combat.prototype.rollInitiative",
-    async function (wrapped, ids, options = {}) {
-      const idArray = Array.isArray(ids) ? ids : [ids];
-      const combat = this;
-      const result = await wrapped(ids, options);
-      onInitiativeRolled(combat, idArray);
-      return result;
-    },
-    "WRAPPER"
-  );
+  game.garou = game.garou || {};
+  game.garou.regalBearing = game.garou.regalBearing || {};
+  game.garou.regalBearing.onInitiativeRolled = onInitiativeRolled;
 });
 
 // Turn-end: remove Regal Bearing effects from the actor whose turn just ended

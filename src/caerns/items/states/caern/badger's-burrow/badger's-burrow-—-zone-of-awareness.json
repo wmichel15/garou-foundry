@@ -1,0 +1,180 @@
+{
+  "folder": "dbd6bTPEqqBRnHPL",
+  "name": "Badger’s Burrow — Zone of Awareness",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "Hw5AcW6lfhYA0WOr": {
+        "type": "utility",
+        "_id": "Hw5AcW6lfhYA0WOr",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "GM Utility: Set/Update Badger’s Burrow zone center. Cursor automation will store the center + radius on the Caern actor flags and/or as a measured template. [GAROU_CAERN_TRIGGER] id=badgers-burrow; action=set-zone"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Set zone center (GM)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"4269\" data-end=\"4308\">Badger’s Burrow — Zone of Awareness</strong><br data-start=\"4308\" data-end=\"4311\" /><em data-start=\"4311\" data-end=\"4347\">Caern State (from Badger’s Burrow)</em></p><p data-start=\"4349\" data-end=\"4408\">The Caern listens for disturbance within a designated zone.</p><p data-start=\"4410\" data-end=\"4596\"><strong data-start=\"4410\" data-end=\"4423\">Duration:</strong> Until the end of the current <strong data-start=\"4453\" data-end=\"4467\">Caern Turn</strong><br data-start=\"4467\" data-end=\"4470\" /><strong data-start=\"4470\" data-end=\"4486\">Zone Radius:</strong> Based on Caern Rating (1=60ft, 2=120ft, 3=300ft, 4=1000ft, 5=1 mile)<br data-start=\"4555\" data-end=\"4558\" /><strong data-start=\"4558\" data-end=\"4575\">Center Point:</strong> (set by script / GM)</p><p data-start=\"4598\" data-end=\"4610\"><strong data-start=\"4598\" data-end=\"4610\">Benefits</strong></p><ul data-start=\"4611\" data-end=\"4923\"><li data-start=\"4611\" data-end=\"4761\"><p data-start=\"4613\" data-end=\"4628\">ST alerts when:</p><ul data-start=\"4631\" data-end=\"4761\"><li data-start=\"4631\" data-end=\"4654\"><p data-start=\"4633\" data-end=\"4654\">creatures enter/leave</p></li><li data-start=\"4657\" data-end=\"4702\"><p data-start=\"4659\" data-end=\"4702\">hostile/stealth/clandestine activity occurs</p></li><li data-start=\"4705\" data-end=\"4761\"><p data-start=\"4707\" data-end=\"4761\">rituals/corruption/supernatural influence is attempted</p></li></ul></li><li data-start=\"4762\" data-end=\"4864\"><p data-start=\"4764\" data-end=\"4864\">Garou tending the Caern: advantage on Perception/Survival to investigate events from within the zone</p></li><li data-start=\"4865\" data-end=\"4923\"><p data-start=\"4867\" data-end=\"4923\">Creatures bypassing notice within the zone: disadvantage</p></li></ul><p data-start=\"4925\" data-end=\"5000\"><strong data-start=\"4925\" data-end=\"4934\">Limit</strong><br />Conveys presence/disturbance, not exact identity/location/intent.</p><p data-start=\"5002\" data-end=\"5143\"><strong data-start=\"5002\" data-end=\"5026\">Tag (do not remove):</strong><br data-start=\"5026\" data-end=\"5029\" /><code data-start=\"5029\" data-end=\"5143\">[GAROU_CAERN_STATE] parent=badgers-burrow; effect=zone-of-awareness; cadence=turn; exclusiveGroup=badgers-burrow</code></p>",
+      "chat": "<p><strong data-start=\"4269\" data-end=\"4308\">Badger’s Burrow — Zone of Awareness</strong><br data-start=\"4308\" data-end=\"4311\" /><em data-start=\"4311\" data-end=\"4347\">Caern State (from Badger’s Burrow)</em></p><p data-start=\"4349\" data-end=\"4408\">The Caern listens for disturbance within a designated zone.</p><p data-start=\"4410\" data-end=\"4596\"><strong data-start=\"4410\" data-end=\"4423\">Duration:</strong> Until the end of the current <strong data-start=\"4453\" data-end=\"4467\">Caern Turn</strong><br data-start=\"4467\" data-end=\"4470\" /><strong data-start=\"4470\" data-end=\"4486\">Zone Radius:</strong> Based on Caern Rating (1=60ft, 2=120ft, 3=300ft, 4=1000ft, 5=1 mile)<br data-start=\"4555\" data-end=\"4558\" /><strong data-start=\"4558\" data-end=\"4575\">Center Point:</strong> (set by script / GM)</p><p data-start=\"4598\" data-end=\"4610\"><strong data-start=\"4598\" data-end=\"4610\">Benefits</strong></p><ul data-start=\"4611\" data-end=\"4923\"><li data-start=\"4611\" data-end=\"4761\"><p data-start=\"4613\" data-end=\"4628\">ST alerts when:</p><ul data-start=\"4631\" data-end=\"4761\"><li data-start=\"4631\" data-end=\"4654\"><p data-start=\"4633\" data-end=\"4654\">creatures enter/leave</p></li><li data-start=\"4657\" data-end=\"4702\"><p data-start=\"4659\" data-end=\"4702\">hostile/stealth/clandestine activity occurs</p></li><li data-start=\"4705\" data-end=\"4761\"><p data-start=\"4707\" data-end=\"4761\">rituals/corruption/supernatural influence is attempted</p></li></ul></li><li data-start=\"4762\" data-end=\"4864\"><p data-start=\"4764\" data-end=\"4864\">Garou tending the Caern: advantage on Perception/Survival to investigate events from within the zone</p></li><li data-start=\"4865\" data-end=\"4923\"><p data-start=\"4867\" data-end=\"4923\">Creatures bypassing notice within the zone: disadvantage</p></li></ul><p data-start=\"4925\" data-end=\"5000\"><strong data-start=\"4925\" data-end=\"4934\">Limit</strong><br />Conveys presence/disturbance, not exact identity/location/intent.</p><p data-start=\"5002\" data-end=\"5143\"><strong data-start=\"5002\" data-end=\"5026\">Tag (do not remove):</strong><br data-start=\"5026\" data-end=\"5029\" /><code data-start=\"5029\" data-end=\"5143\">[GAROU_CAERN_STATE] parent=badgers-burrow; effect=zone-of-awareness; cadence=turn; exclusiveGroup=badgers-burrow</code></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.tmJdtCsH9gbwtVzD",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.tmJdtCsH9gbwtVzD",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770644002049,
+    "modifiedTime": 1770644120115,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

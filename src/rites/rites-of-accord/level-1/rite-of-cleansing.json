@@ -1,0 +1,195 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of Cleansing",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "y5mdHwMno2gIx3Y1": {
+        "type": "utility",
+        "_id": "y5mdHwMno2gIx3Y1",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\">   <h3>Rite of Cleansing</h3>   <p><em>Rite of Accord (Level 1)</em></p>    <hr>    <p><strong>Time:</strong> 30 minutes<br>   <strong>Cost:</strong> 3 Gnosis (spent on attempt)<br>   <strong>Focus:</strong> Pure water, ash, smoke, or soil from an untainted place<br>   <strong>Target:</strong> One willing creature you touch</p>    <p><strong>Roll:</strong> Gnosis Roll (d20 + Max Gnosis rating)<br>   <strong>DC:</strong> 13 (minor impurity) or 15 (severe impurity)</p>    <hr>    <p><strong>On Success — choose ONE:</strong></p>   <ul>     <li>Remove <strong>Poisoned</strong> (only if disease/toxin/supernatural corruption)</li>     <li>Remove <strong>Frightened</strong> (only if supernatural/spiritual source)</li>     <li>Remove <strong>Charmed</strong> (only if supernatural/spiritual source)</li>     <li>Reduce <strong>Exhaustion</strong> by 1 (only spiritual strain/corruption/supernatural influence)</li>     <li>Cleanse one lingering <strong>minor curse</strong> or corrupting effect (ST adjudication)</li>   </ul>    <p><strong>Limitations:</strong></p>   <ul>     <li>Cannot cure mundane disease</li>     <li>Cannot remove paralysis, petrification, blindness, or deafness</li>     <li>Cannot remove major curses (remove curse+ required)</li>     <li>A creature can benefit from this Rite only once per long rest</li>   </ul>    <p><strong>On Failure:</strong> Gnosis is spent. The condition remains. No worsening.</p>    <hr>    <p style=\"opacity:0.7; font-size:0.85em;\">     [GAROU_RITE_USE] id=cleansing; category=accord; tier=1; dc=13|15   </p> </div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "30"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "touch",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": true,
+          "visible": true,
+          "formula": "1d20 + @abilities.wis.mod",
+          "name": "Wisdom Check(gnosis roll)"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Cleansing"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"625\" data-end=\"646\">Rite of Cleansing</strong><br data-start=\"646\" data-end=\"649\" /><em data-start=\"649\" data-end=\"675\">Rite of Accord • Level 1</em></p><p data-start=\"677\" data-end=\"946\"><strong data-start=\"677\" data-end=\"704\">Minimum Maximum Gnosis:</strong> 4<br data-start=\"706\" data-end=\"709\" /><strong data-start=\"709\" data-end=\"725\">Gnosis Cost:</strong> 3<br data-start=\"727\" data-end=\"730\" /><strong data-start=\"730\" data-end=\"739\">Time:</strong> 30 minutes<br data-start=\"750\" data-end=\"753\" /><strong data-start=\"753\" data-end=\"768\">Resolution:</strong> Wisdom Check (Gnosis Roll)<br data-start=\"795\" data-end=\"798\" /><strong data-start=\"798\" data-end=\"805\">DC:</strong> 13 (minor impurity), 15 (severe impurity)<br data-start=\"847\" data-end=\"850\" /><strong data-start=\"850\" data-end=\"867\">Participants:</strong> One Garou<br data-start=\"877\" data-end=\"880\" /><strong data-start=\"880\" data-end=\"890\">Focus:</strong> Pure water, ash, smoke, or soil from an untainted place</p><hr data-start=\"948\" data-end=\"951\" /><h3 data-start=\"953\" data-end=\"963\">Effect</h3><p data-start=\"964\" data-end=\"1115\">You perform a ceremonial purification to remove temporary spiritual or physical afflictions caused by imbalance, corruption, or supernatural influence.</p><p data-start=\"1117\" data-end=\"1225\">On a successful check, you may remove <strong data-start=\"1155\" data-end=\"1162\">one</strong> of the following conditions from a willing creature you touch:</p><ul data-start=\"1227\" data-end=\"1539\"><li data-start=\"1227\" data-end=\"1304\"><p data-start=\"1229\" data-end=\"1304\">Poisoned <em data-start=\"1238\" data-end=\"1302\">(only if caused by disease, toxin, or supernatural corruption)</em></p></li><li data-start=\"1305\" data-end=\"1371\"><p data-start=\"1307\" data-end=\"1371\">Frightened <em data-start=\"1318\" data-end=\"1369\">(only if the source is supernatural or spiritual)</em></p></li><li data-start=\"1372\" data-end=\"1435\"><p data-start=\"1374\" data-end=\"1435\">Charmed <em data-start=\"1382\" data-end=\"1433\">(only if the source is supernatural or spiritual)</em></p></li><li data-start=\"1436\" data-end=\"1539\"><p data-start=\"1438\" data-end=\"1539\">1 level of exhaustion <em data-start=\"1460\" data-end=\"1537\">(only if caused by spiritual strain, corruption, or supernatural influence)</em></p></li></ul><p data-start=\"1541\" data-end=\"1675\">Alternatively, instead of removing a condition, you may cleanse a creature of one lingering <strong data-start=\"1633\" data-end=\"1648\">minor curse</strong> or corrupting effect that:</p><ul data-start=\"1676\" data-end=\"1845\"><li data-start=\"1676\" data-end=\"1715\"><p data-start=\"1678\" data-end=\"1715\">does not impose permanent penalties</p></li><li data-start=\"1716\" data-end=\"1769\"><p data-start=\"1718\" data-end=\"1769\">does not require <em data-start=\"1735\" data-end=\"1749\">remove curse</em> or stronger magic</p></li><li data-start=\"1770\" data-end=\"1845\"><p data-start=\"1772\" data-end=\"1845\">is thematically tied to Wyrm-tainted, necromantic, or abyssal influence</p></li></ul><p data-start=\"1847\" data-end=\"1902\">The Storyteller determines whether an effect qualifies.</p><hr data-start=\"1904\" data-end=\"1907\" /><h3 data-start=\"1909\" data-end=\"1924\">Limitations</h3><p data-start=\"1925\" data-end=\"1942\">This Rite cannot:</p><ul data-start=\"1943\" data-end=\"2133\"><li data-start=\"1943\" data-end=\"1980\"><p data-start=\"1945\" data-end=\"1980\">remove diseases of mundane origin</p></li><li data-start=\"1981\" data-end=\"2040\"><p data-start=\"1983\" data-end=\"2040\">remove petrification, paralysis, blindness, or deafness</p></li><li data-start=\"2041\" data-end=\"2102\"><p data-start=\"2043\" data-end=\"2102\">remove curses that require <em data-start=\"2070\" data-end=\"2084\">remove curse</em> or higher magic</p></li><li data-start=\"2103\" data-end=\"2133\"><p data-start=\"2105\" data-end=\"2133\">affect unwilling creatures</p></li></ul><p data-start=\"2135\" data-end=\"2201\">A creature can benefit from this Rite only <strong data-start=\"2178\" data-end=\"2200\">once per long rest</strong>.</p><hr data-start=\"2203\" data-end=\"2206\" /><h3 data-start=\"2208\" data-end=\"2219\">Failure</h3><p data-start=\"2220\" data-end=\"2238\">On a failed check:</p><ul data-start=\"2239\" data-end=\"2350\"><li data-start=\"2239\" data-end=\"2262\"><p data-start=\"2241\" data-end=\"2262\">The Gnosis is spent</p></li><li data-start=\"2263\" data-end=\"2288\"><p data-start=\"2265\" data-end=\"2288\">The condition remains</p></li><li data-start=\"2289\" data-end=\"2350\"><p data-start=\"2291\" data-end=\"2350\">Spirits may show mild displeasure at improper performance</p></li></ul><p data-start=\"2352\" data-end=\"2388\">Failure never worsens the condition.</p><hr data-start=\"2390\" data-end=\"2393\" /><p data-start=\"2395\" data-end=\"2576\"><strong data-start=\"2395\" data-end=\"2419\">Tag (do not remove):</strong><br data-start=\"2419\" data-end=\"2422\" /><code data-start=\"2422\" data-end=\"2576\">[GAROU_RITE] category=accord; id=cleansing; tier=1; minMaxGnosis=4; cost=3gnosis; time=30m; resolution=wisdom; dc=13|15; target=touch; limit=1/target/lr</code></p>",
+      "chat": "<p><strong data-start=\"625\" data-end=\"646\">Rite of Cleansing</strong><br data-start=\"646\" data-end=\"649\" /><em data-start=\"649\" data-end=\"675\">Rite of Accord • Level 1</em></p><p data-start=\"677\" data-end=\"946\"><strong data-start=\"677\" data-end=\"704\">Minimum Maximum Gnosis:</strong> 4<br data-start=\"706\" data-end=\"709\" /><strong data-start=\"709\" data-end=\"725\">Gnosis Cost:</strong> 3<br data-start=\"727\" data-end=\"730\" /><strong data-start=\"730\" data-end=\"739\">Time:</strong> 30 minutes<br data-start=\"750\" data-end=\"753\" /><strong data-start=\"753\" data-end=\"768\">Resolution:</strong> Wisdom Check (Gnosis Roll)<br data-start=\"795\" data-end=\"798\" /><strong data-start=\"798\" data-end=\"805\">DC:</strong> 13 (minor impurity), 15 (severe impurity)<br data-start=\"847\" data-end=\"850\" /><strong data-start=\"850\" data-end=\"867\">Participants:</strong> One Garou<br data-start=\"877\" data-end=\"880\" /><strong data-start=\"880\" data-end=\"890\">Focus:</strong> Pure water, ash, smoke, or soil from an untainted place</p><hr data-start=\"948\" data-end=\"951\" /><h3 data-start=\"953\" data-end=\"963\">Effect</h3><p data-start=\"964\" data-end=\"1115\">You perform a ceremonial purification to remove temporary spiritual or physical afflictions caused by imbalance, corruption, or supernatural influence.</p><p data-start=\"1117\" data-end=\"1225\">On a successful check, you may remove <strong data-start=\"1155\" data-end=\"1162\">one</strong> of the following conditions from a willing creature you touch:</p><ul data-start=\"1227\" data-end=\"1539\"><li data-start=\"1227\" data-end=\"1304\"><p data-start=\"1229\" data-end=\"1304\">Poisoned <em data-start=\"1238\" data-end=\"1302\">(only if caused by disease, toxin, or supernatural corruption)</em></p></li><li data-start=\"1305\" data-end=\"1371\"><p data-start=\"1307\" data-end=\"1371\">Frightened <em data-start=\"1318\" data-end=\"1369\">(only if the source is supernatural or spiritual)</em></p></li><li data-start=\"1372\" data-end=\"1435\"><p data-start=\"1374\" data-end=\"1435\">Charmed <em data-start=\"1382\" data-end=\"1433\">(only if the source is supernatural or spiritual)</em></p></li><li data-start=\"1436\" data-end=\"1539\"><p data-start=\"1438\" data-end=\"1539\">1 level of exhaustion <em data-start=\"1460\" data-end=\"1537\">(only if caused by spiritual strain, corruption, or supernatural influence)</em></p></li></ul><p data-start=\"1541\" data-end=\"1675\">Alternatively, instead of removing a condition, you may cleanse a creature of one lingering <strong data-start=\"1633\" data-end=\"1648\">minor curse</strong> or corrupting effect that:</p><ul data-start=\"1676\" data-end=\"1845\"><li data-start=\"1676\" data-end=\"1715\"><p data-start=\"1678\" data-end=\"1715\">does not impose permanent penalties</p></li><li data-start=\"1716\" data-end=\"1769\"><p data-start=\"1718\" data-end=\"1769\">does not require <em data-start=\"1735\" data-end=\"1749\">remove curse</em> or stronger magic</p></li><li data-start=\"1770\" data-end=\"1845\"><p data-start=\"1772\" data-end=\"1845\">is thematically tied to Wyrm-tainted, necromantic, or abyssal influence</p></li></ul><p data-start=\"1847\" data-end=\"1902\">The Storyteller determines whether an effect qualifies.</p><hr data-start=\"1904\" data-end=\"1907\" /><h3 data-start=\"1909\" data-end=\"1924\">Limitations</h3><p data-start=\"1925\" data-end=\"1942\">This Rite cannot:</p><ul data-start=\"1943\" data-end=\"2133\"><li data-start=\"1943\" data-end=\"1980\"><p data-start=\"1945\" data-end=\"1980\">remove diseases of mundane origin</p></li><li data-start=\"1981\" data-end=\"2040\"><p data-start=\"1983\" data-end=\"2040\">remove petrification, paralysis, blindness, or deafness</p></li><li data-start=\"2041\" data-end=\"2102\"><p data-start=\"2043\" data-end=\"2102\">remove curses that require <em data-start=\"2070\" data-end=\"2084\">remove curse</em> or higher magic</p></li><li data-start=\"2103\" data-end=\"2133\"><p data-start=\"2105\" data-end=\"2133\">affect unwilling creatures</p></li></ul><p data-start=\"2135\" data-end=\"2201\">A creature can benefit from this Rite only <strong data-start=\"2178\" data-end=\"2200\">once per long rest</strong>.</p><hr data-start=\"2203\" data-end=\"2206\" /><h3 data-start=\"2208\" data-end=\"2219\">Failure</h3><p data-start=\"2220\" data-end=\"2238\">On a failed check:</p><ul data-start=\"2239\" data-end=\"2350\"><li data-start=\"2239\" data-end=\"2262\"><p data-start=\"2241\" data-end=\"2262\">The Gnosis is spent</p></li><li data-start=\"2263\" data-end=\"2288\"><p data-start=\"2265\" data-end=\"2288\">The condition remains</p></li><li data-start=\"2289\" data-end=\"2350\"><p data-start=\"2291\" data-end=\"2350\">Spirits may show mild displeasure at improper performance</p></li></ul><p data-start=\"2352\" data-end=\"2388\">Failure never worsens the condition.</p><hr data-start=\"2390\" data-end=\"2393\" /><p data-start=\"2395\" data-end=\"2576\"><strong data-start=\"2395\" data-end=\"2419\">Tag (do not remove):</strong><br data-start=\"2419\" data-end=\"2422\" /><code data-start=\"2422\" data-end=\"2576\">[GAROU_RITE] category=accord; id=cleansing; tier=1; minMaxGnosis=4; cost=3gnosis; time=30m; resolution=wisdom; dc=13|15; target=touch; limit=1/target/lr</code></p>"
+    },
+    "identifier": "rite-of-cleansing",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "dnd5e": {}
+  },
+  "_stats": {
+    "compendiumSource": "Item.cKgpuTda0I4IXojN",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.cKgpuTda0I4IXojN",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770649429945,
+    "modifiedTime": 1770653346261,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

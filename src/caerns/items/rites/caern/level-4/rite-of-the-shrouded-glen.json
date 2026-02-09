@@ -1,0 +1,189 @@
+{
+  "folder": "xmkWmYScAeWAjhYH",
+  "name": "Rite of the Shrouded Glen",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "SmR8d5zOJn2Hw7CH": {
+        "type": "utility",
+        "name": "Perform Rite of the Shrouded Glen",
+        "_id": "SmR8d5zOJn2Hw7CH",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Rite of the Shrouded Glen (8 hours) — Caern Rite (Level 4)  Cost: Invest 10 Gnosis (may be shared). If the full cost is paid, the Rite succeeds automatically.  This Rite shrouds the Caern from those who do not belong. Search DC is based on Caern Rating (14–18). At Corruption 3+, DC is reduced by 2. At Corruption 5, the shroud collapses.  Magical scrying/divination fails unless 6th level or higher.  [GAROU_RITE_USE] id=shrouded-glen; applyTo=caern; creates=shroud; duration=indefinite"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "99"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"685\" data-end=\"714\">Rite of the Shrouded Glen</strong><br data-start=\"714\" data-end=\"717\" /><em data-start=\"717\" data-end=\"739\">Caern Rite • Level 4</em></p><p data-start=\"741\" data-end=\"878\"><strong data-start=\"741\" data-end=\"750\">Time:</strong> 8 hours<br data-start=\"758\" data-end=\"761\" /><strong data-start=\"761\" data-end=\"770\">Cost:</strong> 10 Gnosis (may be shared by multiple Garou)<br data-start=\"814\" data-end=\"817\" /><strong data-start=\"817\" data-end=\"833\">Requirement:</strong> Must be performed within a functioning Caern</p><hr data-start=\"880\" data-end=\"883\" /><p data-start=\"885\" data-end=\"1107\"><strong data-start=\"885\" data-end=\"900\">Description</strong><br data-start=\"900\" data-end=\"903\" />The Rite of the Shrouded Glen binds spirits of concealment, misdirection, and silence to the Caern. Those who do not belong find paths twisting, landmarks blurring, and instincts quietly urging them away.</p><p data-start=\"1109\" data-end=\"1174\">The Caern is not hidden from the world —<br data-start=\"1149\" data-end=\"1152\" />it is forgotten by it.</p><hr data-start=\"1176\" data-end=\"1179\" /><p data-start=\"1181\" data-end=\"1264\"><strong data-start=\"1181\" data-end=\"1191\">Effect</strong><br data-start=\"1191\" data-end=\"1194\" />When the full Gnosis cost is invested, the Caern becomes <strong data-start=\"1251\" data-end=\"1263\">shrouded</strong>.</p><p data-start=\"1266\" data-end=\"1320\">While shrouded, the Caern gains the following effects:</p><h3 data-start=\"1322\" data-end=\"1351\">Search DC by Caern Rating</h3><p data-start=\"1352\" data-end=\"1522\">Creatures attempting to locate, track, or deliberately travel to the Caern must succeed on a Wisdom (Survival) or Intelligence (Investigation) check against the DC below:</p><ul data-start=\"1524\" data-end=\"1643\"><li data-start=\"1524\" data-end=\"1547\"><p data-start=\"1526\" data-end=\"1547\"><strong data-start=\"1526\" data-end=\"1539\">Rating 1:</strong> DC 14</p></li><li data-start=\"1548\" data-end=\"1571\"><p data-start=\"1550\" data-end=\"1571\"><strong data-start=\"1550\" data-end=\"1563\">Rating 2:</strong> DC 15</p></li><li data-start=\"1572\" data-end=\"1595\"><p data-start=\"1574\" data-end=\"1595\"><strong data-start=\"1574\" data-end=\"1587\">Rating 3:</strong> DC 16</p></li><li data-start=\"1596\" data-end=\"1619\"><p data-start=\"1598\" data-end=\"1619\"><strong data-start=\"1598\" data-end=\"1611\">Rating 4:</strong> DC 17</p></li><li data-start=\"1620\" data-end=\"1643\"><p data-start=\"1622\" data-end=\"1643\"><strong data-start=\"1622\" data-end=\"1635\">Rating 5:</strong> DC 18</p></li></ul><p data-start=\"1645\" data-end=\"1776\">On a failed check, the creature becomes lost, believes the Caern does not exist, or abandons the search entirely (DM adjudication).</p><h3 data-start=\"1778\" data-end=\"1800\">Magical Divination</h3><p data-start=\"1801\" data-end=\"1926\">Magical effects used to locate, scry upon, or divine the Caern automatically fail unless they are of <strong data-start=\"1902\" data-end=\"1925\">6th level or higher</strong>.</p><h3 data-start=\"1928\" data-end=\"1948\">Mundane Approach</h3><p data-start=\"1949\" data-end=\"2032\">Mundane paths leading toward the Caern subtly redirect, fade, or appear impassable.</p><hr data-start=\"2034\" data-end=\"2037\" /><p data-start=\"2039\" data-end=\"2058\"><strong data-start=\"2039\" data-end=\"2058\">Who Is Affected</strong></p><ul data-start=\"2059\" data-end=\"2327\"><li data-start=\"2059\" data-end=\"2136\"><p data-start=\"2061\" data-end=\"2136\">The shroud affects <strong data-start=\"2080\" data-end=\"2093\">non-Garou</strong> and Garou <strong data-start=\"2104\" data-end=\"2122\">not recognized</strong> by the Caern.</p></li><li data-start=\"2137\" data-end=\"2241\"><p data-start=\"2139\" data-end=\"2241\">Garou who have contributed Gnosis to the Caern or been formally recognized by the sept are unaffected.</p></li><li data-start=\"2242\" data-end=\"2327\"><p data-start=\"2244\" data-end=\"2327\">Allies may bypass the shroud through guidance, escort, or tokens (ST adjudication).</p></li></ul><hr data-start=\"2329\" data-end=\"2332\" /><p data-start=\"2334\" data-end=\"2374\"><strong data-start=\"2334\" data-end=\"2374\">Interaction with Caern Rating &amp; Area</strong></p><ul data-start=\"2375\" data-end=\"2522\"><li data-start=\"2375\" data-end=\"2423\"><p data-start=\"2377\" data-end=\"2423\">Applies to the entire Caern area of influence.</p></li><li data-start=\"2424\" data-end=\"2468\"><p data-start=\"2426\" data-end=\"2468\">Does not extend beyond the Caern’s radius.</p></li><li data-start=\"2469\" data-end=\"2522\"><p data-start=\"2471\" data-end=\"2522\">Adapts automatically as the Caern’s Rating changes.</p></li></ul><hr data-start=\"2524\" data-end=\"2527\" /><p data-start=\"2529\" data-end=\"2560\"><strong data-start=\"2529\" data-end=\"2560\">Interaction with Corruption</strong></p><ul data-start=\"2561\" data-end=\"2662\"><li data-start=\"2561\" data-end=\"2608\"><p data-start=\"2563\" data-end=\"2608\">At <strong data-start=\"2566\" data-end=\"2583\">Corruption 3+</strong>, the DC is reduced by 2.</p></li><li data-start=\"2609\" data-end=\"2662\"><p data-start=\"2611\" data-end=\"2662\">At <strong data-start=\"2614\" data-end=\"2630\">Corruption 5</strong>, the shroud collapses entirely.</p></li></ul><hr data-start=\"2664\" data-end=\"2667\" /><p data-start=\"2669\" data-end=\"2695\"><strong data-start=\"2669\" data-end=\"2684\">Limitations</strong><br />This Rite:</p><ul data-start=\"2696\" data-end=\"2924\"><li data-start=\"2696\" data-end=\"2731\"><p data-start=\"2698\" data-end=\"2731\">Does not make the Caern invisible</p></li><li data-start=\"2732\" data-end=\"2791\"><p data-start=\"2734\" data-end=\"2791\">Does not block determined assault once the Caern is found</p></li><li data-start=\"2792\" data-end=\"2844\"><p data-start=\"2794\" data-end=\"2844\">Does not affect creatures already inside the Caern</p></li><li data-start=\"2845\" data-end=\"2924\"><p data-start=\"2847\" data-end=\"2924\">Cannot be selectively applied or dismissed without performing this Rite again</p></li></ul><blockquote data-start=\"2926\" data-end=\"3021\"><p data-start=\"2928\" data-end=\"3021\">“Those who are not meant to find this place will never quite remember why they were looking.”</p></blockquote><hr data-start=\"3023\" data-end=\"3026\" /><p data-start=\"3028\" data-end=\"3171\"><strong data-start=\"3028\" data-end=\"3052\">Tag (do not remove):</strong><br data-start=\"3052\" data-end=\"3055\" /><code data-start=\"3055\" data-end=\"3171\">[GAROU_RITE] type=caern; id=shrouded-glen; level=4; cadence=permanent; cost=10gnosis; requires=caern; state=shroud</code></p>",
+      "chat": "<p><strong data-start=\"685\" data-end=\"714\">Rite of the Shrouded Glen</strong><br data-start=\"714\" data-end=\"717\" /><em data-start=\"717\" data-end=\"739\">Caern Rite • Level 4</em></p><p data-start=\"741\" data-end=\"878\"><strong data-start=\"741\" data-end=\"750\">Time:</strong> 8 hours<br data-start=\"758\" data-end=\"761\" /><strong data-start=\"761\" data-end=\"770\">Cost:</strong> 10 Gnosis (may be shared by multiple Garou)<br data-start=\"814\" data-end=\"817\" /><strong data-start=\"817\" data-end=\"833\">Requirement:</strong> Must be performed within a functioning Caern</p><hr data-start=\"880\" data-end=\"883\" /><p data-start=\"885\" data-end=\"1107\"><strong data-start=\"885\" data-end=\"900\">Description</strong><br data-start=\"900\" data-end=\"903\" />The Rite of the Shrouded Glen binds spirits of concealment, misdirection, and silence to the Caern. Those who do not belong find paths twisting, landmarks blurring, and instincts quietly urging them away.</p><p data-start=\"1109\" data-end=\"1174\">The Caern is not hidden from the world —<br data-start=\"1149\" data-end=\"1152\" />it is forgotten by it.</p><hr data-start=\"1176\" data-end=\"1179\" /><p data-start=\"1181\" data-end=\"1264\"><strong data-start=\"1181\" data-end=\"1191\">Effect</strong><br data-start=\"1191\" data-end=\"1194\" />When the full Gnosis cost is invested, the Caern becomes <strong data-start=\"1251\" data-end=\"1263\">shrouded</strong>.</p><p data-start=\"1266\" data-end=\"1320\">While shrouded, the Caern gains the following effects:</p><h3 data-start=\"1322\" data-end=\"1351\">Search DC by Caern Rating</h3><p data-start=\"1352\" data-end=\"1522\">Creatures attempting to locate, track, or deliberately travel to the Caern must succeed on a Wisdom (Survival) or Intelligence (Investigation) check against the DC below:</p><ul data-start=\"1524\" data-end=\"1643\"><li data-start=\"1524\" data-end=\"1547\"><p data-start=\"1526\" data-end=\"1547\"><strong data-start=\"1526\" data-end=\"1539\">Rating 1:</strong> DC 14</p></li><li data-start=\"1548\" data-end=\"1571\"><p data-start=\"1550\" data-end=\"1571\"><strong data-start=\"1550\" data-end=\"1563\">Rating 2:</strong> DC 15</p></li><li data-start=\"1572\" data-end=\"1595\"><p data-start=\"1574\" data-end=\"1595\"><strong data-start=\"1574\" data-end=\"1587\">Rating 3:</strong> DC 16</p></li><li data-start=\"1596\" data-end=\"1619\"><p data-start=\"1598\" data-end=\"1619\"><strong data-start=\"1598\" data-end=\"1611\">Rating 4:</strong> DC 17</p></li><li data-start=\"1620\" data-end=\"1643\"><p data-start=\"1622\" data-end=\"1643\"><strong data-start=\"1622\" data-end=\"1635\">Rating 5:</strong> DC 18</p></li></ul><p data-start=\"1645\" data-end=\"1776\">On a failed check, the creature becomes lost, believes the Caern does not exist, or abandons the search entirely (DM adjudication).</p><h3 data-start=\"1778\" data-end=\"1800\">Magical Divination</h3><p data-start=\"1801\" data-end=\"1926\">Magical effects used to locate, scry upon, or divine the Caern automatically fail unless they are of <strong data-start=\"1902\" data-end=\"1925\">6th level or higher</strong>.</p><h3 data-start=\"1928\" data-end=\"1948\">Mundane Approach</h3><p data-start=\"1949\" data-end=\"2032\">Mundane paths leading toward the Caern subtly redirect, fade, or appear impassable.</p><hr data-start=\"2034\" data-end=\"2037\" /><p data-start=\"2039\" data-end=\"2058\"><strong data-start=\"2039\" data-end=\"2058\">Who Is Affected</strong></p><ul data-start=\"2059\" data-end=\"2327\"><li data-start=\"2059\" data-end=\"2136\"><p data-start=\"2061\" data-end=\"2136\">The shroud affects <strong data-start=\"2080\" data-end=\"2093\">non-Garou</strong> and Garou <strong data-start=\"2104\" data-end=\"2122\">not recognized</strong> by the Caern.</p></li><li data-start=\"2137\" data-end=\"2241\"><p data-start=\"2139\" data-end=\"2241\">Garou who have contributed Gnosis to the Caern or been formally recognized by the sept are unaffected.</p></li><li data-start=\"2242\" data-end=\"2327\"><p data-start=\"2244\" data-end=\"2327\">Allies may bypass the shroud through guidance, escort, or tokens (ST adjudication).</p></li></ul><hr data-start=\"2329\" data-end=\"2332\" /><p data-start=\"2334\" data-end=\"2374\"><strong data-start=\"2334\" data-end=\"2374\">Interaction with Caern Rating &amp; Area</strong></p><ul data-start=\"2375\" data-end=\"2522\"><li data-start=\"2375\" data-end=\"2423\"><p data-start=\"2377\" data-end=\"2423\">Applies to the entire Caern area of influence.</p></li><li data-start=\"2424\" data-end=\"2468\"><p data-start=\"2426\" data-end=\"2468\">Does not extend beyond the Caern’s radius.</p></li><li data-start=\"2469\" data-end=\"2522\"><p data-start=\"2471\" data-end=\"2522\">Adapts automatically as the Caern’s Rating changes.</p></li></ul><hr data-start=\"2524\" data-end=\"2527\" /><p data-start=\"2529\" data-end=\"2560\"><strong data-start=\"2529\" data-end=\"2560\">Interaction with Corruption</strong></p><ul data-start=\"2561\" data-end=\"2662\"><li data-start=\"2561\" data-end=\"2608\"><p data-start=\"2563\" data-end=\"2608\">At <strong data-start=\"2566\" data-end=\"2583\">Corruption 3+</strong>, the DC is reduced by 2.</p></li><li data-start=\"2609\" data-end=\"2662\"><p data-start=\"2611\" data-end=\"2662\">At <strong data-start=\"2614\" data-end=\"2630\">Corruption 5</strong>, the shroud collapses entirely.</p></li></ul><hr data-start=\"2664\" data-end=\"2667\" /><p data-start=\"2669\" data-end=\"2695\"><strong data-start=\"2669\" data-end=\"2684\">Limitations</strong><br />This Rite:</p><ul data-start=\"2696\" data-end=\"2924\"><li data-start=\"2696\" data-end=\"2731\"><p data-start=\"2698\" data-end=\"2731\">Does not make the Caern invisible</p></li><li data-start=\"2732\" data-end=\"2791\"><p data-start=\"2734\" data-end=\"2791\">Does not block determined assault once the Caern is found</p></li><li data-start=\"2792\" data-end=\"2844\"><p data-start=\"2794\" data-end=\"2844\">Does not affect creatures already inside the Caern</p></li><li data-start=\"2845\" data-end=\"2924\"><p data-start=\"2847\" data-end=\"2924\">Cannot be selectively applied or dismissed without performing this Rite again</p></li></ul><blockquote data-start=\"2926\" data-end=\"3021\"><p data-start=\"2928\" data-end=\"3021\">“Those who are not meant to find this place will never quite remember why they were looking.”</p></blockquote><hr data-start=\"3023\" data-end=\"3026\" /><p data-start=\"3028\" data-end=\"3171\"><strong data-start=\"3028\" data-end=\"3052\">Tag (do not remove):</strong><br data-start=\"3052\" data-end=\"3055\" /><code data-start=\"3055\" data-end=\"3171\">[GAROU_RITE] type=caern; id=shrouded-glen; level=4; cadence=permanent; cost=10gnosis; requires=caern; state=shroud</code></p>"
+    },
+    "identifier": "rite-of-the-shrouded-glen",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.v155ax3CSZJmIt7s",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770646467505,
+    "modifiedTime": 1770646567587,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

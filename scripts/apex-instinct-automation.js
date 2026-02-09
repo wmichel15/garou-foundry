@@ -192,7 +192,7 @@ async function runApexGalliardInitiativeFlow(actor, token) {
   ui.notifications?.info?.(`Apex Instinct (Galliard): ${allyActor.name} has advantage on their first attack roll.`);
 }
 
-// Single initiative wrapper: advantage for Apex+natural, then Galliard flow
+// Single initiative wrapper: advantage for Apex+natural, then Galliard flow, then Regal Bearing
 Hooks.once("ready", () => {
   if (typeof libWrapper === "undefined") return;
   const CombatClass = CONFIG.Combat?.documentClass;
@@ -208,10 +208,20 @@ Hooks.once("ready", () => {
         const combatant = this.combatants?.get(id);
         if (!combatant?.actor) continue;
         const actor = combatant.actor;
-        if (!hasApexInstinct(actor) || !hasApexRider(actor, "galliard") || !isInNaturalTerrain(actor)) continue;
-        const tokenId = combatant.token?.id ?? combatant.tokenId;
-        const token = canvas.tokens?.placeables?.find(t => t.id === tokenId);
-        if (token) await runApexGalliardInitiativeFlow(actor, token);
+        // Apex Instinct: Galliard flow
+        if (hasApexInstinct(actor) && hasApexRider(actor, "galliard") && isInNaturalTerrain(actor)) {
+          const tokenId = combatant.token?.id ?? combatant.tokenId;
+          const token = canvas.tokens?.placeables?.find(t => t.id === tokenId);
+          if (token) await runApexGalliardInitiativeFlow(actor, token);
+        }
+        // Regal Bearing: call handler if available
+        if (game.garou?.regalBearing?.onInitiativeRolled) {
+          try {
+            game.garou.regalBearing.onInitiativeRolled(this, [id]);
+          } catch (err) {
+            console.error("[garou] Regal Bearing initiative handler error:", err);
+          }
+        }
       }
       return result;
     },

@@ -1,0 +1,180 @@
+{
+  "folder": "qMopcZ3HOUeH5Hst",
+  "name": "Rite of the Opened Bridge(Caern Owned)",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "X5WuTqGrYmHcOKNe": {
+        "type": "utility",
+        "name": "Collapse Moon Bridge (GM)",
+        "_id": "X5WuTqGrYmHcOKNe",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "GM Utility: Collapse this Moon Bridge link. Remove this state item from BOTH linked Caerns. [GAROU_CAERN_TRIGGER] id=opened-bridge; action=collapse"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"3960\" data-end=\"3990\">Moon Bridge — Linked Caern</strong><br data-start=\"3990\" data-end=\"3993\" /><em data-start=\"3993\" data-end=\"4039\">Caern State (from Rite of the Opened Bridge)</em></p><p data-start=\"4041\" data-end=\"4123\">A permanent Moon Bridge links this Caern to another sacred site through the Umbra.</p><p data-start=\"4125\" data-end=\"4135\"><strong data-start=\"4125\" data-end=\"4135\">Effect</strong></p><ul data-start=\"4136\" data-end=\"4437\"><li data-start=\"4136\" data-end=\"4220\"><p data-start=\"4138\" data-end=\"4220\">Garou may travel between the linked Caerns in <strong data-start=\"4184\" data-end=\"4196\">1 minute</strong>, regardless of distance</p></li><li data-start=\"4221\" data-end=\"4286\"><p data-start=\"4223\" data-end=\"4286\">Entry and exit occur only within each Caern’s area of influence</p></li><li data-start=\"4287\" data-end=\"4335\"><p data-start=\"4289\" data-end=\"4335\">Travel is <strong data-start=\"4299\" data-end=\"4318\">one-way per use</strong>, chosen at entry</p></li><li data-start=\"4336\" data-end=\"4437\"><p data-start=\"4338\" data-end=\"4437\">Non-Garou may not use the bridge unless permitted by the Caern’s spirits (Storyteller adjudication)</p></li></ul><p data-start=\"4439\" data-end=\"4452\"><strong data-start=\"4439\" data-end=\"4452\">Stability</strong></p><ul data-start=\"4453\" data-end=\"4695\"><li data-start=\"4453\" data-end=\"4522\"><p data-start=\"4455\" data-end=\"4522\">The bridge requires no additional upkeep beyond normal Caern upkeep</p></li><li data-start=\"4523\" data-end=\"4615\"><p data-start=\"4525\" data-end=\"4615\">If either Caern is lost or reaches <strong data-start=\"4560\" data-end=\"4576\">Corruption 5</strong>, the Moon Bridge collapses immediately</p></li><li data-start=\"4616\" data-end=\"4695\"><p data-start=\"4618\" data-end=\"4695\">At <strong data-start=\"4621\" data-end=\"4638\">Corruption 4+</strong>, travel may be narratively strained but remains possible</p></li></ul><p data-start=\"4697\" data-end=\"4712\"><strong data-start=\"4697\" data-end=\"4712\">Limitations</strong></p><ul data-start=\"4713\" data-end=\"4818\"><li data-start=\"4713\" data-end=\"4769\"><p data-start=\"4715\" data-end=\"4769\">Cannot be redirected without performing the Rite again</p></li><li data-start=\"4770\" data-end=\"4818\"><p data-start=\"4772\" data-end=\"4818\">Cannot be used for forced or hostile transport</p></li></ul><p data-start=\"4820\" data-end=\"4958\"><strong data-start=\"4820\" data-end=\"4844\">Tag (do not remove):</strong><br data-start=\"4844\" data-end=\"4847\" /><code data-start=\"4847\" data-end=\"4958\">[GAROU_CAERN_STATE] parent=opened-bridge; effect=moon-bridge; exclusiveGroup=moon-bridge; requires=two-caerns</code></p>",
+      "chat": "<p><strong data-start=\"3960\" data-end=\"3990\">Moon Bridge — Linked Caern</strong><br data-start=\"3990\" data-end=\"3993\" /><em data-start=\"3993\" data-end=\"4039\">Caern State (from Rite of the Opened Bridge)</em></p><p data-start=\"4041\" data-end=\"4123\">A permanent Moon Bridge links this Caern to another sacred site through the Umbra.</p><p data-start=\"4125\" data-end=\"4135\"><strong data-start=\"4125\" data-end=\"4135\">Effect</strong></p><ul data-start=\"4136\" data-end=\"4437\"><li data-start=\"4136\" data-end=\"4220\"><p data-start=\"4138\" data-end=\"4220\">Garou may travel between the linked Caerns in <strong data-start=\"4184\" data-end=\"4196\">1 minute</strong>, regardless of distance</p></li><li data-start=\"4221\" data-end=\"4286\"><p data-start=\"4223\" data-end=\"4286\">Entry and exit occur only within each Caern’s area of influence</p></li><li data-start=\"4287\" data-end=\"4335\"><p data-start=\"4289\" data-end=\"4335\">Travel is <strong data-start=\"4299\" data-end=\"4318\">one-way per use</strong>, chosen at entry</p></li><li data-start=\"4336\" data-end=\"4437\"><p data-start=\"4338\" data-end=\"4437\">Non-Garou may not use the bridge unless permitted by the Caern’s spirits (Storyteller adjudication)</p></li></ul><p data-start=\"4439\" data-end=\"4452\"><strong data-start=\"4439\" data-end=\"4452\">Stability</strong></p><ul data-start=\"4453\" data-end=\"4695\"><li data-start=\"4453\" data-end=\"4522\"><p data-start=\"4455\" data-end=\"4522\">The bridge requires no additional upkeep beyond normal Caern upkeep</p></li><li data-start=\"4523\" data-end=\"4615\"><p data-start=\"4525\" data-end=\"4615\">If either Caern is lost or reaches <strong data-start=\"4560\" data-end=\"4576\">Corruption 5</strong>, the Moon Bridge collapses immediately</p></li><li data-start=\"4616\" data-end=\"4695\"><p data-start=\"4618\" data-end=\"4695\">At <strong data-start=\"4621\" data-end=\"4638\">Corruption 4+</strong>, travel may be narratively strained but remains possible</p></li></ul><p data-start=\"4697\" data-end=\"4712\"><strong data-start=\"4697\" data-end=\"4712\">Limitations</strong></p><ul data-start=\"4713\" data-end=\"4818\"><li data-start=\"4713\" data-end=\"4769\"><p data-start=\"4715\" data-end=\"4769\">Cannot be redirected without performing the Rite again</p></li><li data-start=\"4770\" data-end=\"4818\"><p data-start=\"4772\" data-end=\"4818\">Cannot be used for forced or hostile transport</p></li></ul><p data-start=\"4820\" data-end=\"4958\"><strong data-start=\"4820\" data-end=\"4844\">Tag (do not remove):</strong><br data-start=\"4844\" data-end=\"4847\" /><code data-start=\"4847\" data-end=\"4958\">[GAROU_CAERN_STATE] parent=opened-bridge; effect=moon-bridge; exclusiveGroup=moon-bridge; requires=two-caerns</code></p>"
+    },
+    "identifier": "rite-of-the-opened-bridgecaern-owned",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.2tzqm7CjcB2aCgJV",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.2tzqm7CjcB2aCgJV",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770645644957,
+    "modifiedTime": 1770646033907,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "folder": "IY9RtefNCgonDjqc",
+  "name": "Rite of Caern Founding",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "TXWA1zjf8oo026ls": {
+        "type": "utility",
+        "_id": "TXWA1zjf8oo026ls",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Rite of Caern Founding — Contribute Gnosis  Choose the founding site (a Caern Actor-in-progress) and contribute an amount of Gnosis toward the total of 100. Progress is bound to the site and has no effect until the full 100 is reached.  If Corruption is present, progress is HALTED (no gnosis is lost, but you cannot add more until purified).  [GAROU_RITE_USE] id=caern-founding; action=contribute; target=caern-site; progress=0..100"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Contribute Gnosis"
+      },
+      "bAml1oRW40bDYdVR": {
+        "type": "utility",
+        "_id": "bAml1oRW40bDYdVR",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Rite of Caern Founding — Check Progress Shows current invested Gnosis, whether progress is halted by corruption, and what remains.  [GAROU_RITE_USE] id=caern-founding; action=check"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Check Progress"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"809\" data-end=\"835\">Rite of Caern Founding</strong><br data-start=\"835\" data-end=\"838\" /><em data-start=\"838\" data-end=\"872\">Caern Rite • Level 5 (Legendary)</em></p><p data-start=\"874\" data-end=\"1100\"><strong data-start=\"874\" data-end=\"883\">Time:</strong> Performed over time<br data-start=\"903\" data-end=\"906\" /><strong data-start=\"906\" data-end=\"915\">Cost:</strong> 100 Gnosis (may be contributed over time and shared by multiple Garou)<br data-start=\"986\" data-end=\"989\" /><strong data-start=\"989\" data-end=\"1005\">Requirement:</strong> A site of exceptional spiritual significance, completely free of Corruption and Wyrm influence</p><hr data-start=\"1102\" data-end=\"1105\" /><p data-start=\"1107\" data-end=\"1367\"><strong data-start=\"1107\" data-end=\"1122\">Description</strong><br data-start=\"1122\" data-end=\"1125\" />The Rite of Caern Founding is a legendary undertaking through which the Garou establish a new Rank 5 Caern. Unlike lesser Caerns, which grow through steady investment, this Rite represents a singular act of world-shaping spiritual commitment.</p><p data-start=\"1369\" data-end=\"1473\">This Rite is not performed in a single night.<br data-start=\"1414\" data-end=\"1417\" />It is completed when the land accepts the full offering.</p><hr data-start=\"1475\" data-end=\"1478\" /><p data-start=\"1480\" data-end=\"1617\"><strong data-start=\"1480\" data-end=\"1490\">Effect</strong><br data-start=\"1490\" data-end=\"1493\" />When a total of <strong data-start=\"1509\" data-end=\"1523\">100 Gnosis</strong> has been successfully invested at the chosen site, the location becomes a <strong data-start=\"1598\" data-end=\"1616\">Caern (Rank 5)</strong>.</p><p data-start=\"1619\" data-end=\"1645\">Gnosis may be contributed:</p><ul data-start=\"1646\" data-end=\"1817\"><li data-start=\"1646\" data-end=\"1668\"><p data-start=\"1648\" data-end=\"1668\">By one or more Garou</p></li><li data-start=\"1669\" data-end=\"1698\"><p data-start=\"1671\" data-end=\"1698\">Across multiple Caern Turns</p></li><li data-start=\"1699\" data-end=\"1749\"><p data-start=\"1701\" data-end=\"1749\">Gnosis invested is permanently bound to the site</p></li><li data-start=\"1750\" data-end=\"1817\"><p data-start=\"1752\" data-end=\"1817\">Partial investment has no effect until the full amount is reached</p></li></ul><p data-start=\"1819\" data-end=\"1845\">Once completed, the Caern:</p><ul data-start=\"1846\" data-end=\"2023\"><li data-start=\"1846\" data-end=\"1876\"><p data-start=\"1848\" data-end=\"1876\">Begins with <strong data-start=\"1860\" data-end=\"1876\">Corruption 0</strong></p></li><li data-start=\"1877\" data-end=\"1912\"><p data-start=\"1879\" data-end=\"1912\">Is immediately spiritually active</p></li><li data-start=\"1913\" data-end=\"1939\"><p data-start=\"1915\" data-end=\"1939\">May host all Caern Rites</p></li><li data-start=\"1940\" data-end=\"2023\"><p data-start=\"1942\" data-end=\"2023\">Enters the normal Caern upkeep and Corruption system starting the next Caern Turn</p></li></ul><hr data-start=\"2025\" data-end=\"2028\" /><p data-start=\"2030\" data-end=\"2046\"><strong data-start=\"2030\" data-end=\"2046\">Restrictions</strong></p><ul data-start=\"2047\" data-end=\"2305\"><li data-start=\"2047\" data-end=\"2103\"><p data-start=\"2049\" data-end=\"2103\">The site must be free of Corruption and Wyrm influence</p></li><li data-start=\"2104\" data-end=\"2258\"><p data-start=\"2106\" data-end=\"2152\">If Corruption is introduced before completion:</p><ul data-start=\"2155\" data-end=\"2258\"><li data-start=\"2155\" data-end=\"2179\"><p data-start=\"2157\" data-end=\"2179\">All progress is halted</p></li><li data-start=\"2182\" data-end=\"2201\"><p data-start=\"2184\" data-end=\"2201\">No Gnosis is lost</p></li><li data-start=\"2204\" data-end=\"2258\"><p data-start=\"2206\" data-end=\"2258\">The Rite cannot continue until Corruption is removed</p></li></ul></li><li data-start=\"2259\" data-end=\"2305\"><p data-start=\"2261\" data-end=\"2305\">This Rite cannot create Caerns of lower rank</p></li></ul><hr data-start=\"2307\" data-end=\"2310\" /><p data-start=\"2312\" data-end=\"2527\"><strong data-start=\"2312\" data-end=\"2340\">Limits on Caern Creation</strong><br />A sept or Garou may only create one additional Rank 5 Caern beyond those already existing in the setting (ST discretion). This Rite is intended to be rare, political, and world-defining.</p><hr data-start=\"2529\" data-end=\"2532\" /><p data-start=\"2534\" data-end=\"2758\"><strong data-start=\"2534\" data-end=\"2576\">Interaction: Rite of the Opened Bridge</strong><br />Upon completion, the Garou may immediately perform the Rite of the Opened Bridge to connect the newly founded Caern to an existing Caern (all normal costs/requirements still apply).</p><blockquote data-start=\"2760\" data-end=\"2805\"><p data-start=\"2762\" data-end=\"2805\">“Some places are not grown. They are born.”</p></blockquote><hr data-start=\"2807\" data-end=\"2810\" /><p data-start=\"2812\" data-end=\"2945\"><strong data-start=\"2812\" data-end=\"2836\">Tag (do not remove):</strong><br data-start=\"2836\" data-end=\"2839\" /><code data-start=\"2839\" data-end=\"2945\">[GAROU_RITE] type=caern; id=caern-founding; level=5; cadence=project; cost=100gnosis; requires=pure-site</code></p>",
+      "chat": "<p><strong data-start=\"809\" data-end=\"835\">Rite of Caern Founding</strong><br data-start=\"835\" data-end=\"838\" /><em data-start=\"838\" data-end=\"872\">Caern Rite • Level 5 (Legendary)</em></p><p data-start=\"874\" data-end=\"1100\"><strong data-start=\"874\" data-end=\"883\">Time:</strong> Performed over time<br data-start=\"903\" data-end=\"906\" /><strong data-start=\"906\" data-end=\"915\">Cost:</strong> 100 Gnosis (may be contributed over time and shared by multiple Garou)<br data-start=\"986\" data-end=\"989\" /><strong data-start=\"989\" data-end=\"1005\">Requirement:</strong> A site of exceptional spiritual significance, completely free of Corruption and Wyrm influence</p><hr data-start=\"1102\" data-end=\"1105\" /><p data-start=\"1107\" data-end=\"1367\"><strong data-start=\"1107\" data-end=\"1122\">Description</strong><br data-start=\"1122\" data-end=\"1125\" />The Rite of Caern Founding is a legendary undertaking through which the Garou establish a new Rank 5 Caern. Unlike lesser Caerns, which grow through steady investment, this Rite represents a singular act of world-shaping spiritual commitment.</p><p data-start=\"1369\" data-end=\"1473\">This Rite is not performed in a single night.<br data-start=\"1414\" data-end=\"1417\" />It is completed when the land accepts the full offering.</p><hr data-start=\"1475\" data-end=\"1478\" /><p data-start=\"1480\" data-end=\"1617\"><strong data-start=\"1480\" data-end=\"1490\">Effect</strong><br data-start=\"1490\" data-end=\"1493\" />When a total of <strong data-start=\"1509\" data-end=\"1523\">100 Gnosis</strong> has been successfully invested at the chosen site, the location becomes a <strong data-start=\"1598\" data-end=\"1616\">Caern (Rank 5)</strong>.</p><p data-start=\"1619\" data-end=\"1645\">Gnosis may be contributed:</p><ul data-start=\"1646\" data-end=\"1817\"><li data-start=\"1646\" data-end=\"1668\"><p data-start=\"1648\" data-end=\"1668\">By one or more Garou</p></li><li data-start=\"1669\" data-end=\"1698\"><p data-start=\"1671\" data-end=\"1698\">Across multiple Caern Turns</p></li><li data-start=\"1699\" data-end=\"1749\"><p data-start=\"1701\" data-end=\"1749\">Gnosis invested is permanently bound to the site</p></li><li data-start=\"1750\" data-end=\"1817\"><p data-start=\"1752\" data-end=\"1817\">Partial investment has no effect until the full amount is reached</p></li></ul><p data-start=\"1819\" data-end=\"1845\">Once completed, the Caern:</p><ul data-start=\"1846\" data-end=\"2023\"><li data-start=\"1846\" data-end=\"1876\"><p data-start=\"1848\" data-end=\"1876\">Begins with <strong data-start=\"1860\" data-end=\"1876\">Corruption 0</strong></p></li><li data-start=\"1877\" data-end=\"1912\"><p data-start=\"1879\" data-end=\"1912\">Is immediately spiritually active</p></li><li data-start=\"1913\" data-end=\"1939\"><p data-start=\"1915\" data-end=\"1939\">May host all Caern Rites</p></li><li data-start=\"1940\" data-end=\"2023\"><p data-start=\"1942\" data-end=\"2023\">Enters the normal Caern upkeep and Corruption system starting the next Caern Turn</p></li></ul><hr data-start=\"2025\" data-end=\"2028\" /><p data-start=\"2030\" data-end=\"2046\"><strong data-start=\"2030\" data-end=\"2046\">Restrictions</strong></p><ul data-start=\"2047\" data-end=\"2305\"><li data-start=\"2047\" data-end=\"2103\"><p data-start=\"2049\" data-end=\"2103\">The site must be free of Corruption and Wyrm influence</p></li><li data-start=\"2104\" data-end=\"2258\"><p data-start=\"2106\" data-end=\"2152\">If Corruption is introduced before completion:</p><ul data-start=\"2155\" data-end=\"2258\"><li data-start=\"2155\" data-end=\"2179\"><p data-start=\"2157\" data-end=\"2179\">All progress is halted</p></li><li data-start=\"2182\" data-end=\"2201\"><p data-start=\"2184\" data-end=\"2201\">No Gnosis is lost</p></li><li data-start=\"2204\" data-end=\"2258\"><p data-start=\"2206\" data-end=\"2258\">The Rite cannot continue until Corruption is removed</p></li></ul></li><li data-start=\"2259\" data-end=\"2305\"><p data-start=\"2261\" data-end=\"2305\">This Rite cannot create Caerns of lower rank</p></li></ul><hr data-start=\"2307\" data-end=\"2310\" /><p data-start=\"2312\" data-end=\"2527\"><strong data-start=\"2312\" data-end=\"2340\">Limits on Caern Creation</strong><br />A sept or Garou may only create one additional Rank 5 Caern beyond those already existing in the setting (ST discretion). This Rite is intended to be rare, political, and world-defining.</p><hr data-start=\"2529\" data-end=\"2532\" /><p data-start=\"2534\" data-end=\"2758\"><strong data-start=\"2534\" data-end=\"2576\">Interaction: Rite of the Opened Bridge</strong><br />Upon completion, the Garou may immediately perform the Rite of the Opened Bridge to connect the newly founded Caern to an existing Caern (all normal costs/requirements still apply).</p><blockquote data-start=\"2760\" data-end=\"2805\"><p data-start=\"2762\" data-end=\"2805\">“Some places are not grown. They are born.”</p></blockquote><hr data-start=\"2807\" data-end=\"2810\" /><p data-start=\"2812\" data-end=\"2945\"><strong data-start=\"2812\" data-end=\"2836\">Tag (do not remove):</strong><br data-start=\"2836\" data-end=\"2839\" /><code data-start=\"2839\" data-end=\"2945\">[GAROU_RITE] type=caern; id=caern-founding; level=5; cadence=project; cost=100gnosis; requires=pure-site</code></p>"
+    },
+    "identifier": "rite-of-caern-founding",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.Pqo60C9IAHjUQO28",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770648165082,
+    "modifiedTime": 1770648268429,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

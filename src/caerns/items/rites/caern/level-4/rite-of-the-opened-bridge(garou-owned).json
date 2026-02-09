@@ -1,0 +1,184 @@
+{
+  "folder": "xmkWmYScAeWAjhYH",
+  "name": "Rite of the Opened Bridge(garou owned)",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "SmQ6g1T9YlGbTU9h": {
+        "type": "utility",
+        "name": "Perform Rite of the Opened Bridge",
+        "_id": "SmQ6g1T9YlGbTU9h",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Rite of the Opened Bridge (8 hours) — Caern Rite (Level 4)  This Rite forges a permanent Moon Bridge between TWO functioning Caerns. Cost: 12 Gnosis invested at EACH Caern (may be shared by multiple Garou).  While the Moon Bridge exists: • Travel between the two Caerns takes 1 minute (one-way per use) • Entry/exit only within each Caern’s area of influence • Non-Garou may not pass unless permitted by the Caern’s spirits • If either Caern is lost or reaches Corruption 5, the bridge collapses immediately  [GAROU_RITE_USE] id=opened-bridge; applyTo=two-caerns; creates=moon-bridge; duration=indefinite"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "99"
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"726\" data-end=\"755\">Rite of the Opened Bridge</strong><br data-start=\"755\" data-end=\"758\" /><em data-start=\"758\" data-end=\"780\">Caern Rite • Level 4</em></p><p data-start=\"782\" data-end=\"985\"><strong data-start=\"782\" data-end=\"791\">Time:</strong> 8 hours<br data-start=\"799\" data-end=\"802\" /><strong data-start=\"802\" data-end=\"811\">Cost:</strong> 12 Gnosis from each connected Caern (may be shared by multiple Garou)<br data-start=\"881\" data-end=\"884\" /><strong data-start=\"884\" data-end=\"900\">Requirement:</strong> Two functioning Caerns, each possessing a bound Pathstone or equivalent sacred focus</p><hr data-start=\"987\" data-end=\"990\" /><p data-start=\"992\" data-end=\"1261\"><strong data-start=\"992\" data-end=\"1007\">Description</strong><br data-start=\"1007\" data-end=\"1010\" />The Rite of the Opened Bridge forges a Moon Bridge — a permanent spiritual pathway linking two Caerns across vast distance. The bridge exists partially in the Umbra, allowing Garou to travel between sacred sites without crossing the land between them.</p><p data-start=\"1263\" data-end=\"1354\">A Moon Bridge is not convenience magic.<br data-start=\"1302\" data-end=\"1305\" />It is infrastructure born of trust and sacrifice.</p><hr data-start=\"1356\" data-end=\"1359\" /><p data-start=\"1361\" data-end=\"1470\"><strong data-start=\"1361\" data-end=\"1371\">Effect</strong><br data-start=\"1371\" data-end=\"1374\" />When the full Gnosis cost is invested at both Caerns, a <strong data-start=\"1430\" data-end=\"1445\">Moon Bridge</strong> is created between them.</p><p data-start=\"1472\" data-end=\"1501\">While the Moon Bridge exists:</p><ul data-start=\"1502\" data-end=\"1902\"><li data-start=\"1502\" data-end=\"1583\"><p data-start=\"1504\" data-end=\"1583\">Garou may travel between the two Caerns in <strong data-start=\"1547\" data-end=\"1559\">1 minute</strong>, regardless of distance</p></li><li data-start=\"1584\" data-end=\"1658\"><p data-start=\"1586\" data-end=\"1658\">Entry and exit occur only within the <strong data-start=\"1623\" data-end=\"1644\">area of influence</strong> of each Caern</p></li><li data-start=\"1659\" data-end=\"1707\"><p data-start=\"1661\" data-end=\"1707\">Travel is <strong data-start=\"1671\" data-end=\"1690\">one-way per use</strong>, chosen at entry</p></li><li data-start=\"1708\" data-end=\"1814\"><p data-start=\"1710\" data-end=\"1814\">Non-Garou may not use the Moon Bridge unless permitted by the Caern’s spirits (Storyteller adjudication)</p></li><li data-start=\"1815\" data-end=\"1902\"><p data-start=\"1817\" data-end=\"1902\">The Moon Bridge remains in place indefinitely, provided both Caerns remain functional</p></li></ul><hr data-start=\"1904\" data-end=\"1907\" /><p data-start=\"1909\" data-end=\"1936\"><strong data-start=\"1909\" data-end=\"1936\">Interaction with Caerns</strong></p><ul data-start=\"1937\" data-end=\"2194\"><li data-start=\"1937\" data-end=\"2011\"><p data-start=\"1939\" data-end=\"2011\">The Moon Bridge requires no additional upkeep beyond normal Caern upkeep</p></li><li data-start=\"2012\" data-end=\"2105\"><p data-start=\"2014\" data-end=\"2105\">If either Caern is lost, or reaches <strong data-start=\"2050\" data-end=\"2066\">Corruption 5</strong>, the Moon Bridge collapses immediately</p></li><li data-start=\"2106\" data-end=\"2194\"><p data-start=\"2108\" data-end=\"2194\">At <strong data-start=\"2111\" data-end=\"2137\">Corruption 4 or higher</strong>, travel may be narratively strained but remains possible</p></li></ul><hr data-start=\"2196\" data-end=\"2199\" /><p data-start=\"2201\" data-end=\"2216\"><strong data-start=\"2201\" data-end=\"2216\">Limitations</strong></p><ul data-start=\"2217\" data-end=\"2363\"><li data-start=\"2217\" data-end=\"2301\"><p data-start=\"2219\" data-end=\"2301\">Moon Bridges cannot be redirected or reassigned without performing this Rite again</p></li><li data-start=\"2302\" data-end=\"2363\"><p data-start=\"2304\" data-end=\"2363\">Moon Bridges cannot be used for forced or hostile transport</p></li></ul><hr data-start=\"2365\" data-end=\"2368\" /><p data-start=\"2370\" data-end=\"2517\"><strong data-start=\"2370\" data-end=\"2394\">Tag (do not remove):</strong><br data-start=\"2394\" data-end=\"2397\" /><code data-start=\"2397\" data-end=\"2517\">[GAROU_RITE] type=caern; id=opened-bridge; level=4; cadence=permanent; requires=two-caerns; infrastructure=moon-bridge</code></p>",
+      "chat": "<p><strong data-start=\"726\" data-end=\"755\">Rite of the Opened Bridge</strong><br data-start=\"755\" data-end=\"758\" /><em data-start=\"758\" data-end=\"780\">Caern Rite • Level 4</em></p><p data-start=\"782\" data-end=\"985\"><strong data-start=\"782\" data-end=\"791\">Time:</strong> 8 hours<br data-start=\"799\" data-end=\"802\" /><strong data-start=\"802\" data-end=\"811\">Cost:</strong> 12 Gnosis from each connected Caern (may be shared by multiple Garou)<br data-start=\"881\" data-end=\"884\" /><strong data-start=\"884\" data-end=\"900\">Requirement:</strong> Two functioning Caerns, each possessing a bound Pathstone or equivalent sacred focus</p><hr data-start=\"987\" data-end=\"990\" /><p data-start=\"992\" data-end=\"1261\"><strong data-start=\"992\" data-end=\"1007\">Description</strong><br data-start=\"1007\" data-end=\"1010\" />The Rite of the Opened Bridge forges a Moon Bridge — a permanent spiritual pathway linking two Caerns across vast distance. The bridge exists partially in the Umbra, allowing Garou to travel between sacred sites without crossing the land between them.</p><p data-start=\"1263\" data-end=\"1354\">A Moon Bridge is not convenience magic.<br data-start=\"1302\" data-end=\"1305\" />It is infrastructure born of trust and sacrifice.</p><hr data-start=\"1356\" data-end=\"1359\" /><p data-start=\"1361\" data-end=\"1470\"><strong data-start=\"1361\" data-end=\"1371\">Effect</strong><br data-start=\"1371\" data-end=\"1374\" />When the full Gnosis cost is invested at both Caerns, a <strong data-start=\"1430\" data-end=\"1445\">Moon Bridge</strong> is created between them.</p><p data-start=\"1472\" data-end=\"1501\">While the Moon Bridge exists:</p><ul data-start=\"1502\" data-end=\"1902\"><li data-start=\"1502\" data-end=\"1583\"><p data-start=\"1504\" data-end=\"1583\">Garou may travel between the two Caerns in <strong data-start=\"1547\" data-end=\"1559\">1 minute</strong>, regardless of distance</p></li><li data-start=\"1584\" data-end=\"1658\"><p data-start=\"1586\" data-end=\"1658\">Entry and exit occur only within the <strong data-start=\"1623\" data-end=\"1644\">area of influence</strong> of each Caern</p></li><li data-start=\"1659\" data-end=\"1707\"><p data-start=\"1661\" data-end=\"1707\">Travel is <strong data-start=\"1671\" data-end=\"1690\">one-way per use</strong>, chosen at entry</p></li><li data-start=\"1708\" data-end=\"1814\"><p data-start=\"1710\" data-end=\"1814\">Non-Garou may not use the Moon Bridge unless permitted by the Caern’s spirits (Storyteller adjudication)</p></li><li data-start=\"1815\" data-end=\"1902\"><p data-start=\"1817\" data-end=\"1902\">The Moon Bridge remains in place indefinitely, provided both Caerns remain functional</p></li></ul><hr data-start=\"1904\" data-end=\"1907\" /><p data-start=\"1909\" data-end=\"1936\"><strong data-start=\"1909\" data-end=\"1936\">Interaction with Caerns</strong></p><ul data-start=\"1937\" data-end=\"2194\"><li data-start=\"1937\" data-end=\"2011\"><p data-start=\"1939\" data-end=\"2011\">The Moon Bridge requires no additional upkeep beyond normal Caern upkeep</p></li><li data-start=\"2012\" data-end=\"2105\"><p data-start=\"2014\" data-end=\"2105\">If either Caern is lost, or reaches <strong data-start=\"2050\" data-end=\"2066\">Corruption 5</strong>, the Moon Bridge collapses immediately</p></li><li data-start=\"2106\" data-end=\"2194\"><p data-start=\"2108\" data-end=\"2194\">At <strong data-start=\"2111\" data-end=\"2137\">Corruption 4 or higher</strong>, travel may be narratively strained but remains possible</p></li></ul><hr data-start=\"2196\" data-end=\"2199\" /><p data-start=\"2201\" data-end=\"2216\"><strong data-start=\"2201\" data-end=\"2216\">Limitations</strong></p><ul data-start=\"2217\" data-end=\"2363\"><li data-start=\"2217\" data-end=\"2301\"><p data-start=\"2219\" data-end=\"2301\">Moon Bridges cannot be redirected or reassigned without performing this Rite again</p></li><li data-start=\"2302\" data-end=\"2363\"><p data-start=\"2304\" data-end=\"2363\">Moon Bridges cannot be used for forced or hostile transport</p></li></ul><hr data-start=\"2365\" data-end=\"2368\" /><p data-start=\"2370\" data-end=\"2517\"><strong data-start=\"2370\" data-end=\"2394\">Tag (do not remove):</strong><br data-start=\"2394\" data-end=\"2397\" /><code data-start=\"2397\" data-end=\"2517\">[GAROU_RITE] type=caern; id=opened-bridge; level=4; cadence=permanent; requires=two-caerns; infrastructure=moon-bridge</code></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.qqpuVeuAfMwtN0Or",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770645300612,
+    "modifiedTime": 1770645561766,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "folder": "wWozcBuXFgBAjUDS",
+  "name": "Shrouded Glen — Caern Shroud",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "cvap7GgfOvBI3Lmj": {
+        "type": "utility",
+        "name": "Collapse Shroud (GM)",
+        "_id": "cvap7GgfOvBI3Lmj",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "GM Utility: Collapse the Shrouded Glen effect on this Caern. Remove the Shrouded Glen — Caern Shroud state item. [GAROU_CAERN_TRIGGER] id=shrouded-glen; action=collapse"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"4502\" data-end=\"4534\">Shrouded Glen — Caern Shroud</strong><br data-start=\"4534\" data-end=\"4537\" /><em data-start=\"4537\" data-end=\"4583\">Caern State (from Rite of the Shrouded Glen)</em></p><p data-start=\"4585\" data-end=\"4760\">Spirits of concealment, misdirection, and silence bind themselves to the Caern. Those who do not belong find the Caern difficult to remember, locate, or deliberately approach.</p><p data-start=\"4762\" data-end=\"4773\"><strong data-start=\"4762\" data-end=\"4773\">Effects</strong></p><ul data-start=\"4774\" data-end=\"5159\"><li data-start=\"4774\" data-end=\"4925\"><p data-start=\"4776\" data-end=\"4925\">Creatures attempting to locate, track, or deliberately travel to the Caern must succeed on a Wisdom (Survival) or Intelligence (Investigation) check.</p></li><li data-start=\"4926\" data-end=\"5065\"><p data-start=\"4928\" data-end=\"4965\">The DC is determined by Caern Rating:</p><ul data-start=\"4968\" data-end=\"5065\"><li data-start=\"4968\" data-end=\"4985\"><p data-start=\"4970\" data-end=\"4985\">Rating 1: DC 14</p></li><li data-start=\"4988\" data-end=\"5005\"><p data-start=\"4990\" data-end=\"5005\">Rating 2: DC 15</p></li><li data-start=\"5008\" data-end=\"5025\"><p data-start=\"5010\" data-end=\"5025\">Rating 3: DC 16</p></li><li data-start=\"5028\" data-end=\"5045\"><p data-start=\"5030\" data-end=\"5045\">Rating 4: DC 17</p></li><li data-start=\"5048\" data-end=\"5065\"><p data-start=\"5050\" data-end=\"5065\">Rating 5: DC 18</p></li></ul></li><li data-start=\"5066\" data-end=\"5109\"><p data-start=\"5068\" data-end=\"5109\">At Corruption 3+, the DC is reduced by 2.</p></li><li data-start=\"5110\" data-end=\"5159\"><p data-start=\"5112\" data-end=\"5159\">At Corruption 5, the shroud collapses entirely.</p></li></ul><p data-start=\"5161\" data-end=\"5294\"><strong data-start=\"5161\" data-end=\"5175\">Divination</strong><br />Magical effects used to locate, scry upon, or divine the Caern automatically fail unless they are 6th level or higher.</p><p data-start=\"5296\" data-end=\"5315\"><strong data-start=\"5296\" data-end=\"5315\">Who Is Affected</strong></p><ul data-start=\"5316\" data-end=\"5480\"><li data-start=\"5316\" data-end=\"5364\"><p data-start=\"5318\" data-end=\"5364\">Non-Garou and unrecognized Garou are affected.</p></li><li data-start=\"5365\" data-end=\"5416\"><p data-start=\"5367\" data-end=\"5416\">Recognized Garou and contributors are unaffected.</p></li><li data-start=\"5417\" data-end=\"5480\"><p data-start=\"5419\" data-end=\"5480\">Allies may bypass through escort or tokens (ST adjudication).</p></li></ul><p data-start=\"5482\" data-end=\"5497\"><strong data-start=\"5482\" data-end=\"5497\">Limitations</strong></p><ul data-start=\"5498\" data-end=\"5689\"><li data-start=\"5498\" data-end=\"5533\"><p data-start=\"5500\" data-end=\"5533\">Does not make the Caern invisible</p></li><li data-start=\"5534\" data-end=\"5568\"><p data-start=\"5536\" data-end=\"5568\">Does not stop assault once found</p></li><li data-start=\"5569\" data-end=\"5621\"><p data-start=\"5571\" data-end=\"5621\">Does not affect creatures already inside the Caern</p></li><li data-start=\"5622\" data-end=\"5689\"><p data-start=\"5624\" data-end=\"5689\">Cannot be selectively dismissed without performing the Rite again</p></li></ul><p data-start=\"5691\" data-end=\"5826\"><strong data-start=\"5691\" data-end=\"5715\">Tag (do not remove):</strong><br data-start=\"5715\" data-end=\"5718\" /><code data-start=\"5718\" data-end=\"5826\">[GAROU_CAERN_STATE] parent=shrouded-glen; effect=shroud; exclusiveGroup=shrouded-glen; duration=indefinite</code></p>",
+      "chat": "<p><strong data-start=\"4502\" data-end=\"4534\">Shrouded Glen — Caern Shroud</strong><br data-start=\"4534\" data-end=\"4537\" /><em data-start=\"4537\" data-end=\"4583\">Caern State (from Rite of the Shrouded Glen)</em></p><p data-start=\"4585\" data-end=\"4760\">Spirits of concealment, misdirection, and silence bind themselves to the Caern. Those who do not belong find the Caern difficult to remember, locate, or deliberately approach.</p><p data-start=\"4762\" data-end=\"4773\"><strong data-start=\"4762\" data-end=\"4773\">Effects</strong></p><ul data-start=\"4774\" data-end=\"5159\"><li data-start=\"4774\" data-end=\"4925\"><p data-start=\"4776\" data-end=\"4925\">Creatures attempting to locate, track, or deliberately travel to the Caern must succeed on a Wisdom (Survival) or Intelligence (Investigation) check.</p></li><li data-start=\"4926\" data-end=\"5065\"><p data-start=\"4928\" data-end=\"4965\">The DC is determined by Caern Rating:</p><ul data-start=\"4968\" data-end=\"5065\"><li data-start=\"4968\" data-end=\"4985\"><p data-start=\"4970\" data-end=\"4985\">Rating 1: DC 14</p></li><li data-start=\"4988\" data-end=\"5005\"><p data-start=\"4990\" data-end=\"5005\">Rating 2: DC 15</p></li><li data-start=\"5008\" data-end=\"5025\"><p data-start=\"5010\" data-end=\"5025\">Rating 3: DC 16</p></li><li data-start=\"5028\" data-end=\"5045\"><p data-start=\"5030\" data-end=\"5045\">Rating 4: DC 17</p></li><li data-start=\"5048\" data-end=\"5065\"><p data-start=\"5050\" data-end=\"5065\">Rating 5: DC 18</p></li></ul></li><li data-start=\"5066\" data-end=\"5109\"><p data-start=\"5068\" data-end=\"5109\">At Corruption 3+, the DC is reduced by 2.</p></li><li data-start=\"5110\" data-end=\"5159\"><p data-start=\"5112\" data-end=\"5159\">At Corruption 5, the shroud collapses entirely.</p></li></ul><p data-start=\"5161\" data-end=\"5294\"><strong data-start=\"5161\" data-end=\"5175\">Divination</strong><br />Magical effects used to locate, scry upon, or divine the Caern automatically fail unless they are 6th level or higher.</p><p data-start=\"5296\" data-end=\"5315\"><strong data-start=\"5296\" data-end=\"5315\">Who Is Affected</strong></p><ul data-start=\"5316\" data-end=\"5480\"><li data-start=\"5316\" data-end=\"5364\"><p data-start=\"5318\" data-end=\"5364\">Non-Garou and unrecognized Garou are affected.</p></li><li data-start=\"5365\" data-end=\"5416\"><p data-start=\"5367\" data-end=\"5416\">Recognized Garou and contributors are unaffected.</p></li><li data-start=\"5417\" data-end=\"5480\"><p data-start=\"5419\" data-end=\"5480\">Allies may bypass through escort or tokens (ST adjudication).</p></li></ul><p data-start=\"5482\" data-end=\"5497\"><strong data-start=\"5482\" data-end=\"5497\">Limitations</strong></p><ul data-start=\"5498\" data-end=\"5689\"><li data-start=\"5498\" data-end=\"5533\"><p data-start=\"5500\" data-end=\"5533\">Does not make the Caern invisible</p></li><li data-start=\"5534\" data-end=\"5568\"><p data-start=\"5536\" data-end=\"5568\">Does not stop assault once found</p></li><li data-start=\"5569\" data-end=\"5621\"><p data-start=\"5571\" data-end=\"5621\">Does not affect creatures already inside the Caern</p></li><li data-start=\"5622\" data-end=\"5689\"><p data-start=\"5624\" data-end=\"5689\">Cannot be selectively dismissed without performing the Rite again</p></li></ul><p data-start=\"5691\" data-end=\"5826\"><strong data-start=\"5691\" data-end=\"5715\">Tag (do not remove):</strong><br data-start=\"5715\" data-end=\"5718\" /><code data-start=\"5718\" data-end=\"5826\">[GAROU_CAERN_STATE] parent=shrouded-glen; effect=shroud; exclusiveGroup=shrouded-glen; duration=indefinite</code></p>"
+    },
+    "identifier": "shrouded-glen--caern-shroud",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.ZDflvonMj4qYltar",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770646618826,
+    "modifiedTime": 1770646676700,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

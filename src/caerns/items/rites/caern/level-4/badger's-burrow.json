@@ -1,0 +1,182 @@
+{
+  "folder": "xmkWmYScAeWAjhYH",
+  "name": "Badger's Burrow",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "HHVCrgMk1mYpGCE8": {
+        "type": "utility",
+        "_id": "HHVCrgMk1mYpGCE8",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Badger’s Burrow (4 hours) — Caern Rite (Level 4)  Cost: Invest 6 Gnosis (may be shared). If the full cost is paid, the Rite succeeds automatically.  Choose a point within the Caern to center a Zone of Awareness. Radius by Caern Rating: 1: 60 ft | 2: 120 ft | 3: 300 ft | 4: 1,000 ft | 5: 1 mile  For the rest of this Caern Turn, the Caern “reports disturbances” within the zone. Garou tending the Caern have advantage on Perception/Survival to investigate events from within the zone. Creatures trying to hide/bypass notice within the zone do so at disadvantage. (Detects presence/disturbance, not exact identity.)  [GAROU_RITE_USE] id=badgers-burrow; cadence=turn; applyTo=caern; zone=center-point; radius=by-caern-rating"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "value": ""
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Badger's Burrow"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong data-start=\"714\" data-end=\"733\">Badger’s Burrow</strong><br data-start=\"733\" data-end=\"736\" /><em data-start=\"736\" data-end=\"758\">Caern Rite • Level 4</em></p><p data-start=\"760\" data-end=\"933\"><strong data-start=\"760\" data-end=\"769\">Time:</strong> 4 hours<br data-start=\"777\" data-end=\"780\" /><strong data-start=\"780\" data-end=\"794\">Frequency:</strong> Once per Caern Turn<br data-start=\"814\" data-end=\"817\" /><strong data-start=\"817\" data-end=\"826\">Cost:</strong> 6 Gnosis (may be shared by multiple Garou)<br data-start=\"869\" data-end=\"872\" /><strong data-start=\"872\" data-end=\"888\">Requirement:</strong> Must be performed within a functioning Caern</p><hr data-start=\"935\" data-end=\"938\" /><p data-start=\"940\" data-end=\"1199\"><strong data-start=\"940\" data-end=\"955\">Description</strong><br data-start=\"955\" data-end=\"958\" />Badger’s Burrow attunes the Garou to disturbances within the Caern’s bounds. Rather than watching the entire Caern, this Rite focuses attention inward, sharpening awareness where it matters most. The land listens — and reports what it feels.</p><hr data-start=\"1201\" data-end=\"1204\" /><p data-start=\"1206\" data-end=\"1381\"><strong data-start=\"1206\" data-end=\"1216\">Effect</strong><br data-start=\"1216\" data-end=\"1219\" />When the full Gnosis cost is invested, designate a <strong data-start=\"1270\" data-end=\"1291\">Zone of Awareness</strong> centered on a point within the Caern. The size of the zone depends on the Caern’s Rating:</p><ul data-start=\"1383\" data-end=\"1551\"><li data-start=\"1383\" data-end=\"1415\"><p data-start=\"1385\" data-end=\"1415\"><strong data-start=\"1385\" data-end=\"1398\">Rating 1:</strong> 60-foot radius</p></li><li data-start=\"1416\" data-end=\"1449\"><p data-start=\"1418\" data-end=\"1449\"><strong data-start=\"1418\" data-end=\"1431\">Rating 2:</strong> 120-foot radius</p></li><li data-start=\"1450\" data-end=\"1483\"><p data-start=\"1452\" data-end=\"1483\"><strong data-start=\"1452\" data-end=\"1465\">Rating 3:</strong> 300-foot radius</p></li><li data-start=\"1484\" data-end=\"1519\"><p data-start=\"1486\" data-end=\"1519\"><strong data-start=\"1486\" data-end=\"1499\">Rating 4:</strong> 1,000-foot radius</p></li><li data-start=\"1520\" data-end=\"1551\"><p data-start=\"1522\" data-end=\"1551\"><strong data-start=\"1522\" data-end=\"1535\">Rating 5:</strong> 1-mile radius</p></li></ul><p data-start=\"1553\" data-end=\"1698\">For the duration of the <strong data-start=\"1577\" data-end=\"1591\">Caern Turn</strong>, Garou tending the Caern gain supernatural awareness of significant activity within the Zone of Awareness.</p><p data-start=\"1700\" data-end=\"1712\"><strong data-start=\"1700\" data-end=\"1712\">Benefits</strong></p><ul data-start=\"1713\" data-end=\"2151\"><li data-start=\"1713\" data-end=\"1909\"><p data-start=\"1715\" data-end=\"1753\">The Storyteller alerts the Garou when:</p><ul data-start=\"1756\" data-end=\"1909\"><li data-start=\"1756\" data-end=\"1791\"><p data-start=\"1758\" data-end=\"1791\">Creatures enter or leave the zone</p></li><li data-start=\"1794\" data-end=\"1845\"><p data-start=\"1796\" data-end=\"1845\">Hostile, stealthy, or clandestine activity occurs</p></li><li data-start=\"1848\" data-end=\"1909\"><p data-start=\"1850\" data-end=\"1909\">Rituals, corruption, or supernatural influence is attempted</p></li></ul></li><li data-start=\"1910\" data-end=\"2047\"><p data-start=\"1912\" data-end=\"2047\">Garou have advantage on <strong data-start=\"1936\" data-end=\"1959\">Wisdom (Perception)</strong> and <strong data-start=\"1964\" data-end=\"1985\">Wisdom (Survival)</strong> checks made to investigate events originating within the zone</p></li><li data-start=\"2048\" data-end=\"2151\"><p data-start=\"2050\" data-end=\"2151\">Creatures attempting to hide, move unseen, or bypass notice within the zone do so at <strong data-start=\"2135\" data-end=\"2151\">disadvantage</strong></p></li></ul><p data-start=\"2153\" data-end=\"2258\"><strong data-start=\"2153\" data-end=\"2162\">Limit</strong><br />This awareness conveys <strong data-start=\"2186\" data-end=\"2214\">presence and disturbance</strong>, not precise identity, location, or intent.</p><p>Limitations This Rite: Does not prevent entry into the Caern Grants no combat bonuses Does not bypass nondetection or similar effects The Zone of Awareness must remain entirely within the Caern Only one Zone of Awareness may be active at a time Performing this Rite again replaces the previous zone Corruption Interaction At Corruption 3 or higher, information may be delayed, muted, or unclear At Corruption 5, this Rite cannot be performed</p><hr data-start=\"2260\" data-end=\"2263\" /><p data-start=\"2265\" data-end=\"2404\"><strong data-start=\"2265\" data-end=\"2289\">Tag (do not remove):</strong><br data-start=\"2289\" data-end=\"2292\" /><code data-start=\"2292\" data-end=\"2404\">[GAROU_RITE] type=caern; id=badgers-burrow; level=4; cadence=turn; cost=6gnosis; requires=caern; zone=variable</code></p>",
+      "chat": "<p><strong data-start=\"714\" data-end=\"733\">Badger’s Burrow</strong><br data-start=\"733\" data-end=\"736\" /><em data-start=\"736\" data-end=\"758\">Caern Rite • Level 4</em></p><p data-start=\"760\" data-end=\"933\"><strong data-start=\"760\" data-end=\"769\">Time:</strong> 4 hours<br data-start=\"777\" data-end=\"780\" /><strong data-start=\"780\" data-end=\"794\">Frequency:</strong> Once per Caern Turn<br data-start=\"814\" data-end=\"817\" /><strong data-start=\"817\" data-end=\"826\">Cost:</strong> 6 Gnosis (may be shared by multiple Garou)<br data-start=\"869\" data-end=\"872\" /><strong data-start=\"872\" data-end=\"888\">Requirement:</strong> Must be performed within a functioning Caern</p><hr data-start=\"935\" data-end=\"938\" /><p data-start=\"940\" data-end=\"1199\"><strong data-start=\"940\" data-end=\"955\">Description</strong><br data-start=\"955\" data-end=\"958\" />Badger’s Burrow attunes the Garou to disturbances within the Caern’s bounds. Rather than watching the entire Caern, this Rite focuses attention inward, sharpening awareness where it matters most. The land listens — and reports what it feels.</p><hr data-start=\"1201\" data-end=\"1204\" /><p data-start=\"1206\" data-end=\"1381\"><strong data-start=\"1206\" data-end=\"1216\">Effect</strong><br data-start=\"1216\" data-end=\"1219\" />When the full Gnosis cost is invested, designate a <strong data-start=\"1270\" data-end=\"1291\">Zone of Awareness</strong> centered on a point within the Caern. The size of the zone depends on the Caern’s Rating:</p><ul data-start=\"1383\" data-end=\"1551\"><li data-start=\"1383\" data-end=\"1415\"><p data-start=\"1385\" data-end=\"1415\"><strong data-start=\"1385\" data-end=\"1398\">Rating 1:</strong> 60-foot radius</p></li><li data-start=\"1416\" data-end=\"1449\"><p data-start=\"1418\" data-end=\"1449\"><strong data-start=\"1418\" data-end=\"1431\">Rating 2:</strong> 120-foot radius</p></li><li data-start=\"1450\" data-end=\"1483\"><p data-start=\"1452\" data-end=\"1483\"><strong data-start=\"1452\" data-end=\"1465\">Rating 3:</strong> 300-foot radius</p></li><li data-start=\"1484\" data-end=\"1519\"><p data-start=\"1486\" data-end=\"1519\"><strong data-start=\"1486\" data-end=\"1499\">Rating 4:</strong> 1,000-foot radius</p></li><li data-start=\"1520\" data-end=\"1551\"><p data-start=\"1522\" data-end=\"1551\"><strong data-start=\"1522\" data-end=\"1535\">Rating 5:</strong> 1-mile radius</p></li></ul><p data-start=\"1553\" data-end=\"1698\">For the duration of the <strong data-start=\"1577\" data-end=\"1591\">Caern Turn</strong>, Garou tending the Caern gain supernatural awareness of significant activity within the Zone of Awareness.</p><p data-start=\"1700\" data-end=\"1712\"><strong data-start=\"1700\" data-end=\"1712\">Benefits</strong></p><ul data-start=\"1713\" data-end=\"2151\"><li data-start=\"1713\" data-end=\"1909\"><p data-start=\"1715\" data-end=\"1753\">The Storyteller alerts the Garou when:</p><ul data-start=\"1756\" data-end=\"1909\"><li data-start=\"1756\" data-end=\"1791\"><p data-start=\"1758\" data-end=\"1791\">Creatures enter or leave the zone</p></li><li data-start=\"1794\" data-end=\"1845\"><p data-start=\"1796\" data-end=\"1845\">Hostile, stealthy, or clandestine activity occurs</p></li><li data-start=\"1848\" data-end=\"1909\"><p data-start=\"1850\" data-end=\"1909\">Rituals, corruption, or supernatural influence is attempted</p></li></ul></li><li data-start=\"1910\" data-end=\"2047\"><p data-start=\"1912\" data-end=\"2047\">Garou have advantage on <strong data-start=\"1936\" data-end=\"1959\">Wisdom (Perception)</strong> and <strong data-start=\"1964\" data-end=\"1985\">Wisdom (Survival)</strong> checks made to investigate events originating within the zone</p></li><li data-start=\"2048\" data-end=\"2151\"><p data-start=\"2050\" data-end=\"2151\">Creatures attempting to hide, move unseen, or bypass notice within the zone do so at <strong data-start=\"2135\" data-end=\"2151\">disadvantage</strong></p></li></ul><p data-start=\"2153\" data-end=\"2258\"><strong data-start=\"2153\" data-end=\"2162\">Limit</strong><br />This awareness conveys <strong data-start=\"2186\" data-end=\"2214\">presence and disturbance</strong>, not precise identity, location, or intent.</p><p>Limitations This Rite: Does not prevent entry into the Caern Grants no combat bonuses Does not bypass nondetection or similar effects The Zone of Awareness must remain entirely within the Caern Only one Zone of Awareness may be active at a time Performing this Rite again replaces the previous zone Corruption Interaction At Corruption 3 or higher, information may be delayed, muted, or unclear At Corruption 5, this Rite cannot be performed</p><hr data-start=\"2260\" data-end=\"2263\" /><p data-start=\"2265\" data-end=\"2404\"><strong data-start=\"2265\" data-end=\"2289\">Tag (do not remove):</strong><br data-start=\"2289\" data-end=\"2292\" /><code data-start=\"2292\" data-end=\"2404\">[GAROU_RITE] type=caern; id=badgers-burrow; level=4; cadence=turn; cost=6gnosis; requires=caern; zone=variable</code></p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "dnd5e": {}
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.K8KrnwuTfMFwkqXm",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770643779323,
+    "modifiedTime": 1770645061907,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

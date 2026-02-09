@@ -147,7 +147,7 @@
     "scripts/relentless-pursuit-automation.js",
     "scripts/untamed-ferocity-automation.js",
     "scripts/extinction-drive-automation.js",
-    "scripts/garou-forms.js","scripts/caerns/index.js"
+    "scripts/garou-forms.js","scripts/caerns/index.js","scripts/rites-of-accord/rite-of-cleansing.js"
   ],
   "flags": {}
 }

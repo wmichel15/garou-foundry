@@ -1,0 +1,128 @@
+{
+  "folder": "281qpIFnrgndnoAx",
+  "name": "Voice of the Jackal",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "V01c30fJ4ck4lXy9": {
+        "type": "utility",
+        "_id": "V01c30fJ4ck4lXy9",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Voice of the Jackal</h3><p><em>Punishment Rite (Level 2) • Caern</em></p><hr><p><strong>Time:</strong> 30 minutes<br><strong>Cost:</strong> 3 Gnosis<br><strong>Target:</strong> One creature capable of speech</p><p><strong>Resolution:</strong> Unwilling target may resist with a Wisdom saving throw. DC = 8 + performing Garou's Max Gnosis. Success: Rite fails, no effect (Gnosis still spent). Failure: Effect lasts 24 hours.</p><hr><p><strong>Effect:</strong> Target has disadvantage on Charisma-based ability checks. When speaking in social situations, the Storyteller may compel awkward honesty, socially inappropriate admissions, or embarrassing but non-damaging statements. Cannot force revelation of magical secrets, plot-critical information, or player-controlled backstory without consent.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=voice-of-the-jackal; category=caern; subcategory=punishment; tier=2; dc=8+max-gnosis; resolution=wisdom-save</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "30"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Voice of the Jackal"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Voice of the Jackal</strong><br><em>Punishment Rite (Level 2) • Caern</em></p><p><strong>Time:</strong> 30 minutes<br><strong>Cost:</strong> 3 Gnosis<br><strong>Target:</strong> One creature capable of speech</p><hr><h3>Description</h3><p>The Voice of the Jackal is a rite of humiliation and enforced honesty. Spirits of mockery and revelation cling to the offender, twisting their words and undermining their dignity.</p><hr><h3>Effect</h3><p>If the target fails their saving throw, for the next 24 hours:</p><ul><li>The target has disadvantage on Charisma-based ability checks</li><li>When speaking in social situations, the Storyteller may compel: awkward honesty; socially inappropriate admissions; embarrassing but non-damaging statements</li></ul><p><strong>This Rite cannot force the revelation of:</strong></p><ul><li>Magical secrets</li><li>Plot-critical information</li><li>Player-controlled backstory details without consent</li></ul><hr><h3>Resisting a Punishment Rite</h3><p>If this rite targets an unwilling creature, the target may attempt to resist. The target makes a Wisdom saving throw. Save DC = 8 + the performing Garou's Max Gnosis Rating. On a success, the Rite fails and has no effect (the Gnosis cost is still spent). On a failure, the Rite takes full effect. Willing targets do not make a saving throw.</p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=caern; subcategory=punishment; id=voice-of-the-jackal; tier=2; cost=3gnosis; time=30min; resolution=wisdom-save; dc=8+max-gnosis</code></p>",
+      "chat": "<p><strong>Voice of the Jackal</strong><br><em>Punishment Rite (Level 2) • Caern</em></p><p><strong>Cost:</strong> 3 Gnosis • <strong>Time:</strong> 30 minutes • <strong>Target:</strong> One creature capable of speech</p><p><strong>Resolution:</strong> Unwilling target makes Wis save (DC 8 + performer's Max Gnosis). On failure, for 24 hours: disadvantage on Charisma-based checks; ST may compel awkward honesty or embarrassing (non-damaging) statements. Cannot force magical secrets, plot-critical info, or backstory without consent.</p>"
+    },
+    "identifier": "voice-of-the-jackal",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of Heritage",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "r1t30fH3r1t4g3Xy": {
+        "type": "utility",
+        "_id": "r1t30fH3r1t4g3Xy",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of Heritage</h3><p><em>Mystic Rite (Level 2)</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> The willing subject of the Rite, or a personal item strongly tied to their lineage</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> Choose one willing creature present (or use a personal item tied to lineage). Gain spiritual insight: Garou blood or latent supernatural lineage; breed origin (if Garou); notable spiritual significance, taint, or blessing. Conveyed through visions, sensations, or symbolic imagery — not exact factual detail.</p><p><strong>Mechanical:</strong> Does not reveal class, level, or abilities; does not identify curses, diseases, or conditions; does not expose secrets unrelated to lineage. Spiritual truth, not genealogical records; ST determines detail.</p><p><strong>Limitations:</strong> Cannot be used on unwilling creature; does not bypass magic that conceals lineage; cannot track or locate a creature. Often used to confirm Garou lineage, resolve identity disputes, identify lost kin, or determine if newborn should receive Baptism of Fire. No mechanical advantage beyond knowledge.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-heritage; category=mystic; tier=2; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Heritage"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of Heritage</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> The willing subject of the Rite, or a personal item strongly tied to their lineage</p><hr><h3>Description</h3><p>The Rite of Heritage calls upon ancestral and blood spirits to reveal the spiritual lineage of an individual. Through this Rite, the Garou seek understanding of where a creature comes from — not in names and dates, but in spiritual inheritance.</p><p>This Rite does not judge. It reveals.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>Choose one willing creature present during the Rite. The Garou gains clear spiritual insight into the subject's heritage, including:</p><ul><li>Whether the subject possesses Garou blood or a latent supernatural lineage</li><li>The subject's breed origin (if Garou)</li><li>Whether the subject's lineage carries notable spiritual significance, taint, or blessing</li></ul><p>This information is conveyed through visions, sensations, or symbolic imagery rather than exact factual detail.</p><hr><h3>Mechanical Clarifications</h3><p>The Rite:</p><ul><li>Does not reveal class, level, or abilities</li><li>Does not identify curses, diseases, or conditions</li><li>Does not expose secrets unrelated to lineage</li><li>The Rite provides spiritual truth, not genealogical records</li><li>The Storyteller determines the level of detail revealed</li></ul><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Cannot be used on an unwilling creature</li><li>Does not bypass effects that explicitly conceal lineage or origin through powerful magic</li><li>Cannot be used to track or locate a creature</li></ul><hr><h3>Narrative Use</h3><p>The Rite of Heritage is often used to:</p><ul><li>Confirm Garou lineage</li><li>Resolve disputes of identity</li><li>Identify lost kin or spiritual heirs</li><li>Determine whether a newborn should receive the Baptism of Fire</li></ul><p>It carries no mechanical advantage beyond knowledge.</p><p><em>\"Blood remembers what names forget.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=rite-of-heritage; tier=2; cost=3gnosis; time=1h; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of Heritage</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Cost:</strong> 3 Gnosis • <strong>Time:</strong> 1 hour • <strong>Resolution:</strong> Automatic on payment</p><p>Reveals spiritual lineage of a willing subject (or via personal item). Insight: Garou blood/latent lineage; breed origin (if Garou); spiritual significance, taint, or blessing. Visions/symbolic imagery, not factual detail. Does not reveal class/level/abilities, curses/diseases, or non-lineage secrets; ST sets detail. Cannot be used on unwilling, bypass lineage-concealing magic, or track. No mechanical advantage beyond knowledge.</p>"
+    },
+    "identifier": "rite-of-heritage",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

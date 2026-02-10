@@ -1,0 +1,127 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Breath of Gaia",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "Br34th0fG4i4Xy9k": {
+        "type": "utility",
+        "_id": "Br34th0fG4i4Xy9k",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Breath of Gaia</h3><p><em>Minor Rite</em></p><hr><p><strong>Time:</strong> 1 bonus action<br><strong>Cost:</strong> 1 Gnosis<br><strong>Frequency:</strong> Once per long rest</p><p>When you perform this Rite, choose one: (1) Advantage on your next Gnosis Roll before end of your next turn, or (2) Advantage on your next Wisdom saving throw to resist fear, charm, or Umbral disorientation. Effect remains available until used or end of your next turn. Does not restore Gnosis. Only one active Breath of Gaia effect at a time.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=breath-of-gaia; category=minor; cost=1gnosis; frequency=once-per-long-rest</p></div>"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Breath of Gaia"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Breath of Gaia</strong><br><em>Minor Rite</em></p><p><strong>Time:</strong> 1 bonus action<br><strong>Cost:</strong> 1 Gnosis<br><strong>Frequency:</strong> Once per long rest</p><hr><h3>Description</h3><p>Breath of Gaia is a calming rite in which the Garou pauses, slows their breathing, and draws in the living essence of the world around them. Through deliberate breath and focus, the Garou realigns their spirit with Gaia, pushing aside panic, doubt, and spiritual turbulence.</p><p>This Rite does not grant strength. It restores clarity.</p><hr><h3>Effect</h3><p>When you perform this Rite, choose one of the following effects:</p><ul><li>You gain advantage on your next Gnosis Roll made before the end of your next turn, or</li><li>You gain advantage on your next Wisdom saving throw made to resist a fear, charm, or Umbral disorientation effect</li></ul><p>Once chosen, the effect remains available until used or until the end of your next turn.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Can only be used once per long rest</li><li>Does not restore Gnosis</li><li>Cannot be used while unconscious or incapacitated</li><li>You may have only one active Breath of Gaia effect at a time</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=minor; id=breath-of-gaia; cost=1gnosis; time=bonus-action; frequency=once-per-long-rest</code></p>",
+      "chat": "<p><strong>Breath of Gaia</strong><br><em>Minor Rite</em></p><p><strong>Cost:</strong> 1 Gnosis (1 bonus action) • <strong>Frequency:</strong> Once per long rest</p><p>Perform and choose one: advantage on your next Gnosis Roll before end of next turn, or advantage on your next Wisdom save vs fear, charm, or Umbral disorientation. Effect lasts until used or end of next turn. Does not restore Gnosis. Only one active at a time.</p>"
+    },
+    "identifier": "breath-of-gaia",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

@@ -1,0 +1,127 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Greet the Moon",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "Gr33tTh3M00nXy9k": {
+        "type": "utility",
+        "_id": "Gr33tTh3M00nXy9k",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Greet the Moon</h3><p><em>Minor Rite</em></p><hr><p><strong>Time:</strong> 1 bonus action<br><strong>Cost:</strong> 1 Gnosis<br><strong>Frequency:</strong> Once per long rest</p><p>When performed, the rite remains dormant until triggered. Once before the end of your next long rest, when you fail a Charisma-based ability check during a social interaction, you may reroll and use the new result (must accept the new result). Applies to Persuasion, Deception, Intimidation, Performance, or ST-approved Charisma check in social interaction. Not attack, damage, or saving throws. Only one active Greet the Moon effect at a time.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=greet-the-moon; category=minor; cost=1gnosis; frequency=once-per-long-rest</p></div>"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Greet the Moon"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "1"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Greet the Moon</strong><br><em>Minor Rite</em></p><p><strong>Time:</strong> 1 bonus action<br><strong>Cost:</strong> 1 Gnosis<br><strong>Frequency:</strong> Once per long rest</p><hr><h3>Description</h3><p>Greet the Moon is a brief rite of reverence performed under the open sky. The Garou acknowledges Luna's watchful presence, aligning their voice and presence with the rhythms of instinct, emotion, and truth.</p><p>This Rite does not compel. It invites favor.</p><hr><h3>Effect</h3><p>When this Rite is performed, it remains dormant until triggered.</p><p>Once before the end of your next long rest, when you fail a Charisma-based ability check made during a social interaction, you may choose to reroll that check and use the new result.</p><p>This may apply to:</p><ul><li>Charisma (Persuasion)</li><li>Charisma (Deception)</li><li>Charisma (Intimidation)</li><li>Charisma (Performance)</li><li>Any Storyteller-approved Charisma check involving social interaction</li></ul><p>You must accept the new result.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Can only be used once per long rest</li><li>Cannot be used on attack rolls, damage rolls, or saving throws</li><li>Must be declared after the failure but before the outcome is finalized</li><li>You may have only one active Greet the Moon effect at a time</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=minor; id=greet-the-moon; cost=1gnosis; time=bonus-action; frequency=once-per-long-rest</code></p>",
+      "chat": "<p><strong>Greet the Moon</strong><br><em>Minor Rite</em></p><p><strong>Cost:</strong> 1 Gnosis (1 bonus action) • <strong>Frequency:</strong> Once per long rest</p><p>Perform to set a dormant benefit. Once before your next long rest, when you fail a Charisma-based check during a social interaction (Persuasion, Deception, Intimidation, Performance, or ST-approved), you may reroll and use the new result. Must accept new result. Not for attack, damage, or saves. Only one active at a time.</p>"
+    },
+    "identifier": "greet-the-moon",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

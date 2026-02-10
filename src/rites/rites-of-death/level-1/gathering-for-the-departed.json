@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Gathering for the Departed",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "f2g7H4cP9sTuVw6x": {
+        "type": "utility",
+        "_id": "f2g7H4cP9sTuVw6x",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Gathering for the Departed</h3><p><em>Rite of Death (Level 1)</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 1 Gnosis<br><strong>Requirement:</strong> The body, remains, or a personal item of the deceased Garou</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> The spirit is formally released; the deceased cannot unintentionally linger or be exploited by minor necromantic effects. Each participating Garou may choose one benefit until end of next long rest: advantage on one Wis save vs fear/despair/dread, or advantage on one Cha check to console/inspire/support. Benefits do not stack and expire unused.</p><p><strong>Limitations:</strong> Does not contact or summon the deceased; does not prevent powerful magic from interacting with the soul; no combat bonuses. Must be performed within one Caern Turn of death for full effect. A given death may only be honored once.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=gathering-for-the-departed; category=death; tier=1; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Gathering for the Departed"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Gathering for the Departed</strong><br><em>Rite of Death • Level 1</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 1 Gnosis<br><strong>Requirement:</strong> The body, remains, or a personal item of the deceased Garou</p><hr><h3>Description</h3><p>The Gathering for the Departed is performed to honor a recently fallen Garou and guide their spirit toward rest. Through shared memory, howls, and remembrance, the living acknowledge both loss and legacy.</p><p>This Rite does not summon the dead. It allows the dead to be acknowledged and released.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p><strong>Upon completion:</strong></p><ul><li>The spirit of the deceased Garou is formally released from lingering emotional ties to the living world</li><li>The deceased cannot unintentionally linger, manifest, or become a restless spirit due to unresolved grief or unfinished remembrance</li><li>The Rite establishes the deceased as properly honored, preventing their spirit from being exploited or bound through minor necromantic or spiritual effects</li></ul><p>In addition, each Garou who participated in the Rite may choose one of the following benefits, which lasts until the end of their next long rest:</p><ul><li>Gain advantage on one Wisdom saving throw made to resist fear, despair, or supernatural dread</li><li>Gain advantage on one Charisma-based ability check made to console, inspire, or support another creature</li></ul><p>These benefits do not stack and expire unused.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Does not contact or summon the deceased</li><li>Does not prevent powerful magic from interacting with the soul</li><li>Does not provide combat bonuses</li><li>The Rite must be performed within one Caern Turn of the Garou's death to gain its full effect</li><li>A given death may only be honored by this Rite once</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=death; id=gathering-for-the-departed; tier=1; cost=1gnosis; time=1h; resolution=none</code></p>",
+      "chat": "<p><strong>Gathering for the Departed</strong><br><em>Rite of Death • Level 1</em></p><p><strong>Cost:</strong> 1 Gnosis • <strong>Time:</strong> 1 hour • <strong>Resolution:</strong> Automatic on payment</p><p>Releases the spirit; prevents lingering or exploitation. Each participant may choose one benefit until next long rest: advantage on one Wis save (fear/despair/dread) or one Cha check (console/inspire/support). Must be within one Caern Turn of death; a given death honored only once.</p>"
+    },
+    "identifier": "gathering-for-the-departed",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

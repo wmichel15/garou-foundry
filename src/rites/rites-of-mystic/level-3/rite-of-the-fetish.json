@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of the Fetish",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "r1t30fF3t1shXy9k": {
+        "type": "utility",
+        "_id": "r1t30fF3t1shXy9k",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of the Fetish</h3><p><em>Mystic Rite (Level 3)</em></p><hr><p><strong>Time:</strong> 8 hours<br><strong>Cost:</strong> 5 Gnosis<br><strong>Requirement:</strong> An awakened spirit, a suitable vessel, and access to the Umbra. A failed agreement may have narrative consequences.</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> Choose one awakened spirit and one non-magical object suitable to house it. Spirit is bound into the object, creating a Fetish (magical item with personality and will; abilities per Fetish section). Activating a Fetish: Gnosis roll equal to Fetish rating, or spend 1 Gnosis to activate automatically. Fetish may refuse if wielder violates its nature or agreement.</p><p><strong>Mechanical:</strong> Rite does not determine Fetish abilities, guarantee cooperation, or override activation limits. Spirit bound but not enslaved. Destroying Fetish releases spirit. Cannot bind major spirits, gods, unique entities, or unwilling spirits; spirit must agree or be properly bargained with.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-the-fetish; category=mystic; tier=3; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "480"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of the Fetish"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of the Fetish</strong><br><em>Mystic Rite • Level 3</em></p><p><strong>Time:</strong> 8 hours<br><strong>Cost:</strong> 5 Gnosis<br><strong>Requirement:</strong> An awakened spirit, a suitable vessel, and access to the Umbra. A failed agreement may have narrative consequences.</p><hr><h3>Description</h3><p>The Rite of the Fetish binds an awakened spirit into a physical object, creating a Fetish — a sacred item that channels spiritual power through material form.</p><p>Fetishes are not tools; they are agreements, forged through ritual, negotiation, and sacrifice.</p><p>This Rite does not create power. It gives power a place to dwell.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>Choose:</p><ul><li>One awakened spirit (see Rite of Spirit Awakening)</li><li>One non-magical object suitable to house that spirit</li></ul><p>The spirit is bound into the object, transforming it into a Fetish.</p><p><strong>A Fetish:</strong></p><ul><li>Is considered a magical item</li><li>Retains its own personality and will</li><li>Possesses one or more abilities defined in the Fetish section of this document</li></ul><hr><h3>Using a Fetish</h3><p>Activating a Fetish's power requires either:</p><ul><li>A Gnosis Roll equal to the Fetish's rating, or</li><li>Spending 1 Gnosis to activate it automatically</li></ul><p>Fetish abilities, ratings, and limitations are detailed in the Fetish section. A Fetish may refuse to activate if its wielder violates its nature or agreement.</p><hr><h3>Mechanical Clarifications</h3><p>This Rite:</p><ul><li>Does not determine the Fetish's abilities</li><li>Does not guarantee the spirit's cooperation</li><li>Does not override Fetish activation limits</li><li>The spirit remains bound but not enslaved</li><li>Destroying the Fetish releases the spirit</li></ul><hr><h3>Limitations</h3><p>This Rite cannot bind:</p><ul><li>Major spirits, gods, or unique entities</li><li>Spirits unwilling to be bound</li></ul><p>A Garou may only attempt to create a Fetish if the spirit agrees or has been properly bargained with.</p><hr><h3>Narrative Use</h3><p>The Rite of the Fetish is central to Garou culture and legacy. Many Fetishes are passed down through generations, carrying memory, expectation, and obligation alongside power.</p><p><em>\"A Fetish is not owned. It is endured.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=rite-of-the-fetish; tier=3; cost=5gnosis; time=8h; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of the Fetish</strong><br><em>Mystic Rite • Level 3</em></p><p><strong>Cost:</strong> 5 Gnosis • <strong>Time:</strong> 8 hours • <strong>Resolution:</strong> Automatic on payment</p><p>Binds awakened spirit into non-magical object, creating a Fetish (magical item with personality, will, and abilities per Fetish section). Activate: Gnosis roll = Fetish rating or spend 1 Gnosis. Fetish may refuse if agreement violated. Cannot bind major spirits, gods, or unwilling spirits; spirit must agree or be bargained with. Destroying Fetish releases spirit.</p>"
+    },
+    "identifier": "rite-of-the-fetish",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

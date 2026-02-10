@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of Talisman Dedication",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "t4l1sm4nD3d1c4t9": {
+        "type": "utility",
+        "_id": "t4l1sm4nD3d1c4t9",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of Talisman Dedication</h3><p><em>Mystic Rite (Level 1)</em></p><hr><p><strong>Time:</strong> 1 minute<br><strong>Cost:</strong> 1 Gnosis<br><strong>Requirement:</strong> One or more non-magical items carried by the Garou</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> Choose one talisman set (non-magical items carried/worn). One item counts as: backpack + mundane contents; complete set of clothing; worn non-magical armor; weapon + sheath/sling. The set is spiritually keyed to the Garou. While dedication remains active: set travels with the Garou into the Umbra; items return when exiting; spirits do not impede or separate items during Umbra travel.</p><p><strong>Restrictions:</strong> Cannot resize, merge, or alter items; cannot affect structures, vehicles, or objects too large to carry; cannot transport other creatures; only what the Garou can normally carry. No protection against loss, theft, or destruction.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-talisman-dedication; category=mystic; tier=1; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "1"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Talisman Dedication"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of Talisman Dedication</strong><br><em>Mystic Rite • Level 1</em></p><p><strong>Time:</strong> 1 minute<br><strong>Cost:</strong> 1 Gnosis<br><strong>Requirement:</strong> One or more non-magical items carried by the Garou</p><hr><h3>Description</h3><p>The Rite of Talisman Dedication prepares mundane possessions for travel between the physical world and the Umbra. Through spiritual marking and recognition, the Garou ensure that what they carry is acknowledged by the spirits as belonging with them.</p><p>Magical items, Fetishes, and Talens do not require this Rite. This Rite exists for everything else.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>Choose one talisman set composed of non-magical items currently carried or worn by the Garou. The following count as one item for the purposes of this Rite:</p><ul><li>A backpack and all mundane contents within it</li><li>A complete set of clothing</li><li>A worn suit of non-magical armor</li><li>A weapon and its sheath or sling</li></ul><p>The entire talisman set is spiritually keyed to the Garou.</p><p><strong>While the dedication remains active:</strong></p><ul><li>The talisman set travels with the Garou into the Umbra</li><li>The items return with the Garou when exiting the Umbra</li><li>Spirits do not impede, reject, or separate the items during Umbra travel</li></ul><hr><h3>Restrictions on Items</h3><p>This Rite:</p><ul><li>Cannot resize, merge, or alter items</li><li>Cannot affect structures, vehicles, or objects too large to be normally carried</li><li>Cannot be used to transport other creatures</li><li>Items that cannot normally be carried by the Garou cannot be included</li><li>The Rite does not grant protection against loss, theft, or destruction</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=rite-of-talisman-dedication; tier=1; cost=1gnosis; time=1min; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of Talisman Dedication</strong><br><em>Mystic Rite • Level 1</em></p><p><strong>Cost:</strong> 1 Gnosis • <strong>Time:</strong> 1 minute • <strong>Resolution:</strong> Automatic on payment</p><p>Prepares non-magical carried items for Umbra travel. Choose one talisman set (backpack+contents, clothing, armor, weapon+sheath count as one). Set is spiritually keyed; travels with you into/out of Umbra; spirits do not impede. Cannot resize/alter items, affect large objects, or transport creatures. No protection vs loss, theft, or destruction.</p>"
+    },
+    "identifier": "rite-of-talisman-dedication",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

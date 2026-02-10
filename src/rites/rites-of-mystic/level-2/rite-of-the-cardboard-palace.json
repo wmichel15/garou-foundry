@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of the Cardboard Palace",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "c4rdb04rdP4l4c3X": {
+        "type": "utility",
+        "_id": "c4rdb04rdP4l4c3X",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of the Cardboard Palace</h3><p><em>Mystic Rite (Level 2)</em></p><hr><p><strong>Time:</strong> 30 minutes<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> A mundane structure or collection of materials capable of forming shelter</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> Choose a non-magical structure or materials that can provide cover (shack, alley shelter, abandoned building, improvised dwelling). For 24 hours: structurally sound (resists collapse from normal weather/wear); interior dry, insulated, habitable; creatures resting inside gain normal long rest benefits even in hostile environments. Does not prevent intrusion, violence, or detection.</p><p><strong>Mechanical:</strong> Does not create structure from nothing; no defensive bonuses; does not conceal from detection; shelter remains mundane in appearance. Environmental hazards (lava, floods, siege) still affect it. Cannot be used on fortified/magically enhanced structures or locations actively collapsing. Once per Caern Turn per shelter; effects end if structure destroyed.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-the-cardboard-palace; category=mystic; tier=2; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "30"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of the Cardboard Palace"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of the Cardboard Palace</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Time:</strong> 30 minutes<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> A mundane structure or collection of materials capable of forming shelter</p><hr><h3>Description</h3><p>The Rite of the Cardboard Palace calls upon spirits of shelter, survival, and humility to elevate a humble space into a place of temporary safety and dignity. What would otherwise be ignored — cardboard, scrap wood, abandoned buildings — becomes sufficient for rest and refuge.</p><p>This Rite does not create luxury. It ensures no Garou is left without shelter.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>Choose a non-magical structure or assemblage of materials capable of providing cover (such as a shack, alley shelter, abandoned building, or improvised dwelling). For the next 24 hours, the space gains the following benefits:</p><ul><li>The shelter becomes structurally sound, resisting collapse from normal weather and wear</li><li>The interior remains dry, insulated, and habitable, regardless of external conditions</li><li>Creatures resting within the shelter gain the normal benefits of a long rest, even in otherwise hostile environments</li></ul><p>This Rite does not prevent intrusion, violence, or detection.</p><hr><h3>Mechanical Clarifications</h3><p>The Rite:</p><ul><li>Does not create a structure from nothing</li><li>Does not grant defensive bonuses</li><li>Does not conceal occupants from detection</li><li>The shelter remains mundane in appearance</li><li>Environmental hazards beyond normal exposure (lava, floods, siege weapons) still affect the shelter normally</li></ul><hr><h3>Limitations</h3><p>This Rite cannot be used on:</p><ul><li>Structures already fortified or magically enhanced</li><li>Locations actively collapsing or being destroyed</li></ul><p>A given shelter may only be affected by this Rite once per Caern Turn. The effects end immediately if the structure is destroyed.</p><hr><h3>Narrative Use</h3><p>The Rite of the Cardboard Palace is commonly used to:</p><ul><li>Shelter kinfolk or displaced Garou</li><li>Establish temporary safe havens</li><li>Survive hostile urban or wilderness conditions without drawing attention</li></ul><p>It is a Rite of endurance, not comfort.</p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=rite-of-the-cardboard-palace; tier=2; cost=3gnosis; time=30min; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of the Cardboard Palace</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Cost:</strong> 3 Gnosis • <strong>Time:</strong> 30 minutes • <strong>Resolution:</strong> Automatic on payment</p><p>Elevates a mundane shelter (shack, alley, abandoned building, improvised dwelling) for 24 hours: structurally sound, dry and habitable; resting inside grants normal long rest even in hostile environments. No intrusion/violence/detection protection. Does not create structure, grant defenses, or conceal; shelter stays mundane. Once per Caern Turn per shelter; effects end if destroyed. Rite of endurance, not comfort.</p>"
+    },
+    "identifier": "rite-of-the-cardboard-palace",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

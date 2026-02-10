@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of Contrition",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "a7b2C9xK4mNpQr1s": {
+        "type": "utility",
+        "_id": "a7b2C9xK4mNpQr1s",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of Contrition</h3><p><em>Rite of Accord (Level 1)</em></p><hr><p><strong>Time:</strong> 20 minutes<br><strong>Cost:</strong> 1 Gnosis (spent on attempt)<br><strong>Focus:</strong> A meaningful apology, offering, or symbolic act tied to the offense<br><strong>Participants:</strong> One Garou (others may witness)</p><p><strong>Roll:</strong> Gnosis Roll (d20 + Max Gnosis rating)<br><strong>DC:</strong> 12 (minor offense) or 14 (serious offense)</p><hr><p><strong>On Success:</strong> For 24 hours, advantage on <strong>one</strong> Charisma-based check to seek forgiveness, negotiate reparations, restore trust, or resolve social/spiritual conflict with the subject of the offense. Applies once, only for interactions related to the acknowledged wrongdoing.</p><p><strong>Limitations:</strong> Does not compel forgiveness; does not remove penalties/curses/sanctions; no effect on creatures incapable of social interaction; cannot be repeated for the same offense; bad faith or repetition loses benefit immediately.</p><p><strong>On Failure:</strong> Gnosis spent. Apology rejected. Further attempts to resolve the same offense within 24 hours are made at disadvantage.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=contrition; category=accord; tier=1; dc=12|14</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "20"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": true,
+          "visible": true,
+          "formula": "1d20 + @abilities.wis.mod",
+          "name": "Wisdom Check (Gnosis Roll)"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Contrition"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of Contrition</strong><br><em>Rite of Accord • Level 1</em></p><p><strong>Gnosis Cost:</strong> 1<br><strong>Time:</strong> 20 minutes<br><strong>Resolution:</strong> Gnosis Roll<br><strong>DC:</strong> 12 (minor offense), 14 (serious offense)<br><strong>Participants:</strong> One Garou (others may witness)<br><strong>Focus:</strong> A meaningful apology, offering, or symbolic act tied to the offense</p><hr><h3>Purpose</h3><p>The Rite of Contrition is performed to formally acknowledge wrongdoing and open the possibility of reconciliation after a breach of trust, custom, or spiritual obligation.</p><p>This Rite does not erase consequences. It creates a brief opportunity for resolution without escalation.</p><hr><h3>Effect</h3><p>On a successful Gnosis roll, for the next 24 hours, the Garou gains advantage on <strong>one</strong> Charisma-based check made to seek forgiveness, negotiate reparations, restore trust, or resolve a social or spiritual conflict with the specific creature, group, or spirit that was the subject of the offense.</p><p>This advantage applies only once, and only for interactions directly related to the acknowledged wrongdoing.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Does not compel forgiveness or compliance</li><li>Does not remove penalties, curses, or sanctions by itself</li><li>Has no effect on creatures incapable of social interaction</li><li>Cannot be repeated for the same offense</li><li>If the Garou acts in bad faith or repeats the offense, the benefit is lost immediately</li></ul><hr><h3>Failure</h3><p>On a failed Gnosis roll:</p><ul><li>The Gnosis is spent</li><li>The apology is rejected</li><li>Further attempts to resolve the same offense within 24 hours are made at disadvantage</li><li>Failure never worsens the original offense beyond social or spiritual consequence</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=accord; id=contrition; tier=1; cost=1gnosis; time=20m; resolution=wisdom; dc=12|14</code></p>",
+      "chat": "<p><strong>Rite of Contrition</strong><br><em>Rite of Accord • Level 1</em></p><p><strong>Cost:</strong> 1 Gnosis • <strong>Time:</strong> 20 min • <strong>DC:</strong> 12 or 14</p><p>On success: advantage on one Charisma-based check (forgiveness/reparations/trust) with the subject of the offense, 24h. Cannot repeat for same offense.</p>"
+    },
+    "identifier": "rite-of-contrition",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

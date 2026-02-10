@@ -1,0 +1,128 @@
+{
+  "folder": "281qpIFnrgndnoAx",
+  "name": "The Hunt",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "Th3HuntR1t3Xy9kL": {
+        "type": "utility",
+        "_id": "Th3HuntR1t3Xy9kL",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "7",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>The Hunt</h3><p><em>Punishment Rite (Level 4) • Caern</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 7 Gnosis<br><strong>Target:</strong> One creature</p><p><strong>Resolution:</strong> Unwilling target may resist with a Wisdom saving throw. DC = 8 + performing Garou's Max Gnosis. Success: Rite fails, no effect (Gnosis still spent). Failure: Target is Marked as Prey for 7 days.</p><hr><p><strong>While Marked as Prey:</strong> Disadvantage on Dexterity (Stealth); cannot benefit from effects that magically conceal, obscure, or erase presence from spirits; hostile spirits drawn at ST discretion; Garou aware of the Rite recognize the mark. Does not compel Garou to attack or remove free will. Mark visible only to Garou and spirits; no physical manifestation or damage.</p><p><strong>Ends early:</strong> Voluntary surrender for judgment; major atonement acknowledged by spirits; or formal release by those who imposed the Rite. Only one creature per sept may be subject to The Hunt at a time; creature who resists cannot be targeted again for 7 days.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=the-hunt; category=caern; subcategory=punishment; tier=4; dc=8+max-gnosis; resolution=wisdom-save</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform The Hunt"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>The Hunt</strong><br><em>Punishment Rite (Level 4) • Caern</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 7 Gnosis<br><strong>Target:</strong> One creature</p><hr><h3>Description</h3><p>The Hunt is a grave sanction reserved for serious violations of the Litany or sacred law. Through this Rite, the spirits mark the offender as prey, denying them secrecy and drawing relentless spiritual attention to their movements.</p><p>The Hunt is not an execution. It is a declaration that escape will not come easily.</p><hr><h3>Effect</h3><p>If the target fails their saving throw, they are Marked as Prey for 7 days.</p><p><strong>While Marked as Prey:</strong></p><ul><li>The target has disadvantage on Dexterity (Stealth) checks</li><li>The target cannot benefit from effects that would magically conceal, obscure, or erase their presence from spirits</li><li>Spirits hostile to the target's actions are drawn toward them at the Storyteller's discretion</li><li>Garou who are aware of the Rite instinctively recognize the mark upon the target</li></ul><p>The Rite does not compel Garou to attack the target, nor does it remove the target's free will.</p><hr><h3>Spiritual Consequences</h3><p>The mark is visible only to Garou and spirits. Mundane creatures perceive nothing unusual. The mark has no physical manifestation and causes no damage. Spirits may observe, harass, or test the target, but they do not act as summoned combatants.</p><hr><h3>Ending the Hunt</h3><p>The Hunt ends early if the target:</p><ul><li>Voluntarily surrenders themselves for judgment, or</li><li>Completes a major act of atonement acknowledged by the spirits, or</li><li>Is formally released by those who imposed the Rite</li></ul><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Does not authorize violence or execution</li><li>Does not override alignment, laws, or player agency</li><li>Does not force encounters or combat</li><li>Only one creature may be subject to The Hunt at a time per sept</li><li>A creature that successfully resists this Rite cannot be targeted by The Hunt again for 7 days</li></ul><hr><h3>Resisting a Punishment Rite</h3><p>If this rite targets an unwilling creature, the target may attempt to resist. The target makes a Wisdom saving throw. Save DC = 8 + the performing Garou's Max Gnosis Rating. On a success, the Rite fails and has no effect (the Gnosis cost is still spent). On a failure, the Rite takes full effect. Willing targets do not make a saving throw.</p><p><em>\"You may still run. The world will remember where you fled.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=caern; subcategory=punishment; id=the-hunt; tier=4; cost=7gnosis; time=1h; resolution=wisdom-save; dc=8+max-gnosis</code></p>",
+      "chat": "<p><strong>The Hunt</strong><br><em>Punishment Rite (Level 4) • Caern</em></p><p><strong>Cost:</strong> 7 Gnosis • <strong>Time:</strong> 1 hour • <strong>Target:</strong> One creature</p><p><strong>Resolution:</strong> Unwilling target makes Wis save (DC 8 + performer's Max Gnosis). On failure, Marked as Prey for 7 days: disadvantage on Dex (Stealth); no magical concealment from spirits; hostile spirits drawn at ST discretion; Garou recognize the mark. Ends early on surrender, major atonement, or formal release. One target per sept; resist = cannot be targeted again for 7 days.</p>"
+    },
+    "identifier": "the-hunt",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

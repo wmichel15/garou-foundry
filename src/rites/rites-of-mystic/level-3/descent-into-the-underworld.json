@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Descent into the Underworld",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "D3sc3ntUnd3rw0rl": {
+        "type": "utility",
+        "_id": "D3sc3ntUnd3rw0rl",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Descent into the Underworld</h3><p><em>Mystic Rite (Level 3)</em></p><hr><p><strong>Time:</strong> 8 hours<br><strong>Cost:</strong> 5 Gnosis<br><strong>Requirement:</strong> A spiritually resonant site associated with death, ancestry, or passage (grave-site, ancestor shrine, deep Umbral locus)</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> Garou's spirit enters deep Umbral state (travel within Ethereal Plane); body unconscious and helpless. Journey up to 10 minutes in-game; symbolic trials, spirits of the dead, spiritual truths. Upon returning, choose <b>two</b>: <em>Ancestral Communion</em> — advantage on one Wis check/save (death, spirits, history, legacy) next Caern Turn; <em>Revelation of the Shadow</em> — remove one non-magical mental effect (fear/despair/doubt) or advantage on one Cha check (spirits/grieving) next Caern Turn; <em>Mark of the Returned</em> — advantage on one social with death/ancestor spirits next Caern Turn.</p><p><strong>Risks:</strong> Cannot benefit again until 3 Caern Turns. Body vulnerable during Rite. No resurrection, targeted soul contact, or binding. Each Garou performs alone.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=descent-into-the-underworld; category=mystic; tier=3; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "480"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Descent into the Underworld"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Descent into the Underworld</strong><br><em>Mystic Rite • Level 3</em></p><p><strong>Time:</strong> 8 hours<br><strong>Cost:</strong> 5 Gnosis<br><strong>Requirement:</strong> A spiritually resonant site associated with death, ancestry, or passage (such as a grave-site, ancestor shrine, or deep Umbral locus)</p><hr><h3>Description</h3><p>The Descent into the Underworld is a perilous rite through which a Garou sends their spirit beyond the living world to confront death, memory, and shadow. Through extended ritual and surrender, the Garou's spirit passes into the Umbra's underworld, where truths are revealed that cannot be learned among the living.</p><p>This Rite is not a journey of the body. It is a journey of the self.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>The Garou's spirit enters a deep Umbral state, mechanically treated as travel within the Ethereal Plane. Their physical body remains unconscious and helpless in the material world for the duration of the Rite.</p><p>The journey lasts up to 10 minutes of in-game time (Storyteller adjudication). During this time, the Garou experiences symbolic trials, encounters spirits of the dead or ancestral echoes, and confronts personal or spiritual truths.</p><p><strong>Upon returning, choose two of the following outcomes:</strong></p><p><em>Ancestral Communion</em> — The Garou gains insight from spirits of the dead or ancestral echoes. Gain advantage on one Wisdom-based ability check or saving throw made within the next Caern Turn that directly relates to death, spirits, history, or legacy.</p><p><em>Revelation of the Shadow</em> — The Garou confronts a difficult personal truth. Remove one non-magical mental effect caused by fear, despair, or doubt (Storyteller adjudication), or gain advantage on one Charisma-based ability check made to speak with spirits or the grieving within the next Caern Turn.</p><p><em>Mark of the Returned</em> — The Garou returns visibly altered on a spiritual level. Spirits associated with death or ancestry recognize the Garou as one who has walked beyond life. Gain advantage on one social interaction with death aspected or ancestor spirits during the next Caern Turn.</p><hr><h3>Risks and Consequences</h3><p>This Rite is profoundly taxing. A Garou cannot benefit from this Rite again until three Caern Turns have passed.</p><p>The Storyteller may introduce lingering narrative consequences, omens, or spiritual attention as a result of the journey.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Does not resurrect the dead</li><li>Does not allow targeted contact with specific souls</li><li>Does not bind, compel, or control spirits</li><li>The Garou's body is vulnerable for the duration of the Rite</li><li>Each Garou must perform this Rite alone</li></ul><p><em>\"Those who walk among the dead return knowing why they still live.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=descent-into-the-underworld; tier=3; cost=5gnosis; time=8h; resolution=none</code></p>",
+      "chat": "<p><strong>Descent into the Underworld</strong><br><em>Mystic Rite • Level 3</em></p><p><strong>Cost:</strong> 5 Gnosis • <strong>Time:</strong> 8 hours • <strong>Resolution:</strong> Automatic on payment</p><p>Spirit enters Umbra (Ethereal); body unconscious/helpless. Journey up to 10 min; trials, dead/ancestral spirits, truths. Upon return choose <b>two</b>: Ancestral Communion (advantage one Wis check/save re death/spirits/history/legacy); Revelation of the Shadow (remove one fear/despair/doubt effect or advantage one Cha check re spirits/grieving); Mark of the Returned (advantage one social with death/ancestor spirits). Cannot benefit again for 3 Caern Turns. Body vulnerable; perform alone.</p>"
+    },
+    "identifier": "descent-into-the-underworld",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

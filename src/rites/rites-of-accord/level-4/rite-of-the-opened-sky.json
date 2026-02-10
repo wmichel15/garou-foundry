@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of the Opened Sky",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "e1f6G3bO8qRtUv5w": {
+        "type": "utility",
+        "_id": "e1f6G3bO8qRtUv5w",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "7",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of the Opened Sky</h3><p><em>Rite of Accord (Level 4)</em></p><hr><p><strong>Time:</strong> 8 hours<br><strong>Cost:</strong> 7 Gnosis (spent on attempt)<br><strong>Focus:</strong> Open sky and storm offerings (blooded water, ash, breath, bone, song)<br><strong>Participants:</strong> One or more Garou<br><strong>Area:</strong> 1-mile radius centered on the ritual site<br><strong>Storm Duration:</strong> 1 hour</p><p><strong>Roll:</strong> Gnosis Roll (d20 + Max Gnosis rating)<br><strong>DC:</strong> 16</p><hr><p><strong>On Success:</strong> A dark storm forms; heavy rain falls for 1 hour. Wyrm-tainted creatures exposed to the rain take 4d10 radiant (6d10 at Garou level 17) at start of each turn; Con save for half. Storm suppresses Wyrm-tainted environmental effects; area cannot be used for summoning, corruption rituals, or blight. No effect underground or indoors; does not affect sheltered creatures. Does not stack; ends if dispersed by 8th-level or higher effect.</p><p><strong>On Failure:</strong> Gnosis spent. Storm fails to form. Does not worsen conditions.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=opened-sky; category=accord; tier=4; dc=16</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "480"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": true,
+          "visible": true,
+          "formula": "1d20 + @abilities.wis.mod",
+          "name": "Wisdom Check (Gnosis Roll)"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of the Opened Sky"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of the Opened Sky</strong><br><em>Rite of Accord • Level 4</em></p><p><strong>Gnosis Cost:</strong> 7<br><strong>Time:</strong> 8 hours<br><strong>Resolution:</strong> Gnosis Roll<br><strong>DC:</strong> 16<br><strong>Participants:</strong> One or more Garou<br><strong>Area:</strong> A 1-mile radius centered on the ritual site<br><strong>Duration:</strong> 1 hour<br><strong>Focus:</strong> Open sky and storm offerings (blooded water, ash, breath, bone, song)</p><hr><h3>Summary</h3><p>The Rite of the Opened Sky calls a cleansing storm that scours corruption from the air and land.</p><p>This Rite does not heal the world — it punishes what clings to it. The storm is visible, audible, and unmistakably supernatural.</p><hr><h3>Effect</h3><p>On a successful Gnosis roll, a dark storm cloud forms above the ritual site and moves slowly to cover the affected area. Heavy rain falls across the region for the duration.</p><p>Any area within the 1-mile radius that the rain can physically reach is affected by this Rite.</p><p><strong>While the storm persists:</strong></p><ul><li>Wyrm-tainted creatures exposed to the rain take 4d10 radiant damage at the start of each of their turns</li><li>This damage increases to 6d10 radiant damage at Garou level 17</li><li>Affected creatures may make a Constitution saving throw at the start of their turn, taking half damage on a success</li><li>The storm does not discriminate by allegiance — only by corruption</li></ul><p><strong>Wyrm-Tainted Creatures</strong><br>For the purposes of this Rite, the following creature types are considered Wyrm-tainted: Undead (all); Fiends (demons, devils, yugoloths); Aberrations; Cursed lycanthropes (Monster Manual lycanthropes); Creatures explicitly described as corrupted, blighted, or Wyrm-tainted by the Storyteller. Beasts, humanoids, fey, elementals, giants, dragons, and constructs are not affected unless explicitly corrupted.</p><p><strong>Additional Effects</strong></p><ul><li>The storm suppresses Wyrm-tainted environmental effects while it persists</li><li>The area cannot be used as a focal point for summoning, corruption rituals, or blight-spreading effects</li><li>The storm provides no cover, concealment, or combat advantage to any creature</li></ul><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Has no effect underground or indoors</li><li>Does not affect creatures sheltered from the rain</li><li>Does not stack with itself</li><li>The storm ends immediately if magically dispersed by an effect of 8th level or higher</li></ul><hr><h3>Failure</h3><p>On a failed Gnosis roll:</p><ul><li>The Gnosis is spent</li><li>The storm fails to form</li><li>Failure does not worsen conditions</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=accord; id=opened-sky; tier=4; cost=7gnosis; time=8h; resolution=wisdom; dc=16</code></p>",
+      "chat": "<p><strong>Rite of the Opened Sky</strong><br><em>Rite of Accord • Level 4</em></p><p><strong>Cost:</strong> 7 Gnosis • <strong>Time:</strong> 8 hours • <strong>DC:</strong> 16</p><p>On success: cleansing storm for 1 hour; 1-mile radius. Wyrm-tainted creatures in rain take 4d10 (6d10 at 17) radiant/turn, Con save for half. Suppresses Wyrm-taint; blocks summoning/corruption. No effect underground or on sheltered creatures.</p>"
+    },
+    "identifier": "rite-of-the-opened-sky",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

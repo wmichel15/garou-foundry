@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of Becoming",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "r1t30fB3c0m1ngXy": {
+        "type": "utility",
+        "_id": "r1t30fB3c0m1ngXy",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of Becoming</h3><p><em>Mystic Rite (Level 2)</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> A spiritual locus, thin place, or Umbral threshold</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> The next time the Garou uses Umbra Phasing: entry and exit automatically succeed; the Garou may remain in the Umbra up to 1 minute without penalties or strain. Applies to one complete transition (enter and exit), then ends.</p><p><strong>Limitations:</strong> No repeated or permanent benefits; does not bypass hostile spiritual barriers; no protection vs spirits, hazards, or combat in the Umbra. Effect is lost if Umbra Phasing is not used before end of current Caern Turn. Cannot be stacked or extended by repeated performances.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-becoming; category=mystic; tier=2; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Becoming"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of Becoming</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> A spiritual locus, thin place, or Umbral threshold</p><hr><h3>Description</h3><p>The Rite of Becoming aligns a Garou more closely with the Umbra, easing the strain of crossing between worlds. Through meditation and invocation, the Garou briefly harmonizes their essence with the spirit realm.</p><p>This Rite does not grant mastery of the Umbra. It grants clarity.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>The next time the Garou uses Umbra Phasing:</p><ul><li>Entry into the Umbra automatically succeeds</li><li>Exit from the Umbra automatically succeeds</li><li>The Garou may remain in the Umbra for up to 1 minute without suffering any penalties or strain normally associated with Umbra Phasing</li></ul><p>This effect applies to one complete Umbra transition (entering and exiting) and then ends.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Does not grant repeated or permanent benefits</li><li>Does not allow bypassing hostile spiritual barriers</li><li>Does not protect against spirits, hazards, or combat within the Umbra</li><li>If the Garou does not use Umbra Phasing before the end of the current Caern Turn, the Rite's effect is lost</li><li>This Rite cannot be stacked or extended by repeated performances</li></ul><p><em>\"For a moment, the worlds agree to let you pass.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=rite-of-becoming; tier=2; cost=3gnosis; time=1h; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of Becoming</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Cost:</strong> 3 Gnosis • <strong>Time:</strong> 1 hour • <strong>Resolution:</strong> Automatic on payment</p><p>Aligns Garou with the Umbra. Next use of Umbra Phasing: entry and exit auto-succeed; may remain up to 1 minute without penalties or strain. One complete transition, then ends. Effect lost if not used before end of Caern Turn. Cannot be stacked or extended. No protection in the Umbra; does not bypass hostile barriers.</p>"
+    },
+    "identifier": "rite-of-becoming",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

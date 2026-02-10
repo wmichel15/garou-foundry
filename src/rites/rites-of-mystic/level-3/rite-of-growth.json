@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of Growth",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "r1t30fGr0wthXy9k": {
+        "type": "utility",
+        "_id": "r1t30fGr0wthXy9k",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of Growth</h3><p><em>Mystic Rite (Level 3)</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 5 Gnosis<br><strong>Requirement:</strong> An area of natural terrain containing soil, plants, or dormant vegetation</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> Choose a natural area with radius up to 300 feet. Over the next 24 hours: plants grow at accelerated rate (months/years of growth); barren or depleted land becomes fertile (if not magically or permanently ruined); vegetation dense and healthy. ST may rule: lightly or heavily obscured by foliage; difficult terrain for unfamiliar creatures; increased food, herbs, or resources.</p><p><strong>Mechanical:</strong> Does not create magical plants; does not deal damage or restrain/entangle; difficult terrain or obscurement is environmental, not magical. Growth persists naturally. No effect on stone, metal, worked structures; areas devoid of natural life; land corrupted beyond recovery. Cannot reshape terrain during combat. Area may be affected once per Caern Turn.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-growth; category=mystic; tier=3; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Growth"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of Growth</strong><br><em>Mystic Rite • Level 3</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 5 Gnosis<br><strong>Requirement:</strong> An area of natural terrain containing soil, plants, or dormant vegetation</p><hr><h3>Description</h3><p>The Rite of Growth calls upon spirits of life and renewal to awaken the land. Through song, invocation, and offering, the Garou accelerate natural cycles of growth, causing plants to flourish in a fraction of the time they normally would.</p><p>This Rite does not create life from nothing. It urges what already exists to grow, spread, and thrive.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>Choose a natural area with a radius up to 300 feet. Over the next 24 hours, the following effects occur within the area:</p><ul><li>Plants grow at an accelerated rate, achieving months or years of natural growth</li><li>Barren or depleted land becomes fertile, provided it was not magically or permanently ruined</li><li>Vegetation becomes dense and healthy, restoring undergrowth, brush, or canopy as appropriate</li></ul><p>At the Storyteller's discretion, this may result in:</p><ul><li>The area becoming lightly or heavily obscured by foliage</li><li>Difficult terrain for creatures unfamiliar with the growth</li><li>Increased availability of food, herbs, or natural resources</li></ul><hr><h3>Mechanical Clarifications</h3><p>The Rite:</p><ul><li>Does not create magical plants</li><li>Does not deal damage</li><li>Does not restrain or entangle creatures</li><li>Any difficult terrain or obscurement created is environmental, not magical</li><li>The growth persists naturally and does not wither when the Rite ends</li></ul><hr><h3>Limitations</h3><p>This Rite has no effect on:</p><ul><li>Stone, metal, or worked structures</li><li>Areas completely devoid of natural life</li><li>Land corrupted beyond natural recovery (Storyteller adjudication)</li></ul><p>The Rite cannot be used to instantly reshape terrain during combat. An area may only be affected by this Rite once per Caern Turn.</p><p><em>\"Life does not hurry — but when it is called, it answers.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=rite-of-growth; tier=3; cost=5gnosis; time=1h; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of Growth</strong><br><em>Mystic Rite • Level 3</em></p><p><strong>Cost:</strong> 5 Gnosis • <strong>Time:</strong> 1 hour • <strong>Resolution:</strong> Automatic on payment</p><p>Accelerates growth in natural area (radius up to 300 ft). Over 24 hours: months/years of plant growth; barren land fertile; dense vegetation. ST may rule obscurement, difficult terrain, more food/herbs. No magical plants, damage, or restraint; growth is environmental and persists. No effect on stone/metal, lifeless areas, corrupted land. Once per Caern Turn per area.</p>"
+    },
+    "identifier": "rite-of-growth",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

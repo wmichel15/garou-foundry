@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of the Questing Stone",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "Q3st1ngSt0n3Xy9k": {
+        "type": "utility",
+        "_id": "Q3st1ngSt0n3Xy9k",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of the Questing Stone</h3><p><em>Mystic Rite (Level 2)</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> A small stone, charm, or personal token, and a clearly defined quarry</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> Choose quarry at performance: specific creature known to Garou; specific object seen/handled; clearly described location of spiritual/narrative significance. For 24 hours the stone gives bearer general direction toward quarry (approximate direction only; no distance, obstacles, or exact location; updates as bearer moves).</p><p><strong>Mechanical:</strong> While following guidance, bearer has advantage on Wis (Survival) to track/navigate toward quarry and Wis (Perception) to notice signs/traces related to quarry — only when actively pursuing.</p><p><strong>Limitations:</strong> Cannot target unknown/vague quarry; does not cross planar boundaries or bypass magic that conceals location. If quarry destroyed, unreachable, or warded, guidance may become vague or cease (ST). One active questing stone per Garou. Ends early if quarry found, bearer abandons hunt, or 24 hours expire.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-the-questing-stone; category=mystic; tier=2; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of the Questing Stone"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of the Questing Stone</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> A small stone, charm, or personal token, and a clearly defined quarry</p><hr><h3>Description</h3><p>The Rite of the Questing Stone binds a minor spirit of guidance into a token, allowing it to subtly pull toward a chosen quarry. The spirit does not reveal paths or destinations outright; instead, it provides instinctive direction, nudging the bearer toward what they seek.</p><p>This Rite does not replace the hunt. It ensures the hunt is not blind.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>Choose one of the following quarries at the time of performance:</p><ul><li>A specific creature personally known to the Garou</li><li>A specific object the Garou has seen or handled</li><li>A clearly described location of spiritual or narrative significance</li></ul><p>For the next 24 hours, the questing stone provides the bearer with a general sense of direction toward the quarry.</p><p><strong>This guidance functions as follows:</strong></p><ul><li>The bearer always knows the approximate direction of the quarry (north, south-east, downward, etc.)</li><li>The Rite does not reveal: distance; obstacles; exact location</li><li>The guidance updates naturally as the bearer moves</li></ul><hr><h3>Mechanical Benefits</h3><p>While following the questing stone's guidance, the bearer has advantage on:</p><ul><li>Wisdom (Survival) checks made to track or navigate toward the quarry</li><li>Wisdom (Perception) checks made to notice signs or traces related to the quarry</li></ul><p>These benefits apply only when actively pursuing the chosen quarry.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Cannot target an unknown or vaguely defined quarry</li><li>Does not penetrate planar boundaries</li><li>Does not bypass powerful magic that conceals location</li><li>If the quarry is destroyed, unreachable, or protected by powerful warding, the guidance becomes vague or ceases (Storyteller adjudication)</li><li>A Garou may only have one active questing stone at a time</li></ul><hr><h3>End of Effect</h3><p>The Rite ends early if:</p><ul><li>The quarry is found</li><li>The bearer willingly abandons the hunt</li><li>The 24-hour duration expires</li></ul><p>The stone then becomes mundane once more.</p><p><em>\"The stone does not tell you where to go. It reminds you which way is forward.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=rite-of-the-questing-stone; tier=2; cost=3gnosis; time=1h; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of the Questing Stone</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Cost:</strong> 3 Gnosis • <strong>Time:</strong> 1 hour • <strong>Resolution:</strong> Automatic on payment</p><p>Binds guidance spirit to token; choose quarry (known creature, seen object, or significant location). For 24 hours bearer knows approximate direction; no distance/obstacles/exact location. Advantage on Wis (Survival) to track/navigate and Wis (Perception) for signs — only while actively pursuing. One active stone per Garou. Ends when quarry found, hunt abandoned, or 24 hours expire.</p>"
+    },
+    "identifier": "rite-of-the-questing-stone",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

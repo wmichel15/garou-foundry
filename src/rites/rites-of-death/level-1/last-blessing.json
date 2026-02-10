@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Last Blessing",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "xY9kL2mN4pQr6sTv": {
+        "type": "utility",
+        "_id": "xY9kL2mN4pQr6sTv",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Last Blessing</h3><p><em>Rite of Death (Level 1)</em></p><hr><p><strong>Time:</strong> 10 minutes<br><strong>Cost:</strong> 1 Gnosis<br><strong>Requirement:</strong> The intact body or remains of the deceased Garou</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> The body assumes a natural, non-monstrous form (humanoid or animal, as appropriate). Visible signs of supernatural transformation from shapeshifting are removed; the body no longer appears overtly supernatural to mundane observation. Metis: form chosen by the Storyteller to preserve secrecy and dignity. Effect is permanent; does not interfere with burial, cremation, or other funerary practices.</p><p><strong>Limitations:</strong> Does not restore life, preserve the corpse, conceal wounds, or affect soul/spirit. No effect on bodies already altered by powerful magic. Does not prevent divination, interfere with resurrection, or grant protection vs necromancy. Must be performed within one Caern Turn of death. A body may only be affected once.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=last-blessing; category=death; tier=1; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "10"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Last Blessing"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Last Blessing</strong><br><em>Rite of Death • Level 1</em></p><p><strong>Time:</strong> 10 minutes<br><strong>Cost:</strong> 1 Gnosis<br><strong>Requirement:</strong> The intact body or remains of the deceased Garou</p><hr><h3>Description</h3><p>The Last Blessing is performed to ensure that a fallen Garou's body returns to a form acceptable to the natural and spiritual order. Through prayer and invocation, the Garou release the corpse from unnatural shapes imposed by death or battle.</p><p>This Rite exists to protect the living — not to alter the fate of the dead.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p><strong>Upon completion:</strong></p><ul><li>The deceased Garou's body assumes a natural, non-monstrous form (humanoid or animal, as appropriate)</li><li>Any visible signs of supernatural transformation caused by shapeshifting are removed</li><li>The body no longer presents as overtly supernatural to mundane observation</li><li>If the deceased was metis-born, the body instead assumes a natural humanoid or animal form, chosen by the Storyteller to best preserve secrecy and dignity.</li></ul><p>This effect is permanent and does not interfere with burial, cremation, or other funerary practices.</p><hr><h3>Mechanical Clarification</h3><p>The Rite affects only the physical body. It does not: restore life; preserve the corpse; conceal wounds or cause of death; affect the soul or spirit. The Rite has no effect on bodies already altered by powerful magic (such as true polymorph or resurrection magic).</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Does not prevent divination magic from determining the corpse's true nature</li><li>Does not interfere with resurrection spells</li><li>Does not grant protection against necromancy</li><li>The Rite must be performed within one Caern Turn of the Garou's death to have effect</li><li>A body may only be affected by this Rite once</li></ul><p><em>\"They carried many shapes in life. In death, they carry only one.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=death; id=last-blessing; tier=1; cost=1gnosis; time=10min; resolution=none</code></p>",
+      "chat": "<p><strong>Last Blessing</strong><br><em>Rite of Death • Level 1</em></p><p><strong>Cost:</strong> 1 Gnosis • <strong>Time:</strong> 10 minutes • <strong>Resolution:</strong> Automatic on payment</p><p>Body assumes a natural, non-monstrous form; shapeshifting traces removed; no overtly supernatural appearance. Metis: ST chooses form. Permanent; does not affect soul or resurrection. Must be within one Caern Turn of death; a body may be affected only once.</p>"
+    },
+    "identifier": "last-blessing",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

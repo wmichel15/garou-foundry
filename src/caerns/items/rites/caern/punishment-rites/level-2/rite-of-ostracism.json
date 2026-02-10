@@ -1,0 +1,128 @@
+{
+  "folder": "281qpIFnrgndnoAx",
+  "name": "Rite of Ostracism",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "0str4c1smR1t3Xy9": {
+        "type": "utility",
+        "_id": "0str4c1smR1t3Xy9",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of Ostracism</h3><p><em>Punishment Rite (Level 2) • Caern</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Target:</strong> One Garou</p><p><strong>Resolution:</strong> Unwilling target may resist with a Wisdom saving throw. DC = 8 + performing Garou's Max Gnosis. Success: Rite fails, no effect (Gnosis still spent). Failure: Target is ostracized for one Caern Turn.</p><hr><p><strong>While ostracized:</strong> Target cannot benefit from Totem Pack Benefits, Caern bonuses, or pack-based features or abilities; is treated by spirits as an outsider. Target retains full agency. Rite ends early if target publicly acknowledges wrongdoing or completes a Storyteller-approved act of atonement.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-ostracism; category=caern; subcategory=punishment; tier=2; dc=8+max-gnosis; resolution=wisdom-save</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Ostracism"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of Ostracism</strong><br><em>Punishment Rite (Level 2) • Caern</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Target:</strong> One Garou</p><hr><h3>Description</h3><p>The Rite of Ostracism formally separates a Garou from their pack and sept in the eyes of the spirits. Though the offender remains physically present, the spirit world no longer recognizes them as part of the whole.</p><hr><h3>Effect</h3><p>If the target fails their saving throw, they are ostracized for one Caern Turn.</p><p><strong>While ostracized, the target:</strong></p><ul><li>Cannot benefit from: Totem Pack Benefits; Caern bonuses; pack-based features or abilities</li><li>Is treated by spirits as an outsider</li></ul><p>The target retains full agency and may act normally.</p><hr><h3>Resisting a Punishment Rite</h3><p>If this rite targets an unwilling creature, the target may attempt to resist. The target makes a Wisdom saving throw. Save DC = 8 + the performing Garou's Max Gnosis Rating. On a success, the Rite fails and has no effect (the Gnosis cost is still spent). On a failure, the Rite takes full effect. Willing targets do not make a saving throw.</p><hr><h3>Ending the Rite</h3><p>The Rite ends early if the target:</p><ul><li>Publicly acknowledges their wrongdoing, or</li><li>Completes a Storyteller-approved act of atonement</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=caern; subcategory=punishment; id=rite-of-ostracism; tier=2; cost=3gnosis; time=1h; resolution=wisdom-save; dc=8+max-gnosis</code></p>",
+      "chat": "<p><strong>Rite of Ostracism</strong><br><em>Punishment Rite (Level 2) • Caern</em></p><p><strong>Cost:</strong> 3 Gnosis • <strong>Time:</strong> 1 hour • <strong>Target:</strong> One Garou</p><p><strong>Resolution:</strong> Unwilling target makes Wis save (DC 8 + performer's Max Gnosis). On failure, ostracized for one Caern Turn: no Totem Pack Benefits, Caern bonuses, or pack-based features; spirits treat as outsider. Ends early on acknowledgment or atonement.</p>"
+    },
+    "identifier": "rite-of-ostracism",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

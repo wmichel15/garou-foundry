@@ -1,0 +1,128 @@
+{
+  "folder": "281qpIFnrgndnoAx",
+  "name": "Stone of Scorn",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "St0n30fSc0rnXy9k": {
+        "type": "utility",
+        "_id": "St0n30fSc0rnXy9k",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Stone of Scorn</h3><p><em>Punishment Rite (Level 3) • Caern</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 5 Gnosis<br><strong>Target:</strong> One creature</p><p><strong>Resolution:</strong> Unwilling target may resist with a Wisdom saving throw. DC = 8 + performing Garou's Max Gnosis. Success: Rite fails, no effect (Gnosis still spent). Failure: Target is marked by scorn for three Caern Turns.</p><hr><p><strong>While marked:</strong> Other Garou have disadvantage on Help actions used to aid the target; minor spirits refuse assistance or guidance; the mark is visible to spiritual perception. No physical manifestation; no damage. Ends early if target performs a Rite of Cleansing or completes a meaningful act of atonement acknowledged by the spirits.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=stone-of-scorn; category=caern; subcategory=punishment; tier=3; dc=8+max-gnosis; resolution=wisdom-save</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Stone of Scorn"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Stone of Scorn</strong><br><em>Punishment Rite (Level 3) • Caern</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 5 Gnosis<br><strong>Target:</strong> One creature</p><hr><h3>Description</h3><p>The Stone of Scorn marks a transgressor with spiritual disgrace. Though invisible to mundane senses, the mark is unmistakable to spirits and Garou alike.</p><hr><h3>Effect</h3><p>If the target fails their saving throw, they are marked by scorn for three Caern Turns.</p><p><strong>While marked:</strong></p><ul><li>Other Garou have disadvantage on Help actions used to aid the target</li><li>Minor spirits refuse assistance or guidance</li><li>The mark is visible to spiritual perception</li></ul><p>The mark has no physical manifestation and causes no damage.</p><hr><h3>Ending the Rite</h3><p>The Rite ends early if the target:</p><ul><li>Performs a Rite of Cleansing, or</li><li>Completes a meaningful act of atonement acknowledged by the spirits</li></ul><hr><h3>Resisting a Punishment Rite</h3><p>If this rite targets an unwilling creature, the target may attempt to resist. The target makes a Wisdom saving throw. Save DC = 8 + the performing Garou's Max Gnosis Rating. On a success, the Rite fails and has no effect (the Gnosis cost is still spent). On a failure, the Rite takes full effect. Willing targets do not make a saving throw.</p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=caern; subcategory=punishment; id=stone-of-scorn; tier=3; cost=5gnosis; time=1h; resolution=wisdom-save; dc=8+max-gnosis</code></p>",
+      "chat": "<p><strong>Stone of Scorn</strong><br><em>Punishment Rite (Level 3) • Caern</em></p><p><strong>Cost:</strong> 5 Gnosis • <strong>Time:</strong> 1 hour • <strong>Target:</strong> One creature</p><p><strong>Resolution:</strong> Unwilling target makes Wis save (DC 8 + performer's Max Gnosis). On failure, marked for three Caern Turns: other Garou have disadvantage on Help to aid target; minor spirits refuse aid; mark visible to spiritual perception. No physical manifestation or damage. Ends early with Rite of Cleansing or meaningful atonement.</p>"
+    },
+    "identifier": "stone-of-scorn",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

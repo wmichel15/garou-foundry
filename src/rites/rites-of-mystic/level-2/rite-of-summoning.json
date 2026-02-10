@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of Summoning",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "S1umm0n1ngR1t3Xy": {
+        "type": "utility",
+        "_id": "S1umm0n1ngR1t3Xy",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of Summoning</h3><p><em>Mystic Rite (Level 2)</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> A prepared ritual space and a clear spiritual focus related to the spirit being summoned</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> Choose a minor or moderate spirit known to the Garou or associated with the ritual focus (place, concept, object, past interaction). Spirit becomes aware of summons; if willing, manifests in ritual space in Umbra or at nearest spiritual boundary; may communicate per its nature. Spirit is not bound, controlled, or required to remain.</p><p><strong>Mechanical:</strong> Does not force appearance; no combat actions/stats for spirit; Garou cannot command or direct. If spirit refuses, no effect and Gnosis still spent. Hostile/powerful spirits may answer unexpectedly (ST). Cannot summon major spirits, gods, unique entities, or spirits warded against summoning. Spirit may depart anytime; a given spirit summonable once per Caern Turn. Establishes contact, not authority.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-summoning; category=mystic; tier=2; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Summoning"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of Summoning</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> A prepared ritual space and a clear spiritual focus related to the spirit being summoned</p><hr><h3>Description</h3><p>The Rite of Summoning calls a spirit's attention and invites it to appear before the Garou. Through ritual, offering, and invocation, the Garou sends a formal summons into the Umbra, requesting the spirit's presence.</p><p>This Rite does not compel obedience. It asks for an audience.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>Choose a minor or moderate spirit known to the Garou or reasonably associated with the ritual focus (such as a place, concept, object, or past interaction).</p><p><strong>Upon completion:</strong></p><ul><li>The spirit becomes aware of the summons</li><li>If willing, the spirit manifests within the ritual space in the Umbra or at the nearest appropriate spiritual boundary</li><li>The spirit may communicate with the Garou in accordance with its nature</li><li>The spirit is not bound, controlled, or required to remain</li></ul><hr><h3>Mechanical Clarifications</h3><p>The Rite:</p><ul><li>Does not force the spirit to appear</li><li>Does not grant the spirit combat actions or statistics</li><li>Does not allow the Garou to command or direct the spirit</li><li>If the spirit refuses the summons, no additional effect occurs and the Gnosis is still spent</li><li>Hostile or powerful spirits may answer in unexpected ways at the Storyteller's discretion</li></ul><hr><h3>Limitations</h3><p>This Rite cannot summon:</p><ul><li>Major spirits, gods, or unique entities</li><li>Spirits warded against summoning</li></ul><p>The spirit may depart at any time. A given spirit may only be summoned by this Rite once per Caern Turn.</p><hr><h3>Narrative Use</h3><p>The Rite of Summoning is commonly used to:</p><ul><li>Seek information or guidance</li><li>Request aid through negotiation</li><li>Open dialogue with spirits tied to a location or event</li></ul><p>The Rite establishes contact, not authority.</p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=rite-of-summoning; tier=2; cost=3gnosis; time=1h; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of Summoning</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Cost:</strong> 3 Gnosis • <strong>Time:</strong> 1 hour • <strong>Resolution:</strong> Automatic on payment</p><p>Calls a minor or moderate spirit's attention; if willing, it manifests in ritual space (Umbra or boundary) and may communicate. Does not force, bind, or command; if spirit refuses, Gnosis still spent. Cannot summon major spirits, gods, unique entities, or warded spirits. Spirit may leave anytime; once per Caern Turn per spirit. Establishes contact, not authority.</p>"
+    },
+    "identifier": "rite-of-summoning",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

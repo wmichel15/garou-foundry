@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of Binding",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "r1t30fB1nd1ngXy9": {
+        "type": "utility",
+        "_id": "r1t30fB1nd1ngXy9",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of Binding</h3><p><em>Mystic Rite (Level 2)</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> A willing or subdued spirit, and a suitable vessel, target, or location<br><strong>Limit:</strong> Total Talens a Garou can have = Wisdom modifier (minimum 1). Exceeding ends oldest binding.</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>Binding types:</strong> (1) <em>Spirit to Object</em> — spirit bound into non-magical object (Talen); no magical bonuses by default; object destroyed releases spirit. (2) <em>Spirit to Creature</em> — bound to willing creature; may advise/empower/observe; no combat abilities; spirit cannot act independently. (3) <em>Spirit to Location</em> — bound to site; cannot leave; may influence thematically; often precursor to Caern Rites.</p><p><strong>Binding Terms:</strong> ST defines obligations, limitations, and conditions for binding to end (explicit and finite).</p><p><strong>Limitations:</strong> Cannot bind major spirits, gods, or unique entities; cannot force spirit against its nature; no spellcasting or combat actions. Binding ends if vessel destroyed, term fulfilled, higher effect dissolves it, or Garou releases spirit.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-binding; category=mystic; tier=2; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Binding"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of Binding</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 3 Gnosis<br><strong>Requirement:</strong> A willing or subdued spirit, and a suitable vessel, target, or location<br><strong>Limit:</strong> Total number of Talens a Garou can have at a time is limited by their Wisdom modifier (minimum 1).</p><hr><h3>Description</h3><p>The Rite of Binding compels a spirit to inhabit a specific form, place, or agreement. Through invocation and enforced pact, the Garou bind the spirit's essence to a purpose, limiting its freedom in exchange for stability or service.</p><p>This Rite does not enslave lightly. It creates a lasting spiritual contract.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>Choose one of the following binding types:</p><p><strong>Spirit to Object</strong></p><ul><li>The spirit is bound into a non-magical object, transforming it into a Talen or spiritually active item</li><li>The object gains no magical bonuses by default</li><li>Additional effects require further Rites or agreements</li><li>If the object is destroyed, the spirit is released</li></ul><p><strong>Spirit to Creature</strong></p><ul><li>The spirit is bound to a willing creature</li><li>The spirit may advise, empower, or observe</li><li>The binding does not grant combat abilities</li><li>The spirit cannot take independent actions</li></ul><p><strong>Spirit to Location</strong></p><ul><li>The spirit is bound to a specific site</li><li>The spirit cannot leave the area</li><li>It may influence the site thematically or narratively</li><li>This is often used as a precursor to Caern-related Rites</li></ul><hr><h3>Binding Terms</h3><p>When the Rite is completed, the Storyteller defines:</p><ul><li>The spirit's obligations</li><li>The spirit's limitations</li><li>The conditions under which the binding ends</li></ul><p>These terms should be explicit and finite.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Cannot bind major spirits, gods, or unique entities</li><li>Cannot force a spirit to act against its nature</li><li>Does not grant spellcasting or combat actions</li><li>A single Garou may maintain a number of active bindings equal to their Wisdom modifier (minimum 1)</li><li>Attempting to exceed this limit causes the oldest binding to end immediately</li></ul><hr><h3>Breaking the Binding</h3><p>A binding ends if:</p><ul><li>The vessel is destroyed</li><li>The agreed-upon term is fulfilled</li><li>A higher-level spiritual effect forcibly dissolves it</li><li>The Garou willingly releases the spirit</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=rite-of-binding; tier=2; cost=3gnosis; time=1h; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of Binding</strong><br><em>Mystic Rite • Level 2</em></p><p><strong>Cost:</strong> 3 Gnosis • <strong>Time:</strong> 1 hour • <strong>Resolution:</strong> Automatic on payment</p><p>Binds spirit to object (Talen), creature, or location. Object: no bonuses by default; destroyed releases spirit. Creature: advise/empower/observe; no combat. Location: cannot leave; thematic influence. ST defines obligations, limitations, end conditions. Limit: active bindings = Wis mod (min 1). Cannot bind major spirits/gods; cannot force against nature.</p>"
+    },
+    "identifier": "rite-of-binding",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

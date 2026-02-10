@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Enchant the Forest",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "d0e5F2aN7pQsTu4v": {
+        "type": "utility",
+        "_id": "d0e5F2aN7pQsTu4v",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "8",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Enchant the Forest</h3><p><em>Rite of Accord (Level 4)</em></p><hr><p><strong>Time:</strong> 6 hours<br><strong>Cost:</strong> 8 Gnosis (spent on attempt)<br><strong>Focus:</strong> Offerings returned to the land (water, blood, bone, seed, ash, or song)<br><strong>Participants:</strong> One or more Garou<br><strong>Area:</strong> A contiguous natural region with a radius of up to 1 mile</p><p><strong>Roll:</strong> Gnosis Roll (d20 + Max Gnosis rating)<br><strong>DC:</strong> 17</p><hr><p><strong>On Success:</strong> The chosen area is enchanted for 30 days. While enchanted: Wyrm-tainted environmental effects are suppressed; natural recovery is accelerated; spirits native to the land are more receptive; attempts to corrupt, desecrate, or spiritually damage the area are made with disadvantage. Does not prevent destruction but resists it.</p><p><strong>Limitations:</strong> No effect on urban, industrialized, or artificial environments; does not repair structures or undo physical devastation instantly; does not remove creatures; does not stack. ST may require multiple performances if area is under powerful supernatural corruption.</p><p><strong>On Failure:</strong> Gnosis spent. The land resists the Rite. Local spirits may withdraw or become hostile. Failure does not worsen the land's condition.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=enchant-the-forest; category=accord; tier=4; dc=17</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "360"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": true,
+          "visible": true,
+          "formula": "1d20 + @abilities.wis.mod",
+          "name": "Wisdom Check (Gnosis Roll)"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Enchant the Forest"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Enchant the Forest</strong><br><em>Rite of Accord • Level 4</em></p><p><strong>Gnosis Cost:</strong> 8<br><strong>Time:</strong> 6 hours<br><strong>Resolution:</strong> Gnosis Roll<br><strong>DC:</strong> 17<br><strong>Participants:</strong> One or more Garou<br><strong>Area:</strong> A contiguous natural region with a radius of up to 1 mile<br><strong>Focus:</strong> Offerings returned to the land (water, blood, bone, seed, ash, or song)</p><hr><h3>Summary</h3><p>Enchant the Forest is a Rite performed to restore balance and spiritual harmony to a natural place that has been harmed by corruption, neglect, or supernatural imbalance.</p><p>This Rite does not rebuild what has been destroyed. It reopens the land to healing.</p><hr><h3>Effect</h3><p>On a successful Gnosis roll, the chosen area is enchanted for 30 days.</p><p>While the area is enchanted:</p><ul><li>Wyrm-tainted environmental effects within the area are suppressed</li><li>Natural recovery within the area is accelerated (plants regrow faster, blight recedes, wildlife returns)</li><li>Spirits native to the land are more receptive to Garou presence and requests</li><li>Attempts to corrupt, desecrate, or spiritually damage the area are made with disadvantage</li></ul><p>This Rite does not prevent destruction, but it resists it.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Has no effect on urban, heavily industrialized, or artificial environments</li><li>Does not repair structures or undo physical devastation instantly</li><li>Does not remove creatures from the area</li><li>Does not stack with itself</li><li>If the area is already under the effect of a powerful supernatural corruption, the Storyteller may require multiple performances over time</li></ul><hr><h3>Failure</h3><p>On a failed Gnosis roll:</p><ul><li>The Gnosis is spent</li><li>The land resists the Rite</li><li>Local spirits may withdraw or become hostile</li><li>Failure does not worsen the land's condition</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=accord; id=enchant-the-forest; tier=4; cost=8gnosis; time=6h; resolution=wisdom; dc=17</code></p>",
+      "chat": "<p><strong>Enchant the Forest</strong><br><em>Rite of Accord • Level 4</em></p><p><strong>Cost:</strong> 8 Gnosis • <strong>Time:</strong> 6 hours • <strong>DC:</strong> 17</p><p>On success: chosen natural area (up to 1 mile radius) enchanted for 30 days — Wyrm-taint suppressed, recovery accelerated, spirits receptive, corruption/desecration at disadvantage. Does not stack.</p>"
+    },
+    "identifier": "enchant-the-forest",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

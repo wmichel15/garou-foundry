@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of Renunciation",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "b8c3D0yL5nOqRs2t": {
+        "type": "utility",
+        "_id": "b8c3D0yL5nOqRs2t",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "4",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of Renunciation</h3><p><em>Rite of Accord (Level 2)</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 4 Gnosis (spent on attempt)<br><strong>Focus:</strong> A symbolic act of rejection or release tied to the curse (destruction of a token, burial, confession, offering, or ritual severance)<br><strong>Participants:</strong> One Garou (witnesses optional)</p><p><strong>Roll:</strong> Gnosis Roll (d20 + Max Gnosis rating)<br><strong>DC:</strong> 15</p><hr><p><strong>On Success:</strong> End one curse currently affecting the Garou, as <em>remove curse</em>. If the curse affects the Garou directly, it ends immediately. If from a cursed item, this Rite breaks attunement so the item can be removed; the curse remains on the item and reasserts if attuned again.</p><p><strong>Limitations:</strong> No effect on permanent curses; cannot remove curses tied to artifacts, deities, or cosmic forces; cannot undo permanent transformations; cannot remove curses from another creature; does not cleanse or destroy the cursed object itself.</p><p><strong>On Failure:</strong> Gnosis spent. Curse remains. Cannot attempt this Rite again on the same curse for 7 days. Failure does not worsen the curse.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=renunciation; category=accord; tier=2; dc=15</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": true,
+          "visible": true,
+          "formula": "1d20 + @abilities.wis.mod",
+          "name": "Wisdom Check (Gnosis Roll)"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Renunciation"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of Renunciation</strong><br><em>Rite of Accord • Level 2</em></p><p><strong>Gnosis Cost:</strong> 4<br><strong>Time:</strong> 1 hour<br><strong>Resolution:</strong> Gnosis Roll<br><strong>DC:</strong> 15<br><strong>Participants:</strong> One Garou (witnesses optional)<br><strong>Focus:</strong> A symbolic act of rejection or release tied to the curse (destruction of a token, burial, confession, offering, or ritual severance)</p><hr><h3>Summary</h3><p>The Rite of Renunciation allows a Garou to formally reject and sever a curse that binds them through supernatural means.</p><p>This Rite is an act of declaration and separation, not purification.</p><hr><h3>Effect</h3><p>On a successful Gnosis roll, the Garou ends one curse currently affecting them, functioning as the <em>remove curse</em> spell.</p><p>If the curse affects the Garou directly, it ends immediately.</p><p>If the curse originates from a cursed magic item, this Rite breaks the Garou's attunement to the item, allowing it to be removed or discarded. The curse remains bound to the item and will reassert itself if the item is attuned to again.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Has no effect on permanent curses</li><li>Cannot remove curses tied to artifacts, deities, or cosmic forces</li><li>Cannot undo transformations that have already become permanent</li><li>Cannot be used to remove curses from another creature</li><li>Does not cleanse or destroy a cursed object itself</li></ul><hr><h3>Failure</h3><p>On a failed Gnosis roll:</p><ul><li>The Gnosis is spent</li><li>The curse remains</li><li>The Garou cannot attempt this Rite again on the same curse for 7 days</li><li>Failure does not worsen the curse</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=accord; id=renunciation; tier=2; cost=4gnosis; time=1h; resolution=wisdom; dc=15</code></p>",
+      "chat": "<p><strong>Rite of Renunciation</strong><br><em>Rite of Accord • Level 2</em></p><p><strong>Cost:</strong> 4 Gnosis • <strong>Time:</strong> 1 hour • <strong>DC:</strong> 15</p><p>On success: end one curse on self (as <em>remove curse</em>). Cursed item: breaks attunement. Cannot retry same curse for 7 days on failure.</p>"
+    },
+    "identifier": "rite-of-renunciation",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

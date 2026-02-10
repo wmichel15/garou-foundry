@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Baptism of Fire",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "b4pt1sm0fF1r3XyZ9": {
+        "type": "utility",
+        "_id": "b4pt1sm0fF1r3XyZ9",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Baptism of Fire</h3><p><em>Mystic Rite (Level 1)</em></p><hr><p><strong>Time:</strong> 30 minutes<br><strong>Cost:</strong> 1 Gnosis<br><strong>Requirement:</strong> A newborn or newly discovered Garou</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> The Garou's Auspice is spiritually recognized; spirits acknowledge the Garou as a legitimate child of Gaia; the Garou is no longer considered spiritually untested or unclaimed. No immediate mechanical bonuses.</p><p><strong>Long-Term:</strong> Establishes spiritual identity (spirit reactions, eligibility for Rites/Fetishes/spirit bargains, narrative expectations). A Garou who has not undergone this Rite may be treated as spiritually immature or lacking standing (ST adjudication).</p><p><strong>Limitations:</strong> Does not grant abilities, features, or bonuses; does not affect attributes, gifts, or advancement; does not bind spirits or confer protection. May only be performed once per Garou.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=baptism-of-fire; category=mystic; tier=1; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "30"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Baptism of Fire"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Baptism of Fire</strong><br><em>Mystic Rite • Level 1</em></p><p><strong>Time:</strong> 30 minutes<br><strong>Cost:</strong> 1 Gnosis<br><strong>Requirement:</strong> A newborn or newly discovered Garou</p><hr><h3>Description</h3><p>The Baptism of Fire is the first sacred rite performed for a Garou, marking their entry into the spiritual order of Gaia. Through this Rite, the newborn is presented to the spirits, their nature acknowledged, and their path formally recognized.</p><p>This Rite does not grant power. It grants recognition.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p><strong>Upon completion:</strong></p><ul><li>The Garou's Auspice is spiritually recognized</li><li>Spirits acknowledge the Garou as a legitimate child of Gaia</li><li>The Garou is no longer considered spiritually untested or unclaimed</li></ul><p>This Rite has no immediate mechanical bonuses.</p><hr><h3>Long-Term Significance</h3><p>The Baptism of Fire establishes the Garou's spiritual identity, which may influence:</p><ul><li>How spirits react to the Garou</li><li>Eligibility for certain Rites, Fetishes, or spirit bargains</li><li>Narrative expectations tied to the Garou's Auspice</li></ul><p>A Garou who has not undergone this Rite may be treated as: spiritually immature; unrecognized; or lacking proper standing (Storyteller adjudication).</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Does not grant abilities, features, or bonuses</li><li>Does not affect attributes, gifts, or advancement</li><li>Does not bind spirits or confer protection</li><li>The Rite may only be performed once per Garou</li></ul><p><em>\"You are known now. Walk the path that has opened before you.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=baptism-of-fire; tier=1; cost=1gnosis; time=30min; resolution=none</code></p>",
+      "chat": "<p><strong>Baptism of Fire</strong><br><em>Mystic Rite • Level 1</em></p><p><strong>Cost:</strong> 1 Gnosis • <strong>Time:</strong> 30 minutes • <strong>Resolution:</strong> Automatic on payment</p><p>First sacred rite for a Garou: Auspice spiritually recognized; spirits acknowledge as child of Gaia; no longer spiritually untested. No immediate mechanical bonuses. Establishes spiritual identity for spirit reactions, Rite/Fetish eligibility, narrative. May only be performed once per Garou.</p>"
+    },
+    "identifier": "baptism-of-fire",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

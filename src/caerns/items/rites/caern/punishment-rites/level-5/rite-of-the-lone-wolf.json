@@ -1,0 +1,128 @@
+{
+  "folder": "281qpIFnrgndnoAx",
+  "name": "Rite of the Lone Wolf",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "L0n3W0lfR1t3Xy9k": {
+        "type": "utility",
+        "_id": "L0n3W0lfR1t3Xy9k",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "30",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of the Lone Wolf</h3><p><em>Punishment Rite (Level 5) • Caern</em></p><hr><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 30 Gnosis (may be shared among participating Garou)<br><strong>Target:</strong> One Garou<br><strong>Save:</strong> Wisdom DC 25</p><p><strong>Participants:</strong> At least two Garou must participate; at least one capable of Level 5 Rites; all must willingly contribute. Cannot be performed by a single Garou.</p><hr><p><strong>Effect (on failed save):</strong> Target is declared Lone Wolf for 30 days. Cannot benefit from Totem Pack/Personal Totem Benefits, Caern bonuses, pack-based features; cannot activate Fetishes or Talens; cannot access Umbra (including Umbra Phasing); spirits refuse to bargain/guide/assist; other Garou recognize as spiritually severed. Full agency retained.</p><p><strong>Ends early:</strong> Major atonement quest acknowledged by spirits; sept formally lifts via ritual judgment; or target performs significant act restoring balance to Gaia (meaningful sacrifice or risk). Cannot be used on non-Garou; cannot stack; resist = not targetable again for 30 days.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-the-lone-wolf; category=caern; subcategory=punishment; tier=5; dc=25; resolution=wisdom-save</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "60"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of the Lone Wolf"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of the Lone Wolf</strong><br><em>Punishment Rite (Level 5) • Caern</em></p><p><strong>Time:</strong> 1 hour<br><strong>Cost:</strong> 30 Gnosis (may be shared among participating Garou)<br><strong>Target:</strong> One Garou<br><strong>Save:</strong> Target rolls Wisdom saving throw DC 25</p><hr><h3>Participants</h3><p>This Rite cannot be performed by a single Garou.</p><ul><li>At least two Garou must participate in the Rite</li><li>At least one participating Garou must be capable of performing Level 5 Rites</li><li>All participating Garou must willingly contribute to the judgment</li></ul><hr><h3>Description</h3><p>The Rite of the Lone Wolf is the gravest punishment short of death. Through unified ritual condemnation, the Garou call upon the spirits to sever one of their own from pack, sept, and the greater spiritual community.</p><p>This Rite is not exile by force. It is exile by spiritual consensus.</p><hr><h3>Effect</h3><p>If the target fails their saving throw, they are declared Lone Wolf for 30 days.</p><p><strong>While affected by the Rite of the Lone Wolf:</strong></p><ul><li>The target cannot benefit from: Totem Pack Benefits; Personal Totem Benefits; Caern bonuses; pack-based features or abilities</li><li>The target cannot activate Fetishes or Talens</li><li>The target cannot access the Umbra in any way, including the use of Umbra Phasing or similar abilities</li><li>Spirits refuse to bargain, guide, or assist the target</li><li>Other Garou instinctively recognize the target as spiritually severed</li></ul><p>The target retains full agency and may act normally.</p><hr><h3>Spiritual Consequences</h3><p>Lone Wolf status is visible only to Garou and spirits. Mundane creatures perceive nothing unusual. The Rite causes no damage and imposes no conditions. This state represents total spiritual isolation, not physical punishment.</p><hr><h3>Ending the Rite</h3><p>The Rite ends early only if one of the following occurs:</p><ul><li>The target completes a major atonement quest acknowledged by the spirits</li><li>A sept formally lifts the punishment through ritual judgment</li><li>The target performs a significant act that demonstrably restores balance to Gaia</li></ul><p>Ending the Rite early should require meaningful sacrifice or risk, not a trivial task.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Cannot be used on non-Garou</li><li>Cannot be stacked or reapplied while active</li><li>Does not authorize execution, coercion, or PvP authority</li><li>A Garou who successfully resists this Rite cannot be targeted by it again for 30 days</li><li>This Rite should only be imposed with broad sept consensus (Storyteller guidance)</li></ul><p><em>\"You are not cast out of the world. You are cast out of the spirits' answer.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=caern; subcategory=punishment; id=rite-of-the-lone-wolf; tier=5; cost=30gnosis; time=1h; resolution=wisdom-save; dc=25</code></p>",
+      "chat": "<p><strong>Rite of the Lone Wolf</strong><br><em>Punishment Rite (Level 5) • Caern</em></p><p><strong>Cost:</strong> 30 Gnosis (may be shared) • <strong>Time:</strong> 1 hour • <strong>Target:</strong> One Garou • <strong>Save:</strong> Wis DC 25</p><p>Gravest punishment short of death. Requires at least two Garou (one capable of Level 5 Rites); all must contribute. On failed save, declared Lone Wolf 30 days: no Totem/Caern/pack benefits, no Fetishes/Talens, no Umbra access; spirits refuse aid; Garou recognize as severed. Ends early on major atonement, sept ritual judgment, or act restoring balance to Gaia. Cannot use on non-Garou; resist = not targetable for 30 days.</p>"
+    },
+    "identifier": "rite-of-the-lone-wolf",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

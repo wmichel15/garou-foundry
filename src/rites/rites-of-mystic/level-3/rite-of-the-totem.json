@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of the Totem",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "T0t3mR1t3Myst1cX": {
+        "type": "utility",
+        "_id": "T0t3mR1t3Myst1cX",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of the Totem</h3><p><em>Mystic Rite (Level 3)</em></p><hr><p><strong>Time:</strong> 8 hours<br><strong>Cost:</strong> 5 Gnosis<br><strong>Requirement:</strong> A willing pack, special ritual components, and access to the Umbra</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically. Pack must then seek and negotiate with a spirit (CR 8+) in the Umbra to complete the Totem.</p><hr><p><strong>Rite Performance:</strong> Performing Garou places ritual components on eyelids of willing pack; all participants phase into Umbra (Ethereal Plane) for the Rite's duration; no rolls, no strain; pack may move and act in Umbra.</p><p><strong>Seeking a Totem:</strong> Pack must locate and negotiate with (or earn cooperation of) a spiritual creature CR 8+ that is willing, thematically appropriate, and agrees to inhabit a physical vessel. ST may use trials, bargains, oaths, combat, sacrifice.</p><p><strong>Completion:</strong> Spirit bound into stationary vessel = Totem (magical object; cannot move; retains personality; may withdraw if terms violated). Each Totem grants two abilities (see Totem section): Pack Benefit (aura, one active at a time) and Personal Benefit. Touch Totem + 1 action to invoke one benefit. Recharge: after Long Rest.</p><p><strong>Limitations:</strong> Requires willing pack; cannot bind unwilling spirits; Totem cannot be mobile/carried, resized, or merged with non-participants. Destroying vessel releases spirit.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-the-totem; category=mystic; tier=3; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "480"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of the Totem"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of the Totem</strong><br><em>Mystic Rite • Level 3</em></p><p><strong>Time:</strong> 8 hours<br><strong>Cost:</strong> 5 Gnosis<br><strong>Requirement:</strong> A willing pack, special ritual components, and access to the Umbra</p><hr><h3>Description</h3><p>The Rite of the Totem is a sacred undertaking through which a pack seeks the favor of a powerful spirit. Rather than awakening a dormant entity, the Garou performing this Rite leads their companions into the Umbra so they may seek out, confront, and bargain with a spirit worthy of becoming a Totem.</p><p>A Totem is not created. It is won.</p><hr><h3>Rite Performance</h3><p>When the Rite begins, the Garou performing it places ritual components over the eyelids of each willing pack member. Upon completion of this act:</p><ul><li>All willing participants are temporarily phased into the Umbra, mechanically treated as the Ethereal Plane</li><li>The pack remains in this state as long as the performing Garou maintains the Rite</li><li>The transition requires no rolls and causes no strain</li><li>While phased, the pack may move, act, and interact normally within the Umbra</li></ul><hr><h3>Seeking a Totem Spirit</h3><p>To complete the Rite, the pack must locate and successfully negotiate with — or otherwise earn the cooperation of — a spiritual creature of CR 8 or higher. The spirit must:</p><ul><li>Be willing to enter a pact</li><li>Be thematically appropriate as a Totem</li><li>Agree to inhabit a physical vessel provided by the pack</li></ul><p>The Storyteller determines the nature of the encounter, which may involve: trials; bargains; oaths; combat; sacrifice.</p><hr><h3>Completion and Effect</h3><p>Once an agreement is reached, the spirit is bound into a stationary physical vessel large enough to house it, forming a Totem.</p><p><strong>A Totem:</strong></p><ul><li>Is a magical spiritual object</li><li>Cannot move or act independently</li><li>Retains its personality and expectations</li><li>May withdraw cooperation if its terms are violated</li></ul><hr><h3>Totem Benefits</h3><p>Each Totem provides two abilities, defined in the Totem section of this document: One Pack Benefit; One Personal Benefit.</p><p><strong>To invoke a Totem's power:</strong></p><ul><li>A creature must touch the Totem</li><li>Activation requires 1 action</li><li>The creature chooses either the Pack Benefit or the Personal Benefit</li></ul><p><em>Pack Benefit</em> — Creates an aura centered on the Totem; affects allied creatures within its listed radius; only one Pack Benefit may be active at a time; effect ends as described in the Totem's entry.</p><p><em>Personal Benefit</em> — Applies only to the creature that touched the Totem; effect is immediate and specific to that Totem.</p><p><strong>Recharge:</strong> Once a Totem's power is used, it cannot be used again until after a Long Rest. Pack and Personal Benefits share the same recharge.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Cannot be performed without a willing pack</li><li>Cannot bind unwilling spirits</li><li>Cannot create mobile or carried Totems</li><li>A Totem cannot be resized, carried, or merged with a creature who did not participate in the Rite</li><li>If the Totem vessel is destroyed, the spirit is released</li></ul><p><em>\"A Totem does not answer a call. It answers those who dared to come before it.\"</em></p><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=mystic; id=rite-of-the-totem; tier=3; cost=5gnosis; time=8h; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of the Totem</strong><br><em>Mystic Rite • Level 3</em></p><p><strong>Cost:</strong> 5 Gnosis • <strong>Time:</strong> 8 hours • <strong>Resolution:</strong> Automatic on payment (pack must then seek and bargain with spirit in Umbra)</p><p>Pack phased into Umbra (Ethereal); seek spirit CR 8+ willing to become Totem and inhabit vessel. Spirit bound into stationary vessel = Totem (magical; two abilities: Pack Benefit aura + Personal Benefit). Touch + 1 action to invoke; one Pack Benefit active at a time; recharge after Long Rest. Requires willing pack; cannot bind unwilling spirits or create mobile Totems.</p>"
+    },
+    "identifier": "rite-of-the-totem",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

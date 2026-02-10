@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of Memorial",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "m3m0r1aLr1t3XyZ9": {
+        "type": "utility",
+        "_id": "m3m0r1aLr1t3XyZ9",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of Memorial</h3><p><em>Rite of Death (Level 1)</em></p><hr><p><strong>Time:</strong> 2 hours<br><strong>Cost:</strong> 1 Gnosis<br><strong>Requirement:</strong> A permanent marker, shrine, or dedicated space honoring a deceased Garou</p><p><strong>Resolution:</strong> None — when the Gnosis cost is paid, the Rite succeeds automatically.</p><hr><p><strong>On Completion:</strong> The site becomes spiritually recognized as a place of remembrance. While the memorial remains intact: the honored spirit cannot be trivialized by spirits in the area; minor spirits treat it with respect; Garou who visit the memorial gain advantage on one Wisdom (Insight) or Charisma (Persuasion) check within the same Caern Turn to seek guidance, recall tradition, or reinforce unity (once per Caern Turn per Garou).</p><p><strong>Limitations:</strong> Does not summon or contact the deceased; does not bind the spirit; no combat or numerical bonuses. If the memorial is destroyed or defiled, effects end immediately. A Garou may only be honored by this Rite once.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=rite-of-memorial; category=death; tier=1; dc=none</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "120"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of Memorial"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of Memorial</strong><br><em>Rite of Death • Level 1</em></p><p><strong>Time:</strong> 2 hours<br><strong>Cost:</strong> 1 Gnosis<br><strong>Requirement:</strong> A permanent marker, shrine, or dedicated space honoring a deceased Garou</p><hr><h3>Description</h3><p>The Rite of Memorial sanctifies a place of remembrance for a fallen Garou whose deeds, sacrifice, or legacy deserve to endure. Through this Rite, the Garou bind memory to location, ensuring that the spirit world recognizes the fallen as honored and remembered.</p><p>This Rite does not elevate the dead. It ensures they are not forgotten.</p><hr><h3>Effect</h3><p>When the Gnosis cost is paid, the Rite succeeds automatically.</p><p>The chosen memorial site becomes spiritually recognized as a place of remembrance for the honored Garou.</p><p><strong>While the memorial remains intact:</strong></p><ul><li>The spirit of the honored Garou cannot be trivialized, mocked, or diminished by spirits within the area</li><li>Minor spirits acknowledge the memorial and treat it with respect</li><li>Garou who knowingly visit the memorial gain advantage on one Wisdom (Insight) or Charisma (Persuasion) check made within the same Caern Turn to: seek guidance through reflection; recall sept history or Garou tradition; reinforce unity or resolve among Garou. This benefit may only be gained once per Caern Turn per Garou.</li></ul><hr><h3>Ongoing Significance</h3><p>The memorial serves as a narrative anchor for sept history. The Storyteller may use the memorial as: a focal point for visions, omens, or dreams; a place spirits choose to gather; a reminder of oaths, failures, or victories. No mechanical bonuses are granted outside these contexts.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Does not summon or contact the deceased</li><li>Does not bind the spirit</li><li>Does not grant combat or numerical bonuses</li><li>If the memorial is destroyed or defiled, the Rite's effects immediately end</li><li>A Garou may only be honored by this Rite once</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=death; id=rite-of-memorial; tier=1; cost=1gnosis; time=2h; resolution=none</code></p>",
+      "chat": "<p><strong>Rite of Memorial</strong><br><em>Rite of Death • Level 1</em></p><p><strong>Cost:</strong> 1 Gnosis • <strong>Time:</strong> 2 hours • <strong>Resolution:</strong> Automatic on payment</p><p>Sanctifies a memorial site. While intact: spirit honored; minor spirits respect it; Garou visiting gain advantage on one Insight or Persuasion check (guidance/tradition/unity) per Caern Turn. Effects end if memorial is destroyed or defiled. A Garou may be honored once.</p>"
+    },
+    "identifier": "rite-of-memorial",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

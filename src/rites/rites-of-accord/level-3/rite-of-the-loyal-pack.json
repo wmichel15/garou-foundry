@@ -1,0 +1,128 @@
+{
+  "folder": "kmt23PnqnaitQXAr",
+  "name": "Rite of the Loyal Pack",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "c9d4E1zM6oPrSt3u": {
+        "type": "utility",
+        "_id": "c9d4E1zM6oPrSt3u",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "6",
+              "target": "Item.FvQGHrfaDGaOKRtK",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<div class=\"garou-rite\"><h3>Rite of the Loyal Pack</h3><p><em>Rite of Accord (Level 3)</em></p><hr><p><strong>Time:</strong> 2 hours<br><strong>Cost:</strong> 6 Gnosis (spent on attempt)<br><strong>Focus:</strong> A shared oath, mark, or symbolic act representing unity and mutual protection<br><strong>Participants:</strong> The Garou performing the Rite and at least two willing allies who form a pack</p><p><strong>Roll:</strong> Gnosis Roll (d20 + Max Gnosis rating)<br><strong>DC:</strong> 16</p><hr><p><strong>On Success — choose ONE benefit.</strong> Applies to all willing participants for 7 days.</p><ul><li><strong>Shared Resolve:</strong> Once per long rest, when a pack member fails a saving throw, another pack member who can see or hear them may use their reaction to grant advantage on that save.</li><li><strong>United Purpose:</strong> Pack members have advantage on one chosen ability check type (selected when the Rite is completed) when working together toward a shared goal.</li><li><strong>Stand Together:</strong> Pack members have advantage on saves to resist frightened or charmed while within 30 feet of at least one other pack member.</li></ul><p>The chosen benefit cannot be changed until the Rite is performed again.</p><p><strong>Limitations:</strong> Does not compel loyalty or obedience; no effect on unwilling participants; does not stack; a creature may benefit only once at a time. Betrayal may end effects for that creature (ST ruling).</p><p><strong>On Failure:</strong> Gnosis spent. Rite fails to take hold. Existing tensions may intensify. No mechanical penalties beyond narrative consequence.</p><hr><p style=\"opacity:0.7; font-size:0.85em;\">[GAROU_RITE_USE] id=loyal-pack; category=accord; tier=3; dc=16</p></div>"
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "120"
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "count": "", "type": "", "special": "" },
+          "override": false,
+          "prompt": false
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": {
+          "level": { "min": null, "max": null },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": true,
+          "visible": true,
+          "formula": "1d20 + @abilities.wis.mod",
+          "name": "Wisdom Check (Gnosis Roll)"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "Perform Rite of the Loyal Pack"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [{ "period": "lr", "type": "recoverAll" }],
+      "max": "99"
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rite of the Loyal Pack</strong><br><em>Rite of Accord • Level 3</em></p><p><strong>Gnosis Cost:</strong> 6<br><strong>Time:</strong> 2 hours<br><strong>Resolution:</strong> Gnosis Roll<br><strong>DC:</strong> 16<br><strong>Participants:</strong> The Garou performing the Rite and at least two willing allies who form a pack<br><strong>Focus:</strong> A shared oath, mark, or symbolic act representing unity and mutual protection</p><hr><h3>Summary</h3><p>The Rite of the Loyal Pack is performed to reaffirm unity, trust, and shared purpose among a pack. It binds the participants through recognition, not obedience, reinforcing their commitment to one another in the face of fear, division, and spiritual pressure.</p><p>This Rite does not create loyalty — it strengthens loyalty that already exists.</p><hr><h3>Effect</h3><p>On a successful Gnosis roll, choose one of the following benefits. The chosen benefit applies to all willing participants of the Rite for 7 days.</p><ul><li><strong>Shared Resolve:</strong> Once per long rest, when a pack member fails a saving throw, another pack member who can see or hear them may use their reaction to grant advantage on that saving throw, potentially turning the failure into a success.</li><li><strong>United Purpose:</strong> Pack members have advantage on one chosen ability check type (selected when the Rite is completed) when working together toward a shared goal.</li><li><strong>Stand Together:</strong> Pack members have advantage on saving throws made to resist being frightened or charmed while within 30 feet of at least one other pack member.</li></ul><p>The chosen benefit cannot be changed until the Rite is performed again.</p><hr><h3>Limitations</h3><p>This Rite:</p><ul><li>Does not compel loyalty or obedience</li><li>Has no effect on unwilling participants</li><li>Does not stack with itself</li><li>A creature may benefit from this Rite only once at a time</li><li>If a participant betrays the pack in a significant way, the Storyteller may rule that the Rite's effects immediately end for that creature</li></ul><hr><h3>Failure</h3><p>On a failed Gnosis roll:</p><ul><li>The Gnosis is spent</li><li>The Rite fails to take hold</li><li>Existing tensions within the pack may intensify</li><li>Failure does not impose penalties beyond narrative consequence</li></ul><hr><p><strong>Tag (do not remove):</strong><br><code>[GAROU_RITE] category=accord; id=loyal-pack; tier=3; cost=6gnosis; time=2h; resolution=wisdom; dc=16</code></p>",
+      "chat": "<p><strong>Rite of the Loyal Pack</strong><br><em>Rite of Accord • Level 3</em></p><p><strong>Cost:</strong> 6 Gnosis • <strong>Time:</strong> 2 hours • <strong>DC:</strong> 16</p><p>On success: choose one benefit (Shared Resolve, United Purpose, or Stand Together). Applies to all willing participants for 7 days. Does not stack; benefit once at a time.</p>"
+    },
+    "identifier": "rite-of-the-loyal-pack",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": null },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "", "subtype": "" }
+  },
+  "effects": [],
+  "flags": { "dnd5e": {} },
+  "ownership": { "default": 0 }
+}

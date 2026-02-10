@@ -1,0 +1,108 @@
+{
+  "name": "Totem of Owl",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Owl</strong></p><p><em>Totem Spirit (Wisdom)</em> — Creation Cost: 7 Gnosis</p><p><strong>Spirit Aspect:</strong> Foresight / Knowledge / Silent Judgment</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Owl, the pack must confront a spirit of memory, foresight, and watchful silence. Suitable spirits include:</p><ul><li><strong>Elder Night-Scholar Spirit (Owl Aspect)</strong> — Suggested base: Spirit-empowered Sphinx or sage guardian (CR 10–12), reflavored as an Umbra keeper of knowledge and omens</li><li><strong>Watcher-in-the-Dark Spirit</strong> — Suggested base: Invisible Stalker–style entity (CR 8–9), augmented with divination effects and heightened perception</li><li><strong>Astral Archivist Spirit</strong> — Suggested base: Githzerai Anarch or similar psionic stat block (CR 9–11), stripped of planar allegiance and treated as a spirit of foresight</li></ul><p>These spirits rarely engage in combat. They test patience, memory, and the ability to act only when action is necessary.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain advantage on Intelligence (Arcana, History) and Wisdom (Insight) checks</li><li>When you roll initiative, you may choose to reroll the result and take either roll</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Owl's foresight.</p><p>For 1 minute, while within 30 feet of the Totem:</p><ul><li>Pack members gain advantage on their first saving throw each round</li><li>Once during the duration, one pack member may treat a failed saving throw as a success</li></ul><p>This represents Owl's warning whispered just before disaster strikes.</p><hr><h3>Ban — Act With Purpose</h3><p>Owl demands restraint and thoughtful action.</p><p>The pack must not act hastily or violently without understanding the situation, when observation or planning is reasonably possible.</p><p>If the pack repeatedly rushes into danger without forethought or ignores clear opportunities to gather information, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Owl may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Owl (Wisdom). Creation: 7 Gnosis. Individual: advantage on Int (Arcana, History) and Wis (Insight); when you roll initiative, you may reroll and take either result. Pack: 1 min, within 30 ft — advantage on first saving throw each round; once, one pack member may treat a failed saving throw as a success. Ban: do not act hastily or violently without understanding the situation when observation or planning is reasonably possible.</p>"
+    },
+    "identifier": "totem-owl",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "o1w2l3t4o5t6e7m8": {
+        "type": "utility",
+        "_id": "o1w2l3t4o5t6e7m8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: advantage on Intelligence (Arcana, History) and Wisdom (Insight) checks; when you roll initiative, you may choose to reroll the result and take either roll. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "o1w2l3t4o5t6p7a8": {
+        "type": "utility",
+        "_id": "o1w2l3t4o5t6p7a8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Owl's foresight.</strong> For 1 minute, while within 30 feet of the Totem: pack members have advantage on their first saving throw each round; once during the duration, one pack member may treat a failed saving throw as a success. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Owl Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.arc.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.his.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.ins.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Intelligence (Arcana, History) and Wisdom (Insight) checks. When you roll initiative, you may choose to reroll and take either result (apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Owl's Foresight",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on your first saving throw each round. Once during this duration, one pack member may treat a failed saving throw as a success. Table enforcement.",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "wisdom",
+      "creationCostGnosis": 7
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

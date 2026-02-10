@@ -1,0 +1,109 @@
+{
+  "name": "Totem of Cockroach",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Cockroach</strong></p><p><em>Totem Spirit (Wisdom)</em> — Creation Cost: 6 Gnosis</p><p><strong>Spirit Aspect:</strong> Survival / Adaptation / Persistence</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Cockroach, the pack must confront a spirit that embodies endurance beyond reason and survival after ruin. Suitable spirits include:</p><ul><li><strong>Elder Scavenger-Endurance Spirit (Cockroach Aspect)</strong> — Suggested base: Spirit-empowered monstrosity or aberration (CR 8–9), resilient, evasive, and difficult to destroy</li><li><strong>Aftermath Survivor Spirit</strong> — Suggested base: Oinoloth- or yugoloth-style stat block (CR 8–10), stripped of fiendish allegiance and treated as a spirit of endurance through collapse</li><li><strong>Plague-Hardened Swarm-Mind Spirit</strong> — Suggested base: Single-entity swarm construct (CR 9–11), immune to fear effects and resistant to environmental hazards</li></ul><p>These spirits rarely demand combat. They test the pack's ability to adapt, ration, and persist under hostile conditions.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain advantage on saving throws against poison and disease</li><li>You have advantage on Constitution saving throws made to resist environmental effects (extreme heat or cold, suffocation, forced marches)</li><li>Once per long rest, when you would gain a level of exhaustion, you may ignore that level</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Cockroach's endurance.</p><p>For 1 minute, while within 30 feet of the Totem:</p><ul><li>Pack members have advantage on Constitution saving throws</li><li>Pack members ignore the effects of difficult terrain caused by rubble, debris, filth, or environmental ruin</li><li>Once during the duration, when a pack member would drop to 0 hit points, they may instead drop to 1 hit point and gain one level of exhaustion</li></ul><p>This represents Cockroach's creed: survival now, recovery later.</p><hr><h3>Ban — Endure, Do Not Waste</h3><p>Cockroach demands endurance through prudence.</p><p>The pack must not waste vital resources, abandon preparation, or court unnecessary danger when caution and adaptation are reasonably possible.</p><p>If the pack repeatedly squanders supplies, ignores warnings, or embraces avoidable destruction, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Cockroach may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Cockroach (Wisdom). Creation: 6 Gnosis. Individual: advantage on saves vs poison and disease; advantage on Con saves vs environmental effects (heat, cold, suffocation, forced marches); once per long rest, ignore one level of exhaustion. Pack: 1 min, within 30 ft — advantage on Con saves; ignore difficult terrain from rubble, debris, filth, or ruin; once, when a pack member would drop to 0 HP, drop to 1 HP and gain one exhaustion. Ban: do not waste resources, abandon preparation, or court unnecessary danger when caution is reasonably possible.</p>"
+    },
+    "identifier": "totem-cockroach",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "c1o2c3k4r5o6a7c8": {
+        "type": "utility",
+        "_id": "c1o2c3k4r5o6a7c8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: advantage on saving throws against poison and disease; advantage on Constitution saving throws made to resist environmental effects (extreme heat or cold, suffocation, forced marches); once per long rest, when you would gain a level of exhaustion, you may ignore that level. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "c1o2c3k4r5o6a7p8": {
+        "type": "utility",
+        "_id": "c1o2c3k4r5o6a7p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Cockroach's endurance.</strong> For 1 minute, while within 30 feet of the Totem: pack members have advantage on Constitution saving throws; pack members ignore difficult terrain caused by rubble, debris, filth, or environmental ruin; once during the duration, when a pack member would drop to 0 hit points, they may instead drop to 1 hit point and gain one level of exhaustion. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Cockroach Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.saves.con.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on saving throws against poison, disease, and Constitution saves to resist environmental effects (extreme heat/cold, suffocation, forced marches). Once per long rest, when you would gain a level of exhaustion, you may ignore that level (apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Cockroach's Endurance",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.saves.con.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "system.traits.di.terrain", "mode": 5, "value": "true", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Constitution saving throws. Ignore difficult terrain caused by rubble, debris, filth, or environmental ruin (apply terrain manually if not supported). Once during this duration, when you would drop to 0 hit points, you may instead drop to 1 hit point and gain one level of exhaustion (table enforcement).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "wisdom",
+      "creationCostGnosis": 6
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

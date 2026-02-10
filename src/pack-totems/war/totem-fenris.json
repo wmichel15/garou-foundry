@@ -1,0 +1,104 @@
+{
+  "name": "Totem of Fenris",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Fenris</strong></p><p><em>Totem Spirit (War)</em> — Creation Cost: 9 Gnosis</p><p><strong>Spirit Aspect:</strong> Fury / Destruction / Ruthlessness</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Fenris, the pack must confront a spirit that embodies annihilation, predation, and merciless warfare. Suitable spirits include:</p><ul><li><strong>Elder Doom-Wolf Spirit (Fenris Aspect)</strong> — Suggested base: Dire Werewolf Alpha–style spirit (CR 11–13)</li><li><strong>Shadow Mastiff Pack Lord (Spirit-Empowered)</strong> — Suggested base: Shadow Mastiff (CR 9–10), reflavored as an Umbra predator</li><li><strong>Apocalyptic War-Beast Spirit</strong> — Suggested base: Yugoloth or Fiend stat block (CR 8+), stripped of planar allegiance and treated as a pure spirit of destruction</li></ul><p>These spirits are rarely willing. Submission is typically earned through dominance, endurance, or total victory.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>When you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your proficiency bonus</li><li>Once per turn, when you hit a creature that is below half its hit point maximum, you deal additional damage equal to your proficiency bonus</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Fenris' hunger.</p><p>For 1 minute, while within 20 feet of the Totem:</p><ul><li>Pack members gain advantage on their first attack roll each turn against a creature that has already taken damage this round</li><li>Once during the duration, when a pack member reduces a hostile creature to 0 hit points, another pack member may immediately make one weapon attack as a reaction</li></ul><p>This represents Fenris driving the pack to finish what it starts.</p><hr><h3>Ban — No Mercy for the Hated</h3><p>Fenris demands absolute destruction of declared enemies.</p><p>Once the pack has declared a creature or faction as an enemy, they must not spare, negotiate with, or retreat from that enemy while victory is reasonably possible.</p><p>Showing mercy, hesitation, or restraint toward a sworn foe causes the Totem to become dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Fenris may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Fenris (War). Creation: 9 Gnosis. Individual: when you reduce a hostile to 0 HP, gain temp HP = proficiency; once per turn, when you hit a creature below half HP, deal extra damage = proficiency. Pack: 1 min, within 20 ft — advantage on first attack each turn vs creature that has taken damage this round; once, when a pack member reduces hostile to 0 HP, another may make one weapon attack as reaction. Ban: do not spare, negotiate with, or retreat from a declared enemy while victory is reasonably possible.</p>"
+    },
+    "identifier": "totem-fenris",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "f1e2n3r4i5s6t7e8": {
+        "type": "utility",
+        "_id": "f1e2n3r4i5s6t7e8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: when you reduce a hostile creature to 0 hit points, you gain temp HP equal to your proficiency bonus; once per turn, when you hit a creature below half its hit point maximum, you deal additional damage equal to your proficiency bonus. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "f1e2n3r4i5s6t7p8": {
+        "type": "utility",
+        "_id": "f1e2n3r4i5s6t7p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Fenris' hunger.</strong> For 1 minute, while within 20 feet of the Totem: pack members have advantage on their first attack roll each turn against a creature that has already taken damage this round; once during the duration, when a pack member reduces a hostile to 0 hit points, another pack member may make one weapon attack as a reaction. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Fenris Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "When you reduce a hostile creature to 0 HP, gain temp HP equal to your proficiency bonus. Once per turn, when you hit a creature below half its HP maximum, deal additional damage equal to your proficiency bonus. Apply both manually.",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Fenris' Hunger",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on your first attack roll each turn against a creature that has already taken damage this round. Once during the duration, when a pack member reduces a hostile to 0 HP, another pack member may make one weapon attack as a reaction. Table enforcement.",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "war",
+      "creationCostGnosis": 9
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

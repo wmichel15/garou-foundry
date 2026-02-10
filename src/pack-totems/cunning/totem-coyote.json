@@ -1,0 +1,111 @@
+{
+  "name": "Totem of Coyote",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Coyote</strong></p><p><em>Totem Spirit (Cunning)</em> — Creation Cost: 7 Gnosis</p><p><strong>Spirit Aspect:</strong> Chaos / Deception / Improvised Survival</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Coyote, the pack must confront a spirit of trickery, misdirection, and dangerous cleverness. Suitable spirits include:</p><ul><li><strong>Elder Laughing Trickster Spirit (Coyote Aspect)</strong> — Suggested base: Trickster-themed fey or spirit champion (CR 10–12), focused on illusions, mobility, and misdirection rather than damage</li><li><strong>Chaos-Path Wanderer Spirit</strong> — Suggested base: Rakshasa-like or illusionist stat block (CR 8–10), stripped of fiendish allegiance and treated as a spirit of social deception</li><li><strong>Roadside Whisper Spirit</strong> — Suggested base: Spirit-empowered rogue-caster hybrid (CR 9–11) that tests cleverness, lies, and adaptability</li></ul><p>These spirits rarely fight seriously. They test wit, audacity, and the ability to exploit confusion.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain advantage on Charisma (Deception) and Charisma (Performance) checks</li><li>Once per long rest, when you fail an ability check, you may reroll the check and take the new result</li><li>When you succeed on a Deception or Sleight of Hand check by 5 or more, you gain advantage on your next attack roll or ability check before the end of your next turn</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Coyote's chaos.</p><p>For 1 minute, while within 30 feet of the Totem:</p><ul><li>Pack members gain advantage on Dexterity (Stealth) and Charisma (Deception) checks</li><li>Pack members gain advantage on Wisdom (Survival) checks made in urban or wilderness environments</li><li>Once during the duration, when a pack member fails a Dexterity or Charisma ability check, they may treat the result as if they had rolled a 10 on the die</li></ul><p>In addition, while the Totem of Coyote is active, pack members can always locate one another within the same plane, provided they are willing and conscious. This sense functions as instinctive awareness, not precise direction.</p><hr><h3>Ban — No Bans</h3><p>Coyote refuses limitation.</p><p>The Totem of Coyote imposes no behavioral Ban.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Coyote (Cunning). Creation: 7 Gnosis. Individual: advantage on Cha (Deception) and Cha (Performance); once per long rest, reroll a failed ability check; succeed by 5+ on Deception or Sleight of Hand → advantage on next attack or ability check before end of next turn. Pack: 1 min, within 30 ft — advantage on Dex (Stealth), Cha (Deception), Wis (Survival) in urban/wilderness; once, treat failed Dex or Cha ability check as 10 on the die; pack can locate one another on same plane (willing, conscious). No Ban.</p>"
+    },
+    "identifier": "totem-coyote",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "c1o2y3o4t5e6t7o8": {
+        "type": "utility",
+        "_id": "c1o2y3o4t5e6t7o8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: advantage on Charisma (Deception) and Charisma (Performance) checks; once per long rest, when you fail an ability check, you may reroll and take the new result; when you succeed on a Deception or Sleight of Hand check by 5 or more, you gain advantage on your next attack roll or ability check before the end of your next turn. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "c1o2y3o4t5e6t7p8": {
+        "type": "utility",
+        "_id": "c1o2y3o4t5e6t7p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Coyote's chaos.</strong> For 1 minute, while within 30 feet of the Totem: pack members have advantage on Dexterity (Stealth) and Charisma (Deception) checks and on Wisdom (Survival) in urban or wilderness; once during the duration, when a pack member fails a Dexterity or Charisma ability check, they may treat the result as a 10 on the die. While Coyote is active, pack members can locate one another on the same plane (willing, conscious). This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Coyote Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.dec.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.prf.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Charisma (Deception) and Charisma (Performance) checks. Once per long rest, when you fail an ability check, you may reroll and take the new result (apply manually). When you succeed on Deception or Sleight of Hand by 5 or more, advantage on your next attack or ability check before end of your next turn (apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Coyote's Chaos",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.ste.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.dec.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.sur.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Dexterity (Stealth), Charisma (Deception), and Wisdom (Survival) in urban or wilderness. Once during this duration, when you fail a Dexterity or Charisma ability check, you may treat the result as a 10 on the die (table enforcement). While Coyote is active, pack members can locate one another on the same plane (willing, conscious).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "cunning",
+      "creationCostGnosis": 7
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

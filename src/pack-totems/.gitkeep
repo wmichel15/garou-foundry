@@ -1,0 +1,2 @@
+# Pack Totem source JSONs. Categories: respect/, wisdom/, war/, cunning/, legendary/
+# Each totem: type feat, flags.garou.totemCategory, creationCostGnosis; two activities (Gain Individual Trait, Activate Pack Trait) with 1 use / long rest. Import into Garou - Pack Totems compendium.

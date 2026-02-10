@@ -1,0 +1,110 @@
+{
+  "name": "Totem of Fox",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Fox</strong></p><p><em>Totem Spirit (Cunning)</em> — Creation Cost: 7 Gnosis</p><p><strong>Spirit Aspect:</strong> Trickery / Manipulation / Teaching Through Deception</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Fox, the pack must confront a spirit of clever ambushes, social maneuvering, and layered traps. Suitable spirits include:</p><ul><li><strong>Elder Lesson-Weaver Spirit (Fox Aspect)</strong> — Suggested base: Spirit-empowered trickster or illusionist (CR 10–12), favoring misdirection and control over raw damage</li><li><strong>Red-Trail Deceiver Spirit</strong> — Suggested base: Fey infiltrator or rogue–caster hybrid (CR 9–11), focused on baiting enemies into poor decisions</li><li><strong>Snare-Mind Spirit</strong> — Suggested base: Aberration- or fey-style planner (CR 8–10) that tests foresight and patience rather than strength</li></ul><p>These spirits favor packs that can turn an enemy's aggression against itself.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain advantage on Charisma (Deception) and Charisma (Persuasion) checks</li><li>Once per long rest, when you fail a Charisma-based ability check, you may reroll the check and take the new result</li><li>When you successfully deceive or mislead a creature, you gain advantage on your next Dexterity (Stealth) or Dexterity (Acrobatics) check before the end of your next turn</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Fox's cunning.</p><p>For 1 minute, while within 30 feet of the Totem:</p><ul><li>Pack members gain advantage on Dexterity (Stealth) checks</li><li>Pack members gain advantage on Charisma (Deception) checks</li><li>Once during the duration, when a hostile creature fails an ability check, saving throw, or attack roll against a pack member, that pack member may immediately move up to 10 feet without provoking opportunity attacks</li></ul><p>This represents Fox luring enemies into overextension and punishing mistakes.</p><hr><h3>Ban — Sabotage the Hunt</h3><p>Fox despises the ritualized slaughter of the helpless.</p><p>The pack must never participate in or support a fox hunt or similar sport-hunt targeting prey for cruelty or tradition rather than necessity.</p><p>When such a hunt is encountered, the pack must actively interfere, mislead, or sabotage it, provided doing so does not directly aid the Wyrm or cause greater harm.</p><p>If the pack knowingly allows such a hunt to proceed unopposed, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Fox may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Fox (Cunning). Creation: 7 Gnosis. Individual: advantage on Cha (Deception) and Cha (Persuasion); once per long rest, reroll a failed Charisma-based ability check; when you successfully deceive or mislead a creature, advantage on your next Dex (Stealth) or Dex (Acrobatics) before end of next turn. Pack: 1 min, within 30 ft — advantage on Dex (Stealth) and Cha (Deception); once, when a hostile fails a check, save, or attack against a pack member, that pack member may move up to 10 ft without OA. Ban: never participate in or support a fox hunt or sport-hunt for cruelty/tradition; interfere or sabotage when encountered (unless it aids the Wyrm or causes greater harm).</p>"
+    },
+    "identifier": "totem-fox",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "f1o2x3t4o5t6e7m8": {
+        "type": "utility",
+        "_id": "f1o2x3t4o5t6e7m8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: advantage on Charisma (Deception) and Charisma (Persuasion) checks; once per long rest, when you fail a Charisma-based ability check, you may reroll and take the new result; when you successfully deceive or mislead a creature, you gain advantage on your next Dexterity (Stealth) or Dexterity (Acrobatics) check before the end of your next turn. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "f1o2x3t4o5t6p7a8": {
+        "type": "utility",
+        "_id": "f1o2x3t4o5t6p7a8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Fox's cunning.</strong> For 1 minute, while within 30 feet of the Totem: pack members have advantage on Dexterity (Stealth) and Charisma (Deception) checks; once during the duration, when a hostile creature fails an ability check, saving throw, or attack roll against a pack member, that pack member may immediately move up to 10 feet without provoking opportunity attacks. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Fox Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.dec.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.per.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Charisma (Deception) and Charisma (Persuasion) checks. Once per long rest, when you fail a Charisma-based ability check, you may reroll and take the new result (apply manually). When you successfully deceive or mislead a creature, advantage on your next Dexterity (Stealth) or Dexterity (Acrobatics) check before end of your next turn (apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Fox's Cunning",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.ste.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.dec.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Dexterity (Stealth) and Charisma (Deception) checks. Once during this duration, when a hostile creature fails an ability check, saving throw, or attack roll against you, you may immediately move up to 10 feet without provoking opportunity attacks (table enforcement).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "cunning",
+      "creationCostGnosis": 7
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

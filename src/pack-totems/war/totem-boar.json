@@ -1,0 +1,107 @@
+{
+  "name": "Totem of Boar",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Boar</strong></p><p><em>Totem Spirit (War)</em> — Creation Cost: 8 Gnosis</p><p><strong>Spirit Aspect:</strong> Relentless Assault / Momentum</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>When you take damage, you gain a +1 bonus to melee damage rolls until the end of your next turn (stacks once, max +3)</li><li>You have advantage on saving throws against being knocked prone</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Boar's charge.</p><p>For 1 minute, while within 20 feet of the Totem:</p><ul><li>The first time each pack member takes damage on their turn, they may immediately move up to 10 feet toward a hostile creature without provoking opportunity attacks</li><li>Once during the duration, one pack member may make a melee attack as a reaction after being hit</li></ul><p>This movement must end closer to an enemy than it began.</p><hr><h3>Ban — No Half-Charges</h3><p>Boar demands commitment once battle is joined.</p><p>The pack must not disengage, withdraw, or break formation after initiating combat, unless withdrawal is reasonably necessary to prevent total annihilation.</p><p>If the pack initiates a fight and then hesitates, retreats prematurely, or abandons the assault for convenience, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Boar may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Boar (War). Creation: 8 Gnosis. Individual: when you take damage, +1 to melee damage until end of next turn (stacks once, max +3); advantage on saves vs being knocked prone. Pack: 1 min, within 20 ft — first time you take damage on your turn, move up to 10 ft toward a hostile without OA (must end closer); once, one pack member may melee attack as reaction after being hit. Ban: do not disengage or withdraw after initiating combat unless necessary to prevent annihilation.</p>"
+    },
+    "identifier": "totem-boar",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "b1o2a3r4t5o6t7e8": {
+        "type": "utility",
+        "_id": "b1o2a3r4t5o6t7e8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: when you take damage, you gain +1 to melee damage rolls until the end of your next turn (stacks once, max +3); you have advantage on saving throws against being knocked prone. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "b1o2a3r4t5o6t7p8": {
+        "type": "utility",
+        "_id": "b1o2a3r4t5o6t7p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Boar's charge.</strong> For 1 minute, while within 20 feet of the Totem: the first time each pack member takes damage on their turn, they may move up to 10 feet toward a hostile without provoking opportunity attacks (must end closer to an enemy); once during the duration, one pack member may make a melee attack as a reaction after being hit. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Boar Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.saves.str.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.saves.dex.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on saving throws against being knocked prone. When you take damage, +1 to melee damage rolls until end of your next turn (stacks once, max +3 — apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Boar's Charge",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "First time you take damage on your turn: move up to 10 ft toward a hostile without provoking OA (must end closer to an enemy). Once during the duration, one pack member may make a melee attack as a reaction after being hit. Table enforcement.",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "war",
+      "creationCostGnosis": 8
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

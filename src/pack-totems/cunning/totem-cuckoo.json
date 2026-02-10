@@ -1,0 +1,109 @@
+{
+  "name": "Totem of Cuckoo",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Cuckoo</strong></p><p><em>Totem Spirit (Cunning)</em> — Creation Cost: 6 Gnosis</p><p><strong>Spirit Aspect:</strong> Infiltration / Manipulation / Social Parasitism</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Cuckoo, the pack must confront a spirit of intrusion, misplacement, and assumed authority. Suitable spirits include:</p><ul><li><strong>Elder Nest-Thief Spirit (Cuckoo Aspect)</strong> — Suggested base: Spirit-empowered infiltrator or illusionist (CR 9–11), focused on deception and social manipulation rather than combat</li><li><strong>False Credential Spirit</strong> — Suggested base: Rakshasa-like or social-control stat block (CR 8–10), stripped of fiendish allegiance and treated as a pure spirit of infiltration</li><li><strong>Borrowed Name Spirit</strong> — Suggested base: Changeling-style or illusion-focused fey spirit (CR 8–9), emphasizing identity theft and misdirection</li></ul><p>These spirits prefer manipulation over violence and often test the pack by placing them where they do not belong and seeing if they can remain.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain advantage on Charisma (Deception) and Charisma (Persuasion) checks</li><li>Once per long rest, when a creature questions your authority, identity, or presence, you may force that creature to make a Wisdom (Insight) check opposed by your Charisma (Deception) check. On a failure, the creature accepts that you belong where you are and does not challenge you further unless given clear cause</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait — Overlooked Presence</h3><p>As an action, a creature touching the Totem may designate one willing pack member to invoke Cuckoo's blessing.</p><p>For up to 10 minutes, while within 30 feet of the Totem:</p><ul><li>Creatures assume the chosen pack member has permission, clearance, or a valid reason to be present</li><li>Guards, officials, and authority figures do not challenge the character unless: the character performs a hostile act; the character draws deliberate attention to themselves; or the situation would obviously prohibit their presence (DM discretion)</li><li>If the character takes an action that would draw attention, they must immediately make a Charisma (Deception) check against a DC set by the DM: on a success, suspicion fades; on a failure, the effect ends immediately</li></ul><p>Only one pack member may benefit from this effect at a time.</p><hr><h3>Ban — Always Improve Your Position</h3><p>Cuckoo demands ruthless opportunism.</p><p>The pack must not ignore a clear opportunity to improve its situation at the expense of others, when such an opportunity presents itself without unacceptable risk.</p><p>If the pack consistently refuses advantage out of misplaced mercy, pride, or hesitation, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Cuckoo may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Cuckoo (Cunning). Creation: 6 Gnosis. Individual: advantage on Cha (Deception) and Cha (Persuasion); once per long rest, when a creature questions your authority/identity/presence, opposed Insight vs your Deception — on failure they accept you belong. Pack — Overlooked Presence: designate one willing pack member; up to 10 min, within 30 ft — creatures assume that character has permission; guards don't challenge unless hostile act, drawing attention, or obviously prohibited; if they draw attention, Cha (Deception) vs DM DC (success = suspicion fades, failure = effect ends). Only one pack member at a time. Ban: do not ignore clear opportunity to improve at others' expense when risk is acceptable.</p>"
+    },
+    "identifier": "totem-cuckoo",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "c1u2c3k4o5o6t7e8": {
+        "type": "utility",
+        "_id": "c1u2c3k4o5o6t7e8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: advantage on Charisma (Deception) and Charisma (Persuasion) checks; once per long rest, when a creature questions your authority, identity, or presence, you may force that creature to make a Wisdom (Insight) check opposed by your Charisma (Deception) check — on a failure, they accept you belong and do not challenge you further unless given clear cause. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "c1u2c3k4o5o6t7p8": {
+        "type": "utility",
+        "_id": "c1u2c3k4o5o6t7p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Overlooked Presence.</strong> Designate one willing pack member (including yourself). For up to 10 minutes, while within 30 feet of the Totem: creatures assume the chosen character has permission or valid reason to be present; guards do not challenge unless hostile act, drawing attention, or obviously prohibited. If the character draws attention, they make a Charisma (Deception) check vs DM DC — success: suspicion fades; failure: effect ends. Only one pack member may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "10" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Cuckoo Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.dec.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.per.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Charisma (Deception) and Charisma (Persuasion) checks. Once per long rest, when a creature questions your authority, identity, or presence, you may force an opposed Wisdom (Insight) vs your Charisma (Deception); on failure they accept you belong (apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Overlooked Presence",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.dec.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Cuckoo's blessing (designate one pack member; apply to that character if different). For up to 10 minutes: creatures assume you have permission or valid reason to be present; guards do not challenge unless hostile act, drawing attention, or obviously prohibited. If you draw attention, make Charisma (Deception) vs DM DC — success: suspicion fades; failure: effect ends. Only one pack member benefits at a time.",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "cunning",
+      "creationCostGnosis": 6
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

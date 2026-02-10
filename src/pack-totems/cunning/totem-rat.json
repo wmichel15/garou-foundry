@@ -1,0 +1,107 @@
+{
+  "name": "Totem of Rat",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Rat</strong></p><p><em>Totem Spirit (Cunning)</em> — Creation Cost: 6 Gnosis</p><p><strong>Spirit Aspect:</strong> Survival / Adaptation / Cunning</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Rat, the pack must confront a spirit that embodies endurance through cleverness, scavenging, and refusal to die quietly. Suitable spirits include:</p><ul><li><strong>Elder Plague-Scavenger Spirit (Rat Aspect)</strong> — Suggested base: Swarm-infused monstrosity or spirit beast (CR 8–9), reflavored as a single intelligent Umbra entity</li><li><strong>Urban Shadow Spirit</strong> — Suggested base: Oinoloth- or Yugoloth-style stat block (CR 8–10), stripped of fiendish alignment and treated as a survival-focused spirit</li><li><strong>Gnawing Under-City Spirit</strong> — Suggested base: Spirit-empowered Giant Rat conglomerate (CR 8), functioning as one creature rather than a swarm</li></ul><p>These spirits rarely fight honorably. They test the pack's ability to adapt, escape, bargain, or outlast superior force.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain advantage on Dexterity (Stealth) and Dexterity (Sleight of Hand) checks</li><li>When you fail a Dexterity or Constitution saving throw, you may reroll the save and take the new result (once per long rest)</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Rat's cunning.</p><p>For 1 minute, while within 30 feet of the Totem:</p><ul><li>Pack members may take the Hide action as a bonus action</li><li>Once during the duration, when a pack member would be reduced to 0 hit points, they may instead drop to 1 hit point and immediately move up to 10 feet without provoking opportunity attacks</li></ul><p>This movement must end in cover or concealment if possible.</p><hr><h3>Ban — Survive to Fight Again</h3><p>Rat demands adaptability, not pride.</p><p>The pack must not willingly choose a hopeless fight when retreat, deception, or avoidance is reasonably possible.</p><p>If the pack repeatedly sacrifices survival for pride or refuses to withdraw from unwinnable situations, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Rat may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Rat (Cunning). Creation: 6 Gnosis. Individual: advantage on Dex (Stealth) and Dex (Sleight of Hand); when you fail a Dex or Con save, reroll and take new result (once per long rest). Pack: 1 min, within 30 ft — Hide as bonus action; once, when a pack member would drop to 0 HP, drop to 1 HP and move up to 10 ft without OA (end in cover/concealment if possible). Ban: do not choose hopeless fights when retreat, deception, or avoidance is reasonably possible.</p>"
+    },
+    "identifier": "totem-rat",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "r1a2t3t4o5t6e7m8": {
+        "type": "utility",
+        "_id": "r1a2t3t4o5t6e7m8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: advantage on Dexterity (Stealth) and Dexterity (Sleight of Hand) checks; when you fail a Dexterity or Constitution saving throw, you may reroll the save and take the new result (once per long rest). Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "r1a2t3t4o5t6p7a8": {
+        "type": "utility",
+        "_id": "r1a2t3t4o5t6p7a8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Rat's cunning.</strong> For 1 minute, while within 30 feet of the Totem: pack members may take the Hide action as a bonus action; once during the duration, when a pack member would be reduced to 0 hit points, they may instead drop to 1 hit point and move up to 10 feet without provoking opportunity attacks (must end in cover or concealment if possible). This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Rat Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.ste.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.slt.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Dexterity (Stealth) and Dexterity (Sleight of Hand) checks. When you fail a Dex or Con saving throw, you may reroll and take the new result (once per long rest — apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Rat's Cunning",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "You may take the Hide action as a bonus action. Once during this duration, when you would be reduced to 0 hit points, you may instead drop to 1 hit point and move up to 10 feet without provoking opportunity attacks (must end in cover or concealment if possible). Table enforcement.",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "cunning",
+      "creationCostGnosis": 6
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

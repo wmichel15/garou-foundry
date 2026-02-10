@@ -1,0 +1,110 @@
+{
+  "name": "Totem of Bear",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Bear</strong></p><p><em>Totem Spirit (War)</em> — Creation Cost: 8 Gnosis</p><p><strong>Spirit Aspect:</strong> Endurance / Protection / Ferocity</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain advantage on Constitution saving throws</li><li>When you would be reduced to 0 hit points but not killed outright, you may instead drop to 1 hit point (once per long rest)</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Bear's presence.</p><p>For 1 minute, while within 20 feet of the Totem:</p><ul><li>Pack members gain temporary hit points equal to their proficiency bonus at the start of each of their turns</li><li>Pack members have advantage on saving throws against being frightened or stunned</li></ul><p>This represents Bear's refusal to yield ground.</p><hr><h3>Ban — Endure the Wound</h3><p>Bear demands fortitude and shared suffering.</p><p>The pack must not abandon a fight or retreat while an ally is still standing and able to continue, when withdrawal is not immediately necessary to prevent total annihilation.</p><p>If the pack flees prematurely or leaves allies behind to spare itself harm, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Bear may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Bear (War). Creation: 8 Gnosis. Individual: advantage on Con saves; when reduced to 0 HP (not killed outright), may drop to 1 HP instead (once per long rest). Pack: 1 min, within 20 ft — temp HP = proficiency at start of each turn; advantage on saves vs frightened or stunned. Ban: do not abandon fight or retreat while an ally still stands when withdrawal is not necessary to prevent annihilation.</p>"
+    },
+    "identifier": "totem-bear",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "b1e2a3r4t5o6t7e8": {
+        "type": "utility",
+        "_id": "b1e2a3r4t5o6t7e8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: advantage on Constitution saving throws; when you would be reduced to 0 hit points but not killed outright, you may instead drop to 1 hit point (once per long rest). Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "b1e2a3r4t5o6t7p8": {
+        "type": "utility",
+        "_id": "b1e2a3r4t5o6t7p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Bear's presence.</strong> For 1 minute, while within 20 feet of the Totem: pack members gain temporary hit points equal to their proficiency bonus at the start of each of their turns; pack members have advantage on saving throws against being frightened or stunned. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Bear Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.saves.con.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.garou.relentlessEndurance", "mode": 5, "value": "true", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Constitution saving throws. When you would be reduced to 0 HP but not killed outright, you may instead drop to 1 HP (once per long rest — apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Bear's Presence",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.saves.wis.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.saves.con.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on saving throws against frightened or stunned. At the start of each of your turns, gain temp HP equal to your proficiency bonus (apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "war",
+      "creationCostGnosis": 8
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

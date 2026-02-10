@@ -1,0 +1,110 @@
+{
+  "name": "Totem of Raven",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Raven</strong></p><p><em>Totem Spirit (Cunning)</em> — Creation Cost: 6 Gnosis</p><p><strong>Spirit Aspect:</strong> Secrets / Omens / Passage</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Raven, the pack must confront a spirit of secrets, memory, and the thin boundary between life and death. Suitable spirits include:</p><ul><li><strong>Elder Carrion-Seer Spirit (Raven Aspect)</strong> — Suggested base: Spirit-empowered necromancer or omen-beast (CR 9–11), reflavored as a pure Umbra oracle rather than undead</li><li><strong>Watcher of the Last Breath</strong> — Suggested base: Wraith-like or specter-adjacent stat block (CR 8–10), stripped of undead typing and treated as a spirit of transition</li><li><strong>Omen-Flock Spirit</strong> — Suggested base: Single-entity swarm intelligence (CR 8–9), focused on divination, illusion, and battlefield awareness</li></ul><p>These spirits prefer bargains, secrets, and revelations. Violence is possible, but insight or sacrifice is more respected.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain advantage on Wisdom (Insight) and Intelligence (Investigation) checks</li><li>Once per long rest, when you fail a Gnosis Roll, you may treat the result as if you had rolled a 10 on the die</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Raven's omens.</p><p>For 1 minute, while within 30 feet of the Totem:</p><ul><li>Pack members gain advantage on Dexterity (Stealth) and Charisma (Deception) checks</li><li>Once during the duration, when a pack member would be surprised, they are not surprised and may immediately move up to 10 feet without provoking opportunity attacks</li><li>This movement must end in cover or concealment if possible.</li></ul><hr><h3>Ban — Keep the Secret</h3><p>Raven demands discretion and respect for hidden truths.</p><p>The pack must not reveal secrets, omens, or knowledge entrusted to them unless doing so is reasonably necessary to prevent grave harm.</p><p>If the pack carelessly exposes secrets, betrays confidences, or reveals information for convenience or pride, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Raven may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Raven (Cunning). Creation: 6 Gnosis. Individual: advantage on Wis (Insight) and Int (Investigation); once per long rest, when you fail a Gnosis Roll, treat the result as if you had rolled a 10 on the die. Pack: 1 min, within 30 ft — advantage on Dex (Stealth) and Cha (Deception); once, when a pack member would be surprised, they are not surprised and may move up to 10 ft without OA (end in cover or concealment if possible). Ban: do not reveal secrets, omens, or entrusted knowledge unless reasonably necessary to prevent grave harm.</p>"
+    },
+    "identifier": "totem-raven",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "r1a2v3e4n5t6e7m8": {
+        "type": "utility",
+        "_id": "r1a2v3e4n5t6e7m8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: advantage on Wisdom (Insight) and Intelligence (Investigation) checks; once per long rest, when you fail a Gnosis Roll, you may treat the result as if you had rolled a 10 on the die. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "r1a2v3e4n5t6p7a8": {
+        "type": "utility",
+        "_id": "r1a2v3e4n5t6p7a8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Raven's omens.</strong> For 1 minute, while within 30 feet of the Totem: pack members have advantage on Dexterity (Stealth) and Charisma (Deception) checks; once during the duration, when a pack member would be surprised, they are not surprised and may immediately move up to 10 feet without provoking opportunity attacks (movement must end in cover or concealment if possible). This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Raven Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.ins.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.inv.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Wisdom (Insight) and Intelligence (Investigation) checks. Once per long rest, when you fail a Gnosis Roll, you may treat the result as if you had rolled a 10 on the die (apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Raven's Omens",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.ste.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.dec.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Dexterity (Stealth) and Charisma (Deception) checks. Once during this duration, when you would be surprised, you are not surprised and may immediately move up to 10 feet without provoking opportunity attacks, ending in cover or concealment if possible (table enforcement).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "cunning",
+      "creationCostGnosis": 6
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

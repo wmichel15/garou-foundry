@@ -1,0 +1,110 @@
+{
+  "name": "Totem of Chimera",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Chimera</strong></p><p><em>Totem Spirit (Wisdom)</em> — Creation Cost: 7 Gnosis</p><p><strong>Spirit Aspect:</strong> Vision / Illusion / Hidden Truths</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Chimera, the pack must confront a spirit of dreams, contradictions, and layered realities. Suitable spirits include:</p><ul><li><strong>Elder Dream-Shaper Spirit (Chimera Aspect)</strong> — Suggested base: Sphinx-like or dream-infused guardian (CR 10–12), reflavored as an Umbra spirit of shifting forms and riddled truth</li><li><strong>Living Mirage Spirit</strong> — Suggested base: Djinni- or illusion-focused elemental (CR 8–10), stripped of elemental alignment and treated as a pure spirit of deception and insight</li><li><strong>Many-Faced Vision Spirit</strong> — Suggested base: Beholder-kin or aberration-style stat block (CR 9–11), with eye rays reflavored as psychic visions rather than attacks</li></ul><p>These spirits rarely fight directly. They test the pack through visions, false paths, and revelations that challenge certainty.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain advantage on Intelligence (Investigation) and Wisdom (Insight) checks</li><li>Once per long rest, when you fail a Gnosis Roll, you may reroll the roll and must use the new result</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Chimera's visions.</p><p>For 1 minute, while within 30 feet of the Totem:</p><ul><li>Pack members gain advantage on saving throws against being charmed or frightened</li><li>Once during the duration, when a pack member would be deceived by an illusion, disguise, or false information, they may immediately recognize the deception and treat it as revealed</li></ul><p>This does not automatically dispel illusions, but it reveals their presence and nature.</p><hr><h3>Ban — Question What You See</h3><p>Chimera demands doubt before certainty.</p><p>The pack must not accept appearances, visions, or revelations at face value without reflection or verification, when questioning is reasonably possible.</p><p>If the pack repeatedly acts on illusion, assumption, or unexamined belief, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Chimera may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Chimera (Wisdom). Creation: 7 Gnosis. Individual: advantage on Int (Investigation) and Wis (Insight); once per long rest, when you fail a Gnosis Roll, reroll and use the new result. Pack: 1 min, within 30 ft — advantage on saves vs charmed or frightened; once, when a pack member would be deceived by illusion/disguise/false info, they may recognize the deception (reveals presence and nature; does not dispel). Ban: do not accept appearances or revelations at face value without reflection when questioning is reasonably possible.</p>"
+    },
+    "identifier": "totem-chimera",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "c1h2i3m4e5r6a7t8": {
+        "type": "utility",
+        "_id": "c1h2i3m4e5r6a7t8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: advantage on Intelligence (Investigation) and Wisdom (Insight) checks; once per long rest, when you fail a Gnosis Roll, you may reroll and must use the new result. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "c1h2i3m4e5r6a7p8": {
+        "type": "utility",
+        "_id": "c1h2i3m4e5r6a7p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Chimera's visions.</strong> For 1 minute, while within 30 feet of the Totem: pack members have advantage on saving throws against being charmed or frightened; once during the duration, when a pack member would be deceived by an illusion, disguise, or false information, they may recognize the deception and treat it as revealed (does not dispel; reveals presence and nature). This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Chimera Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.inv.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.ins.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Intelligence (Investigation) and Wisdom (Insight) checks. Once per long rest, when you fail a Gnosis Roll, you may reroll and must use the new result (apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Chimera's Visions",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.saves.wis.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.saves.cha.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on saving throws against being charmed or frightened. Once during this duration, when you would be deceived by an illusion, disguise, or false information, you may recognize the deception and treat it as revealed (does not dispel; table enforcement).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "wisdom",
+      "creationCostGnosis": 7
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

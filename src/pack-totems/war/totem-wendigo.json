@@ -1,0 +1,110 @@
+{
+  "name": "Totem of Wendigo",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Wendigo</strong></p><p><em>Totem Spirit (War)</em> — Creation Cost: 9 Gnosis</p><p><strong>Spirit Aspect:</strong> Endurance / Cold Resolve / Survival</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Wendigo, the pack must confront a spirit of relentless cold, hunger, and survival through deprivation. Suitable spirits include:</p><ul><li><strong>Elder Ice-Hunger Spirit (Wendigo Aspect)</strong> — Suggested base: Frost Giant Everlasting One–style spirit (CR 12–13), reflavored as an Umbra predator of winter and starvation</li><li><strong>Glacial Devourer Spirit</strong> — Suggested base: Remorhaz or Frost Salamander–style stat block (CR 11–12), stripped of elemental typing and treated as a spirit of consumption</li><li><strong>Endless Blizzard Spirit</strong> — Suggested base: Air or Water Elemental Myrmidon (CR 7) empowered to CR 8+, with cold damage and exhaustion effects</li></ul><p>These spirits do not bargain kindly. Worth is proven through endurance, sacrifice, or survival under extreme hardship.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain resistance to cold damage</li><li>You have advantage on saving throws against exhaustion</li><li>When you would gain a level of exhaustion, you may ignore that level once per long rest</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Wendigo's resolve.</p><p>For 1 minute, while within 20 feet of the Totem:</p><ul><li>Pack members gain resistance to cold damage</li><li>Pack members have advantage on Constitution saving throws</li><li>Once during the duration, when a pack member would drop to 0 hit points, they may instead drop to 1 hit point and gain one level of exhaustion instead</li></ul><p>This reflects Wendigo's creed: survive now, pay later.</p><hr><h3>Ban — Survival Is Earned</h3><p>Wendigo demands strength through hardship.</p><p>The pack must not waste vital resources, abandon preparation, or seek comfort when hardship can be endured, if survival is reasonably possible.</p><p>If the pack repeatedly chooses ease over endurance or refuses to suffer when necessary, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Wendigo may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Wendigo (War). Creation: 9 Gnosis. Individual: resistance to cold; advantage on saves vs exhaustion; when you would gain a level of exhaustion, ignore it once per long rest. Pack: 1 min, within 20 ft — resistance to cold; advantage on Con saves; once, when a pack member would drop to 0 HP, drop to 1 HP and gain one level of exhaustion instead. Ban: do not waste resources, abandon preparation, or seek comfort when hardship can be endured.</p>"
+    },
+    "identifier": "totem-wendigo",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "w1e2n3d4i5g6o7t8": {
+        "type": "utility",
+        "_id": "w1e2n3d4i5g6o7t8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: resistance to cold damage; advantage on saving throws against exhaustion; when you would gain a level of exhaustion, you may ignore that level once per long rest. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "w1e2n3d4i5g6o7p8": {
+        "type": "utility",
+        "_id": "w1e2n3d4i5g6o7p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Wendigo's resolve.</strong> For 1 minute, while within 20 feet of the Totem: pack members gain resistance to cold damage; pack members have advantage on Constitution saving throws; once during the duration, when a pack member would drop to 0 hit points, they may instead drop to 1 hit point and gain one level of exhaustion instead. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Wendigo Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "system.traits.dr.value", "mode": 2, "value": "cold", "priority": 20 },
+        { "key": "flags.dnd5e.saves.con.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Resistance to cold damage. Advantage on saving throws against exhaustion (Con save advantage covers many exhaustion-causing effects). When you would gain a level of exhaustion, you may ignore that level once per long rest (apply manually).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Wendigo's Resolve",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "system.traits.dr.value", "mode": 2, "value": "cold", "priority": 20 },
+        { "key": "flags.dnd5e.saves.con.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Resistance to cold damage; advantage on Constitution saving throws. Once during this duration, when you would drop to 0 hit points, you may instead drop to 1 hit point and gain one level of exhaustion (table enforcement).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "war",
+      "creationCostGnosis": 9
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

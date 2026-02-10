@@ -1,0 +1,110 @@
+{
+  "name": "Totem of Griffin",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Griffin</strong></p><p><em>Totem Spirit (Respect)</em> — Creation Cost: 8 Gnosis</p><p><strong>Spirit Aspect:</strong> Vigilance / Guardianship / Sacred Watch</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Griffin, the pack must confront a spirit that embodies eternal watchfulness and the duty to guard what matters. Suitable spirits include:</p><ul><li><strong>Elder Watch-Griffin Spirit (Griffin Aspect)</strong> — Suggested base: Guardian Griffin–style spirit (CR 10–12), reflavored as a pure Umbra sentinel</li><li><strong>Celestial Watcher Spirit</strong> — Suggested base: Gynosphinx or Androsphinx (CR 11–13), stripped of celestial allegiance and treated as a spirit of guardianship</li><li><strong>Skyward Sentinel Spirit</strong> — Suggested base: Stone Golem–like spirit (CR 10), given flight and heightened perception</li></ul><p>These spirits are stern but fair. They respect duty, discipline, and unwavering attention.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>You gain advantage on Wisdom (Perception) and Wisdom (Insight) checks</li><li>You cannot be surprised while conscious</li><li>When you roll initiative, you may add +2 to the result</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Griffin's watch.</p><p>For 1 minute, while within 30 feet of the Totem:</p><ul><li>Pack members gain advantage on initiative rolls</li><li>The first attack made against each pack member during the duration is made with disadvantage</li></ul><p>This represents Griffin's warning cry and coordinated defensive response.</p><hr><h3>Ban — Eternal Vigilance</h3><p>Griffin demands unwavering watchfulness.</p><p>The pack must not neglect guard, watch, or reconnaissance duties, when vigilance is reasonably possible.</p><p>If the pack is surprised due to willful negligence or disregard for watchfulness, the Totem becomes dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Griffin may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Griffin (Respect). Creation: 8 Gnosis. Individual: advantage on Wis (Perception) and Wis (Insight); cannot be surprised while conscious; +2 to initiative. Pack: 1 min, within 30 ft — advantage on initiative; first attack against each pack member during the duration has disadvantage. Ban: do not neglect guard, watch, or recon when vigilance is reasonably possible.</p>"
+    },
+    "identifier": "totem-griffin",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "g1r2i3f4f5i6n7t8": {
+        "type": "utility",
+        "_id": "g1r2i3f4f5i6n7t8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: advantage on Wisdom (Perception) and Wisdom (Insight) checks; you cannot be surprised while conscious; when you roll initiative, you may add +2 to the result. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "g1r2i3f4f5i6n7p8": {
+        "type": "utility",
+        "_id": "g1r2i3f4f5i6n7p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Griffin's watch.</strong> For 1 minute, while within 30 feet of the Totem: pack members have advantage on initiative rolls; the first attack made against each pack member during the duration is made with disadvantage. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Griffin Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.prc.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.ins.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "system.attributes.init.bonus", "mode": 2, "value": "2", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Wisdom (Perception) and Wisdom (Insight) checks; cannot be surprised while conscious; +2 to initiative rolls.",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Griffin's Watch",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.initiative.adv", "mode": 5, "value": "true", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on initiative rolls. The first attack made against you during this duration is made with disadvantage (table enforcement).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "respect",
+      "creationCostGnosis": 8
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

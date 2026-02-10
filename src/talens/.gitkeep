@@ -1,0 +1,3 @@
+# Talen item JSONs go here. Add flag: "flags": { "garou": { "talen": true } }
+# Activity should have uses: { "max": "1", "recovery": [] } for one-time use.
+# The talen-consumption.js script removes the item from the actor when used.

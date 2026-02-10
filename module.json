@@ -91,6 +91,16 @@
       }
     },
     {
+      "name": "garou-pack-totems",
+      "label": "Garou - Pack Totems",
+      "path": "packs/garou-pack-totems",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
       "name": "garou-journals",
       "label": "Garou - Journals",
       "path": "packs/garou-journals",
@@ -173,7 +183,9 @@
     "scripts/fetishes/sun-whip-ignite.js",
     "scripts/fetishes/shroud-of-the-north-wind.js",
     "scripts/fetishes/spirit-drum.js",
-    "scripts/fix-broken-item-icons.js"
+    "scripts/fix-broken-item-icons.js",
+    "scripts/talens/talen-consumption.js",
+    "scripts/pack-totems/totem-falcon-automation.js"
   ],
   "flags": {}
 }

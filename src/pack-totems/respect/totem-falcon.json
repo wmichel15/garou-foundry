@@ -1,0 +1,110 @@
+{
+  "name": "Totem of Falcon",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Falcon</strong></p><p><em>Totem Spirit (Respect)</em> — Creation Cost: 7 Gnosis</p><p><strong>Spirit Aspect:</strong> Sky / Precision / Awareness. Falcon demands patience and precision.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>Gain advantage on Wisdom (Perception) checks relying on sight</li><li>You cannot be surprised unless you are incapacitated</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Falcon's guidance.</p><p>Until the end of the current combat or for 1 minute (whichever comes first):</p><ul><li>Once per round, one pack member may add +1d4 to an attack roll or ability check made with advantage</li></ul><p>This represents Falcon guiding the perfect moment, not raw force.</p><hr><h3>Ban</h3><p>Falcon demands deliberation before action. The pack must never initiate combat without first attempting observation or reconnaissance, when such preparation is reasonably possible.</p><p>If the pack begins combat blindly, through reckless action or willful ignorance, the Totem of Falcon becomes dormant and all its benefits cease. To restore the Totem, the pack leader must reinvest the required Gnosis cost (7) to reaffirm the bond.</p><p>If the pack repeatedly or severely violates this Ban, the Falcon spirit may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Falcon (Respect). Creation: 7 Gnosis. Individual: advantage on Wis (Perception) sight-based; cannot be surprised unless incapacitated. Pack: +1d4 once per round to one pack member's attack or ability check made with advantage (combat or 1 min). Ban: never initiate combat without observation/recon when reasonably possible.</p>"
+    },
+    "identifier": "totem-falcon",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "t1f2a3l4c5o6n7i8": {
+        "type": "utility",
+        "_id": "t1f2a3l4c5o6n7i8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> You gain the following until the next long rest: advantage on Wisdom (Perception) checks relying on sight; you cannot be surprised unless you are incapacitated. Only one creature may benefit from this trait at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "t1f2a3l4c5o6n9p8": {
+        "type": "utility",
+        "_id": "t1f2a3l4c5o6n9p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Falcon's guidance.</strong> Until the end of the current combat or for 1 minute (whichever comes first): once per round, one pack member may add +1d4 to an attack roll or ability check made with advantage. This represents Falcon guiding the perfect moment, not raw force. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Falcon Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "flags.dnd5e.skills.prc.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Advantage on Wisdom (Perception) checks relying on sight; cannot be surprised unless incapacitated.",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Falcon's Guidance",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "system.bonuses.mwak.attack", "mode": 2, "value": "1d4", "priority": 20 },
+        { "key": "system.bonuses.rwak.attack", "mode": 2, "value": "1d4", "priority": 20 },
+        { "key": "system.bonuses.abilities.check", "mode": 2, "value": "1d4", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Once per round, add +1d4 to an attack roll or ability check made with advantage (table enforcement).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "respect",
+      "creationCostGnosis": 7
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

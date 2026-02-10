@@ -1,0 +1,113 @@
+{
+  "name": "Totem of Unicorn",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Totem of Unicorn</strong></p><p><em>Totem Spirit (Wisdom)</em> — Creation Cost: 7 Gnosis</p><p><strong>Spirit Aspect:</strong> Harmony / Grace / Compassionate Resolve</p><hr><h3>Recommended Umbra Spirits (CR 8+)</h3><p>To bind Unicorn, the pack must confront a spirit of harmony, sacrifice, and untainted passage. Suitable spirits include:</p><ul><li><strong>Elder Silver-Hoof Vision Spirit (Unicorn Aspect)</strong> — Suggested base: Sphinx- or guardian-fey–style spirit (CR 10–12), reflavored as a spirit of grace and unity</li><li><strong>Waykeeper of Gaia's Children</strong> — Suggested base: Nature or celestial guardian (CR 9–11), stripped of planar alignment and treated as a Wisdom spirit</li><li><strong>Horizon-Walker Spirit</strong> — Suggested base: Air or nature elemental (CR 8–10), focused on movement, healing acts, and protection rather than damage</li></ul><p>These spirits test empathy, restraint, and willingness to sacrifice advantage for others.</p><hr><h3>Individual Trait</h3><p>The creature who touches the Totem gains the following benefit until the next long rest:</p><ul><li>Your movement speed increases by 10 feet</li><li>You gain proficiency in Medicine and Survival (if you already have proficiency, you gain expertise instead)</li><li>You have advantage on Wisdom (Medicine) checks and Charisma (Persuasion) checks made to calm, heal, or comfort others</li></ul><p>Only one creature may benefit from this trait at a time.</p><hr><h3>Pack Trait</h3><p>As an action, a creature touching the Totem may invoke Unicorn's grace.</p><p>For 1 minute, while within 30 feet of the Totem:</p><ul><li>Pack members ignore nonmagical difficult terrain</li><li>Pack members have advantage on Dexterity saving throws</li><li>When a pack member restores hit points to another creature, that creature regains additional hit points equal to the healer's proficiency bonus (once per creature per round)</li></ul><p>This reflects Unicorn's speed in the Umbra, harmony in motion, and collective healing focus.</p><hr><h3>Drawback — Reluctance to Harm the Pure</h3><p>Unicorn's compassion tempers violence.</p><p>When a pack member makes an attack roll against a Garou or non-Wyrm humanoid, they do so with disadvantage the first time each combat.</p><p>This drawback does not apply if the target is Wyrm-tainted, actively committing atrocities, or poses an immediate lethal threat. This drawback is always in effect while the Totem is active.</p><hr><h3>Ban — Protect Gaia's Children</h3><p>Unicorn demands compassion backed by action.</p><p>The pack must aid and protect the weak, exploited, or defenseless, except when doing so would directly aid the Wyrm.</p><p>Willful refusal to offer aid when it is reasonably possible causes the Totem to become dormant and all its benefits cease.</p><p>To restore the Totem, the pack leader must reinvest the required Gnosis cost to reaffirm the bond.</p><p>If the pack repeatedly or egregiously violates this Ban, Unicorn may withdraw entirely, permanently severing itself from the Totem at the Storyteller's discretion.</p><hr><p><strong>Totem rules:</strong> Only one Totem per pack; benefits do not stack; a dormant Totem provides no benefits. Once a Totem benefit is used, it cannot be used again until after a long rest. Interacting with a Totem requires 1 action while touching it; choose either the Individual Trait or the Pack Trait.</p>",
+      "chat": "<p>Totem of Unicorn (Wisdom). Creation: 7 Gnosis. Individual: +10 ft speed; proficiency (or expertise) in Medicine and Survival; advantage on Wis (Medicine) and Cha (Persuasion) to calm/heal/comfort. Pack: 1 min, within 30 ft — ignore nonmagical difficult terrain; advantage on Dex saves; when you restore HP to another, they regain +prof HP (once per creature per round). Drawback: first attack each combat vs Garou/non-Wyrm humanoid has disadvantage (exceptions: Wyrm-tainted, atrocities, immediate lethal threat). Ban: aid and protect the weak/exploited/defenseless when reasonably possible.</p>"
+    },
+    "identifier": "totem-unicorn",
+    "source": { "revision": 1, "rules": "2024" },
+    "activities": {
+      "u1n2i3c4o5r6n7t8": {
+        "type": "utility",
+        "_id": "u1n2i3c4o5r6n7t8",
+        "sort": 0,
+        "name": "Gain Individual Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Individual Trait.</strong> Until the next long rest: your speed increases by 10 feet; you gain proficiency in Medicine and Survival (expertise if already proficient); advantage on Wisdom (Medicine) and Charisma (Persuasion) checks made to calm, heal, or comfort others. Only one creature may benefit at a time. This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "u1n2i3c4o5r6n7p8": {
+        "type": "utility",
+        "_id": "u1n2i3c4o5r6n7p8",
+        "sort": 1,
+        "name": "Activate Pack Trait",
+        "activation": { "type": "action", "override": false, "condition": "While touching the Totem" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Unicorn's grace.</strong> For 1 minute, while within 30 feet of the Totem: pack members ignore nonmagical difficult terrain; pack members have advantage on Dexterity saving throws; when a pack member restores hit points to another creature, that creature regains additional HP equal to the healer's proficiency bonus (once per creature per round). This Totem benefit cannot be used again until after a long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Unicorn Individual Trait",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "system.attributes.movement.walk", "mode": 2, "value": "10", "priority": 20 },
+        { "key": "system.skills.med.proficient", "mode": 2, "value": "1", "priority": 20 },
+        { "key": "system.skills.sur.proficient", "mode": 2, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.med.adv", "mode": 5, "value": "1", "priority": 20 },
+        { "key": "flags.dnd5e.skills.per.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Speed +10 ft. Proficiency in Medicine and Survival (if already proficient, apply expertise manually). Advantage on Wisdom (Medicine) and Charisma (Persuasion) checks to calm, heal, or comfort others. Drawback: first attack each combat vs Garou or non-Wyrm humanoid has disadvantage (exceptions apply).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    },
+    {
+      "name": "Unicorn's Grace",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        { "key": "system.traits.di.terrain", "mode": 5, "value": "true", "priority": 20 },
+        { "key": "flags.dnd5e.saves.dex.adv", "mode": 5, "value": "1", "priority": 20 }
+      ],
+      "disabled": true,
+      "duration": { "startTime": null, "combat": null, "seconds": null, "rounds": null, "turns": null, "startRound": null, "startTurn": null },
+      "description": "Ignore nonmagical difficult terrain; advantage on Dexterity saving throws. When you restore hit points to another creature, they regain additional HP equal to your proficiency bonus (once per creature per round — table enforcement).",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": { "compendiumSource": null, "duplicateSource": null }
+    }
+  ],
+  "flags": {
+    "garou": {
+      "totemCategory": "wisdom",
+      "creationCostGnosis": 7
+    }
+  },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

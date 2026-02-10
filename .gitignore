@@ -9,6 +9,9 @@ lerna-debug.log*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# Foundry module release zips (built by CI or locally)
+garou-v*.zip
+
 # Foundry VTT compendium LevelDB files
 packs/**/CURRENT
 packs/**/LOG

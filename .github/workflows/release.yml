@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read version from module.json
+        id: version
+        run: |
+          VERSION=$(node -p "require('./module.json').version")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Building garou-v$VERSION.zip"
+
+      - name: Create release zip
+        run: |
+          zip -r "garou-v${{ steps.version.outputs.version }}.zip" \
+            module.json \
+            scripts \
+            packs \
+            assets \
+            docs \
+            LICENSE \
+            README.md \
+            CHANGELOG.md
+
+      - name: Create Release and upload asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: "garou-v${{ steps.version.outputs.version }}.zip"
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

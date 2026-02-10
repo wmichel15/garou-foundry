@@ -1,8 +1,6 @@
-TEST UPDATE 1.2
-
 # Garou Foundry Module (D&D 5e)
 
-This repository contains a Foundry VTT module that adds a homebrew **Garou** class and related content (tribes, gifts, rites, and lore) for D&D 5e.
+This repository contains a Foundry VTT module that adds a homebrew **Garou** class and related content (tribes, gifts, rites, and lore) for D&D 5e. Requires Foundry VTT v13. Compatible with dnd5e.
 
 ## Install (Foundry VTT)
 In Foundry: **Game Settings → Manage Modules → Install Module**  

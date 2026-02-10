@@ -8,35 +8,45 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Read version from module.json
-        id: version
+      - name: Derive version and download URL from tag
+        id: vars
         run: |
-          VERSION=$(node -p "require('./module.json').version")
+          VERSION="${GITHUB_REF_NAME#v}"
+          DOWNLOAD_URL="https://github.com/wmichel15/garou-foundry/releases/download/${GITHUB_REF_NAME}/garou-foundry.zip"
           echo "version=$VERSION" >> $GITHUB_OUTPUT
-          echo "Building garou-v$VERSION.zip"
+          echo "download_url=$DOWNLOAD_URL" >> $GITHUB_OUTPUT
+          echo "Version: $VERSION"
+          echo "Download URL: $DOWNLOAD_URL"
+
+      - name: Update module.json for release
+        run: |
+          node -e "
+            const fs = require('fs');
+            const m = JSON.parse(fs.readFileSync('module.json', 'utf8'));
+            m.version = process.env.VERSION;
+            m.download = process.env.DOWNLOAD_URL;
+            fs.writeFileSync('module.json', JSON.stringify(m, null, 2));
+          "
+        env:
+          VERSION: ${{ steps.vars.outputs.version }}
+          DOWNLOAD_URL: ${{ steps.vars.outputs.download_url }}
 
       - name: Create release zip
         run: |
-          zip -r "garou-v${{ steps.version.outputs.version }}.zip" \
-            module.json \
-            scripts \
-            packs \
-            assets \
-            docs \
-            LICENSE \
-            README.md \
-            CHANGELOG.md
+          zip -r garou-foundry.zip module.json packs scripts assets src docs README.md LICENSE CHANGELOG.md
 
       - name: Create Release and upload asset
         uses: softprops/action-gh-release@v2
         with:
-          files: "garou-v${{ steps.version.outputs.version }}.zip"
+          files: garou-foundry.zip
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

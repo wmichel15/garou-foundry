@@ -688,9 +688,17 @@ async function syncLupusNaturalWeapons(actor) {
       if (empowered) {
         const toUpdate = [];
         for (const w of [...bites, ...claws]) {
-          const props = w.system?.properties ?? [];
-          if (!props.includes("mgc")) {
-            toUpdate.push({ _id: w.id, "system.properties": [...props, "mgc"] });
+          const rawProps = w.system?.properties;
+          if (Array.isArray(rawProps)) {
+            if (!rawProps.includes("mgc")) {
+              toUpdate.push({ _id: w.id, "system.properties": [...rawProps, "mgc"] });
+            }
+          } else if (rawProps && typeof rawProps === "object") {
+            if (!rawProps.mgc) {
+              toUpdate.push({ _id: w.id, "system.properties.mgc": true });
+            }
+          } else {
+            toUpdate.push({ _id: w.id, "system.properties.mgc": true });
           }
         }
         if (toUpdate.length) {
@@ -752,9 +760,18 @@ async function syncGlabroNaturalWeapons(actor) {
       if (empowered) {
         const toUpdate = [];
         for (const w of [...bites, ...claws]) {
-          const props = w.system?.properties ?? [];
-          if (!props.includes("mgc")) {
-            toUpdate.push({ _id: w.id, "system.properties": [...props, "mgc"] });
+          const rawProps = w.system?.properties;
+          if (Array.isArray(rawProps)) {
+            if (!rawProps.includes("mgc")) {
+              toUpdate.push({ _id: w.id, "system.properties": [...rawProps, "mgc"] });
+            }
+          } else if (rawProps && typeof rawProps === "object") {
+            if (!rawProps.mgc) {
+              toUpdate.push({ _id: w.id, "system.properties.mgc": true });
+            }
+          } else {
+            // No properties set; just add mgc in object form.
+            toUpdate.push({ _id: w.id, "system.properties.mgc": true });
           }
         }
         if (toUpdate.length) {
@@ -816,9 +833,17 @@ async function syncCrinosNaturalWeapons(actor) {
       if (empowered) {
         const toUpdate = [];
         for (const w of [...bites, ...claws]) {
-          const props = w.system?.properties ?? [];
-          if (!props.includes("mgc")) {
-            toUpdate.push({ _id: w.id, "system.properties": [...props, "mgc"] });
+          const rawProps = w.system?.properties;
+          if (Array.isArray(rawProps)) {
+            if (!rawProps.includes("mgc")) {
+              toUpdate.push({ _id: w.id, "system.properties": [...rawProps, "mgc"] });
+            }
+          } else if (rawProps && typeof rawProps === "object") {
+            if (!rawProps.mgc) {
+              toUpdate.push({ _id: w.id, "system.properties.mgc": true });
+            }
+          } else {
+            toUpdate.push({ _id: w.id, "system.properties.mgc": true });
           }
         }
         if (toUpdate.length) {
@@ -880,9 +905,17 @@ async function syncHispoNaturalWeapons(actor) {
       if (empowered) {
         const toUpdate = [];
         for (const w of [...bites, ...claws]) {
-          const props = w.system?.properties ?? [];
-          if (!props.includes("mgc")) {
-            toUpdate.push({ _id: w.id, "system.properties": [...props, "mgc"] });
+          const rawProps = w.system?.properties;
+          if (Array.isArray(rawProps)) {
+            if (!rawProps.includes("mgc")) {
+              toUpdate.push({ _id: w.id, "system.properties": [...rawProps, "mgc"] });
+            }
+          } else if (rawProps && typeof rawProps === "object") {
+            if (!rawProps.mgc) {
+              toUpdate.push({ _id: w.id, "system.properties.mgc": true });
+            }
+          } else {
+            toUpdate.push({ _id: w.id, "system.properties.mgc": true });
           }
         }
         if (toUpdate.length) {

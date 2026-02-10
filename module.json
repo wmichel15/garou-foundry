@@ -2,7 +2,7 @@
   "id": "garou",
   "title": "Garou: The Apocalypse",
   "description": "<p>A Foundry VTT module implementing the Garou class, tribes, gifts, rites, and lore for D&amp;D 5e.</p>",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "authors": [
     {
       "name": "Wesley Michel",

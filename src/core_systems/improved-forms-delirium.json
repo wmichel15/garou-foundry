@@ -1,0 +1,114 @@
+{
+  "name": "Improved Forms: Delirium",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "deliriumTrigger": {
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": "When you enter Crinos or Hispo, or begin Rage while already in those forms."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Delirium check"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": "30 ft (choice of hostiles that can see you)"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "macroData": {
+          "name": "Delirium (Single Target Helper)",
+          "command": "// Garou: Improved Forms — Delirium helper\n// For a single targeted hostile, rolls its Wis save vs your Delirium DC and, on a failure, rolls the Delirium Severity d100.\n// This does not enforce conditions automatically; apply them manually.\n\nfunction getActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nconst actor = getActor();\nif (!actor) {\n  ui.notifications.error(\"No Garou actor found for Delirium.\");\n  return;\n}\n\nconst targets = Array.from(game.user?.targets ?? []);\nif (!targets.length) {\n  ui.notifications.warn(\"Target one hostile creature to apply Delirium.\");\n  return;\n}\nif (targets.length > 1) {\n  ui.notifications.warn(\"Delirium helper currently supports one target at a time.\");\n}\n\nconst targetToken = targets[0];\nconst targetActor = targetToken.actor;\nif (!targetActor) {\n  ui.notifications.warn(\"Target has no actor.\");\n  return;\n}\n\n// Creatures immune to frightened are immune to Delirium.\nconst immuneTraits = targetActor.system?.traits?.ci?.value ?? [];\nif (immuneTraits.includes(\"frightened\")) {\n  ChatMessage.create({\n    content: `<p><b>${targetActor.name}</b> is immune to the frightened condition and thus to Delirium.</p>`,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n  return;\n}\n\n// Delirium save DC = 8 + PB + Con mod\nconst pb = Number(actor.system?.attributes?.prof ?? 0) || 0;\nconst conMod = Number(actor.system?.abilities?.con?.mod ?? 0) || 0;\nconst dc = 8 + pb + conMod;\n\n// Roll the target's Wisdom save\nconst flavor = `<p><b>Delirium Check</b><br/>DC ${dc} Wisdom save vs Delirium (Improved Forms: Delirium).</p>`;\nconst saveResult = await targetActor.rollAbilitySave(\"wis\", { dc, fastForward: false, flavor });\n\nif (!saveResult) return;\n\n// If the save succeeded, they are immune to your Delirium for 24 hours (track manually).\nif (saveResult.total >= dc) {\n  ChatMessage.create({\n    content: `<p><b>${targetActor.name}</b> succeeds on the Delirium save (DC ${dc}) and is immune to your Delirium for 24 hours.</p>`,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n  return;\n}\n\n// On a failure, roll Delirium Severity (d100)\nconst r = await (new Roll(\"1d100\")).roll({async: true});\nawait r.toMessage({\n  flavor: `<p><b>Delirium Severity roll for ${targetActor.name}</b> (Improved Forms: Delirium)</p>`\n});\n\nlet severity;\nif (r.total <= 40) severity = \"01–40: Disoriented — Disadvantage on next attack or save; speed –10 ft until end of next turn.\";\nelse if (r.total <= 70) severity = \"41–70: Panicked — Frightened of you until end of next turn; can’t willingly move closer.\";\nelse if (r.total <= 90) severity = \"71–90: Overwhelmed — Stunned until end of next turn.\";\nelse severity = \"91–100: Catatonic Terror — Incapacitated and speed 0 until end of this turn; then frightened of you until end of following turn.\";\n\nChatMessage.create({\n  content: `<p><b>Delirium Failed:</b> ${targetActor.name} suffers: ${severity}</p><p><i>Apply the appropriate conditions manually.</i></p>`,\n  speaker: ChatMessage.getSpeaker({ actor })\n});\n"
+        },
+        "name": "Delirium (Helper)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Improved Forms: Delirium</strong> (10th-level Garou feature)</p><p>Your mastery of your war-forms allows you to weaponize the primal terror mortals feel in your presence.</p><p>When you enter Crinos or Hispo form, or when you begin a Rage while already in one of those forms, each hostile creature of your choice within 30 feet that can see you must make a Wisdom saving throw.</p><p><strong>Save DC</strong> = 8 + your proficiency bonus + your Constitution modifier.</p><p>On a failure, the creature suffers a Delirium effect (see Delirium Severity table). On a success, the creature is immune to your Delirium for 24 hours. Creatures immune to the frightened condition are immune to Delirium.</p><p>You can use this feature once per long rest, or twice per long rest if you expend 1 Rage use when activating it.</p><hr/><p><strong>Delirium Severity (d100)</strong></p><ul><li><strong>01–40: Disoriented.</strong> The creature has disadvantage on its next attack roll or saving throw, and its speed is reduced by 10 feet until the end of its next turn.</li><li><strong>41–70: Panicked.</strong> The creature is frightened of you until the end of its next turn. While frightened this way, it can’t willingly move closer to you.</li><li><strong>71–90: Overwhelmed.</strong> The creature is stunned until the end of its next turn.</li><li><strong>91–100: Catatonic Terror.</strong> The creature is incapacitated and its speed becomes 0 until the end of its next turn. At the end of that turn, it is frightened of you until the end of its following turn.</li></ul><hr/><p><strong>Delirium Rules.</strong> Delirium is not a charm, fear spell, or magical compulsion and does not require concentration. Creatures immune to the frightened condition are immune. Legendary Resistance can be used as normal.</p>",
+      "chat": "<p><strong>Improved Forms: Delirium.</strong> When you enter Crinos/Hispo or Rage in those forms, hostiles of your choice within 30 ft must make a WIS save (DC 8+PB+Con). On a failure, roll Delirium Severity; on a success, they are immune to your Delirium for 24 hours. Use the activity to help with single-target saves and severity rolls.</p>"
+    },
+    "identifier": "garou-improved-forms-delirium",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 10
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {},
+  "ownership": {
+    "default": 0
+  }
+}
+

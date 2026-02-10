@@ -1,0 +1,117 @@
+{
+  "name": "Blood of the First Change",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "shrugOff": {
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": "Once per turn while raging, when you would be affected by speed reduction, attack disadvantage, or action prevention."
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": { "chatFlavor": "Spend 1 Rage to shrug off speed/attack/action effects (once per turn)" },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "type": "" },
+          "override": false,
+          "prompt": true
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "name": "", "formula": "" },
+        "macroData": {
+          "name": "Shrug Off (Spend 1 Rage)",
+          "command": "// Blood of the First Change — spend 1 Rage to ignore speed/attack/action effects (once per turn)\nfunction getActor() {\n  return canvas?.tokens?.controlled?.[0]?.actor ?? this?.actor ?? this?.item?.actor ?? game.user.character ?? null;\n}\nfunction getTurnKey() {\n  if (game.combat) return `${game.combat.id}.${game.combat.round}.${game.combat.turn}`;\n  return `nc.${Math.floor(game.time.worldTime)}`;\n}\nconst actor = getActor();\nif (!actor) { ui.notifications.error(\"No actor found.\"); return; }\nconst rageItem = actor.items.find(i => (i.name ?? \"\").toLowerCase() === \"rage\");\nif (!rageItem) { ui.notifications.warn(\"Rage feature not found.\"); return; }\nconst uses = rageItem.system?.uses ?? {};\nconst max = Number(uses.max ?? 0) || 0;\nconst spent = Number(uses.spent ?? 0) || 0;\nif (max && spent >= max) { ui.notifications.warn(\"No Rage remaining to spend.\"); return; }\nconst scope = \"garou\";\nconst turnKey = getTurnKey();\nconst lastShrug = await actor.getFlag(scope, \"bloodOfFirstChangeShrugTurn\");\nif (lastShrug === turnKey) { ui.notifications.warn(\"Blood of the First Change (Shrug Off) already used this turn.\"); return; }\nawait actor.setFlag(scope, \"bloodOfFirstChangeShrugTurn\", turnKey);\nawait rageItem.update({ \"system.uses.spent\": spent + 1 });\nChatMessage.create({\n  content: `<p><strong>${actor.name}</strong> spends <b>1 Rage</b> (Blood of the First Change) to ignore all effects that would reduce speed, impose disadvantage on attacks, or prevent taking actions until the start of their next turn.</p><p><i>Does not allow acting while unconscious or petrified.</i></p>`,\n  speaker: ChatMessage.getSpeaker({ actor })\n});\n"
+        },
+        "name": "Shrug Off (Spend 1 Rage)"
+      },
+      "regainRage": {
+        "type": "utility",
+        "sort": 1,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": "When you reduce a hostile to 0 HP or score a critical hit (that doesn't reduce to 0 HP) while raging—no action required."
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": { "chatFlavor": "Regain 1 spent Rage (violence); cap = PB per long rest" },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "type": "" },
+          "override": false,
+          "prompt": true
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "name": "", "formula": "" },
+        "macroData": {
+          "name": "Regain 1 Rage (Violence)",
+          "command": "// Blood of the First Change — regain 1 spent Rage (drop to 0 HP or qualifying crit); cap PB per long rest\nconst actor = canvas?.tokens?.controlled?.[0]?.actor ?? this?.actor ?? this?.item?.actor ?? game.user.character ?? null;\nif (!actor) { ui.notifications.error(\"No actor found.\"); return; }\nconst rageItem = actor.items.find(i => (i.name ?? \"\").toLowerCase() === \"rage\");\nif (!rageItem) { ui.notifications.warn(\"Rage feature not found.\"); return; }\nconst pb = Number(actor.system?.attributes?.prof ?? 0) || 0;\nconst scope = \"garou\";\nconst used = Number(await actor.getFlag(scope, \"bloodOfFirstChangeRegainsUsed\") ?? 0) || 0;\nif (used >= pb) {\n  ui.notifications.warn(`Blood of the First Change: you've already regained Rage ${pb} times this long rest. Reset after a long rest.`);\n  return;\n}\nconst spent = Number(rageItem.system?.uses?.spent ?? 0) || 0;\nif (spent <= 0) { ui.notifications.info(\"No spent Rage to regain.\"); return; }\nawait rageItem.update({ \"system.uses.spent\": Math.max(0, spent - 1) });\nawait actor.setFlag(scope, \"bloodOfFirstChangeRegainsUsed\", used + 1);\nChatMessage.create({\n  content: `<p><strong>${actor.name}</strong> regains <b>1 Rage</b> from violence (Blood of the First Change).</p><p><small>Regains used this long rest: ${used + 1}/${pb}. Reset via the feature's \"Reset (Long Rest)\" activity after a long rest.</small></p>`,\n  speaker: ChatMessage.getSpeaker({ actor })\n});\n"
+        },
+        "name": "Regain 1 Rage (Violence)"
+      },
+      "resetLongRest": {
+        "type": "utility",
+        "sort": 2,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": "After completing a long rest."
+        },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": { "chatFlavor": "Reset Blood of the First Change regains counter" },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "name": "", "formula": "" },
+        "macroData": {
+          "name": "Reset (Long Rest)",
+          "command": "const actor = canvas?.tokens?.controlled?.[0]?.actor ?? this?.actor ?? this?.item?.actor ?? game.user.character ?? null;\nif (!actor) { ui.notifications.error(\"No actor found.\"); return; }\nawait actor.unsetFlag(\"garou\", \"bloodOfFirstChangeRegainsUsed\");\nChatMessage.create({ content: `<p><strong>${actor.name}</strong> — Blood of the First Change regains counter reset (long rest).</p>`, speaker: ChatMessage.getSpeaker({ actor }) });\n"
+        },
+        "name": "Reset (Long Rest)"
+      }
+    },
+    "uses": { "spent": 0, "recovery": [], "max": "" },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Blood of the First Change</strong> (18th-level Garou feature)</p><p>Your Rage no longer burns out—it feeds on violence.</p><p>When you reduce a hostile creature to 0 hit points or score a critical hit that does not reduce a creature to 0 hit points while raging, you may immediately regain 1 spent Rage point (no action required).</p><p>In addition, once per turn while raging, you may spend 1 Rage to ignore all effects that would reduce your speed, impose disadvantage on your attacks, or prevent you from taking actions until the start of your next turn. This feature does not allow you to act while unconscious or petrified.</p><p>You can regain Rage in this way (from violence) a number of times equal to your proficiency bonus per long rest.</p>",
+      "chat": "<p><strong>Blood of the First Change.</strong> While raging: (1) Reduce a hostile to 0 HP or score a qualifying crit → regain 1 spent Rage (no action), up to PB times per long rest. (2) Once per turn, spend 1 Rage to ignore speed reduction, attack disadvantage, and action prevention until start of next turn (does not allow acting while unconscious or petrified).</p>"
+    },
+    "identifier": "garou-blood-of-the-first-change",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": 18 },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "class", "subtype": "" }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {},
+  "ownership": { "default": 0 }
+}

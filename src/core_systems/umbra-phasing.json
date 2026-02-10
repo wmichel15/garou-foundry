@@ -1,0 +1,194 @@
+{
+  "name": "Umbra Phasing",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "umbraShift": {
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": "Attempt to phase into the Umbra (see feature text)."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Umbra Shift (enter Umbra)"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "macroData": {
+          "name": "Umbra Shift (Enter)",
+          "command": "// Garou: Umbra Phasing — Umbra Shift (enter)\n// Helper macro: handles entry check, DC, optional Gnosis advantage, use tracking, records data for exit,\n// and applies a Phased (Umbra) effect (invisible on the Material Plane).\n\nfunction getActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nasync function main() {\n  const actor = getActor();\n  if (!actor) {\n    ui.notifications.error(\"No actor found for Umbra Shift.\");\n    return;\n  }\n  const item = this.item;\n\n  const scope = \"garou\";\n  const flagKey = \"umbraPhase\";\n\n  // Uses and Spiritual Strain\n  const uses = item.system?.uses ?? {};\n  const max = Number(uses.max ?? 0) || 0;\n  const spent = Number(uses.spent ?? 0) || 0;\n  const usesLeft = max > 0 ? Math.max(0, max - spent) : Infinity;\n\n  let baseDc = 15;\n  let strain = false;\n  if (max > 0 && usesLeft <= 0) {\n    baseDc = 18;\n    strain = true;\n  }\n\n  // Prompt: choose Con save vs Survival, optional Gnosis advantage.\n  const choice = await new Promise(resolve => {\n    const content = `\n      <form>\n        <div class=\"form-group\">\n          <label>Check Type</label>\n          <select id=\"umbra-check-type\">\n            <option value=\"con\">Constitution Save</option>\n            <option value=\"sur\">Wisdom (Survival) Check</option>\n          </select>\n        </div>\n        <div class=\"form-group\">\n          <label><input type=\"checkbox\" id=\"umbra-spend-gnosis\" /> Spend 1 Gnosis for advantage?</label>\n        </div>\n        <p>Base DC: ${baseDc}${strain ? \" (Spiritual Strain attempt)\" : \"\"}</p>\n      </form>`;\n    new Dialog({\n      title: \"Umbra Shift (Enter)\",\n      content,\n      buttons: {\n        ok: {\n          label: \"Roll\",\n          callback: html => {\n            const type = html.find(\"#umbra-check-type\").val();\n            const spendGnosis = html.find(\"#umbra-spend-gnosis\").is(\":checked\");\n            resolve({ type, spendGnosis });\n          }\n        },\n        cancel: { label: \"Cancel\", callback: () => resolve(null) }\n      },\n      default: \"ok\",\n      close: () => resolve(null)\n    }).render(true);\n  });\n\n  if (!choice) return;\n  const { type, spendGnosis } = choice;\n\n  // Optional: just a reminder about Gnosis; we don’t automatically spend it.\n  if (spendGnosis) {\n    ChatMessage.create({\n      content: `<p><b>${actor.name}</b> attempts Umbra Shift and <b>spends 1 Gnosis</b> for advantage (adjust Gnosis manually).</p>`,\n      speaker: ChatMessage.getSpeaker({ actor })\n    });\n  }\n\n  const advOptions = spendGnosis ? { advantage: true, fastForward: false } : { fastForward: false };\n\n  let roll;\n  if (type === \"sur\") {\n    roll = await actor.rollSkill(\"sur\", advOptions);\n  } else {\n    roll = await actor.rollAbilitySave(\"con\", advOptions);\n  }\n  if (!roll) return;\n\n  const total = roll.total ?? roll._total ?? 0;\n  const success = total >= baseDc;\n\n  // Track uses (only if we actually had uses to spend).\n  if (max > 0 && usesLeft > 0) {\n    await item.update({ \"system.uses.spent\": spent + 1 });\n  }\n\n  // Record metadata for exit helper.\n  const startedAt = {\n    combatId: game.combat?.id ?? null,\n    round: game.combat?.round ?? null,\n    turn: game.combat?.turn ?? null,\n    worldTime: game.time.worldTime\n  };\n\n  let pendingEntitiesFromStrain = 0;\n  if (strain) {\n    // On success: 1 entity on exit. On failure: 2 entities on exit.\n    pendingEntitiesFromStrain = success ? 1 : 2;\n  }\n\n  await actor.setFlag(scope, flagKey, {\n    phased: true,\n    startedAt,\n    pendingEntitiesFromStrain\n  });\n\n  // Apply a Phased (Umbra) effect to mark invisibility/intangibility on the Material Plane.\n  let phasedEffect = actor.effects?.find(e => e.getFlag(\"garou\", \"phasedUmbra\")) ?? null;\n  if (!phasedEffect) {\n    const effectData = {\n      name: \"Phased (Umbra)\",\n      icon: item.img,\n      origin: item.uuid ?? actor.uuid,\n      disabled: false,\n      duration: {\n        startTime: game.time.worldTime,\n        seconds: 60,\n        combat: null,\n        rounds: null,\n        turns: null,\n        startRound: null,\n        startTurn: null\n      },\n      changes: [],\n      flags: {\n        garou: { phasedUmbra: true }\n      },\n      statuses: [\"invisible\"]\n    };\n    try {\n      const created = await actor.createEmbeddedDocuments(\"ActiveEffect\", [effectData]);\n      phasedEffect = created?.[0] ?? null;\n    } catch (err) {\n      console.warn(\"[garou] Umbra Phasing: failed to create Phased (Umbra) effect\", err);\n    }\n  } else if (phasedEffect.disabled) {\n    try {\n      await phasedEffect.update({ disabled: false, \"duration.seconds\": 60 });\n    } catch (err) {\n      console.warn(\"[garou] Umbra Phasing: failed to re-enable Phased (Umbra) effect\", err);\n    }\n  }\n\n  const baseMsg = success\n    ? `${actor.name} succeeds (DC ${baseDc}) and phases into the Umbra (Phased: Umbra).`\n    : `${actor.name} fails the Umbra Shift check (DC ${baseDc}) but still enters the Umbra and suffers Spiritual Backlash.`;\n\n  const extra = [];\n  if (!success) {\n    extra.push(\"<p><b>Spiritual Backlash:</b> Choose one and apply manually:</p>\");\n    extra.push(\"<ul><li>Take 2d6 psychic damage.</li><li>Speed is reduced by 10 ft until end of next turn.</li><li>Can’t benefit from advantage on attack rolls until end of next turn.</li></ul>\");\n  }\n  if (strain) {\n    extra.push(\"<p><b>Spiritual Strain:</b> You attempted Umbra Shift with no uses remaining. On exit, a hostile Umbra entity will emerge on success (two on failure).</p>\");\n  }\n\n  ChatMessage.create({\n    content: `<p>${baseMsg}</p>${extra.join(\"\\n\")}<p><i>While phased, you are invisible and intangible on the Material Plane; see feature for full details.</i></p>` ,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n}\n\nmain.call(this);\n"
+        },
+        "name": "Umbra Shift (Enter)"
+      },
+      "umbraExit": {
+        "type": "utility",
+        "sort": 1,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": "When you exit the Umbra."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Umbra Exit / Strain check"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "macroData": {
+          "name": "Umbra Shift (Exit)",
+          "command": "// Garou: Umbra Phasing — Exit & Strain check\n// Helper macro for exiting the Umbra: rolls Con save vs DC 10 + rounds phased, reports if hostile Umbra entity emerges,\n// and disables the Phased (Umbra) effect on the actor.\n\nfunction getActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nasync function main() {\n  const actor = getActor();\n  if (!actor) {\n    ui.notifications.error(\"No actor found for Umbra Exit.\");\n    return;\n  }\n  const item = this.item;\n  const scope = \"garou\";\n  const flagKey = \"umbraPhase\";\n\n  const data = await actor.getFlag(scope, flagKey) ?? {};\n  const startedAt = data.startedAt ?? {};\n  const pendingEntitiesFromStrain = Number(data.pendingEntitiesFromStrain ?? 0) || 0;\n\n  // Ask how many rounds were spent if we can’t infer it reliably.\n  let guessedRounds = 1;\n  if (game.combat && startedAt.round != null) {\n    const currentRound = game.combat.round ?? startedAt.round;\n    guessedRounds = Math.max(1, currentRound - startedAt.round + 1);\n  }\n\n  const input = await new Promise(resolve => {\n    const content = `\n      <form>\n        <div class=\"form-group\">\n          <label>Rounds spent phased in the Umbra</label>\n          <input id=\"umbra-rounds\" type=\"number\" min=\"1\" value=\"${guessedRounds}\" />\n        </div>\n      </form>`;\n    new Dialog({\n      title: \"Umbra Exit — Strain Check\",\n      content,\n      buttons: {\n        ok: {\n          label: \"Roll\",\n          callback: html => {\n            const v = Number(html.find(\"#umbra-rounds\").val());\n            resolve(v || 1);\n          }\n        },\n        cancel: { label: \"Cancel\", callback: () => resolve(null) }\n      },\n      default: \"ok\",\n      close: () => resolve(null)\n    }).render(true);\n  });\n\n  if (!input) return;\n  const rounds = Math.max(1, Number(input) || 1);\n  const dc = 10 + rounds;\n\n  const flavor = `<p><b>Umbra Exit Strain Check</b><br/>DC ${dc} Constitution save (10 + rounds phased).</p>`;\n  const roll = await actor.rollAbilitySave(\"con\", { dc, fastForward: false, flavor });\n  if (!roll) return;\n\n  const total = roll.total ?? roll._total ?? 0;\n  const success = total >= dc;\n\n  let entitiesFromExit = 0;\n  if (!success) entitiesFromExit += 1; // One hostile entity on failed exit check.\n  entitiesFromExit += pendingEntitiesFromStrain; // Add any from Spiritual Strain on entry.\n\n  const lines = [];\n  lines.push(`<p>${actor.name} makes a Con save vs DC ${dc} and ${success ? \"succeeds\" : \"fails\"}.</p>`);\n\n  if (entitiesFromExit > 0) {\n    lines.push(`<p><b>Hostile Umbra entities:</b> ${entitiesFromExit} emerge when you exit (max CR = half your Garou level, rounded down; place them within 30 ft and determine behavior).</p>`);\n  } else {\n    lines.push(\"<p>No Umbra entities emerge with you.</p>\");\n  }\n\n  lines.push(\"<p>If the situation warrants it, the DM may immediately call for a Frenzy check.</p>\");\n\n  ChatMessage.create({\n    content: `<div class=\\\"garou-umbra-exit\\\">${lines.join(\"\\n\")}</div>`,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n\n  await actor.unsetFlag(scope, flagKey);\n\n  // Disable the Phased (Umbra) effect if present.\n  const phasedEffect = actor.effects?.find(e => e.getFlag(\"garou\", \"phasedUmbra\")) ?? null;\n  if (phasedEffect && !phasedEffect.disabled) {\n    try {\n      await phasedEffect.update({ disabled: true });\n    } catch (err) {\n      console.warn(\"[garou] Umbra Phasing: failed to disable Phased (Umbra) effect\", err);\n    }\n  }\n}\n\nmain.call(this);\n"
+        },
+        "name": "Umbra Shift (Exit)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        },
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": 2,
+      "value": 2
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Umbra Phasing (Level 13 Garou feature)</strong></p><p>You have learned to step sideways into the Umbra, the spirit reflection of the world.</p><p><strong>Uses.</strong> You can use Umbra Shift twice, regaining all uses on a short or long rest. You may attempt Umbra Shift with no uses remaining, but doing so triggers Spiritual Strain.</p><p><strong>Entering the Umbra.</strong> As an action, you attempt to phase into the Umbra by making a Constitution saving throw or Wisdom (Survival) check (your choice). Base DC 15. If you have no uses remaining, the DC is 18 and you risk Spiritual Strain.</p><p>On a success, you become <em>Phased (Umbra)</em>. On a failure, you still enter the Umbra but suffer <em>Spiritual Backlash</em> (see feature text).</p><p><strong>Phased (Umbra).</strong> While phased into the Umbra, you are invisible and intangible on the Material Plane; you can move through creatures and objects as difficult terrain, can’t end your turn in solid matter, can’t make attacks or cast spells on the Material Plane, but perceive it normally and can interact with spirits and spirit-touched beings. Duration: up to 1 minute or until you exit early.</p><p><strong>Exiting the Umbra.</strong> You may exit as a bonus action, when the duration ends, or via a narrative disruption. When you exit, you reappear in the nearest unoccupied space; if no such space exists, you take 1d10 force damage per 5 feet displaced.</p><p>When you exit, make a Constitution saving throw (DC 10 + rounds spent phased). On a failure, a hostile Umbra entity with CR up to half your Garou level (rounded down) emerges with you in an unoccupied space within 30 feet and acts according to its nature. If you attempted Umbra Shift with no uses remaining, entities may emerge even on success (see <em>Spiritual Strain</em>). The DM may also call for a Frenzy check.</p>",
+      "chat": "<p><strong>Umbra Phasing.</strong> Twice per short or long rest, you can shift into the Umbra (Con save or Survival check, DC 15, or 18 with Spiritual Strain). While Phased, you are invisible/intangible on the Material Plane and interact mainly with spirits. On exit, make a Con save vs DC 10 + rounds spent; on failure (and with Spiritual Strain) hostile Umbra entities may emerge with you.</p>"
+    },
+    "identifier": "garou-umbra-phasing",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 13
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {},
+  "ownership": {
+    "default": 0
+  }
+}
+

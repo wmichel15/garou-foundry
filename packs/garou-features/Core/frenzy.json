@@ -1,0 +1,61 @@
+{
+  "_id": "frenzyCheck",
+  "name": "Frenzy Check",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "frenzyCheck": {
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": "When Rage ends under high-stress conditions (see description)."
+        },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": { "chatFlavor": "Frenzy check" },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": {
+          "template": { "contiguous": false, "units": "ft", "type": "" },
+          "affects": { "choice": false, "type": "" },
+          "override": false,
+          "prompt": true
+        },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "name": "", "formula": "" },
+        "macroData": {
+          "name": "Frenzy Check",
+          "command": "// Garou: Frenzy Check\n// Computes Frenzy DC based on Rage uses spent (and Overchannel stacks if present), then rolls a Wisdom save.\n\nfunction getTargetActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nconst actor = getTargetActor();\nif (!actor) {\n  ui.notifications.error(\"No actor found for Frenzy check.\");\n  return;\n}\n\n// Rage item: uses.spent since last long rest.\nconst rageItem = actor.items?.find(i => i.type === \"feat\" && (i.name ?? \"\").trim().toLowerCase() === \"rage\") ?? null;\nconst uses = rageItem?.system?.uses ?? {};\nconst spent = Number(uses.spent ?? 0) || 0;\n\n// Overchannel bonus from current stacks (if using Overchannel Rage).\nconst overItem = actor.items?.find(i => (i.name ?? \"\").trim().toLowerCase() === \"overchannel rage\") ?? null;\nconst stacks = Number(overItem?.system?.uses?.value ?? 0) || 0;\n\n// Determine whether Greater Overchannel is present to decide per-stack DC.\nconst hasGreater = actor.items?.some(i => (i.name ?? \"\").trim().toLowerCase() === \"greater overchannel\") ?? false;\nconst perStackDc = hasGreater ? 3 : 2;\nconst overDcMod = perStackDc * stacks;\n\nlet dc = 8 + spent + overDcMod;\nconst pb = Number(actor.system?.attributes?.prof ?? 0) || 0;\nconst cap = 20 + pb;\nif (dc > cap) dc = cap;\n\nconst parts = [];\nparts.push(`<p><b>Rage uses spent since long rest:</b> ${spent}</p>`);\nif (stacks > 0) {\n  parts.push(`<p><b>Overchannel stacks:</b> ${stacks} (modifier +${overDcMod}, ${perStackDc} per stack${hasGreater ? \" with Greater Overchannel\" : \"\"}).</p>`);\n}\nparts.push(`<p><b>Frenzy DC:</b> ${dc} (capped at 20 + PB = ${cap}).</p>`);\nparts.push(\"<p>On a failure, apply an appropriate Frenzy effect (Overcommit, Predatory Focus, Collateral Damage, or Spiritual Backlash).</p>\");\n\nconst flavor = `<div class=\\\"garou-frenzy\\\">${parts.join(\"\\n\")}<hr/><p><b>Frenzy Check:</b> Wisdom saving throw.</p></div>`;\n\n// Roll the save.\nactor.rollAbilitySave(\"wis\", { dc, flavor, fastForward: false });\n"
+        },
+        "name": "Frenzy Check"
+      }
+    },
+    "uses": { "spent": 0, "recovery": [], "max": "" },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Frenzy (The Cost of Rage)</strong></p><p>Frenzy represents the Beast pressing back when you unleash too much Rage. It is not a punishment, but a consequence of escalation.</p><p><strong>When to Call for a Frenzy Check.</strong> The DM may call for a Frenzy check when Rage ends under one or more of the following conditions:</p><ul><li>You end Rage while in Crinos.</li><li>You reduced one or more creatures to 0 hit points during Rage.</li><li>You end Rage while bloodied (at or below half your hit points).</li><li>The threat that triggered Rage remains unresolved.</li><li>You have spent multiple Rage uses since your last long rest.</li><li>You have Overchanneled your Rage.</li></ul><p>Not every Rage triggers Frenzy—only moments of excess or unresolved danger.</p><p><strong>Frenzy Check.</strong> When called for, make a Wisdom saving throw.</p><p>Frenzy DC = <strong>8 + the number of Rage uses you have spent since your last long rest</strong>, plus any additional modifiers from Overchannel.</p><p><strong>Success.</strong> You suppress the Beast with no further effect.</p><p><strong>Failure.</strong> Until the end of your next turn, the Beast asserts itself. The DM chooses one Frenzy effect (or rolls randomly): Overcommit, Predatory Focus, Collateral Damage, or Spiritual Backlash.</p><p><em>Frenzy exists to escalate tension and remind you that Rage always pushes back, without fully removing player control.</em></p>",
+      "chat": "<p><strong>Frenzy Check.</strong> When Rage ends under dangerous conditions, roll a Wisdom save vs. DC 8 + Rage uses spent (plus Overchannel modifiers). On a failure, apply an appropriate Frenzy effect.</p>"
+    },
+    "identifier": "garou-frenzy-check",
+    "source": { "revision": 1, "rules": "2024" },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": { "items": [], "repeatable": false, "level": 1 },
+    "properties": [],
+    "requirements": "",
+    "type": { "value": "class", "subtype": "" }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {},
+  "ownership": { "default": 0 }
+}

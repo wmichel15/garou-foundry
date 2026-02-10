@@ -1,0 +1,259 @@
+{
+  "name": "Mythic Regeneration",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "mythicRegenTick": {
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": "Start of your turn while raging."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Apply Mythic Regeneration healing"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "macroData": {
+          "name": "Mythic Regeneration (Heal)",
+          "command": "// Garou: Mythic Regeneration — healing tick\n// Start of your turn while raging: regain 10 + CON mod HP if not suppressed.\n\nasync function main() {\n  const actor = canvas?.tokens?.controlled?.[0]?.actor ?? this?.actor ?? this?.item?.actor ?? game.user.character ?? null;\n  if (!actor) {\n    ui.notifications.error(\"No actor found for Mythic Regeneration.\");\n    return;\n  }\n\n  const hp = actor.system?.attributes?.hp;\n  if (!hp) {\n    ui.notifications.warn(\"Actor has no HP data.\");\n    return;\n  }\n\n  // Regeneration only functions if you have at least 1 HP.\n  if ((hp.value ?? 0) <= 0) {\n    ui.notifications.info(\"Mythic Regeneration does not function at 0 HP.\");\n    return;\n  }\n\n  // Check for an active Rage effect.\n  const rageEffect = (actor.effects ?? []).find(e => {\n    const name = (e.name ?? \"\").toLowerCase();\n    return name.includes(\"rage\") && !e.disabled && !e.suppressed;\n  });\n  if (!rageEffect) {\n    ui.notifications.info(\"Mythic Regeneration only functions while you are raging.\");\n    return;\n  }\n\n  // Check suppression flag (set when you take radiant/silver damage).\n  const suppressed = await actor.getFlag(\"garou\", \"mythicRegenSuppressedNext\");\n  if (suppressed) {\n    await actor.unsetFlag(\"garou\", \"mythicRegenSuppressedNext\");\n    ChatMessage.create({\n      content: `<p><strong>${actor.name}</strong>'s <b>Mythic Regeneration</b> is suppressed this turn (radiant or silvered damage).</p>`,\n      speaker: ChatMessage.getSpeaker({ actor })\n    });\n    return;\n  }\n\n  const conMod = Number(actor.system?.abilities?.con?.mod ?? 0) || 0;\n  const heal = Math.max(0, 10 + conMod);\n  if (!heal) {\n    ui.notifications.info(\"Mythic Regeneration would heal 0 HP (check CON modifier).\");\n    return;\n  }\n\n  const newValue = Math.min(hp.max ?? heal, (hp.value ?? 0) + heal);\n  await actor.update({ \"system.attributes.hp.value\": newValue });\n\n  ChatMessage.create({\n    content: `<p><strong>${actor.name}</strong> regenerates <b>${heal}</b> hit points from <b>Mythic Regeneration</b> (now at ${newValue}/${hp.max}).</p>`,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n}\n\nmain.call(this);\n"
+        },
+        "name": "Mythic Regeneration (Heal)"
+      },
+      "unyieldingFlesh": {
+        "type": "utility",
+        "sort": 1,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": "When you would be reduced to 0 HP while raging."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Use Unyielding Flesh (drop to 1 HP, end Rage, gain exhaustion; 1/long rest)"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": 1
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "macroData": {
+          "name": "Unyielding Flesh (1/Long Rest)",
+          "command": "// Garou: Mythic Regeneration — Unyielding Flesh (1/long rest)\n// When you would be reduced to 0 HP while raging: drop to 1 HP instead, end Rage, gain 1 exhaustion.\n\nasync function main() {\n  const actor = canvas?.tokens?.controlled?.[0]?.actor ?? this?.actor ?? this?.item?.actor ?? game.user.character ?? null;\n  if (!actor) {\n    ui.notifications.error(\"No actor found for Unyielding Flesh.\");\n    return;\n  }\n\n  const item = this.item;\n  const uses = item.system?.uses ?? {};\n  const max = Number(uses.max ?? 0) || 0;\n  const spent = Number(uses.spent ?? 0) || 0;\n  if (max && spent >= max) {\n    ui.notifications.warn(\"Unyielding Flesh has already been used this long rest.\");\n    return;\n  }\n\n  const hp = actor.system?.attributes?.hp;\n  if (!hp) {\n    ui.notifications.warn(\"Actor has no HP data.\");\n    return;\n  }\n\n  // Typically used when you would drop to 0; allow use at 0 or below as a helper.\n  if ((hp.value ?? 0) > 1) {\n    ui.notifications.info(\"Use Unyielding Flesh when you would be reduced to 0 HP while raging.\");\n  }\n\n  // Check for an active Rage effect.\n  const effects = actor.effects ?? [];\n  const rageEffect = effects.find(e => {\n    const name = (e.name ?? \"\").toLowerCase();\n    return name.includes(\"rage\") && !e.disabled && !e.suppressed;\n  });\n  if (!rageEffect) {\n    ui.notifications.warn(\"Unyielding Flesh only functions while you are raging.\");\n    return;\n  }\n\n  // Spend the use.\n  if (max) {\n    await item.update({ \"system.uses.spent\": spent + 1 });\n  }\n\n  // Drop to 1 HP.\n  const newHp = Math.max(1, Math.min(hp.max ?? 1, 1));\n  await actor.update({ \"system.attributes.hp.value\": newHp });\n\n  // End Rage: disable all active Rage effects.\n  const rageLike = effects.filter(e => (e.name ?? \"\").toLowerCase().includes(\"rage\") && !e.disabled && !e.suppressed);\n  for (const ef of rageLike) {\n    await ef.update({ disabled: true });\n  }\n\n  // Gain one level of exhaustion.\n  const currentEx = Number(actor.system?.attributes?.exhaustion ?? 0) || 0;\n  const nextEx = Math.min(6, currentEx + 1);\n  await actor.update({ \"system.attributes.exhaustion\": nextEx });\n\n  ChatMessage.create({\n    content: `<p><strong>${actor.name}</strong> invokes <b>Unyielding Flesh</b>: they drop to 1 HP instead of 0, their Rage immediately ends, and they gain 1 level of exhaustion (now ${nextEx}).</p>`,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n}\n\nmain.call(this);\n"
+        },
+        "name": "Unyielding Flesh (1/Long Rest)"
+      },
+      "markRegenSuppressed": {
+        "type": "utility",
+        "sort": 2,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": "When you take radiant damage or damage from a silvered weapon."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Mark Mythic Regeneration suppressed until start of next turn"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "macroData": {
+          "name": "Mark Regeneration Suppressed",
+          "command": "// Garou: Mythic Regeneration — mark suppression (radiant/silver)\n\nasync function main() {\n  const actor = canvas?.tokens?.controlled?.[0]?.actor ?? this?.actor ?? this?.item?.actor ?? game.user.character ?? null;\n  if (!actor) {\n    ui.notifications.error(\"No actor found to mark suppression.\");\n    return;\n  }\n\n  await actor.setFlag(\"garou\", \"mythicRegenSuppressedNext\", true);\n\n  ChatMessage.create({\n    content: `<p><strong>${actor.name}</strong>'s <b>Mythic Regeneration</b> is suppressed until the start of their next turn (radiant or silvered damage).</p>`,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n}\n\nmain.call(this);\n"
+        },
+        "name": "Mark Regeneration Suppressed"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Mythic Regeneration</strong> (19th-level Garou feature)</p><p>Your flesh and spirit have learned to repair themselves with horrifying speed, driven by Rage and sustained by primal instinct.</p><p>While you are raging, you regain hit points at the start of each of your turns equal to <strong>10 + your Constitution modifier</strong>. This regeneration functions only if you have at least 1 hit point.</p><p><strong>Unyielding Flesh.</strong> If you would be reduced to 0 hit points while raging, you may choose to drop to 1 hit point instead. When you do so, your Rage immediately ends and you gain one level of exhaustion. This benefit can’t be used again until you finish a long rest.</p><p><strong>Regeneration Suppression.</strong> If you take radiant damage or damage from a silvered weapon, your Mythic Regeneration is suppressed until the start of your next turn.</p><p><strong>Relentless Form.</strong> Your regeneration requires no action, bonus action, or reaction; functions while you are grappled, restrained, or stunned; and ends immediately if your Rage ends.</p>",
+      "chat": "<p><strong>Mythic Regeneration.</strong> While raging and above 0 HP, you regain HP each round equal to 10 + CON mod at the start of your turn (suppressed until next turn if you take radiant or silvered damage). You also gain <b>Unyielding Flesh</b>: once per long rest, when you would drop to 0 HP while raging, you can instead drop to 1 HP, end your Rage, and gain 1 level of exhaustion.</p>"
+    },
+    "identifier": "garou-mythic-regeneration",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 19
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {},
+  "ownership": {
+    "default": 0
+  }
+}
+

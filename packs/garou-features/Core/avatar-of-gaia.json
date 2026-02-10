@@ -1,0 +1,43 @@
+{
+  "name": "Avatar of Gaia",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Avatar of Gaia</strong> (20th-level Garou feature)</p><p>You are no longer merely a warrior of Gaia. When you act, the balance of the world responds.</p><p><strong>Eternal Rage.</strong> You can enter Rage without expending a Rage use. While raging, your Rage no longer ends due to duration or inactivity. It ends only if you are incapacitated, you choose to end it (no action required), or a feature explicitly ends your Rage.</p><p><strong>Primal Sovereignty.</strong> While you are raging, you have advantage on saving throws against spells and supernatural effects, are immune to being charmed or frightened, and your weapon and natural weapon attacks ignore resistance to their damage types (this does not bypass immunity).</p><p><strong>World-Shaking Presence.</strong> When you enter Rage, choose one of the following effects; it lasts until your Rage ends:</p><ul><li><strong>Predator King.</strong> Hostile creatures of your choice within 30 feet have disadvantage on attack rolls against creatures other than you.</li><li><strong>Living Cataclysm.</strong> The ground within 20 feet of you becomes difficult terrain for hostile creatures.</li><li><strong>Spirit Incarnate.</strong> You may spend Gnosis while raging, as well as anything else that costs Gnosis, but doing so immediately ends your Rage at the end of your turn.</li></ul><p><strong>Delirium Unbound.</strong> Non-Garou creatures that witness you raging in Crinos form must succeed on a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or suffer one of the following effects (DM’s choice) until the end of their next turn: become frightened, be stunned, or be incapacitated. A creature that succeeds on this saving throw is immune to this effect for 24 hours.</p>",
+      "chat": "<p><strong>Avatar of Gaia.</strong> Eternal Rage (Rage is free and persists), Primal Sovereignty (Rage grants spell/supernatural resilience, charm/fright immunity, and resistance-ignoring attacks), World-Shaking Presence (choose a Rage aura), and Delirium Unbound (Crinos Rage forces nearby non-Garou to save vs powerful conditions).</p>"
+    },
+    "identifier": "garou-avatar-of-gaia",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 20
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {},
+  "ownership": {
+    "default": 0
+  }
+}
+

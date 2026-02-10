@@ -1,0 +1,114 @@
+{
+  "name": "Rage Unbound",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "rageUnboundUse": {
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": "On your turn, after taking the Attack, Dash, Disengage, Shove, or Use an Object action."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Spend Rage for an extra action (Rage Unbound)"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "macroData": {
+          "name": "Rage Unbound (Spend Rage)",
+          "command": "// Garou: Rage Unbound — spend Rage for an extra non-spell action\n\nfunction getTargetActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nasync function main() {\n  const actor = getTargetActor();\n  if (!actor) {\n    ui.notifications.error(\"No actor found for Rage Unbound.\");\n    return;\n  }\n\n  const item = this.item;\n\n  // Find the Garou Rage feature if present, to spend a Rage use from it.\n  const rageItem = actor.items.find(i => (i.name ?? \"\").toLowerCase() === \"rage\" || i.system?.identifier === \"feature\") ?? null;\n  let rageUses = rageItem?.system?.uses ?? null;\n\n  // Fallback: also allow spending from this feature's own uses if configured.\n  if (!rageUses) rageUses = item.system?.uses ?? null;\n\n  if (!rageUses) {\n    ui.notifications.warn(\"No Rage resource found to spend.\");\n    return;\n  }\n\n  const max = Number(rageUses.max ?? 0) || 0;\n  const spent = Number(rageUses.spent ?? 0) || 0;\n\n  if (max && spent >= max) {\n    ui.notifications.warn(\"No Rage uses remaining.\");\n    return;\n  }\n\n  // Spend 1 Rage use.\n  if (max) {\n    const targetItem = rageItem ?? item;\n    await targetItem.update({ \"system.uses.spent\": spent + 1 });\n  }\n\n  // Prompt which eligible action you are chaining.\n  const choice = await new Promise(resolve => {\n    const content = `\n      <form>\n        <div class=\"form-group\">\n          <label>Extra action type (Rage Unbound)</label>\n          <select id=\"rage-unbound-action\">\n            <option value=\"attack\">Attack</option>\n            <option value=\"dash\">Dash</option>\n            <option value=\"disengage\">Disengage</option>\n            <option value=\"shove\">Shove</option>\n            <option value=\"use-object\">Use an Object</option>\n          </select>\n        </div>\n      </form>`;\n\n    new Dialog({\n      title: \"Rage Unbound — Extra Action\",\n      content,\n      buttons: {\n        ok: {\n          label: \"Confirm\",\n          callback: html => {\n            const type = html.find(\"#rage-unbound-action\").val();\n            resolve(type);\n          }\n        },\n        cancel: { label: \"Cancel\", callback: () => resolve(null) }\n      },\n      default: \"ok\",\n      close: () => resolve(null)\n    }).render(true);\n  });\n\n  if (!choice) return;\n\n  const labels = {\n    \"attack\": \"Attack\",\n    \"dash\": \"Dash\",\n    \"disengage\": \"Disengage\",\n    \"shove\": \"Shove\",\n    \"use-object\": \"Use an Object\"\n  };\n\n  const label = labels[choice] ?? \"eligible\";\n\n  ChatMessage.create({\n    content: `<p><strong>${actor.name}</strong> spends <b>1 Rage</b> to take an additional <b>${label}</b> action via <b>Rage Unbound</b>.</p><p><small>You may not use this extra action to cast spells, activate magic items that replicate spells, or take the Ready action.</small></p>`,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n}\n\nmain.call(this);\n"
+        },
+        "name": "Rage Unbound (Spend Rage)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Rage Unbound</strong> (14th-level Garou feature)</p><p>Your Rage allows you to act faster than thought, chaining violence through sheer force of will.</p><p>On your turn, when you take the Attack, Dash, Disengage, Shove, or Use an Object action, you may spend 1 Rage to immediately take one additional action from that same list.</p><p>You may use this feature multiple times on the same turn, spending 1 Rage for each additional action gained.</p><p>You can’t use these additional actions to cast spells, activate magic items that replicate spells, or take the Ready action.</p>",
+      "chat": "<p><strong>Rage Unbound.</strong> On your turn, when you take the Attack, Dash, Disengage, Shove, or Use an Object action, you can spend 1 Rage to immediately take another action of that type (or from the same list). You can do this multiple times per turn by spending additional Rage. These extra actions can’t be used to cast spells, activate spell-like magic items, or take the Ready action.</p>"
+    },
+    "identifier": "garou-rage-unbound",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 14
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {},
+  "ownership": {
+    "default": 0
+  }
+}
+

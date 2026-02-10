@@ -1,0 +1,114 @@
+{
+  "name": "Relentless Momentum",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "relentlessUse": {
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "override": false,
+          "condition": "When you trigger Relentless Momentum (once per turn while raging)."
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Relentless Momentum use"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "macroData": {
+          "name": "Relentless Momentum (Use)",
+          "command": "// Garou: Relentless Momentum use tracker (once per turn)\n\nfunction getTargetActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nfunction getTurnKey() {\n  if (game.combat) return `${game.combat.round}.${game.combat.turn}`;\n  return `no-combat.${Math.floor(game.time.worldTime)}`;\n}\n\nconst actor = getTargetActor();\nif (!actor) {\n  ui.notifications.error(\"No actor found for Relentless Momentum.\");\n  return;\n}\n\nconst item = this.item;\nconst flagKey = \"relentlessMomentumTurn\";\nconst scope = \"garou\";\nconst turnKey = getTurnKey();\nconst lastUsed = await actor.getFlag(scope, flagKey);\n\nif (lastUsed === turnKey) {\n  ui.notifications.warn(\"Relentless Momentum has already been used this turn.\");\n  return;\n}\n\nawait actor.setFlag(scope, flagKey, turnKey);\n\nChatMessage.create({\n  content: `<p><strong>${actor.name}</strong> triggers <b>Relentless Momentum</b> this turn. You may immediately make one extra melee weapon attack against another hostile within half your speed.</p>`,\n  speaker: ChatMessage.getSpeaker({ actor })\n});\n"
+        },
+        "name": "Relentless Momentum (Use)"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Relentless Momentum</strong> (9th-level Garou feature)</p><p>Once your Rage is unleashed, it carries you forward in a tide of violence that is difficult to stop.</p><p>While you are raging, when you reduce a hostile creature to 0 hit points with a melee weapon attack or natural weapon attack, you can immediately make one additional melee weapon attack against another hostile creature within a distance equal to half your walking speed.</p><ul><li>This additional attack is part of the same action and does not require a bonus action.</li><li>You can use this feature once on each of your turns.</li><li>This attack does not trigger form shifting.</li></ul>",
+      "chat": "<p><strong>Relentless Momentum.</strong> While raging, when you drop a hostile to 0 HP with a melee or natural weapon attack, you can immediately make one extra melee weapon attack against another hostile within half your speed. Once per turn; does not trigger form shifting.</p>"
+    },
+    "identifier": "garou-relentless-momentum",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 9
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {},
+  "ownership": {
+    "default": 0
+  }
+}
+

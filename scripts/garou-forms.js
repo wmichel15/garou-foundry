@@ -67,6 +67,198 @@ function hasEmpoweredNaturalWeapons(actor) {
   return getGarouLevel(actor) >= 5;
 }
 
+function isRageActive(actor) {
+  if (!actor?.effects) return false;
+  return actor.effects.some(e => {
+    const name = (e.name ?? "").toLowerCase();
+    return name.includes("rage") && !e.disabled && !e.suppressed;
+  });
+}
+
+function getFeatureByIdentifier(actor, identifier) {
+  if (!actor?.items) return null;
+  const items = actor.items?.contents ?? actor.items ?? [];
+  const idLower = String(identifier ?? "").toLowerCase();
+  return items.find(i => (i.system?.identifier ?? "").toLowerCase() === idLower) ?? null;
+}
+
+function hasAvatarOfGaia(actor) {
+  return Boolean(getFeatureByIdentifier(actor, "garou-avatar-of-gaia"));
+}
+
+async function runDeliriumUnbound(actor) {
+  if (!isGarouActor(actor)) return;
+  if (!hasAvatarOfGaia(actor)) return;
+
+  // Only while raging and in Crinos form.
+  if (!isRageActive(actor)) return;
+  const formName = getEnabledFormName(actor);
+  if (formName !== "Crinos") return;
+
+  const originToken =
+    canvas?.tokens?.controlled?.find(t => t.actor === actor) ??
+    canvas?.tokens?.placeables?.find(t => t.actor === actor) ??
+    null;
+  if (!originToken) return;
+
+  const pb = Number(actor.system?.attributes?.prof ?? 0) || 0;
+  const conMod = Number(actor.system?.abilities?.con?.mod ?? 0) || 0;
+  const dc = 8 + pb + conMod;
+
+  const now = game.time?.worldTime ?? 0;
+  const radius = 30; // 30 ft feels right for Delirium radius.
+
+  const tokens = canvas?.tokens?.placeables ?? [];
+
+  for (const token of tokens) {
+    const targetActor = token.actor;
+    if (!targetActor || targetActor === actor) continue;
+
+    // Only non-Garou creatures.
+    if (isGarouActor(targetActor)) continue;
+
+    // Must be close enough to clearly witness you.
+    const dist = canvas.grid?.measureDistance?.(originToken.center, token.center) ?? 0;
+    if (dist > radius) continue;
+
+    // Creatures immune to frightened are effectively immune to Delirium here.
+    const ci = targetActor.system?.traits?.ci?.value ?? [];
+    if (Array.isArray(ci) && ci.includes("frightened")) {
+      ChatMessage.create?.({
+        content: `<p><b>${targetActor.name}</b> is immune to the frightened condition and thus to Delirium Unbound.</p>`,
+        speaker: ChatMessage.getSpeaker?.({ actor })
+      });
+      continue;
+    }
+
+    // 24-hour immunity tracking (per target).
+    const immuneUntil = Number(await targetActor.getFlag(GAROU_ITEM_FLAG_SCOPE, "avatarGaiaDeliriumImmuneUntil") ?? 0) || 0;
+    if (immuneUntil && immuneUntil > now) {
+      ChatMessage.create?.({
+        content: `<p><b>${targetActor.name}</b> is already immune to <b>Delirium Unbound</b> for 24 hours.</p>`,
+        speaker: ChatMessage.getSpeaker?.({ actor })
+      });
+      continue;
+    }
+
+    const flavor = `<p><b>Delirium Unbound</b> — ${actor.name} raging in Crinos form.<br/>Wisdom save DC ${dc} or suffer frightened / stunned / incapacitated (DM's choice) until end of next turn. On success, immune for 24 hours.</p>`;
+    const save = await targetActor.rollAbilitySave("wis", { dc, fastForward: false, flavor });
+    if (!save) continue;
+
+    const total = save.total ?? save._total ?? 0;
+    if (total >= dc) {
+      const day = 24 * 60 * 60;
+      await targetActor.setFlag(GAROU_ITEM_FLAG_SCOPE, "avatarGaiaDeliriumImmuneUntil", now + day);
+      ChatMessage.create?.({
+        content: `<p><b>${targetActor.name}</b> succeeds on <b>Delirium Unbound</b> (DC ${dc}) and is immune to this effect for 24 hours.</p>`,
+        speaker: ChatMessage.getSpeaker?.({ actor })
+      });
+    } else {
+      ChatMessage.create?.({
+        content: `<p><b>${targetActor.name}</b> fails the <b>Delirium Unbound</b> save (DC ${dc}).</p><p><small>Choose one condition for them until the end of their next turn: frightened, stunned, or incapacitated (apply manually).</small></p>`,
+        speaker: ChatMessage.getSpeaker?.({ actor })
+      });
+    }
+  }
+}
+
+async function applyWorldShakingPresence(actor) {
+  if (!hasAvatarOfGaia(actor)) return;
+  if (!isRageActive(actor)) return;
+
+  // Don't re-prompt if an aura is already active this Rage.
+  const existing = actor.effects?.find(e => e.getFlag?.(GAROU_ITEM_FLAG_SCOPE, "avatarGaiaPresence")) ?? null;
+  if (existing && isActiveEffect(existing)) return;
+
+  const choice = await new Promise(resolve => {
+    const content = `
+      <form>
+        <div class="form-group">
+          <label>Choose your World-Shaking Presence (lasts while Rage persists):</label>
+          <select id="avatar-gaia-presence">
+            <option value="predator">Predator King — hostiles have disadvantage attacking others.</option>
+            <option value="cataclysm">Living Cataclysm — ground within 20 ft is difficult terrain for hostiles.</option>
+            <option value="spirit">Spirit Incarnate — may spend Gnosis while raging; ends Rage at end of turn.</option>
+          </select>
+        </div>
+      </form>`;
+    new Dialog({
+      title: "Avatar of Gaia — World-Shaking Presence",
+      content,
+      buttons: {
+        ok: {
+          label: "Confirm",
+          callback: html => {
+            const v = html.find("#avatar-gaia-presence").val();
+            resolve(v || null);
+          }
+        },
+        cancel: {
+          label: "Skip",
+          callback: () => resolve(null)
+        }
+      },
+      default: "ok",
+      close: () => resolve(null)
+    }).render(true);
+  });
+
+  if (!choice) return;
+
+  const labels = {
+    predator: "Predator King",
+    cataclysm: "Living Cataclysm",
+    spirit: "Spirit Incarnate"
+  };
+
+  const descriptions = {
+    predator:
+      "Hostile creatures of your choice within 30 feet have disadvantage on attack rolls against creatures other than you.",
+    cataclysm:
+      "The ground within 20 feet of you is difficult terrain for hostile creatures.",
+    spirit:
+      "You may spend Gnosis while raging; doing so causes your Rage to end at the end of your turn."
+  };
+
+  const effectData = {
+    name: `World-Shaking Presence: ${labels[choice] ?? "Unknown"}`,
+    icon: actor.img ?? "systems/dnd5e/icons/svg/items/feature.svg",
+    origin: actor.uuid,
+    disabled: false,
+    duration: {}, // Ends when Rage ends / toggled off
+    changes: [],
+    flags: {
+      [GAROU_ITEM_FLAG_SCOPE]: {
+        avatarGaiaPresence: choice
+      }
+    }
+  };
+
+  try {
+    await actor.createEmbeddedDocuments("ActiveEffect", [effectData]);
+  } catch (err) {
+    console.warn("[garou] Avatar of Gaia: failed to create World-Shaking Presence effect", err);
+  }
+
+  ChatMessage.create?.({
+    content: `<p><strong>${actor.name}</strong> invokes <b>${labels[choice]}</b> (${descriptions[choice]}).</p>`,
+    speaker: ChatMessage.getSpeaker?.({ actor })
+  });
+}
+
+async function handleAvatarOnRageStart(actor) {
+  if (!actor || actor.type !== "character") return;
+  if (!isGarouActor(actor)) return;
+  if (!hasAvatarOfGaia(actor)) return;
+
+  try {
+    await applyWorldShakingPresence(actor);
+    await runDeliriumUnbound(actor);
+  } catch (err) {
+    console.error("[garou] Avatar of Gaia Rage-start handler failed:", err);
+  }
+}
+
 function isFormEffect(effect) {
   const n = (effect?.name ?? "").trim();
   if (!n.startsWith(FORM_PREFIX)) return false;
@@ -861,7 +1053,78 @@ async function enforceSingleForm(actor, preferredEffectId = null) {
   }
 }
 
+async function handleMythicRegenerationTurn(actor, combat) {
+  if (!actor || actor.type !== "character") return;
+  if (!isGarouActor(actor)) return;
+
+  // Require the Mythic Regeneration feature at all.
+  const mythic = getFeatureByIdentifier(actor, "garou-mythic-regeneration");
+  if (!mythic) return;
+
+  // Only while raging.
+  if (!isRageActive(actor)) return;
+
+  const hp = actor.system?.attributes?.hp;
+  if (!hp) return;
+
+  // Regeneration only functions if you have at least 1 HP.
+  if ((hp.value ?? 0) <= 0) return;
+
+  const combatId = combat?.id ?? "no-combat";
+  const round = combat?.round ?? 0;
+  const turn = combat?.turn ?? 0;
+  const turnKey = `${combatId}.${round}.${turn}`;
+
+  // Ensure we only process once per turn.
+  const lastTurnKey = await actor.getFlag(GAROU_ITEM_FLAG_SCOPE, "mythicRegenLastTurn");
+  if (lastTurnKey === turnKey) return;
+  await actor.setFlag(GAROU_ITEM_FLAG_SCOPE, "mythicRegenLastTurn", turnKey);
+
+  // Check suppression flag (set by the feature's helper when radiant/silvered damage is taken).
+  const suppressed = await actor.getFlag(GAROU_ITEM_FLAG_SCOPE, "mythicRegenSuppressedNext");
+  if (suppressed) {
+    await actor.unsetFlag(GAROU_ITEM_FLAG_SCOPE, "mythicRegenSuppressedNext");
+    ChatMessage.create?.({
+      content: `<p><strong>${actor.name}</strong>'s <b>Mythic Regeneration</b> is suppressed this turn (radiant or silvered damage).</p>`,
+      speaker: ChatMessage.getSpeaker?.({ actor })
+    });
+    return;
+  }
+
+  const conMod = Number(actor.system?.abilities?.con?.mod ?? 0) || 0;
+  const heal = Math.max(0, 10 + conMod);
+  if (!heal) return;
+
+  const maxHp = hp.max ?? heal;
+  const current = hp.value ?? 0;
+  const next = Math.min(maxHp, current + heal);
+  if (next <= current) return;
+
+  try {
+    await actor.update({ "system.attributes.hp.value": next });
+    ChatMessage.create?.({
+      content: `<p><strong>${actor.name}</strong> regenerates <b>${heal}</b> hit points from <b>Mythic Regeneration</b> (now at ${next}/${maxHp}).</p>`,
+      speaker: ChatMessage.getSpeaker?.({ actor })
+    });
+  } catch (err) {
+    console.error("[garou] Mythic Regeneration turn handler failed:", err);
+  }
+}
+
 // ---- Hooks ----
+// When a Rage effect is created on a Garou actor, handle Avatar of Gaia (if present).
+Hooks.on("createActiveEffect", async (effect, options, userId) => {
+  const parent = effect?.parent;
+  const actor = parent instanceof Actor ? parent : (parent instanceof Item ? parent.parent : null);
+  if (!(actor instanceof Actor)) return;
+  if (!isGarouActor(actor)) return;
+
+  const name = (effect.name ?? "").toLowerCase();
+  if (!name.includes("rage")) return;
+  if (effect.disabled || effect.suppressed) return;
+
+  await handleAvatarOnRageStart(actor);
+});
 
 // When any form ActiveEffect is updated, enforce "only one" and sync Lupus weapons.
 Hooks.on("updateActiveEffect", async (effect, changed, options) => {
@@ -949,6 +1212,19 @@ Hooks.on("updateItem", (item, changed, options) => {
   if (id !== "garou" && name !== "garou") return;
   const actor = item.actor ?? item.parent;
   if (actor) ensureFormsGranted(actor).catch(err => console.error("[garou] ensureFormsGranted (updateItem):", err));
+});
+
+Hooks.on("updateCombat", async (combat, changed) => {
+  // Only react when the active turn advances.
+  if (!("turn" in changed) && !("round" in changed)) return;
+  const combatant = combat?.combatant;
+  const actor = combatant?.actor ?? null;
+  if (!actor) return;
+  try {
+    await handleMythicRegenerationTurn(actor, combat);
+  } catch (err) {
+    console.error("[garou] updateCombat Mythic Regeneration error:", err);
+  }
 });
 
 Hooks.once("ready", async () => {

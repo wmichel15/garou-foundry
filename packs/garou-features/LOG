@@ -1,5 +1,5 @@
-2026/02/10-00:38:45.789 66c8 Recovering log #230
-2026/02/10-00:38:45.789 66c8 Level-0 table #232: started
-2026/02/10-00:38:45.796 66c8 Level-0 table #232: 510 bytes OK
-2026/02/10-00:38:45.798 66c8 Delete type=0 #230
-2026/02/10-00:38:45.798 66c8 Delete type=3 #229
+2026/02/10-02:23:30.744 16dc Recovering log #235
+2026/02/10-02:23:30.744 16dc Level-0 table #237: started
+2026/02/10-02:23:30.745 16dc Level-0 table #237: 6390 bytes OK
+2026/02/10-02:23:30.748 16dc Delete type=0 #235
+2026/02/10-02:23:30.748 16dc Delete type=3 #234

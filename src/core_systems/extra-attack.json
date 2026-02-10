@@ -1,0 +1,59 @@
+{
+  "folder": "yxgvWvYhPGrlTBl1",
+  "name": "Extra Attack",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><span style=\"animation:0.25s ease 0s 1 normal none running fade-in\"><span id=\"markdown-section-d14b4aed-6c3f-44cf-b727-f5f8b2552bac-11\" class=\"markdown-section chat-fade-in\" data-markdown-raw=\"\n   &gt; **Extra Attack**  \" data-section-index=\"11\" style=\"border-radius:4px;line-height:19.5px;margin:6px 0px;position:relative;scroll-margin-bottom:40px;scroll-margin-top:40px;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"><strong>Extra Attack</strong></span><span id=\"markdown-section-d14b4aed-6c3f-44cf-b727-f5f8b2552bac-12\" class=\"markdown-section chat-fade-in\" data-markdown-raw=\"\n   &gt; Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.\" data-section-index=\"12\" style=\"border-radius:4px;line-height:19.5px;margin:6px 0px;position:relative;scroll-margin-bottom:40px;scroll-margin-top:40px;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">&gt; Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</span></span></p>",
+      "chat": "<p><span style=\"animation:0.25s ease 0s 1 normal none running fade-in\"><span id=\"markdown-section-d14b4aed-6c3f-44cf-b727-f5f8b2552bac-11\" class=\"markdown-section chat-fade-in\" data-markdown-raw=\"\n   &gt; **Extra Attack**  \" data-section-index=\"11\" style=\"border-radius:4px;line-height:19.5px;margin:6px 0px;position:relative;scroll-margin-bottom:40px;scroll-margin-top:40px;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"><strong>Extra Attack</strong></span><span id=\"markdown-section-d14b4aed-6c3f-44cf-b727-f5f8b2552bac-12\" class=\"markdown-section chat-fade-in\" data-markdown-raw=\"\n   &gt; Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.\" data-section-index=\"12\" style=\"border-radius:4px;line-height:19.5px;margin:6px 0px;position:relative;scroll-margin-bottom:40px;scroll-margin-top:40px;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">&gt; Starting at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</span></span></p>"
+    },
+    "identifier": "extra-attack",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 5
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.IaGHaDCtqB9SKOfe",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.IaGHaDCtqB9SKOfe",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770712879677,
+    "modifiedTime": 1770712943186,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

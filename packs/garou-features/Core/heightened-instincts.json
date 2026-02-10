@@ -1,0 +1,122 @@
+{
+  "name": "Heightened Instincts",
+  "type": "feat",
+  "img": "icons/skills/wounds/anatomy-organ-brain-pink-red.webp",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Level 2 Garou Feature.</strong></p><p>Your First Change has permanently sharpened your awareness of danger and hostile intent.</p><p><strong>Benefits:</strong></p><ul><li>You have advantage on Wisdom (Perception) and Wisdom (Insight) checks to notice danger, ambushes, or deception. (Implemented as general advantage on Perception and Insight checks.)</li><li>You have advantage on initiative rolls while you are not surprised.</li><li>You can’t be surprised while you are conscious, unless you are incapacitated or magically unaware (such as by the <em>sleep</em> spell or similar effects).</li><li>When a hidden creature misses you with an attack, you can use your reaction to move up to half your speed toward or away from the source of the attack. This movement doesn’t provoke opportunity attacks. (Apply this movement manually.)</li></ul>",
+      "chat": "<p><strong>Heightened Instincts.</strong> Advantage on Perception and Insight checks; advantage on initiative while not surprised; can’t be surprised while conscious except by magical unconsciousness; special reaction move when a hidden attacker misses you.</p>"
+    },
+    "identifier": "garou-heightened-instincts",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 2
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Heightened Instincts",
+      "img": "icons/skills/wounds/anatomy-organ-brain-pink-red.webp",
+      "origin": "",
+      "_id": "HeightenedInstinctsEffect",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.dnd5e.skills.prc.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 30
+        },
+        {
+          "key": "flags.dnd5e.skills.ins.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 30
+        },
+        {
+          "key": "flags.dnd5e.initiative.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 30
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>You have advantage on Wisdom (Perception) and Wisdom (Insight) checks, and advantage on initiative rolls while you are not surprised. You also can’t be surprised while conscious (DM adjudication), and you have a special reaction move against hidden attackers (see feature text).</p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    }
+  ],
+  "folder": "khoiWkeO9DUdZXsm",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.garou.garou-features.Item.heightenedInstincts",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Compendium.garou.garou-features.Item.heightenedInstincts",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770235000001,
+    "modifiedTime": 1770235000001,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}
+

@@ -1,0 +1,246 @@
+{
+  "folder": "yxgvWvYhPGrlTBl1",
+  "name": "Heightened Instincts",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><span id=\"level-2-heightened-instincts\" style=\"padding:0px;margin:0.235cm 0px 0px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-variant-alternates:inherit;font-variant-position:inherit;font-variant-emoji:inherit;font-weight:bold;font-stretch:inherit;line-height:0.971em;font-family:MrEavesRemake;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:0.458cm;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;--TOC:exclude;color:rgb(88, 24, 13);scroll-margin-top:100px;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(238, 229, 206);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"><strong>Level 2: Heightened Instincts</strong></span><span style=\"padding:0px;margin:0px;font-style:italic;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact\"><em>2nd-level Garou feature</em></span><span style=\"padding:0px;margin:0px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-variant-alternates:inherit;font-variant-position:inherit;font-variant-emoji:inherit;font-weight:400;font-stretch:inherit;line-height:1.25em;font-family:BookInsanityRemake;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;display:block;overflow-wrap:break-word;text-indent:1em;color:rgb(0, 0, 0);letter-spacing:normal;orphans:2;text-align:start;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(238, 229, 206);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">Your First Change has permanently altered how you perceive the world. You no longer rely on conscious thought alone — your instincts react before danger fully reveals itself.You gain the following benefits:</span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;break-inside:avoid\">You have </span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:bold;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;letter-spacing:-0.02em\"><strong>advantage on Wisdom (Perception) and Wisdom (Insight) checks</strong></span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;break-inside:avoid\"> made to detect </span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:bold;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;letter-spacing:-0.02em\"><strong>hostile intent, ambushes, or deception</strong></span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;break-inside:avoid\">.You have </span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:bold;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;letter-spacing:-0.02em\"><strong>advantage on initiative rolls</strong></span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;break-inside:avoid\"> if you are not surprised.You can’t be surprised while you are </span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:bold;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;letter-spacing:-0.02em\"><strong>conscious</strong></span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;break-inside:avoid\">, unless you are </span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:bold;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;letter-spacing:-0.02em\"><strong>incapacitated</strong></span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;break-inside:avoid\"> or </span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:bold;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;letter-spacing:-0.02em\"><strong>magically unaware</strong></span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;break-inside:avoid\"> (such as by the </span><span style=\"padding:0px;margin:0px;font-style:italic;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact\"><em>sleep</em></span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;break-inside:avoid\"> spell or similar effects).</span><span style=\"padding:0px;margin:0px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-variant-alternates:inherit;font-variant-position:inherit;font-variant-emoji:inherit;font-weight:400;font-stretch:inherit;line-height:1.25em;font-family:BookInsanityRemake;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;display:block;overflow-wrap:break-word;text-indent:1em;color:rgb(0, 0, 0);letter-spacing:normal;orphans:2;text-align:start;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(238, 229, 206);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">In addition, when a hidden creature misses you with an attack, you can use your </span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:bold;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;letter-spacing:-0.02em\"><strong>reaction</strong></span><span style=\"padding:0px;margin:0px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-variant-alternates:inherit;font-variant-position:inherit;font-variant-emoji:inherit;font-weight:400;font-stretch:inherit;line-height:1.25em;font-family:BookInsanityRemake;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;display:block;overflow-wrap:break-word;text-indent:1em;color:rgb(0, 0, 0);letter-spacing:normal;orphans:2;text-align:start;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(238, 229, 206);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"> to move up to </span><span style=\"padding:0px;margin:0px;font-style:inherit;font-variant:inherit;font-weight:bold;font-stretch:inherit;line-height:inherit;font-family:inherit;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;letter-spacing:-0.02em\"><strong>half your speed</strong></span><span style=\"padding:0px;margin:0px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-variant-alternates:inherit;font-variant-position:inherit;font-variant-emoji:inherit;font-weight:400;font-stretch:inherit;line-height:1.25em;font-family:BookInsanityRemake;font-optical-sizing:inherit;font-size-adjust:inherit;font-kerning:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-language-override:inherit;font-size:12.8504px;vertical-align:baseline;border:0px;box-sizing:border-box;print-color-adjust:exact;display:block;overflow-wrap:break-word;text-indent:1em;color:rgb(0, 0, 0);letter-spacing:normal;orphans:2;text-align:start;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(238, 229, 206);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"> toward or away from the source of the attack. This movement doesn’t provoke opportunity attacks.</span></p>",
+      "chat": "<p>Level 2: Heightened Instincts 2nd-level Garou feature Your First Change has permanently altered how you perceive the world. You no longer rely on conscious thought alone — your instincts react before danger fully reveals itself. You gain the following benefits: You have advantage on Wisdom (Perception) and Wisdom (Insight) checks made to detect hostile intent, ambushes, or deception. You have advantage on initiative rolls if you are not surprised. You can’t be surprised while you are conscious, unless you are incapacitated or magically unaware (such as by the sleep spell or similar effects). In addition, when a hidden creature misses you with an attack, you can use your reaction to move up to half your speed toward or away from the source of the attack. This movement doesn’t provoke opportunity attacks.</p>"
+    },
+    "identifier": "heightened-instincts",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 2
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "perception advantage",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.DoMEm7ssDSpga0MS",
+      "_id": "ygeRkyn0Xn7aSEcj",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.dnd5e.skills.prc.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 20,
+          "fieldName": "flags.dnd5e.skills.prc.adv",
+          "fieldDescription": ""
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770712359010,
+        "modifiedTime": 1770712411669,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    },
+    {
+      "name": "Insight advantage",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.DoMEm7ssDSpga0MS",
+      "_id": "MFJOsuK7P0RgSl4G",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.dnd5e.skills.ins.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 20,
+          "fieldName": "flags.dnd5e.skills.ins.adv",
+          "fieldDescription": ""
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770712421738,
+        "modifiedTime": 1770712561219,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    },
+    {
+      "name": "Initiative advantage",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "Item.DoMEm7ssDSpga0MS",
+      "_id": "JWkTPU0znST4ehax",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.dnd5e.initiative.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 20,
+          "fieldName": "flags.dnd5e.initiative.adv",
+          "fieldDescription": ""
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1770712499139,
+        "modifiedTime": 1770712555504,
+        "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+      }
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.DoMEm7ssDSpga0MS",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.DoMEm7ssDSpga0MS",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770711541779,
+    "modifiedTime": 1770712625429,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

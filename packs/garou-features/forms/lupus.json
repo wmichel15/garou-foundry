@@ -170,7 +170,19 @@
           "key": "system.attributes.movement.walk",
           "mode": 5,
           "value": "50",
-          "priority": 10
+          "priority": 50
+        },
+        {
+          "key": "flags.dnd5e.skills.ste.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 50
+        },
+        {
+          "key": "flags.dnd5e.skills.prc.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 50
         }
       ],
       "disabled": false,
@@ -183,7 +195,7 @@
         "startRound": null,
         "startTurn": null
       },
-      "description": "",
+      "description": "<p><strong>While in Lupus (Wolf) form, you gain the following benefits and limitations.</strong></p><p><strong>Speed:</strong> 50 feet</p><p><strong>Benefits:</strong></p><ul><li>You have advantage on Dexterity (Stealth) checks.</li><li>You have advantage on Wisdom (Perception) checks (especially those that rely on smell).</li><li><strong>Bite:</strong> 1d6 + Strength modifier (piercing).</li><li><strong>Claw:</strong> 1d4 + Strength modifier (slashing).</li></ul><p><strong>Limitations:</strong></p><ul><li>You can’t wield manufactured weapons or use items requiring hands.</li><li>You can attempt to communicate in humanoid languages at disadvantage (DC 10).</li></ul>",
       "tint": "#6b6b6b",
       "transfer": true,
       "statuses": [],

@@ -189,6 +189,25 @@
         "classRestriction": "primary"
       },
       {
+        "type": "ItemGrant",
+        "_id": "heightenedInstinctsGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.garou.garou-features.Item.heightenedInstincts",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Heightened Instincts",
+        "hint": "Garou core feature: sharpened perception and initiative.",
+        "classRestriction": "primary"
+      },
+      {
         "type": "ItemChoice",
         "_id": "33Nz8D64aMKgyzpn",
         "configuration": {

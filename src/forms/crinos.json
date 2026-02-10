@@ -170,13 +170,31 @@
           "key": "system.attributes.movement.walk",
           "mode": 5,
           "value": "40",
-          "priority": 10
+          "priority": 50
         },
         {
           "key": "system.attributes.ac.bonus",
           "mode": 2,
           "value": "2",
-          "priority": 10
+          "priority": 50
+        },
+        {
+          "key": "flags.dnd5e.abilities.str.save.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 50
+        },
+        {
+          "key": "flags.dnd5e.abilities.con.save.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 50
+        },
+        {
+          "key": "flags.dnd5e.abilities.cha.check.disadv",
+          "mode": 5,
+          "value": "1",
+          "priority": 50
         }
       ],
       "disabled": false,
@@ -189,7 +207,7 @@
         "startRound": null,
         "startTurn": null
       },
-      "description": "<img src=\"assets/Red%20Talon.png\" width=\"100\" height=\"100\" />",
+      "description": "<p><strong>While in Crinos (War Form), you gain the following benefits and limitations.</strong></p><p><strong>Speed:</strong> 40 feet</p><p><strong>Benefits:</strong></p><ul><li>You gain a +2 bonus to AC.</li><li>You have advantage on Strength saving throws.</li><li>You have advantage on Constitution saving throws.</li><li><strong>Bite:</strong> 1d12 + Strength modifier (piercing).</li><li><strong>Claw:</strong> 1d10 + Strength modifier (slashing).</li></ul><p><strong>Limitations & Reminders:</strong></p><ul><li>When you assume this form, you should immediately enter Rage and consume 1 use if you have any Rage remaining (apply via the Rage feature).</li><li>You can’t cast spells while in Crinos.</li><li>You can’t spend Gnosis unless a Gift explicitly states it can be used while raging.</li><li>You have disadvantage on Charisma checks, and you generally can’t persuade creatures to see you as non-hostile through conversation alone.</li><li>Remaining in Crinos after combat may trigger a Frenzy check at the Storyteller’s discretion.</li></ul>",
       "tint": "#8b0000",
       "transfer": true,
       "statuses": [],

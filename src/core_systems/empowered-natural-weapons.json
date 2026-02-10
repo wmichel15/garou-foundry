@@ -1,0 +1,59 @@
+{
+  "folder": "yxgvWvYhPGrlTBl1",
+  "name": "Empowered Natural Weapons",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><span style=\"animation:0.25s ease 0s 1 normal none running fade-in;color:rgba(228, 228, 228, 0.92);font-family:'Segoe WPC', 'Segoe UI', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(24, 24, 24);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">Starting at 5th level, your Claw and Bite attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</span></p>",
+      "chat": "<p>Starting at 5th level, your Claw and Bite attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>"
+    },
+    "identifier": "empowered-natural-weapons",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 5
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Item.lWaYtlWoEcktS9E5",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "vindara-5e",
+      "uuid": "Item.lWaYtlWoEcktS9E5",
+      "coreVersion": "13.351",
+      "systemId": "dnd5e",
+      "systemVersion": "5.2.5"
+    },
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.5",
+    "createdTime": 1770713250140,
+    "modifiedTime": 1770713297418,
+    "lastModifiedBy": "1MqF4AiaVyJDlXbK"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

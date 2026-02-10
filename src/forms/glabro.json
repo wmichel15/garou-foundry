@@ -170,7 +170,19 @@
           "key": "system.attributes.ac.bonus",
           "mode": 2,
           "value": "1",
-          "priority": 10
+          "priority": 50
+        },
+        {
+          "key": "flags.dnd5e.abilities.str.check.adv",
+          "mode": 5,
+          "value": "1",
+          "priority": 50
+        },
+        {
+          "key": "flags.dnd5e.abilities.cha.check.disadv",
+          "mode": 5,
+          "value": "1",
+          "priority": 50
         }
       ],
       "disabled": false,
@@ -183,7 +195,7 @@
         "startRound": null,
         "startTurn": null
       },
-      "description": "",
+      "description": "<p><strong>While in Glabro (Near-Human) form, you gain the following benefits and limitations.</strong></p><p><strong>Speed:</strong> 30 feet</p><p><strong>Benefits:</strong></p><ul><li>You have advantage on Strength checks.</li><li>You gain a +1 bonus to AC.</li><li><strong>Bite:</strong> 1d8 + Strength modifier (piercing).</li><li><strong>Claw:</strong> 1d6 + Strength modifier (slashing).</li></ul><p><strong>Limitations:</strong></p><ul><li>You have disadvantage on Charisma checks made to blend in among humanoids.</li></ul>",
       "tint": "#8b6f47",
       "transfer": true,
       "statuses": [],

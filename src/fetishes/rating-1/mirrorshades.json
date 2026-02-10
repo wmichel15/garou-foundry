@@ -1,0 +1,86 @@
+{
+  "name": "Mirrorshades",
+  "type": "equipment",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Mirrorshades (Fetish)</strong></p><p><em>Creation Cost: 7 Gnosis.</em></p><p><strong>Effect (for 10 minutes):</strong></p><ul><li>You gain advantage on Dexterity (Stealth) checks made in dim light or darkness</li><li>You gain advantage on checks made to enter or exit the Umbra</li></ul><p>Usable <strong>once per long rest</strong>.</p><p><strong>Fetish Rating:</strong> 1. <strong>Minimum Max Gnosis:</strong> 3. Cannot use while raging unless this fetish states otherwise. Spirit Attention: you can have a number of actively empowered fetishes equal to your Wisdom modifier (minimum 1); instantaneous effects do not count after resolution.</p><p><code>[GAROU_FETISH] id=mirrorshades; rating=1; minGnosis=3; activation=action</code></p>",
+      "chat": "<p>Fetish (Rating 1). Min Max Gnosis 3. Activate: action — Force (Wisdom/Gnosis check DC 11) or Appease (spend 1 Gnosis). For 10 min: advantage on Dex (Stealth) in dim light/darkness and on checks to enter/exit the Umbra. Once per long rest.</p>"
+    },
+    "identifier": "mirrorshades",
+    "source": { "revision": 1, "rules": "2024" },
+    "quantity": 1,
+    "weight": 0,
+    "price": { "value": 0, "denomination": "gp" },
+    "equipmentType": "trinket",
+    "activities": {
+      "r1m2i3r4r5o6r7s8": {
+        "type": "utility",
+        "_id": "r1m2i3r4r5o6r7s8",
+        "sort": 0,
+        "name": "Activate (Force Spirit)",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": true, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Force the Spirit.</strong> Wisdom (Gnosis) check DC = 10 + Fetish Rating (11). Success: for 10 minutes you gain advantage on Dex (Stealth) in dim light or darkness and on checks to enter or exit the Umbra. Failure: no effect, no Gnosis spent. Failure by 5 or more: spirit refuses until short or long rest. Once per long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "10" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": true, "visible": true, "formula": "1d20 + @abilities.wis.mod", "name": "Wisdom (Gnosis) check" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": { "ignoreTraits": [], "triggeredActivityId": "none", "triggeredActivityConditionText": "", "triggeredActivityTargets": "targets", "triggeredActivityRollAs": "self", "autoConsume": false, "forceConsumeDialog": "default", "forceRollDialog": "default", "forceDamageDialog": "default", "confirmTargets": "default", "autoTargetType": "any", "autoTargetAction": "default", "automationOnly": false, "otherActivityCompatible": true, "otherActivityAsParentType": true, "identifier": "", "displayActivityName": false, "rollMode": "default", "chooseEffects": false, "toggleEffect": false, "ignoreFullCover": false, "removeChatButtons": "default", "magicEffect": false, "magicDamage": false, "noConcentrationCheck": false, "skipConcentrationCheck": false, "autoCEEffects": "default" },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      },
+      "s8h7a6d5e4s3r2i1": {
+        "type": "utility",
+        "_id": "s8h7a6d5e4s3r2i1",
+        "sort": 1,
+        "name": "Activate (Appease Spirit)",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            { "type": "itemUses", "value": "1", "target": "Item.FvQGHrfaDGaOKRtK", "scaling": {} }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<p><strong>Appease the Spirit.</strong> Spend 1 Gnosis. No roll; for 10 minutes you gain advantage on Dex (Stealth) in dim light or darkness and on checks to enter or exit the Umbra. Once per long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "10" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": { "ignoreTraits": [], "triggeredActivityId": "none", "triggeredActivityConditionText": "", "triggeredActivityTargets": "targets", "triggeredActivityRollAs": "self", "autoConsume": false, "forceConsumeDialog": "default", "forceRollDialog": "default", "forceDamageDialog": "default", "confirmTargets": "default", "autoTargetType": "any", "autoTargetAction": "default", "automationOnly": false, "otherActivityCompatible": true, "otherActivityAsParentType": true, "identifier": "", "displayActivityName": false, "rollMode": "default", "chooseEffects": false, "toggleEffect": false, "ignoreFullCover": false, "removeChatButtons": "default", "magicEffect": false, "magicDamage": false, "noConcentrationCheck": false, "skipConcentrationCheck": false, "autoCEEffects": "default" },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      }
+    }
+  },
+  "effects": [],
+  "flags": { "garou": {} },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

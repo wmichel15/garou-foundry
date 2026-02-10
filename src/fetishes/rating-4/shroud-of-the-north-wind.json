@@ -1,0 +1,73 @@
+{
+  "name": "Shroud of the North Wind",
+  "type": "equipment",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Shroud of the North Wind (Fetish)</strong></p><p><em>Creation Cost: 9 Gnosis</em></p><p>A heavy cloak bound with winter spirits.</p><p><strong>Effect (10 minutes):</strong></p><ul><li>You gain resistance to cold damage</li><li>Creatures of your choice within 10 feet have disadvantage on opportunity attacks against you</li><li>You ignore difficult terrain caused by ice, snow, or wind</li></ul><p>Usable once per long rest.</p>",
+      "chat": "<p>Fetish (Level 4). Creation cost 9 Gnosis. Activate: for 10 min gain cold resistance; creatures of your choice within 10 ft have disadvantage on opportunity attacks against you; ignore difficult terrain from ice, snow, or wind. Once per long rest.</p>"
+    },
+    "identifier": "shroud-of-the-north-wind",
+    "source": { "revision": 1, "rules": "2024" },
+    "quantity": 1,
+    "weight": 4,
+    "price": { "value": 0, "denomination": "gp" },
+    "equipmentType": "trinket",
+    "activities": {
+      "s1h2r3o4u5d6n7o8": {
+        "type": "utility",
+        "_id": "s1h2r3o4u5d6n7o8",
+        "sort": 0,
+        "name": "Activate",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p>Don the shroud. For 10 minutes you gain resistance to cold damage; creatures of your choice within 10 feet have disadvantage on opportunity attacks against you; you ignore difficult terrain caused by ice, snow, or wind. Once per long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "10" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Shroud of the North Wind (Active)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "cold",
+          "priority": 20
+        }
+      ],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "seconds": 600,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>For 10 minutes: resistance to cold damage (applied automatically); creatures of your choice within 10 feet have disadvantage on opportunity attacks against you (apply manually); you ignore difficult terrain caused by ice, snow, or wind (apply manually). Use the item's &quot;Activate&quot; activity to apply this effect; once per long rest.</p>",
+      "flags": {}
+    }
+  ],
+  "flags": { "garou": {} },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

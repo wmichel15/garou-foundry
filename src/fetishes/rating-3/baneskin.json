@@ -1,0 +1,86 @@
+{
+  "name": "Baneskin",
+  "type": "equipment",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Baneskin (Fetish)</strong></p><p><em>Creation Cost: 7 Gnosis.</em></p><p><strong>Effect:</strong></p><p>For 10 minutes:</p><ul><li>Hostile spirits perceive you as a neutral or allied entity</li><li>You have advantage on Charisma checks made to negotiate with spirits</li><li>If you take hostile action, the effect immediately ends.</li></ul><p><strong>Fetish Rating:</strong> 3. <strong>Minimum Max Gnosis:</strong> 7. Cannot use while raging unless this fetish states otherwise. Spirit Attention: you can have a number of actively empowered fetishes equal to your Wisdom modifier (minimum 1); instantaneous effects do not count after resolution.</p><p><code>[GAROU_FETISH] id=baneskin; rating=3; minGnosis=7; activation=action</code></p>",
+      "chat": "<p>Fetish (Rating 3). Min Max Gnosis 7. For 10 min: hostile spirits perceive you as neutral or allied; advantage on Cha checks to negotiate with spirits; effect ends if you take hostile action.</p>"
+    },
+    "identifier": "baneskin",
+    "source": { "revision": 1, "rules": "2024" },
+    "quantity": 1,
+    "weight": 0,
+    "price": { "value": 0, "denomination": "gp" },
+    "equipmentType": "trinket",
+    "activities": {
+      "b1a2n3e4s5k6i7n8": {
+        "type": "utility",
+        "_id": "b1a2n3e4s5k6i7n8",
+        "sort": 0,
+        "name": "Activate (Force Spirit)",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": true, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Force the Spirit.</strong> Wisdom (Gnosis) check DC = 10 + Fetish Rating (13). Success: for 10 minutes hostile spirits perceive you as a neutral or allied entity, you have advantage on Charisma checks made to negotiate with spirits, and the effect ends immediately if you take hostile action. Failure: no effect, no Gnosis spent. Failure by 5 or more: spirit refuses until short or long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "10" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": true, "visible": true, "formula": "1d20 + @abilities.wis.mod", "name": "Wisdom (Gnosis) check" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": { "ignoreTraits": [], "triggeredActivityId": "none", "triggeredActivityConditionText": "", "triggeredActivityTargets": "targets", "triggeredActivityRollAs": "self", "autoConsume": false, "forceConsumeDialog": "default", "forceRollDialog": "default", "forceDamageDialog": "default", "confirmTargets": "default", "autoTargetType": "any", "autoTargetAction": "default", "automationOnly": false, "otherActivityCompatible": true, "otherActivityAsParentType": true, "identifier": "", "displayActivityName": false, "rollMode": "default", "chooseEffects": false, "toggleEffect": false, "ignoreFullCover": false, "removeChatButtons": "default", "magicEffect": false, "magicDamage": false, "noConcentrationCheck": false, "skipConcentrationCheck": false, "autoCEEffects": "default" },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      },
+      "8n7i6k5s4e3n2a1b": {
+        "type": "utility",
+        "_id": "8n7i6k5s4e3n2a1b",
+        "sort": 1,
+        "name": "Activate (Appease Spirit)",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            { "type": "itemUses", "value": "1", "target": "Item.FvQGHrfaDGaOKRtK", "scaling": {} }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<p><strong>Appease the Spirit.</strong> Spend 1 Gnosis. No roll; for 10 minutes hostile spirits perceive you as a neutral or allied entity, you have advantage on Charisma checks made to negotiate with spirits, and the effect ends immediately if you take hostile action.</p>"
+        },
+        "duration": { "units": "minute", "concentration": false, "override": false, "value": "10" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": { "ignoreTraits": [], "triggeredActivityId": "none", "triggeredActivityConditionText": "", "triggeredActivityTargets": "targets", "triggeredActivityRollAs": "self", "autoConsume": false, "forceConsumeDialog": "default", "forceRollDialog": "default", "forceDamageDialog": "default", "confirmTargets": "default", "autoTargetType": "any", "autoTargetAction": "default", "automationOnly": false, "otherActivityCompatible": true, "otherActivityAsParentType": true, "identifier": "", "displayActivityName": false, "rollMode": "default", "chooseEffects": false, "toggleEffect": false, "ignoreFullCover": false, "removeChatButtons": "default", "magicEffect": false, "magicDamage": false, "noConcentrationCheck": false, "skipConcentrationCheck": false, "autoCEEffects": "default" },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      }
+    }
+  },
+  "effects": [],
+  "flags": { "garou": {} },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

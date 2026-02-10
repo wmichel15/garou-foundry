@@ -1,0 +1,86 @@
+{
+  "name": "Nyx's Bangle",
+  "type": "equipment",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Nyx's Bangle (Fetish)</strong></p><p><em>Creation Cost: 6 Gnosis.</em></p><p><strong>Effect (while worn at night, for 1 hour):</strong></p><ul><li>You gain advantage on Dexterity (Stealth) checks</li><li>You are invisible to non-magical detection beyond 30 feet</li></ul><p>Lasts for <strong>1 hour</strong> per activation.</p><p><strong>Fetish Rating:</strong> 1. <strong>Minimum Max Gnosis:</strong> 3. Cannot use while raging unless this fetish states otherwise. Spirit Attention: you can have a number of actively empowered fetishes equal to your Wisdom modifier (minimum 1); instantaneous effects do not count after resolution.</p><p><code>[GAROU_FETISH] id=nyxs-bangle; rating=1; minGnosis=3; activation=action</code></p>",
+      "chat": "<p>Fetish (Rating 1). Min Max Gnosis 3. Activate: action — Force (Wisdom/Gnosis check DC 11) or Appease (spend 1 Gnosis). While worn at night for 1 hour: advantage on Dex (Stealth); invisible to non-magical detection beyond 30 ft.</p>"
+    },
+    "identifier": "nyxs-bangle",
+    "source": { "revision": 1, "rules": "2024" },
+    "quantity": 1,
+    "weight": 0,
+    "price": { "value": 0, "denomination": "gp" },
+    "equipmentType": "trinket",
+    "activities": {
+      "n1y2x3s4b5a6n7g8": {
+        "type": "utility",
+        "_id": "n1y2x3s4b5a6n7g8",
+        "sort": 0,
+        "name": "Activate (Force Spirit)",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": true, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Force the Spirit.</strong> Wisdom (Gnosis) check DC = 10 + Fetish Rating (11). Success: while worn at night for 1 hour you gain advantage on Dex (Stealth) and are invisible to non-magical detection beyond 30 feet. Failure: no effect, no Gnosis spent. Failure by 5 or more: spirit refuses until short or long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": true, "visible": true, "formula": "1d20 + @abilities.wis.mod", "name": "Wisdom (Gnosis) check" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": { "ignoreTraits": [], "triggeredActivityId": "none", "triggeredActivityConditionText": "", "triggeredActivityTargets": "targets", "triggeredActivityRollAs": "self", "autoConsume": false, "forceConsumeDialog": "default", "forceRollDialog": "default", "forceDamageDialog": "default", "confirmTargets": "default", "autoTargetType": "any", "autoTargetAction": "default", "automationOnly": false, "otherActivityCompatible": true, "otherActivityAsParentType": true, "identifier": "", "displayActivityName": false, "rollMode": "default", "chooseEffects": false, "toggleEffect": false, "ignoreFullCover": false, "removeChatButtons": "default", "magicEffect": false, "magicDamage": false, "noConcentrationCheck": false, "skipConcentrationCheck": false, "autoCEEffects": "default" },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      },
+      "8g7n6a5b4s3x2y1n": {
+        "type": "utility",
+        "_id": "8g7n6a5b4s3x2y1n",
+        "sort": 1,
+        "name": "Activate (Appease Spirit)",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            { "type": "itemUses", "value": "1", "target": "Item.FvQGHrfaDGaOKRtK", "scaling": {} }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<p><strong>Appease the Spirit.</strong> Spend 1 Gnosis. No roll; while worn at night for 1 hour you gain advantage on Dex (Stealth) and are invisible to non-magical detection beyond 30 feet.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": { "ignoreTraits": [], "triggeredActivityId": "none", "triggeredActivityConditionText": "", "triggeredActivityTargets": "targets", "triggeredActivityRollAs": "self", "autoConsume": false, "forceConsumeDialog": "default", "forceRollDialog": "default", "forceDamageDialog": "default", "confirmTargets": "default", "autoTargetType": "any", "autoTargetAction": "default", "automationOnly": false, "otherActivityCompatible": true, "otherActivityAsParentType": true, "identifier": "", "displayActivityName": false, "rollMode": "default", "chooseEffects": false, "toggleEffect": false, "ignoreFullCover": false, "removeChatButtons": "default", "magicEffect": false, "magicDamage": false, "noConcentrationCheck": false, "skipConcentrationCheck": false, "autoCEEffects": "default" },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      }
+    }
+  },
+  "effects": [],
+  "flags": { "garou": {} },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

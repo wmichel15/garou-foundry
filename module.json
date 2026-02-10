@@ -71,6 +71,26 @@
       }
     },
     {
+      "name": "garou-fetishes",
+      "label": "Garou - Fetishes",
+      "path": "packs/garou-fetishes",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
+      "name": "garou-talens",
+      "label": "Garou - Talens",
+      "path": "packs/garou-talens",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER"
+      }
+    },
+    {
       "name": "garou-journals",
       "label": "Garou - Journals",
       "path": "packs/garou-journals",
@@ -148,7 +168,12 @@
     "scripts/untamed-ferocity-automation.js",
     "scripts/extinction-drive-automation.js",
     "scripts/garou-forms.js","scripts/caerns/index.js","scripts/rites-of-accord/rite-of-cleansing.js",
-    "scripts/rites-of-death/gathering-for-the-departed.js"
+    "scripts/rites-of-death/gathering-for-the-departed.js",
+    "scripts/fetishes/fetish-automation.js",
+    "scripts/fetishes/sun-whip-ignite.js",
+    "scripts/fetishes/shroud-of-the-north-wind.js",
+    "scripts/fetishes/spirit-drum.js",
+    "scripts/fix-broken-item-icons.js"
   ],
   "flags": {}
 }

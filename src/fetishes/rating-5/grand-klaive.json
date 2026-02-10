@@ -1,0 +1,101 @@
+{
+  "name": "Grand Klaive",
+  "type": "weapon",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Grand Klaive (Fetish Weapon)</strong></p><p><em>Creation Cost: 15 Gnosis</em></p><p>A legendary klaive bound to an ancient war-spirit, forged for battles that decide the fate of Gaia herself. This weapon is magical.</p><p><strong>Effect:</strong> In addition to the weapon's normal attack bonuses, damage dice, and features (unless the weapon is already intelligent or already infused with a bound spirit of any creature type):</p><ul><li>The Grand Klaive deals an additional 3d8 radiant damage to creatures with the Wyrm tag</li><li>The Grand Klaive ignores resistance and immunity to slashing damage</li><li>Attacks made with the Grand Klaive count as silvered, magical, and spiritual</li></ul><p><strong>Spirit of War:</strong> Once per long rest, when you hit a creature with the Grand Klaive, the target must succeed on a Constitution saving throw or be frightened of you for 1 minute. A creature with the Wyrm tag has disadvantage on this saving throw. While frightened by this effect, the creature has disadvantage on attack rolls against you. A frightened creature may repeat the saving throw at the end of each of its turns, ending the effect on a success.</p><p><strong>Call of the Grand Klaive:</strong> As a bonus action, you may spend 1 Gnosis to summon the Grand Klaive to your hand, provided the Grand Klaive exists on the same plane, is not wielded by another creature, and is not restrained by a ward, binding, or effect that blocks planar or spiritual movement (Storyteller adjudication). The weapon instantly appears in your grasp; this does not provoke opportunity attacks and does not require line of sight.</p><p><strong>Legacy Weapon:</strong> The Grand Klaive cannot be willingly used against another Garou. If the wielder repeatedly violates the spirit's nature, the Grand Klaive may refuse to function or sever its bond entirely.</p><p><em>\"This blade does not seek battle. It ends wars.\"</em></p>",
+      "chat": "<p>Fetish Weapon (Level 5). +3d8 radiant vs Wyrm; ignores slashing res/immunity; silvered, magical, spiritual. Spirit of War: 1/lr on hit — Con save or frightened 1 min (Wyrm disadvantage on save). Call: bonus action, 1 Gnosis — summon to hand (same plane, not wielded). Legacy: cannot be used against Garou.</p>"
+    },
+    "identifier": "grand-klaive",
+    "source": { "revision": 1, "rules": "2024" },
+    "quantity": 1,
+    "weight": 3,
+    "price": { "value": 0, "denomination": "gp" },
+    "weaponType": "martialM",
+    "damage": { "parts": [["1d8", "slashing"]], "versatile": "1d10" },
+    "properties": ["ver"],
+    "range": { "value": 5, "long": null, "units": "ft" },
+    "proficient": true,
+    "activities": {
+      "g1r2a3n4d5s6p7i8": {
+        "type": "utility",
+        "_id": "g1r2a3n4d5s6p7i8",
+        "sort": 0,
+        "name": "Spirit of War",
+        "activation": { "type": "reaction", "override": false, "condition": "When you hit a creature with this weapon" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p>Once per long rest, when you hit with the Grand Klaive: the target must succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or be frightened of you for 1 minute. A creature with the Wyrm tag has disadvantage on this save. While frightened, the creature has disadvantage on attack rolls against you. The creature may repeat the save at the end of each of its turns, ending the effect on a success.</p>"
+        },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "ft", "override": false, "special": "", "value": "5" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "creature", "count": "1", "special": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      },
+      "g1r2a3n4d5c6a7l8": {
+        "type": "utility",
+        "_id": "g1r2a3n4d5c6a7l8",
+        "sort": 1,
+        "name": "Call of the Grand Klaive",
+        "activation": { "type": "bonus", "override": false, "condition": "" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p>Spend 1 Gnosis (bonus action). Summon the Grand Klaive to your hand if: it exists on the same plane, is not wielded by another creature, and is not restrained by a ward, binding, or effect that blocks planar or spiritual movement. The weapon instantly appears in your grasp (through the Umbra). Does not provoke opportunity attacks; does not require line of sight. Automatically fails if restrained (ST adjudication).</p>"
+        },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Grand Klaive — Wyrm Bane",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.mwak.damage",
+          "mode": 2,
+          "value": "3d8[radiant]",
+          "priority": 20
+        }
+      ],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>Apply only against creatures with the Wyrm tag. When attacking such a creature, enable this effect to add 3d8 radiant damage. The Grand Klaive ignores resistance and immunity to slashing (apply manually). Attacks with this weapon count as silvered, magical, and spiritual.</p>",
+      "flags": {}
+    }
+  ],
+  "flags": { "garou": {} },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

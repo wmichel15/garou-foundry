@@ -1,0 +1,86 @@
+{
+  "name": "Cup of the Alicorn",
+  "type": "equipment",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cup of the Alicorn (Fetish)</strong></p><p><em>Creation Cost: 6 Gnosis.</em></p><p><strong>Effect:</strong></p><ul><li>Any poison or disease poured into the cup is neutralized.</li><li>As a bonus action, you may drink from the cup to gain advantage on your next saving throw against poison or disease.</li></ul><p>The effect lasts until you complete a long rest (ST discretion).</p><p><strong>Fetish Rating:</strong> 2. <strong>Minimum Max Gnosis:</strong> 5. Cannot use while raging unless this fetish states otherwise. Spirit Attention: you can have a number of actively empowered fetishes equal to your Wisdom modifier (minimum 1); instantaneous effects do not count after resolution.</p><p><code>[GAROU_FETISH] id=cup-of-the-alicorn; rating=2; minGnosis=5; activation=action</code></p>",
+      "chat": "<p>Fetish (Rating 2). Min Max Gnosis 5. Activate: action — Force (Wisdom/Gnosis check DC 12) or Appease (spend 1 Gnosis). Cup neutralizes poison/disease poured in; bonus action drink for advantage on next save vs poison or disease.</p>"
+    },
+    "identifier": "cup-of-the-alicorn",
+    "source": { "revision": 1, "rules": "2024" },
+    "quantity": 1,
+    "weight": 0,
+    "price": { "value": 0, "denomination": "gp" },
+    "equipmentType": "trinket",
+    "activities": {
+      "c1u2p3o4f5t6h7e8": {
+        "type": "utility",
+        "_id": "c1u2p3o4f5t6h7e8",
+        "sort": 0,
+        "name": "Activate (Force Spirit)",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": true, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Force the Spirit.</strong> Wisdom (Gnosis) check DC = 10 + Fetish Rating (12). Success: the cup is empowered — it neutralizes poison or disease poured in, and you may use a bonus action to drink from it for advantage on your next save vs poison or disease. Failure: no effect, no Gnosis spent. Failure by 5 or more: spirit refuses until short or long rest.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": true, "visible": true, "formula": "1d20 + @abilities.wis.mod", "name": "Wisdom (Gnosis) check" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": { "ignoreTraits": [], "triggeredActivityId": "none", "triggeredActivityConditionText": "", "triggeredActivityTargets": "targets", "triggeredActivityRollAs": "self", "autoConsume": false, "forceConsumeDialog": "default", "forceRollDialog": "default", "forceDamageDialog": "default", "confirmTargets": "default", "autoTargetType": "any", "autoTargetAction": "default", "automationOnly": false, "otherActivityCompatible": true, "otherActivityAsParentType": true, "identifier": "", "displayActivityName": false, "rollMode": "default", "chooseEffects": false, "toggleEffect": false, "ignoreFullCover": false, "removeChatButtons": "default", "magicEffect": false, "magicDamage": false, "noConcentrationCheck": false, "skipConcentrationCheck": false, "autoCEEffects": "default" },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      },
+      "8e7h6t5f4o3p2u1c": {
+        "type": "utility",
+        "_id": "8e7h6t5f4o3p2u1c",
+        "sort": 1,
+        "name": "Activate (Appease Spirit)",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            { "type": "itemUses", "value": "1", "target": "Item.FvQGHrfaDGaOKRtK", "scaling": {} }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<p><strong>Appease the Spirit.</strong> Spend 1 Gnosis. No roll; the cup is empowered — it neutralizes poison or disease poured in, and you may use a bonus action to drink from it for advantage on your next save vs poison or disease.</p>"
+        },
+        "duration": { "units": "hour", "concentration": false, "override": false, "value": "24" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": { "ignoreTraits": [], "triggeredActivityId": "none", "triggeredActivityConditionText": "", "triggeredActivityTargets": "targets", "triggeredActivityRollAs": "self", "autoConsume": false, "forceConsumeDialog": "default", "forceRollDialog": "default", "forceDamageDialog": "default", "confirmTargets": "default", "autoTargetType": "any", "autoTargetAction": "default", "automationOnly": false, "otherActivityCompatible": true, "otherActivityAsParentType": true, "identifier": "", "displayActivityName": false, "rollMode": "default", "chooseEffects": false, "toggleEffect": false, "ignoreFullCover": false, "removeChatButtons": "default", "magicEffect": false, "magicDamage": false, "noConcentrationCheck": false, "skipConcentrationCheck": false, "autoCEEffects": "default" },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      }
+    }
+  },
+  "effects": [],
+  "flags": { "garou": {} },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

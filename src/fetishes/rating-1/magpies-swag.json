@@ -1,0 +1,86 @@
+{
+  "name": "Magpie's Swag",
+  "type": "equipment",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Magpie's Swag (Fetish)</strong></p><p><em>Creation Cost: 5 Gnosis.</em> A spiritually expanded container.</p><p><strong>Effect:</strong> This container holds up to three times the normal capacity of a similar mundane container and ignores weight restrictions for non-magical items.</p><p><strong>It cannot store:</strong></p><ul><li>Living creatures</li><li>Active magical effects</li></ul><p>Once activated, the fetish functions as the expanded container until dismissed or long rest (ST discretion).</p><p><strong>Fetish Rating:</strong> 1. <strong>Minimum Max Gnosis:</strong> 3. Cannot use while raging unless this fetish states otherwise. Spirit Attention: you can have a number of actively empowered fetishes equal to your Wisdom modifier (minimum 1); instantaneous effects do not count after resolution.</p><p><code>[GAROU_FETISH] id=magpies-swag; rating=1; minGnosis=3; activation=action</code></p>",
+      "chat": "<p>Fetish (Rating 1). Min Max Gnosis 3. Activate: action — Force (Wisdom/Gnosis check DC 11) or Appease (spend 1 Gnosis). Container holds 3× capacity, ignores weight for non-magical items; cannot store living creatures or active magical effects.</p>"
+    },
+    "identifier": "magpies-swag",
+    "source": { "revision": 1, "rules": "2024" },
+    "quantity": 1,
+    "weight": 0,
+    "price": { "value": 0, "denomination": "gp" },
+    "equipmentType": "container",
+    "activities": {
+      "m1a2g3p4i5e6s7w8": {
+        "type": "utility",
+        "_id": "m1a2g3p4i5e6s7w8",
+        "sort": 0,
+        "name": "Activate (Force Spirit)",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": true, "targets": [] },
+        "description": {
+          "chatFlavor": "<p><strong>Force the Spirit.</strong> Wisdom (Gnosis) check DC = 10 + Fetish Rating (11). Success: the container is spiritually expanded — holds 3× capacity, ignores weight for non-magical items; cannot store living creatures or active magical effects. Failure: no effect, no Gnosis spent. Failure by 5 or more: spirit refuses until short or long rest.</p>"
+        },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": true, "visible": true, "formula": "1d20 + @abilities.wis.mod", "name": "Wisdom (Gnosis) check" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": { "ignoreTraits": [], "triggeredActivityId": "none", "triggeredActivityConditionText": "", "triggeredActivityTargets": "targets", "triggeredActivityRollAs": "self", "autoConsume": false, "forceConsumeDialog": "default", "forceRollDialog": "default", "forceDamageDialog": "default", "confirmTargets": "default", "autoTargetType": "any", "autoTargetAction": "default", "automationOnly": false, "otherActivityCompatible": true, "otherActivityAsParentType": true, "identifier": "", "displayActivityName": false, "rollMode": "default", "chooseEffects": false, "toggleEffect": false, "ignoreFullCover": false, "removeChatButtons": "default", "magicEffect": false, "magicDamage": false, "noConcentrationCheck": false, "skipConcentrationCheck": false, "autoCEEffects": "default" },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      },
+      "8w7s6e5i4p3g2a1m": {
+        "type": "utility",
+        "_id": "8w7s6e5i4p3g2a1m",
+        "sort": 1,
+        "name": "Activate (Appease Spirit)",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": {
+          "scaling": { "allowed": false },
+          "spellSlot": true,
+          "targets": [
+            { "type": "itemUses", "value": "1", "target": "Item.FvQGHrfaDGaOKRtK", "scaling": {} }
+          ]
+        },
+        "description": {
+          "chatFlavor": "<p><strong>Appease the Spirit.</strong> Spend 1 Gnosis. No roll; the container is spiritually expanded — holds 3× capacity, ignores weight for non-magical items; cannot store living creatures or active magical effects.</p>"
+        },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "ignoreTraits": { "idi": false, "idr": false, "idv": false, "ida": false, "idm": false },
+        "midiProperties": { "ignoreTraits": [], "triggeredActivityId": "none", "triggeredActivityConditionText": "", "triggeredActivityTargets": "targets", "triggeredActivityRollAs": "self", "autoConsume": false, "forceConsumeDialog": "default", "forceRollDialog": "default", "forceDamageDialog": "default", "confirmTargets": "default", "autoTargetType": "any", "autoTargetAction": "default", "automationOnly": false, "otherActivityCompatible": true, "otherActivityAsParentType": true, "identifier": "", "displayActivityName": false, "rollMode": "default", "chooseEffects": false, "toggleEffect": false, "ignoreFullCover": false, "removeChatButtons": "default", "magicEffect": false, "magicDamage": false, "noConcentrationCheck": false, "skipConcentrationCheck": false, "autoCEEffects": "default" },
+        "isOverTimeFlag": false,
+        "overTimeProperties": { "saveRemoves": true, "preRemoveConditionText": "", "postRemoveConditionText": "" },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true
+      }
+    }
+  },
+  "effects": [],
+  "flags": { "garou": {} },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Klaive",
+  "type": "weapon",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Klaive (Fetish Weapon)</strong></p><p><em>Creation Cost: 10 Gnosis</em></p><p>A sacred silvered blade bound with a war spirit. This weapon is magical.</p><p><strong>Effect:</strong> In addition to the weapon's normal attack and damage bonuses and features (unless the weapon has an intelligence or is already infused with a creature of any type):</p><ul><li>Deals an additional 1d8 radiant damage to creatures with the Wyrm tag</li><li>Ignores resistance to slashing damage</li><li>Once per long rest, on a hit: the target must succeed on a Constitution saving throw or be frightened of you until the end of its next turn</li></ul>",
+      "chat": "<p>Fetish Weapon (Level 4). Magical silvered blade. +1d8 radiant vs Wyrm; ignores slashing resistance; once per long rest on hit: target Con save or frightened until end of its next turn.</p>"
+    },
+    "identifier": "klaive",
+    "source": { "revision": 1, "rules": "2024" },
+    "quantity": 1,
+    "weight": 3,
+    "price": { "value": 0, "denomination": "gp" },
+    "weaponType": "martialM",
+    "damage": { "parts": [["1d8", "slashing"]], "versatile": "1d10" },
+    "properties": ["ver"],
+    "range": { "value": 5, "long": null, "units": "ft" },
+    "proficient": true,
+    "activities": {
+      "k1l2a3i4v5e6f7r8": {
+        "type": "utility",
+        "_id": "k1l2a3i4v5e6f7r8",
+        "sort": 0,
+        "name": "Frightening Strike",
+        "activation": { "type": "reaction", "override": false, "condition": "When you hit a creature with this weapon" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p>Once per long rest, when you hit with the Klaive: the target must succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or be frightened of you until the end of its next turn.</p>"
+        },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "ft", "override": false, "special": "", "value": "5" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "creature", "count": "1", "special": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Klaive — Wyrm Bane",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.mwak.damage",
+          "mode": 2,
+          "value": "1d8[radiant]",
+          "priority": 20
+        }
+      ],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>Apply only against creatures with the Wyrm tag. When attacking such a creature, enable this effect to add 1d8 radiant damage. The weapon also ignores resistance to slashing (apply manually).</p>",
+      "flags": {}
+    }
+  ],
+  "flags": { "garou": {} },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Croatan Fetish",
+  "type": "equipment",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Croatan Fetish (Fetish)</strong></p><p><em>Creation Cost: 15 Gnosis</em></p><p>A relic bound with sacrifice-spirits and ancient memory.</p><p><strong>Effect:</strong> As an action, choose one effect:</p><ul><li><strong>Cleanse:</strong> Instantly end one ongoing environmental corruption, curse, or spiritual blight in a 60-foot radius</li><li><strong>Restore:</strong> Restore balance to a desecrated area, allowing Caern or Rite activity to function normally for 24 hours</li></ul><p>After activation, the fetish becomes inert until the next full moon. Usable once per month.</p>",
+      "chat": "<p>Fetish (Level 5). Action: choose one — end one corruption/curse/spiritual blight in 60 ft radius, or restore balance to a desecrated area (Caern/Rite normal for 24 hours). Then inert until next full moon. Once per month.</p>"
+    },
+    "identifier": "croatan-fetish",
+    "source": { "revision": 1, "rules": "2024" },
+    "quantity": 1,
+    "weight": 1,
+    "price": { "value": 0, "denomination": "gp" },
+    "equipmentType": "trinket",
+    "activities": {
+      "c1r2o3a4t5a6n7f8": {
+        "type": "utility",
+        "_id": "c1r2o3a4t5a6n7f8",
+        "sort": 0,
+        "name": "Activate",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p>As an action, choose one effect: (1) <strong>Cleanse</strong> — instantly end one ongoing environmental corruption, curse, or spiritual blight in a 60-foot radius; or (2) <strong>Restore</strong> — restore balance to a desecrated area, allowing Caern or Rite activity to function normally for 24 hours. After activation, the fetish becomes inert until the next full moon. Usable once per month (track manually).</p>"
+        },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "ft", "override": false, "special": "", "value": "60" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [],
+  "flags": { "garou": {} },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

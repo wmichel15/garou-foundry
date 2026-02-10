@@ -1,0 +1,67 @@
+{
+  "name": "Spirit Drum",
+  "type": "equipment",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Spirit Drum (Fetish)</strong></p><p><em>Creation Cost: 10 Gnosis</em></p><p>A great drum stretched with spirit-hide.</p><p><strong>Effect:</strong> As an action, beat the drum for up to 1 minute. While the drum is played:</p><ul><li>Allies within 30 feet gain advantage on saving throws against fear and charm</li><li>Allies gain advantage on their next Gnosis Roll</li></ul><p>Requires concentration (as if concentrating on a spell). Usable once per long rest.</p>",
+      "chat": "<p>Fetish (Level 4). Creation cost 10 Gnosis. Action: beat the drum for up to 1 min; allies within 30 ft advantage on saves vs fear and charm, advantage on next Gnosis Roll. Concentration. Once per long rest.</p>"
+    },
+    "identifier": "spirit-drum",
+    "source": { "revision": 1, "rules": "2024" },
+    "quantity": 1,
+    "weight": 10,
+    "price": { "value": 0, "denomination": "gp" },
+    "equipmentType": "trinket",
+    "activities": {
+      "s1p2i3r4i5t6d7r8": {
+        "type": "utility",
+        "_id": "s1p2i3r4i5t6d7r8",
+        "sort": 0,
+        "name": "Beat Drum",
+        "activation": { "type": "action", "override": false, "condition": "" },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "description": {
+          "chatFlavor": "<p>Beat the drum for up to 1 minute. While playing: allies within 30 feet gain advantage on saving throws against fear and charm; allies gain advantage on their next Gnosis Roll. Requires concentration. Once per long rest.</p>"
+        },
+        "duration": { "units": "minute", "concentration": true, "override": false, "value": "1" },
+        "effects": [],
+        "flags": {},
+        "range": { "units": "self", "override": false, "special": "" },
+        "target": { "template": { "contiguous": false, "units": "ft", "type": "" }, "affects": { "choice": false, "type": "" }, "override": false, "prompt": true },
+        "uses": { "spent": 0, "recovery": [{ "period": "lr", "type": "recoverAll" }], "max": "1" },
+        "visibility": { "level": { "min": null, "max": null }, "requireAttunement": false, "requireIdentification": false, "requireMagic": false, "identifier": "" },
+        "roll": { "prompt": false, "visible": false, "formula": "", "name": "" },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": { "name": "", "command": "" },
+        "otherActivityAsParentType": false
+      }
+    }
+  },
+  "effects": [
+    {
+      "name": "Spirit Drum (Playing)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "concentration": true
+      },
+      "description": "<p>You are beating the Spirit Drum (concentration). For up to 1 minute: allies within 30 feet gain advantage on saving throws against fear and charm; allies gain advantage on their next Gnosis Roll. Apply those benefits manually when relevant. If you lose concentration, this effect ends.</p>",
+      "flags": {}
+    }
+  ],
+  "flags": { "garou": {} },
+  "_stats": { "compendiumSource": "", "duplicateSource": null }
+}

@@ -995,6 +995,45 @@ async function ensureFormsGranted(actor) {
   }
 }
 
+const GAROU_SPECIES_ID = "garouSpecies0000";
+const GAROU_BACKGROUND_ID = "garouBackground0";
+
+/** Ensure Garou characters have the Garou species and background items (so Add Species / Add Background default to Garou). */
+async function ensureGarouSpeciesAndBackground(actor) {
+  if (!actor || actor.type !== "character") return;
+  if (!isGarouActor(actor)) return;
+
+  const pack = game.packs.get(FEATURES_PACK_KEY);
+  if (!pack) return;
+
+  const items = actor.items?.contents ?? actor.items ?? [];
+  const hasRace = items.some(i => i.type === "race");
+  const hasBackground = items.some(i => i.type === "background");
+
+  const toGrant = [];
+  if (!hasRace) {
+    const entry = pack.index.find(e => e._id === GAROU_SPECIES_ID) ?? pack.index.find(e => (e.type === "race") && (e.name === "Garou"));
+    if (entry) toGrant.push(entry);
+  }
+  if (!hasBackground) {
+    const entry = pack.index.find(e => e._id === GAROU_BACKGROUND_ID) ?? pack.index.find(e => (e.type === "background") && (e.name === "Garou"));
+    if (entry) toGrant.push(entry);
+  }
+  if (toGrant.length === 0) return;
+
+  for (const entry of toGrant) {
+    try {
+      const doc = await pack.getDocument(entry._id);
+      if (!doc) continue;
+      const data = doc.toObject();
+      delete data._id;
+      await actor.createEmbeddedDocuments("Item", [data]);
+    } catch (err) {
+      console.warn("[garou] ensureGarouSpeciesAndBackground: could not grant", entry.name, err);
+    }
+  }
+}
+
 async function enforceSingleForm(actor, preferredEffectId = null) {
   if (!isGarouActor(actor)) return;
 
@@ -1213,11 +1252,12 @@ Hooks.on("deleteActiveEffect", async (effect, options) => {
   }
 });
 
-// Safety net: when sheet opens, normalize (helps after imports); also ensure forms are granted
+// Safety net: when sheet opens, normalize (helps after imports); also ensure forms and species/background are granted
 Hooks.on("renderActorSheet", (app) => {
   const actor = app.actor;
   if (!isGarouActor(actor)) return;
   ensureFormsGranted(actor)
+    .then(() => ensureGarouSpeciesAndBackground(actor))
     .then(() => enforceSingleForm(actor))
     .then(() => syncLupusNaturalWeapons(actor))
     .then(() => syncGlabroNaturalWeapons(actor))
@@ -1228,14 +1268,19 @@ Hooks.on("renderActorSheet", (app) => {
 
 Hooks.on("createActor", (actor) => {
   if (actor?.type === "character" && isGarouActor(actor)) {
-    ensureFormsGranted(actor).catch(err => console.error("[garou] ensureFormsGranted (createActor):", err));
+    ensureFormsGranted(actor)
+      .then(() => ensureGarouSpeciesAndBackground(actor))
+      .catch(err => console.error("[garou] ensureFormsGranted (createActor):", err));
   }
 });
 
 Hooks.on("updateActor", (actor, changed) => {
   if (!changed.items || actor?.type !== "character") return;
   if (!isGarouActor(actor)) return;
-  ensureFormsGranted(actor).then(() => enforceSingleForm(actor)).catch(err => console.error("[garou] garou-forms (updateActor):", err));
+  ensureFormsGranted(actor)
+    .then(() => ensureGarouSpeciesAndBackground(actor))
+    .then(() => enforceSingleForm(actor))
+    .catch(err => console.error("[garou] garou-forms (updateActor):", err));
 });
 
 Hooks.on("updateItem", (item, changed, options) => {
@@ -1244,7 +1289,11 @@ Hooks.on("updateItem", (item, changed, options) => {
   const name = (item.name ?? "").toLowerCase();
   if (id !== "garou" && name !== "garou") return;
   const actor = item.actor ?? item.parent;
-  if (actor) ensureFormsGranted(actor).catch(err => console.error("[garou] ensureFormsGranted (updateItem):", err));
+  if (actor) {
+    ensureFormsGranted(actor)
+      .then(() => ensureGarouSpeciesAndBackground(actor))
+      .catch(err => console.error("[garou] ensureFormsGranted (updateItem):", err));
+  }
 });
 
 Hooks.on("updateCombat", async (combat, changed) => {
@@ -1265,6 +1314,7 @@ Hooks.once("ready", async () => {
     if (actor.type !== "character" || !isGarouActor(actor)) continue;
     try {
       await ensureFormsGranted(actor);
+      await ensureGarouSpeciesAndBackground(actor);
       await enforceSingleForm(actor);
       await syncLupusNaturalWeapons(actor);
       await syncGlabroNaturalWeapons(actor);

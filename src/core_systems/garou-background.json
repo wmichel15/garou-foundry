@@ -1,0 +1,18 @@
+{
+  "_id": "garouBackground0",
+  "name": "Garou",
+  "type": "background",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your origin and background are defined by the <strong>Garou</strong> class. You are a werewolf—a warrior of Gaia. Your Tribe, Auspice, and Breed (and any background skills or flavor) are represented by the Garou class, subclass, and Breed feat rather than a separate core-rule background.</p><p>Use this placeholder so the character sheet shows that background benefits come from the Garou class and your choices (Tribe, Auspice, Breed).</p>",
+      "chat": ""
+    },
+    "identifier": "garou-background",
+    "source": { "revision": 1, "rules": "2024" }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {},
+  "ownership": { "default": 0 }
+}

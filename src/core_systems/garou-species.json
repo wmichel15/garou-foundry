@@ -1,0 +1,21 @@
+{
+  "_id": "garouSpecies0000",
+  "name": "Garou",
+  "type": "race",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your species is defined by the <strong>Garou</strong> class. You are a werewolf—a shapeshifter bound to Gaia. Your specific heritage (Breed) is chosen via the Breed feat (Homid, Metis, or Lupus) and provides additional traits; the Garou class itself supplies your core identity, forms, Rage, and Gnosis.</p><p>Do not add a separate species from the core rules. Use this placeholder so the character sheet reflects that species and origin come from the Garou class and your Breed.</p>",
+      "chat": ""
+    },
+    "identifier": "garou-species",
+    "source": { "revision": 1, "rules": "2024" },
+    "size": "med",
+    "speed": { "walk": { "number": 30, "distance": "ft" }, "units": "ft" },
+    "creatureType": "humanoid"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {},
+  "ownership": { "default": 0 }
+}

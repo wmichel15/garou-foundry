@@ -1,7 +1,7 @@
 {
   "name": "Greater Overchannel",
   "type": "feat",
-  "img": "icons/skills/wounds/anatomy-organ-heart-red.webp",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
   "system": {
     "activities": {},
     "uses": {
@@ -14,7 +14,7 @@
       "value": "<p><strong>Level 7: Greater Overchannel</strong></p><p><em>Your mastery of Rage deepens, allowing you to push beyond safe limits — at great personal risk.</em></p><hr /><p><strong>Overchannel Limit.</strong> Your maximum Overchannel Rage stacks increases from 2 to 3.</p><p><strong>Per-Stack Benefits (while raging).</strong> Each Overchannel stack grants the following benefits while raging:</p><ul><li>Your Rage Damage bonus increases by <strong>+2 per stack</strong>.</li><li>You gain a <strong>+1 bonus to Strength saving throws</strong>.</li></ul><p><strong>Escalating Risk.</strong> Each Overchannel stack increases your Frenzy DC by <strong>+3</strong> instead of +2.</p><p>If you Overchannel to <strong>3 stacks</strong>, you must make a Frenzy check when your Rage ends (this check is mandatory and cannot be waived).</p><p>The Frenzy DC cannot exceed <strong>20 + your proficiency bonus</strong>.</p><hr /><p><strong>Automation Notes.</strong> Overchannel stacks, Rage damage, and Frenzy checks/DC are handled by your Rage/Frenzy workflow. This feature provides the rules modifiers and reminders.</p>",
       "chat": "<p><strong>Greater Overchannel (Level 7).</strong> Max Overchannel stacks 3. While raging: +2 Rage damage per stack; +1 STR save per stack. Frenzy DC increases by +3 per stack (max 20 + PB). If you reach 3 stacks, Frenzy check is mandatory when Rage ends.</p>"
     },
-    "identifier": "garou-greater-overchannel",
+    "identifier": "feature",
     "source": {
       "revision": 1,
       "rules": "2024"
@@ -26,9 +26,7 @@
       "repeatable": false,
       "level": 7
     },
-    "properties": [
-      "trait"
-    ],
+    "properties": [],
     "requirements": "",
     "type": {
       "value": "class",
@@ -38,9 +36,8 @@
   "effects": [
     {
       "name": "Greater Overchannel (Reminder)",
-      "img": "icons/skills/wounds/anatomy-organ-heart-red.webp",
-      "origin": "",
-      "_id": "GreaterOverchannelReminder",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "_id": "GOverchanRemind1",
       "type": "base",
       "system": {},
       "changes": [],
@@ -66,24 +63,11 @@
           }
         }
       },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null,
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "5.2.5",
-        "lastModifiedBy": null
-      }
+      "_stats": {}
     }
   ],
-  "folder": "khoiWkeO9DUdZXsm",
   "flags": {},
-  "_stats": {
-    "compendiumSource": null,
-    "duplicateSource": null,
-    "exportSource": null
-  },
+  "_stats": {},
   "ownership": {
     "default": 0
   }

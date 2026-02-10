@@ -1,0 +1,147 @@
+{
+  "name": "Overchannel Rage",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {
+      "OverchanAct000001": {
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "overchannel"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "macroData": {
+          "name": "Overchannel Rage",
+          "command": "// ===== Garou: Overchannel Rage (Item Macro) =====\n// Tracks Overchannel stacks and applies per-stack bonuses.\n// Note: Rage state detection is best-effort (looks for an active effect with \"rage\" in the name).\n\nfunction getTargetActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nfunction getGarouLevel(actor) {\n  const cls = (actor.items?.find(i => i.type === \"class\" && ((i.system?.identifier ?? \"\").toLowerCase() === \"garou\" || (i.name ?? \"\").toLowerCase().includes(\"garou\"))) ?? null);\n  return Number(cls?.system?.levels ?? 0) || 0;\n}\n\nfunction hasGreaterOverchannel(actor) {\n  return (actor.items ?? []).some(i => (i.name ?? \"\").trim().toLowerCase() === \"greater overchannel\") || getGarouLevel(actor) >= 7;\n}\n\nfunction getMaxStacks(actor) {\n  return hasGreaterOverchannel(actor) ? 3 : 2;\n}\n\nfunction isRaging(actor) {\n  return (actor.effects ?? []).some(e => !e.disabled && !e.suppressed && ((e.name ?? \"\").toLowerCase().includes(\"rage\")));\n}\n\nasync function setStacks(actor, stacks) {\n  const item = this.item;\n  const max = getMaxStacks(actor);\n  const next = Math.max(0, Math.min(max, Number(stacks) || 0));\n\n  // Use the item uses.value as the stack counter.\n  await item.update({\n    \"system.uses.max\": max,\n    \"system.uses.value\": next,\n    \"system.uses.spent\": 0\n  });\n\n  // Ensure the Overchannel effect exists on the item.\n  const eff = item.effects?.find(e => (e.name ?? \"\") === \"Overchannel (Stacks)\") ?? null;\n  if (!eff) {\n    ui.notifications.warn(\"Overchannel effect is missing on the item.\");\n    return;\n  }\n\n  const rageActive = isRaging(actor);\n  const shouldEnable = rageActive && next > 0;\n\n  // Per-stack bonuses\n  const dmg = 2 * next;\n  const strSave = next;\n\n  const changes = [\n    { key: \"system.bonuses.mwak.damage\", mode: 2, value: dmg ? `+${dmg}` : \"\", priority: 30 },\n    { key: \"system.bonuses.abilities.str.save\", mode: 2, value: strSave ? `+${strSave}` : \"\", priority: 30 }\n  ].filter(c => c.value !== \"\");\n\n  await eff.update({\n    disabled: !shouldEnable,\n    changes\n  });\n\n  // Frenzy DC reminder (we can’t compute your base Frenzy DC yet; we only report the Overchannel modifier).\n  const perStackDc = hasGreaterOverchannel(actor) ? 3 : 2;\n  const overDc = perStackDc * next;\n  const pb = Number(actor.system?.attributes?.prof ?? 0) || 0;\n  const cap = 20 + pb;\n\n  const mandatory = hasGreaterOverchannel(actor) && next >= 3;\n\n  const parts = [\n    `<p><b>Overchannel stacks:</b> ${next}/${max}</p>`,\n    `<p><b>While raging:</b> +${dmg} melee damage; +${strSave} STR save bonus.</p>`,\n    `<p><b>Frenzy DC modifier from Overchannel:</b> +${overDc} (cap your final Frenzy DC at ${cap}).</p>`\n  ];\n  if (mandatory) parts.push(`<p><b>Mandatory:</b> When your Rage ends at 3 stacks, you must make a Frenzy check.</p>`);\n  if (!rageActive) parts.push(`<p><i>Note:</i> Rage not detected as active—Overchannel bonuses are currently not applied.</p>`);\n\n  ChatMessage.create({\n    content: `<div class=\"garou-overchannel\">${parts.join(\"\\n\")}</div>`,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n}\n\nconst actor = getTargetActor();\nif (!actor) {\n  ui.notifications.error(\"No actor found for Overchannel Rage.\");\n  return;\n}\n\nconst item = this.item;\nconst current = Number(item.system?.uses?.value ?? 0) || 0;\nconst max = getMaxStacks(actor);\n\nnew Dialog({\n  title: \"Overchannel Rage\",\n  content: `\n    <form>\n      <p><b>Current stacks:</b> ${current}/${max}</p>\n      <div class=\"form-group\">\n        <label>Set stacks</label>\n        <input id=\"oc-stacks\" type=\"number\" min=\"0\" max=\"${max}\" value=\"${current}\" />\n      </div>\n    </form>\n  `,\n  buttons: {\n    apply: {\n      label: \"Apply\",\n      callback: async (html) => {\n        const v = Number(html.find(\"#oc-stacks\").val());\n        await setStacks.call({ item }, actor, v);\n      }\n    },\n    plus: {\n      label: \"+1\",\n      callback: async () => {\n        await setStacks.call({ item }, actor, current + 1);\n      }\n    },\n    minus: {\n      label: \"-1\",\n      callback: async () => {\n        await setStacks.call({ item }, actor, current - 1);\n      }\n    },\n    clear: {\n      label: \"Clear\",\n      callback: async () => {\n        await setStacks.call({ item }, actor, 0);\n      }\n    }\n  },\n  default: \"apply\"\n}).render(true);\n"
+        },
+        "name": "Overchannel Rage"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": 2,
+      "value": 0
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p><strong>Overchannel Rage.</strong></p><p>You can push your Rage beyond safe limits by building Overchannel stacks.</p><ul><li>Default maximum stacks: <strong>2</strong> (increases to <strong>3</strong> with <em>Greater Overchannel</em> at level 7).</li><li>Each stack grants (while raging): <strong>+2 Rage damage</strong> and <strong>+1 bonus to Strength saving throws</strong>.</li><li>Each stack increases your Frenzy DC (handled in your Frenzy rules/workflow).</li></ul><p><strong>Use:</strong> Use the item’s activity to set stacks; it will apply the per-stack bonuses while Rage is detected as active.</p>",
+      "chat": "<p><strong>Overchannel Rage.</strong> Track stacks (0–2, or 0–3 at level 7+). While raging: +2 damage per stack and +1 STR save per stack. Use the activity to manage stacks.</p>"
+    },
+    "identifier": "feature",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false,
+      "level": 1
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "Overchannel (Stacks)",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "origin": "",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>Applied automatically by the Overchannel Rage activity while Rage is active.</p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "_stats": {}
+    }
+  ],
+  "flags": {},
+  "_stats": {},
+  "ownership": {
+    "default": 0
+  }
+}
+

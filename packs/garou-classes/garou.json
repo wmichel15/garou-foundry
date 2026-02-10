@@ -193,7 +193,7 @@
       },
       {
         "type": "ItemGrant",
-        "_id": "heightenedInstinctsGrant",
+        "_id": "0000000000000001",
         "configuration": {
           "items": [
             {
@@ -408,6 +408,38 @@
         "value": {},
         "title": "Rage Uses",
         "hint": "",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ScaleValue",
+        "_id": "0000000000000002",
+        "configuration": {
+          "identifier": "rageDamage",
+          "type": "string",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": "2"
+            },
+            "5": {
+              "value": "3"
+            },
+            "9": {
+              "value": "4"
+            },
+            "13": {
+              "value": "5"
+            },
+            "17": {
+              "value": "6"
+            }
+          }
+        },
+        "value": {},
+        "title": "Rage Damage",
+        "hint": "Bonus damage added to each melee/natural weapon hit while raging.",
         "classRestriction": "primary"
       }
     ],

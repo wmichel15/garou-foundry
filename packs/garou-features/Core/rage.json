@@ -16,8 +16,8 @@
     },
     "advancement": [],
     "description": {
-      "value": "<p>Rage is the primal fury of the Garou, a supernatural force drawn from instinct, spirit, and ancestral memory.</p><p>You can enter a Rage to unleash heightened physical power, supernatural resilience, and terrifying presence. While raging, your abilities reflect the predatory nature of the Garou, but repeated use risks loss of control.</p><p>Rage uses are tracked as a class resource and fuel many Garou abilities, including Frenzy checks, Overchanneling, and certain Gifts.</p><p></p>",
-      "chat": ""
+      "value": "<p><strong>Garou Rage.</strong> Rage is the primal fury of the Garou, a supernatural force drawn from instinct, spirit, and ancestral memory.</p><p>You can enter Rage as a bonus action, expending 1 Rage use. While raging, your abilities reflect the predatory nature of the Garou, but repeated use risks loss of control.</p><p>Rage uses are tracked as a class resource and fuel many Garou abilities, including Frenzy checks, Overchanneling, and certain Gifts.</p>",
+      "chat": "<p><strong>Rage.</strong> Bonus action to enter Rage (spend 1 use); grants Rage Damage and STR adv as per class table. Use the item activity to toggle Rage on/off.</p>"
     },
     "identifier": "feature",
     "source": {

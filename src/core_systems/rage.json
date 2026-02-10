@@ -3,7 +3,78 @@
   "type": "feat",
   "img": "assets/rage.png",
   "system": {
-    "activities": {},
+    "activities": {
+      "rageToggle": {
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "Enter or end Rage"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "macroData": {
+          "name": "Toggle Rage",
+          "command": "// Garou: Rage toggle (enter/end Rage)\n\nfunction getTargetActor() {\n  return (\n    canvas?.tokens?.controlled?.[0]?.actor ??\n    this?.actor ??\n    this?.item?.actor ??\n    game.user.character ??\n    null\n  );\n}\n\nconst actor = getTargetActor();\nif (!actor) {\n  ui.notifications.error(\"No actor found for Rage.\");\n  return;\n}\n\nconst item = this.item;\nconst effects = actor.effects ?? [];\nlet rageEffect = effects.find(e => (e.name ?? \"\").toLowerCase().includes(\"rage\"));\n\n// If we already have an active Rage effect, end it.\nif (rageEffect && !rageEffect.disabled && !rageEffect.suppressed) {\n  await rageEffect.update({ disabled: true });\n  ChatMessage.create({\n    content: `<p><strong>${actor.name}</strong> lets their Rage subside.</p>`,\n    speaker: ChatMessage.getSpeaker({ actor })\n  });\n  return;\n}\n\n// Otherwise, try to enter Rage.\nconst uses = item.system?.uses ?? {};\nconst max = Number(uses.max ?? 0) || 0;\nconst spent = Number(uses.spent ?? 0) || 0;\nconst remaining = Math.max(0, max - spent);\n\nif (max && remaining <= 0) {\n  ui.notifications.warn(\"No Rage uses remaining.\");\n  return;\n}\n\n// Consume 1 use if we track uses on the item.\nif (max) {\n  await item.update({ \"system.uses.spent\": spent + 1 });\n}\n\n// Create a simple Rage effect on the actor if one was not found.\nif (!rageEffect) {\n  const effectData = {\n    name: \"Rage\",\n    img: item.img,\n    origin: item.uuid ?? null,\n    transfer: false,\n    disabled: false,\n    duration: { seconds: 60 },\n    changes: [\n      { key: \"system.bonuses.mwak.damage\", mode: 2, value: \"+@scale.garou.rageDamage\", priority: 20 },\n      { key: \"system.bonuses.abilities.str.check\", mode: 2, value: \"advantage\", priority: 20 },\n      { key: \"system.bonuses.abilities.str.save\", mode: 2, value: \"advantage\", priority: 20 }\n    ]\n  };\n  const created = await actor.createEmbeddedDocuments(\"ActiveEffect\", [effectData]);\n  rageEffect = created[0] ?? null;\n} else {\n  await rageEffect.update({ disabled: false, \"duration.seconds\": 60 });\n}\n\nChatMessage.create({\n  content: `<p><strong>${actor.name}</strong> enters a state of primal <b>Rage</b>.</p>`,\n  speaker: ChatMessage.getSpeaker({ actor })\n});\n"
+        },
+        "name": "Toggle Rage"
+      }
+    },
     "uses": {
       "spent": 0,
       "recovery": [
@@ -16,8 +87,8 @@
     },
     "advancement": [],
     "description": {
-      "value": "<p>Rage is the primal fury of the Garou, a supernatural force drawn from instinct, spirit, and ancestral memory.</p><p>You can enter a Rage to unleash heightened physical power, supernatural resilience, and terrifying presence. While raging, your abilities reflect the predatory nature of the Garou, but repeated use risks loss of control.</p><p>Rage uses are tracked as a class resource and fuel many Garou abilities, including Frenzy checks, Overchanneling, and certain Gifts.</p><p></p>",
-      "chat": ""
+      "value": "<p><strong>Garou Rage.</strong> Rage is the primal fury of the Garou, a supernatural force drawn from instinct, spirit, and ancestral memory.</p><p>You can enter Rage as a bonus action, expending 1 Rage use. While raging, your abilities reflect the predatory nature of the Garou, but repeated use risks loss of control.</p><p>Rage uses are tracked as a class resource and fuel many Garou abilities, including Frenzy checks, Overchanneling, and certain Gifts.</p>",
+      "chat": "<p><strong>Rage.</strong> Bonus action to enter Rage (spend 1 use); grants Rage Damage and STR adv as per class table. Use the item activity to toggle Rage on/off.</p>"
     },
     "identifier": "feature",
     "source": {

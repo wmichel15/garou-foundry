@@ -190,7 +190,7 @@
       },
       {
         "type": "ItemGrant",
-        "_id": "heightenedInstinctsGrant",
+        "_id": "0000000000000001",
         "configuration": {
           "items": [
             {
@@ -351,6 +351,38 @@
         "classRestriction": "primary"
       },
       {
+        "type": "ScaleValue",
+        "_id": "0000000000000002",
+        "configuration": {
+          "identifier": "rageDamage",
+          "type": "string",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "1": {
+              "value": "2"
+            },
+            "5": {
+              "value": "3"
+            },
+            "9": {
+              "value": "4"
+            },
+            "13": {
+              "value": "5"
+            },
+            "17": {
+              "value": "6"
+            }
+          }
+        },
+        "value": {},
+        "title": "Rage Damage",
+        "hint": "Bonus damage added to each melee/natural weapon hit while raging.",
+        "classRestriction": "primary"
+      },
+      {
         "type": "ItemChoice",
         "_id": "OwRp21VL7SIYzL5T",
         "configuration": {
@@ -383,6 +415,25 @@
           "replaced": {}
         },
         "title": "Breed",
+        "hint": "",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemGrant",
+        "title": "Frenzy Check",
+        "_id": "n4WK6BI9bfn2vYCY",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.G0BEq0fUYDhI37SQ",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
         "hint": "",
         "classRestriction": "primary"
       }
@@ -441,7 +492,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825224080,
-    "modifiedTime": 1770233988800,
+    "modifiedTime": 1770716423911,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

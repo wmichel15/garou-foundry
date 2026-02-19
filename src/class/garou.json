@@ -98,24 +98,6 @@
         }
       },
       {
-        "type": "ItemChoice",
-        "_id": "bvMWRhDNkCQrY5xO",
-        "configuration": {
-          "allowDrops": true,
-          "choices": {},
-          "pool": [],
-          "restriction": {
-            "list": []
-          },
-          "spell": null,
-          "type": null
-        },
-        "value": {
-          "added": {},
-          "replaced": {}
-        }
-      },
-      {
         "type": "ItemGrant",
         "_id": "ocTacHj5DBhAu2Us",
         "configuration": {
@@ -206,6 +188,160 @@
         "title": "Heightened Instincts",
         "hint": "Garou core feature: sharpened perception and initiative.",
         "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "riteChoiceL100002",
+        "level": 2,
+        "title": "Rite (Level 1)",
+        "hint": "Max Rites = WIS mod + PB (min 1). Minor Rites don't count. You may replace one Rite when you gain a level.",
+        "classRestriction": "primary",
+        "configuration": {
+          "allowDrops": true,
+          "choices": { "2": { "count": 1, "replacement": true } },
+          "pool": [{ "uuid": "Compendium.garou.garou-features.Item.riteL1Placeholder" }],
+          "restriction": { "list": [], "type": "feat" },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": { "added": {}, "replaced": {} }
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "riteMinor00000003",
+        "level": 3,
+        "title": "Minor Rite",
+        "hint": "Feature-granted; does not count against Rites known.",
+        "classRestriction": "primary",
+        "configuration": {
+          "allowDrops": true,
+          "choices": { "3": { "count": 1, "replacement": true } },
+          "pool": [{ "uuid": "Compendium.garou.garou-features.Item.riteMinorPlacehold" }],
+          "restriction": { "list": [], "type": "feat" },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": { "added": {}, "replaced": {} }
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "riteChoiceL200005",
+        "level": 5,
+        "title": "Rite (Level 2 or lower)",
+        "hint": "Max Rites = WIS mod + PB (min 1). You may replace one Rite when you gain a level.",
+        "classRestriction": "primary",
+        "configuration": {
+          "allowDrops": true,
+          "choices": { "5": { "count": 1, "replacement": true } },
+          "pool": [
+            { "uuid": "Compendium.garou.garou-features.Item.riteL1Placeholder" },
+            { "uuid": "Compendium.garou.garou-features.Item.riteL2Placeholder" }
+          ],
+          "restriction": { "list": [], "type": "feat" },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": { "added": {}, "replaced": {} }
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "riteMinor00000006",
+        "level": 6,
+        "title": "Minor Rite",
+        "hint": "Feature-granted; does not count against Rites known.",
+        "classRestriction": "primary",
+        "configuration": {
+          "allowDrops": true,
+          "choices": { "6": { "count": 1, "replacement": true } },
+          "pool": [{ "uuid": "Compendium.garou.garou-features.Item.riteMinorPlacehold" }],
+          "restriction": { "list": [], "type": "feat" },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": { "added": {}, "replaced": {} }
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "riteChoiceL300009",
+        "level": 9,
+        "title": "Rite (Level 3 or lower)",
+        "hint": "Max Rites = WIS mod + PB (min 1). You may replace one Rite when you gain a level.",
+        "classRestriction": "primary",
+        "configuration": {
+          "allowDrops": true,
+          "choices": { "9": { "count": 1, "replacement": true } },
+          "pool": [
+            { "uuid": "Compendium.garou.garou-features.Item.riteL1Placeholder" },
+            { "uuid": "Compendium.garou.garou-features.Item.riteL2Placeholder" },
+            { "uuid": "Compendium.garou.garou-features.Item.riteL3Placeholder" }
+          ],
+          "restriction": { "list": [], "type": "feat" },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": { "added": {}, "replaced": {} }
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "riteMinor00000011",
+        "level": 11,
+        "title": "Minor Rite",
+        "hint": "Feature-granted; does not count against Rites known.",
+        "classRestriction": "primary",
+        "configuration": {
+          "allowDrops": true,
+          "choices": { "11": { "count": 1, "replacement": true } },
+          "pool": [{ "uuid": "Compendium.garou.garou-features.Item.riteMinorPlacehold" }],
+          "restriction": { "list": [], "type": "feat" },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": { "added": {}, "replaced": {} }
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "riteChoiceL400013",
+        "level": 13,
+        "title": "Rite (Level 4 or lower)",
+        "hint": "Max Rites = WIS mod + PB (min 1). You may replace one Rite when you gain a level.",
+        "classRestriction": "primary",
+        "configuration": {
+          "allowDrops": true,
+          "choices": { "13": { "count": 1, "replacement": true } },
+          "pool": [
+            { "uuid": "Compendium.garou.garou-features.Item.riteL1Placeholder" },
+            { "uuid": "Compendium.garou.garou-features.Item.riteL2Placeholder" },
+            { "uuid": "Compendium.garou.garou-features.Item.riteL3Placeholder" },
+            { "uuid": "Compendium.garou.garou-features.Item.riteL4Placeholder" }
+          ],
+          "restriction": { "list": [], "type": "feat" },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": { "added": {}, "replaced": {} }
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "riteChoiceL500017",
+        "level": 17,
+        "title": "Rite (Level 5 or lower)",
+        "hint": "Max Rites = WIS mod + PB (min 1). You may replace one Rite when you gain a level.",
+        "classRestriction": "primary",
+        "configuration": {
+          "allowDrops": true,
+          "choices": { "17": { "count": 1, "replacement": true } },
+          "pool": [
+            { "uuid": "Compendium.garou.garou-features.Item.riteL1Placeholder" },
+            { "uuid": "Compendium.garou.garou-features.Item.riteL2Placeholder" },
+            { "uuid": "Compendium.garou.garou-features.Item.riteL3Placeholder" },
+            { "uuid": "Compendium.garou.garou-features.Item.riteL4Placeholder" },
+            { "uuid": "Compendium.garou.garou-features.Item.riteL5Placeholder" }
+          ],
+          "restriction": { "list": [], "type": "feat" },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": { "added": {}, "replaced": {} }
       },
       {
         "type": "ItemChoice",

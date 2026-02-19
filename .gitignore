@@ -14,9 +14,11 @@ garou-v*.zip
 
 # Foundry VTT compendium LevelDB files
 packs/**/CURRENT
+packs/**/LOCK
 packs/**/LOG
 packs/**/LOG.old
 packs/**/MANIFEST-*
+packs/**/*.ldb
 
 # Runtime data
 pids

@@ -1,0 +1,18 @@
+{
+  "_id": "riteL1Placeholder",
+  "name": "Rite (Level 1)",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "description": {
+      "value": "<p>Choose one Level 1 Rite. See <strong>Rites &amp; Sacred Duties</strong> in the Garou Journals for full rite descriptions. This placeholder represents your chosen Level 1 Rite until specific rite items are added to the compendium.</p>",
+      "chat": ""
+    },
+    "identifier": "garou-rite-level-1",
+    "source": { "revision": 1, "rules": "2024" }
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": { "default": 0 }
+}

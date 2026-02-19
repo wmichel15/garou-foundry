@@ -1,0 +1,18 @@
+{
+  "_id": "riteMinorPlacehold",
+  "name": "Minor Rite",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "description": {
+      "value": "<p>Choose one Minor Rite (feature-granted; does not count against your Rites known). See <strong>Rites &amp; Sacred Duties</strong> in the Garou Journals. This placeholder represents your chosen Minor Rite until specific rite items are added.</p>",
+      "chat": ""
+    },
+    "identifier": "garou-rite-minor",
+    "source": { "revision": 1, "rules": "2024" }
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": { "default": 0 }
+}

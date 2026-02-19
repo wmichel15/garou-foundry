@@ -1,7 +1,7 @@
 {
   "name": "Garou",
   "type": "class",
-  "img": "systems/dnd5e/icons/svg/items/class.svg",
+  "img": "assets/garou%20class.png",
   "system": {
     "advancement": [
       {
@@ -132,7 +132,8 @@
         "level": 1,
         "title": "Garou Rage",
         "hint": "",
-        "classRestriction": "primary"
+        "classRestriction": "primary",
+        "icon": "assets/rage.png"
       },
       {
         "type": "ItemGrant",
@@ -151,7 +152,8 @@
         "level": 1,
         "title": "Gnosis",
         "hint": "",
-        "classRestriction": "primary"
+        "classRestriction": "primary",
+        "icon": "assets/gnosis.png"
       },
       {
         "type": "ItemGrant",
@@ -159,27 +161,23 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-features.Item.SKzsFOgh7Vc0IxMZ",
+              "uuid": "Compendium.garou.garou-features.Item.T1jyHJbWsBUF00Au",
               "optional": false
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.UpsKrpUJywOuqrXO",
+              "uuid": "Compendium.garou.garou-features.Item.itbPQTye52dMayy5",
               "optional": false
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.pfUSJpqU85vsChOq",
+              "uuid": "Compendium.garou.garou-features.Item.WdT6sMTMoQWTSu9m",
               "optional": false
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.8NfAsllSBWNtHeIe",
+              "uuid": "Compendium.garou.garou-features.Item.to2RLM9mFFpNkPiL",
               "optional": false
             },
             {
-              "uuid": "Compendium.garou.garou-features.Item.zVACRixq3U1VA5dK",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.garou.garou-features.Item.sp4sul0jz8xGhvHt",
+              "uuid": "Item.FkKVAWENruWqsdJ4",
               "optional": false
             }
           ],
@@ -189,7 +187,9 @@
         "value": {},
         "level": 1,
         "title": "Shapeshifting Forms",
-        "hint": ""
+        "hint": "",
+        "classRestriction": "primary",
+        "icon": "assets/5%20forms.png"
       },
       {
         "type": "ItemGrant",
@@ -197,7 +197,7 @@
         "configuration": {
           "items": [
             {
-              "uuid": "Compendium.garou.garou-features.Item.heightenedInstincts",
+              "uuid": "Item.DoMEm7ssDSpga0MS",
               "optional": false
             }
           ],
@@ -208,64 +208,8 @@
         "level": 2,
         "title": "Heightened Instincts",
         "hint": "Garou core feature: sharpened perception and initiative.",
-        "classRestriction": "primary"
-      },
-      {
-        "type": "ItemGrant",
-        "_id": "A0nQU4foKToXh6rR",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Item.mUoDmp8d5DLXF963",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 1,
-        "title": "Breed: Lupus",
-        "hint": "",
-        "classRestriction": "primary"
-      },
-      {
-        "type": "ItemGrant",
-        "title": "Breed: Homid",
-        "_id": "jCuh3XZrBkuDfx6v",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Item.F5AZ59q2eoo3W3ru",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 1,
-        "hint": "",
-        "classRestriction": "primary"
-      },
-      {
-        "type": "ItemGrant",
-        "_id": "2p1NNwQgzDuQeVPe",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Item.TcyPZjV8wcpy8jjL",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": null
-        },
-        "value": {},
-        "level": 1,
-        "title": "Breed: Metis",
-        "hint": "",
-        "classRestriction": "primary"
+        "classRestriction": "primary",
+        "icon": "assets/core-features/heightened-instincts.png"
       },
       {
         "type": "ItemChoice",
@@ -373,7 +317,8 @@
         "value": {},
         "title": "Gnosis Maximum",
         "hint": "",
-        "classRestriction": "primary"
+        "classRestriction": "primary",
+        "icon": "assets/core-features/gnosis-maximum.png"
       },
       {
         "type": "ScaleValue",
@@ -408,7 +353,8 @@
         "value": {},
         "title": "Rage Uses",
         "hint": "",
-        "classRestriction": "primary"
+        "classRestriction": "primary",
+        "icon": "assets/core-features/rage-uses.png"
       },
       {
         "type": "ScaleValue",
@@ -440,6 +386,1137 @@
         "value": {},
         "title": "Rage Damage",
         "hint": "Bonus damage added to each melee/natural weapon hit while raging.",
+        "classRestriction": "primary",
+        "icon": "assets/core-features/rage-damage.png"
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "OwRp21VL7SIYzL5T",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.F5AZ59q2eoo3W3ru"
+            },
+            {
+              "uuid": "Item.mUoDmp8d5DLXF963"
+            },
+            {
+              "uuid": "Item.TcyPZjV8wcpy8jjL"
+            }
+          ],
+          "restriction": {
+            "list": []
+          },
+          "spell": null,
+          "type": null
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Breed",
+        "hint": "",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemGrant",
+        "title": "Frenzy Check",
+        "_id": "n4WK6BI9bfn2vYCY",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.G0BEq0fUYDhI37SQ",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "hint": "",
+        "classRestriction": "primary",
+        "icon": "assets/core-features/frenzy-check.png"
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "mdMNQeoqqzzXcHcn",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.gQKu9nEreOo3uPix",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "Relentless Momentum",
+        "hint": "",
+        "classRestriction": "primary",
+        "icon": "assets/core-features/relentless-momentum.png"
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "OWv3wPLAFZ5nOGdZ",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.nAjLxl75Qz6ycNM7",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Improved Forms: Delirium",
+        "hint": "",
+        "classRestriction": "primary",
+        "icon": "assets/core-features/improved-forms-delirium.png"
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "RIGVtuWQOz7Z4kYB",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.GZU1317oHar5i0QW",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 13,
+        "title": "Umbra Phasing",
+        "hint": "",
+        "classRestriction": "primary",
+        "icon": "assets/core-features/umbra-phasing.png"
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "IKLaCQatuBIdmYaA",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.WqlA4aylTwN7AUsj",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Rage Unbound",
+        "hint": "",
+        "icon": "assets/core-features/rage-unbound.png"
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "MRuBhE4pecBheTuI",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.FGHOdwGp9KwAuigp",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "Unstoppable Momentum",
+        "hint": "",
+        "classRestriction": "primary",
+        "icon": "assets/core-features/unstoppable-momentum.png"
+      },
+      {
+        "type": "ItemGrant",
+        "_id": "zCwBgRQAztcJHwEM",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.GNjfVRk9RsONFSy1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 18,
+        "title": "Blood of the First Change",
+        "hint": "",
+        "classRestriction": "primary",
+        "icon": "assets/core-features/blood-of-the-first-change.png"
+      },
+      {
+        "type": "ItemGrant",
+        "title": "Mythic Regeneration",
+        "_id": "ajeM9xx4IAtIWCOa",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.CC7zWap24sAqfqZ0",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 19,
+        "hint": "",
+        "icon": "assets/core-features/mythic-regeneration.png"
+      },
+      {
+        "type": "ItemGrant",
+        "title": "Avatar of Gaia",
+        "_id": "XB7g2agWzkU2czOg",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.AgAwSwTvDxIyLY0f",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 20,
+        "hint": "",
+        "classRestriction": "primary",
+        "icon": "assets/core-features/avatar-of-gaia.png"
+      },
+      {
+        "type": "ItemGrant",
+        "title": "Extra Attack",
+        "_id": "AilACO26obDI3krV",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.IaGHaDCtqB9SKOfe",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "hint": "",
+        "classRestriction": "primary",
+        "icon": "assets/core-features/extra-attack.png"
+      },
+      {
+        "type": "ItemGrant",
+        "title": "Empowered Natural Weapons",
+        "_id": "NOmxMrUwwzvaHSWW",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.lWaYtlWoEcktS9E5",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "hint": "",
+        "classRestriction": "primary",
+        "icon": "assets/core-features/empowered-natural-weapons.png"
+      },
+      {
+        "type": "ItemGrant",
+        "title": "Greater Overchannel",
+        "_id": "NRKn1l6roVSlOn0t",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Item.l4TmetGCpePLjVxV",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "hint": "",
+        "icon": "assets/core-features/greater-overchannel.png"
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "bBYhHHsoU6EdY9Zr",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "3": {
+              "count": 1,
+              "replacement": true
+            },
+            "6": {
+              "count": 1,
+              "replacement": true
+            },
+            "11": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.k1GQco14u47sYqT8"
+            },
+            {
+              "uuid": "Item.jRrTUAFgXOPK2Qyl"
+            },
+            {
+              "uuid": "Item.LGMrOXietVfdRrOc"
+            },
+            {
+              "uuid": "Item.LToy5OcjFlvIn3AX"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": ""
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Minor Rite Choice",
+        "hint": "Choose one minor rite",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "lotPBDcDNSlwtXiZ",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "2": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.JrCujlFf7sYeRLoi"
+            },
+            {
+              "uuid": "Item.qrDu6UiuAN48eRQZ"
+            },
+            {
+              "uuid": "Item.cKgpuTda0I4IXojN"
+            },
+            {
+              "uuid": "Item.ed9zX1H3pk2AX2gz"
+            },
+            {
+              "uuid": "Item.CuokWypfl0oFGXxg"
+            },
+            {
+              "uuid": "Item.Su2K5Ins347iM4GD"
+            },
+            {
+              "uuid": "Item.DOOye1sc8Qs9eX1m"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": "feat",
+            "subtype": ""
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Rite (Level 1)",
+        "hint": "“Max Rites = WIS mod + PB (min 1). Minor Rites don’t count",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "HqnwhzKeOMBtgHZJ",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "5": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.CuokWypfl0oFGXxg"
+            },
+            {
+              "uuid": "Item.Su2K5Ins347iM4GD"
+            },
+            {
+              "uuid": "Item.DOOye1sc8Qs9eX1m"
+            },
+            {
+              "uuid": "Item.cKgpuTda0I4IXojN"
+            },
+            {
+              "uuid": "Item.ed9zX1H3pk2AX2gz"
+            },
+            {
+              "uuid": "Item.3G2nsbr11TumyQZr"
+            },
+            {
+              "uuid": "Item.JrCujlFf7sYeRLoi"
+            },
+            {
+              "uuid": "Item.qrDu6UiuAN48eRQZ"
+            },
+            {
+              "uuid": "Item.4Xx2hDoVhfZNrHGL"
+            },
+            {
+              "uuid": "Item.BHRv4E4TulI50aqJ"
+            },
+            {
+              "uuid": "Item.R9xukcybECjCQVl7"
+            },
+            {
+              "uuid": "Item.DdE6mz2n0UEU4M18"
+            },
+            {
+              "uuid": "Item.XFNSLSGafIbusJNh"
+            },
+            {
+              "uuid": "Item.CJb8F6shdefAmb6F"
+            },
+            {
+              "uuid": "Item.uxz15UdG9zfLWMCS"
+            },
+            {
+              "uuid": "Item.SJcmvMkFLbkdtvoZ"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": "feat",
+            "subtype": ""
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Rite (Level 2 or lower)",
+        "hint": "Max Rites = WIS mod + PB (min 1). You may replace one Rite when you gain a level.",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "18deYJ9pNLukqIOp",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "9": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.CuokWypfl0oFGXxg"
+            },
+            {
+              "uuid": "Item.Su2K5Ins347iM4GD"
+            },
+            {
+              "uuid": "Item.DOOye1sc8Qs9eX1m"
+            },
+            {
+              "uuid": "Item.cKgpuTda0I4IXojN"
+            },
+            {
+              "uuid": "Item.ed9zX1H3pk2AX2gz"
+            },
+            {
+              "uuid": "Item.3G2nsbr11TumyQZr"
+            },
+            {
+              "uuid": "Item.JrCujlFf7sYeRLoi"
+            },
+            {
+              "uuid": "Item.qrDu6UiuAN48eRQZ"
+            },
+            {
+              "uuid": "Item.4Xx2hDoVhfZNrHGL"
+            },
+            {
+              "uuid": "Item.BHRv4E4TulI50aqJ"
+            },
+            {
+              "uuid": "Item.R9xukcybECjCQVl7"
+            },
+            {
+              "uuid": "Item.DdE6mz2n0UEU4M18"
+            },
+            {
+              "uuid": "Item.XFNSLSGafIbusJNh"
+            },
+            {
+              "uuid": "Item.CJb8F6shdefAmb6F"
+            },
+            {
+              "uuid": "Item.wuUEOVKbArP66F2k"
+            },
+            {
+              "uuid": "Item.uxz15UdG9zfLWMCS"
+            },
+            {
+              "uuid": "Item.SJcmvMkFLbkdtvoZ"
+            },
+            {
+              "uuid": "Item.rSn5lpJGSR2eS9eL"
+            },
+            {
+              "uuid": "Item.ig6CCxpBXzmAEpGt"
+            },
+            {
+              "uuid": "Item.dB8SBBmu29AkbEy5"
+            },
+            {
+              "uuid": "Item.G8UZRfi8NansYmi5"
+            },
+            {
+              "uuid": "Item.ksGeg0vzKQoLfM0q"
+            },
+            {
+              "uuid": "Item.vhya8iwichAMrkkQ"
+            },
+            {
+              "uuid": "Item.DAPQaz9JMYf0K3e3"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": "feat"
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Rite (Level 3 or lower)",
+        "hint": "Max Rites = WIS mod + PB (min 1). You may replace one Rite when you gain a level.",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "3TAzKLbQOW8O83Qp",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "13": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.CuokWypfl0oFGXxg"
+            },
+            {
+              "uuid": "Item.Su2K5Ins347iM4GD"
+            },
+            {
+              "uuid": "Item.DOOye1sc8Qs9eX1m"
+            },
+            {
+              "uuid": "Item.cKgpuTda0I4IXojN"
+            },
+            {
+              "uuid": "Item.ed9zX1H3pk2AX2gz"
+            },
+            {
+              "uuid": "Item.3G2nsbr11TumyQZr"
+            },
+            {
+              "uuid": "Item.JrCujlFf7sYeRLoi"
+            },
+            {
+              "uuid": "Item.qrDu6UiuAN48eRQZ"
+            },
+            {
+              "uuid": "Item.4Xx2hDoVhfZNrHGL"
+            },
+            {
+              "uuid": "Item.BHRv4E4TulI50aqJ"
+            },
+            {
+              "uuid": "Item.R9xukcybECjCQVl7"
+            },
+            {
+              "uuid": "Item.DdE6mz2n0UEU4M18"
+            },
+            {
+              "uuid": "Item.XFNSLSGafIbusJNh"
+            },
+            {
+              "uuid": "Item.CJb8F6shdefAmb6F"
+            },
+            {
+              "uuid": "Item.wuUEOVKbArP66F2k"
+            },
+            {
+              "uuid": "Item.uxz15UdG9zfLWMCS"
+            },
+            {
+              "uuid": "Item.SJcmvMkFLbkdtvoZ"
+            },
+            {
+              "uuid": "Item.rSn5lpJGSR2eS9eL"
+            },
+            {
+              "uuid": "Item.ig6CCxpBXzmAEpGt"
+            },
+            {
+              "uuid": "Item.dB8SBBmu29AkbEy5"
+            },
+            {
+              "uuid": "Item.G8UZRfi8NansYmi5"
+            },
+            {
+              "uuid": "Item.ksGeg0vzKQoLfM0q"
+            },
+            {
+              "uuid": "Item.vhya8iwichAMrkkQ"
+            },
+            {
+              "uuid": "Item.DAPQaz9JMYf0K3e3"
+            },
+            {
+              "uuid": "Item.K8KrnwuTfMFwkqXm"
+            },
+            {
+              "uuid": "Item.qqpuVeuAfMwtN0Or"
+            },
+            {
+              "uuid": "Item.v155ax3CSZJmIt7s"
+            },
+            {
+              "uuid": "Item.rE0358Wuf3F8vA78"
+            },
+            {
+              "uuid": "Item.sD4ODuZvzIBFNBwy"
+            },
+            {
+              "uuid": "Item.tbdYoBKQKuZL5AMh"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": "feat"
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Rite (Level 4 or lower)",
+        "hint": "Max Rites = WIS mod + PB (min 1). You may replace one Rite when you gain a level.",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "ch9WhC7uun7fZwSo",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.CuokWypfl0oFGXxg"
+            },
+            {
+              "uuid": "Item.Su2K5Ins347iM4GD"
+            },
+            {
+              "uuid": "Item.DOOye1sc8Qs9eX1m"
+            },
+            {
+              "uuid": "Item.cKgpuTda0I4IXojN"
+            },
+            {
+              "uuid": "Item.ed9zX1H3pk2AX2gz"
+            },
+            {
+              "uuid": "Item.3G2nsbr11TumyQZr"
+            },
+            {
+              "uuid": "Item.JrCujlFf7sYeRLoi"
+            },
+            {
+              "uuid": "Item.qrDu6UiuAN48eRQZ"
+            },
+            {
+              "uuid": "Item.4Xx2hDoVhfZNrHGL"
+            },
+            {
+              "uuid": "Item.BHRv4E4TulI50aqJ"
+            },
+            {
+              "uuid": "Item.R9xukcybECjCQVl7"
+            },
+            {
+              "uuid": "Item.DdE6mz2n0UEU4M18"
+            },
+            {
+              "uuid": "Item.XFNSLSGafIbusJNh"
+            },
+            {
+              "uuid": "Item.CJb8F6shdefAmb6F"
+            },
+            {
+              "uuid": "Item.wuUEOVKbArP66F2k"
+            },
+            {
+              "uuid": "Item.uxz15UdG9zfLWMCS"
+            },
+            {
+              "uuid": "Item.SJcmvMkFLbkdtvoZ"
+            },
+            {
+              "uuid": "Item.rSn5lpJGSR2eS9eL"
+            },
+            {
+              "uuid": "Item.ig6CCxpBXzmAEpGt"
+            },
+            {
+              "uuid": "Item.dB8SBBmu29AkbEy5"
+            },
+            {
+              "uuid": "Item.G8UZRfi8NansYmi5"
+            },
+            {
+              "uuid": "Item.ksGeg0vzKQoLfM0q"
+            },
+            {
+              "uuid": "Item.vhya8iwichAMrkkQ"
+            },
+            {
+              "uuid": "Item.DAPQaz9JMYf0K3e3"
+            },
+            {
+              "uuid": "Item.K8KrnwuTfMFwkqXm"
+            },
+            {
+              "uuid": "Item.qqpuVeuAfMwtN0Or"
+            },
+            {
+              "uuid": "Item.v155ax3CSZJmIt7s"
+            },
+            {
+              "uuid": "Item.rE0358Wuf3F8vA78"
+            },
+            {
+              "uuid": "Item.sD4ODuZvzIBFNBwy"
+            },
+            {
+              "uuid": "Item.Pqo60C9IAHjUQO28"
+            },
+            {
+              "uuid": "Item.tbdYoBKQKuZL5AMh"
+            },
+            {
+              "uuid": "Item.v7hqJSN119WsKgeR"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": "feat"
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Rite (Level 5 or lower)",
+        "hint": "Max Rites = WIS mod + PB (min 1). You may replace one Rite when you gain a level.",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "_id": "azfEzxw4uMxmosHM",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "2": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.139NjT8gJ7yr0kGs"
+            },
+            {
+              "uuid": "Item.bsAdIGCKFq2DvQxH"
+            },
+            {
+              "uuid": "Item.zudgV6nIJaqwgKp0"
+            },
+            {
+              "uuid": "Item.kHghjMCTjj9ZqTGt"
+            },
+            {
+              "uuid": "Item.C0oHT6uWKOK3rC3U"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": "feat"
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Gift (Rank 1)",
+        "hint": "First class Gift at 2nd level. Max by rank: R1=3, R2=2, R3=1, R4=1, R5=1. You may replace one Gift when you gain a level that grants a new Gift.",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "title": "Gift (Rank 2 or lower)",
+        "_id": "x2Bbh9twRot6Inxb",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "5": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.139NjT8gJ7yr0kGs"
+            },
+            {
+              "uuid": "Item.bsAdIGCKFq2DvQxH"
+            },
+            {
+              "uuid": "Item.zudgV6nIJaqwgKp0"
+            },
+            {
+              "uuid": "Item.kHghjMCTjj9ZqTGt"
+            },
+            {
+              "uuid": "Item.C0oHT6uWKOK3rC3U"
+            },
+            {
+              "uuid": "Item.veTr67yulIh6SvRO"
+            },
+            {
+              "uuid": "Item.V1BnUQu790kqfSxI"
+            },
+            {
+              "uuid": "Item.6ftjWFEOKzDcbKrn"
+            },
+            {
+              "uuid": "Item.fILX24f2CaJOTMHF"
+            },
+            {
+              "uuid": "Item.6Ft9uJg9oDrc7uh0"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": "feat"
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "hint": "Max by rank: R1=3, R2=2, R3=1, R4=1, R5=1. You may replace one Gift when you gain a level that grants a new Gift.",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "title": "Gift (Rank 3 or lower)",
+        "_id": "fyUGoRidPuPpf0oY",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "9": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.139NjT8gJ7yr0kGs"
+            },
+            {
+              "uuid": "Item.bsAdIGCKFq2DvQxH"
+            },
+            {
+              "uuid": "Item.zudgV6nIJaqwgKp0"
+            },
+            {
+              "uuid": "Item.kHghjMCTjj9ZqTGt"
+            },
+            {
+              "uuid": "Item.C0oHT6uWKOK3rC3U"
+            },
+            {
+              "uuid": "Item.veTr67yulIh6SvRO"
+            },
+            {
+              "uuid": "Item.V1BnUQu790kqfSxI"
+            },
+            {
+              "uuid": "Item.6ftjWFEOKzDcbKrn"
+            },
+            {
+              "uuid": "Item.fILX24f2CaJOTMHF"
+            },
+            {
+              "uuid": "Item.6Ft9uJg9oDrc7uh0"
+            },
+            {
+              "uuid": "Item.JkrVpV1mPHKki6pU"
+            },
+            {
+              "uuid": "Item.75PD4aT83i0sv90l"
+            },
+            {
+              "uuid": "Item.8KvW9Qnbi71vNiXm"
+            },
+            {
+              "uuid": "Item.n5YEXgsTvXthtOqr"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": "feat"
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "hint": "Max by rank: R1=3, R2=2, R3=1, R4=1, R5=1. You may replace one Gift when you gain a level that grants a new Gift.",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "title": "Gift (Rank 4 or lower)",
+        "_id": "OeDb7ueOsOxC6VTM",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "13": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.139NjT8gJ7yr0kGs"
+            },
+            {
+              "uuid": "Item.bsAdIGCKFq2DvQxH"
+            },
+            {
+              "uuid": "Item.zudgV6nIJaqwgKp0"
+            },
+            {
+              "uuid": "Item.kHghjMCTjj9ZqTGt"
+            },
+            {
+              "uuid": "Item.C0oHT6uWKOK3rC3U"
+            },
+            {
+              "uuid": "Item.veTr67yulIh6SvRO"
+            },
+            {
+              "uuid": "Item.V1BnUQu790kqfSxI"
+            },
+            {
+              "uuid": "Item.6ftjWFEOKzDcbKrn"
+            },
+            {
+              "uuid": "Item.fILX24f2CaJOTMHF"
+            },
+            {
+              "uuid": "Item.6Ft9uJg9oDrc7uh0"
+            },
+            {
+              "uuid": "Item.JkrVpV1mPHKki6pU"
+            },
+            {
+              "uuid": "Item.75PD4aT83i0sv90l"
+            },
+            {
+              "uuid": "Item.8KvW9Qnbi71vNiXm"
+            },
+            {
+              "uuid": "Item.n5YEXgsTvXthtOqr"
+            },
+            {
+              "uuid": "Item.r1iYE1cl5jzAXIpy"
+            },
+            {
+              "uuid": "Item.NSAyNkFUfHiBiYr3"
+            },
+            {
+              "uuid": "Item.ah5YUIVatEXGO7WI"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": "feat",
+            "subtype": ""
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "hint": "Max by rank: R1=3, R2=2, R3=1, R4=1, R5=1. You may replace one Gift when you gain a level that grants a new Gift.",
+        "classRestriction": "primary"
+      },
+      {
+        "type": "ItemChoice",
+        "title": "Gift (Rank 5 or lower)",
+        "_id": "o8hwTnj8cgByboe1",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "17": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Item.139NjT8gJ7yr0kGs"
+            },
+            {
+              "uuid": "Item.bsAdIGCKFq2DvQxH"
+            },
+            {
+              "uuid": "Item.zudgV6nIJaqwgKp0"
+            },
+            {
+              "uuid": "Item.kHghjMCTjj9ZqTGt"
+            },
+            {
+              "uuid": "Item.C0oHT6uWKOK3rC3U"
+            },
+            {
+              "uuid": "Item.veTr67yulIh6SvRO"
+            },
+            {
+              "uuid": "Item.V1BnUQu790kqfSxI"
+            },
+            {
+              "uuid": "Item.6ftjWFEOKzDcbKrn"
+            },
+            {
+              "uuid": "Item.fILX24f2CaJOTMHF"
+            },
+            {
+              "uuid": "Item.6Ft9uJg9oDrc7uh0"
+            },
+            {
+              "uuid": "Item.JkrVpV1mPHKki6pU"
+            },
+            {
+              "uuid": "Item.75PD4aT83i0sv90l"
+            },
+            {
+              "uuid": "Item.8KvW9Qnbi71vNiXm"
+            },
+            {
+              "uuid": "Item.n5YEXgsTvXthtOqr"
+            },
+            {
+              "uuid": "Item.r1iYE1cl5jzAXIpy"
+            },
+            {
+              "uuid": "Item.NSAyNkFUfHiBiYr3"
+            },
+            {
+              "uuid": "Item.ah5YUIVatEXGO7WI"
+            },
+            {
+              "uuid": "Item.Pa58HOqHjstvaS7m"
+            },
+            {
+              "uuid": "Item.f5Sgm3UhVvy8bdMs"
+            },
+            {
+              "uuid": "Item.dzsrL2Hw60MdXcKQ"
+            }
+          ],
+          "restriction": {
+            "list": [],
+            "type": "feat",
+            "subtype": ""
+          },
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "hint": "Max by rank: R1=3, R2=2, R3=1, R4=1, R5=1. You may replace one Gift when you gain a level that grants a new Gift.",
         "classRestriction": "primary"
       }
     ],
@@ -497,7 +1574,7 @@
     "systemId": "dnd5e",
     "systemVersion": "5.2.5",
     "createdTime": 1769825224080,
-    "modifiedTime": 1770216158608,
+    "modifiedTime": 1771537574841,
     "lastModifiedBy": "1MqF4AiaVyJDlXbK"
   },
   "ownership": {

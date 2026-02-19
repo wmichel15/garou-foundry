@@ -1,0 +1,18 @@
+{
+  "_id": "riteL4Placeholder",
+  "name": "Rite (Level 4)",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "activities": {},
+    "description": {
+      "value": "<p>Choose one Level 4 Rite. See <strong>Rites &amp; Sacred Duties</strong> in the Garou Journals. This placeholder represents your chosen Level 4 Rite until specific rite items are added.</p>",
+      "chat": ""
+    },
+    "identifier": "garou-rite-level-4",
+    "source": { "revision": 1, "rules": "2024" }
+  },
+  "effects": [],
+  "flags": {},
+  "ownership": { "default": 0 }
+}
